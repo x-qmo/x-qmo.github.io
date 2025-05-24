@@ -5,18 +5,19 @@
 /* @import 'normalize.css'; */
 
 /* Variabel Warna (Opsional) */
-$primary-color: #3498db;
-$secondary-color: #2c3e50;
-$text-color: #333;
-$light-grey: #f4f4f4;
+$primary-color: #fe8019;
+$secondary-color: #fbf1c7;
+$text-color: #9d8f7c;
+$light-grey: #282828;
 $border-color: #eee;
 
 /* Styling Umum */
 .language-plaintext.highlighter-rouge {
-  background-color: antiquewhite;
+  background-color: #685e55;
   max-width: 580px;
   padding: 10px;
   overflow-x: scroll;
+  color: #b8bb26;
 }
 
 body {
@@ -24,7 +25,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #3c3836;
   color: $text-color;
 }
 
@@ -45,7 +46,7 @@ a:hover {
 
 /* Header */
 .site-header {
-  background-color: $secondary-color;
+  background-color: #282828;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -166,10 +167,12 @@ a:hover {
 .main-content {
   flex: 3; /* Mengambil proporsi lebih besar di desktop */
   padding: 20px;
-  background-color: #fff;
+  background-color: #282828;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   max-width: 560px;
+  color: #d0c8a6;
+  border: 1px solid #84776a;
 }
 
 .sidebar {
@@ -178,7 +181,7 @@ a:hover {
   background-color: $light-grey;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-
+border: 1px solid #84776a;
 }
 
 .sidebar h3 {
@@ -242,7 +245,7 @@ a:hover {
 
 /* Footer */
 .site-footer {
-  background-color: $secondary-color;
+  background-color: #282828;
   color: #fff;
   text-align: center;
   padding: 20px 0;
