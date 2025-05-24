@@ -4,6 +4,9 @@ layout: default
 
 <article class="post">
   <header class="post-header">
+  {% if page.image %}
+  <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="main-post-image">
+  {% endif %}
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">

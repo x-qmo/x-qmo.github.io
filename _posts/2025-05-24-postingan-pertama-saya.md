@@ -5,6 +5,7 @@ date: 2025-05-24 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
 author: Nama Anda
+thumbnail: /assets/images/post-thumbnail-1.jpg
 ---
 
 Selamat datang di blog baru saya yang dibangun dengan Jekyll! Ini adalah postingan pertama.
