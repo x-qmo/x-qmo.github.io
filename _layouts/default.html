@@ -9,17 +9,17 @@
 </head>
 <body>
 
-    {% include header.html %} {# Memanggil header #}
-    {% include navigation.html %} {# Memanggil navigasi #}
+    {% include header.html %}
+    {% include navigation.html %}
 
     <div class="container">
         <main class="main-content">
-            {{ content }} {# Konten dari halaman/post akan dirender di sini #}
+            {{ content }}
         </main>
-        {% include sidebar.html %} {# Memanggil sidebar #}
+        {% include sidebar.html %}
     </div>
 
-    {% include footer.html %} {# Memanggil footer #}
+    {% include footer.html %}
 
 </body>
 </html>

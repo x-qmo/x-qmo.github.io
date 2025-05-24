@@ -8,7 +8,10 @@ twitter_username: your_twitter
 github_username:  your_github
 
 # Build settings
+highlighter: rouge
 markdown: kramdown
+kramdown:
+    input: GFM
 theme: null # Penting: Atur ke null karena kita membuat tema sendiri
 plugins:
     - jekyll-feed

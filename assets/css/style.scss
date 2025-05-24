@@ -12,6 +12,13 @@ $light-grey: #f4f4f4;
 $border-color: #eee;
 
 /* Styling Umum */
+.language-plaintext.highlighter-rouge {
+  background-color: antiquewhite;
+  padding: 10px;
+  overflow-x: scroll;
+  max-width: 580px;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
