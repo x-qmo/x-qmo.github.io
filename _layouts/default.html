@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+
+    {% include header.html %} {# Memanggil header #}
+    {% include navigation.html %} {# Memanggil navigasi #}
+
+    <div class="container">
+        <main class="main-content">
+            {{ content }} {# Konten dari halaman/post akan dirender di sini #}
+        </main>
+        {% include sidebar.html %} {# Memanggil sidebar #}
+    </div>
+
+    {% include footer.html %} {# Memanggil footer #}
+
+</body>
+</html>

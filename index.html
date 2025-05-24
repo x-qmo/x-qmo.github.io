@@ -1,0 +1,26 @@
+---
+layout: default
+title: Beranda Blog
+description: Selamat datang di blog pribadi saya!
+---
+
+<div class="posts-list">
+  <h2 class="section-title">Postingan Terbaru</h2>
+  {% for post in site.posts %}
+  <article class="post-preview">
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p class="post-meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%d %b %Y" }}
+      </time>
+      {% if post.author %}
+        oleh {{ post.author }}
+      {% endif %}
+    </p>
+    <div class="post-excerpt">
+      {{ post.excerpt | strip_html | truncatewords: 30 }}
+      <a href="{{ post.url | relative_url }}" class="read-more">Baca Selengkapnya &raquo;</a>
+    </div>
+  </article>
+  {% endfor %}
+</div>

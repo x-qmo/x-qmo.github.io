@@ -1,0 +1,280 @@
+---
+---
+
+/* Import normalize.css atau reset CSS jika Anda menginginkannya */
+/* @import 'normalize.css'; */
+
+/* Variabel Warna (Opsional) */
+$primary-color: #3498db;
+$secondary-color: #2c3e50;
+$text-color: #333;
+$light-grey: #f4f4f4;
+$border-color: #eee;
+
+/* Styling Umum */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: $text-color;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.site-header {
+  background-color: $secondary-color;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+  display: block;
+  color: #fff;
+}
+
+.site-description {
+  font-size: 1.1em;
+  opacity: 0.8;
+}
+
+/* Navigasi (Sesuai dengan kode navigation.html yang diberikan sebelumnya) */
+.main-nav {
+  background-color: #333;
+  padding: 15px 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+  width: 30px;
+  height: 25px;
+}
+
+.menu-icon span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.menu-icon span:last-child {
+  margin-bottom: 0;
+}
+
+.menu-toggle:checked + .menu-icon span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle:checked + .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle:checked + .menu-icon span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.nav-list li {
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-list li:last-child {
+  border-bottom: none;
+}
+
+.menu-toggle:checked ~ .nav-list {
+  display: flex;
+}
+
+/* Konten Utama & Sidebar Layout */
+.container {
+  display: flex; /* Menggunakan Flexbox untuk main-content dan sidebar */
+  flex-direction: column; /* Default stack di mobile */
+  gap: 20px; /* Jarak antar konten dan sidebar */
+  padding: 20px 0;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.main-content {
+  flex: 3; /* Mengambil proporsi lebih besar di desktop */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.sidebar {
+  flex: 1; /* Mengambil proporsi lebih kecil di desktop */
+  padding: 20px;
+  background-color: $light-grey;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  color: $secondary-color;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 8px;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 5px 0;
+  color: $text-color;
+  transition: color 0.2s ease;
+}
+
+.sidebar ul li a:hover {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+/* Styling Postingan */
+.post {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-color;
+}
+
+.post-header {
+  margin-bottom: 20px;
+}
+
+.post-title {
+  font-size: 2em;
+  margin-bottom: 5px;
+  color: $secondary-color;
+}
+
+.post-meta {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: $secondary-color;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+.site-footer a {
+  color: $primary-color;
+}
+
+/* Media Queries untuk Responsif */
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none; /* Sembunyikan ikon hamburger di desktop */
+  }
+
+  .nav-list {
+    display: flex; /* Tampilkan menu secara horizontal di desktop */
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .nav-list li {
+    border-bottom: none;
+  }
+
+  .nav-list a {
+    padding: 10px 15px;
+  }
+
+  .container {
+    flex-direction: row; /* Main content dan sidebar berdampingan di desktop */
+  }
+
+  .main-content {
+    order: 1; /* Konten di kiri */
+  }
+
+  .sidebar {
+    order: 2; /* Sidebar di kanan */
+  }
+}

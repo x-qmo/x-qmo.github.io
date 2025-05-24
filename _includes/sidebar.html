@@ -1,0 +1,26 @@
+<aside class="sidebar">
+    <h3>Postingan Terbaru</h3>
+    <ul>
+        {% for post in site.posts limit:5 %}
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <h3>Kategori</h3>
+    <ul>
+        {% assign categories = site.categories | sort %}
+        {% for category in categories %}
+        <li><a href="{{ site.baseurl }}/kategori/{{ category | first | slugify }}/">{{ category | first }} ({{ category | last | size }})</a></li>
+        {% endfor %}
+    </ul>
+
+    <h3>Ikuti Kami</h3>
+    <ul class="social-links">
+        {% if site.twitter_username %}
+            <li><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+        {% endif %}
+        {% if site.github_username %}
+            <li><a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        {% endif %}
+    </ul>
+</aside>
