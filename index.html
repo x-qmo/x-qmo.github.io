@@ -24,7 +24,7 @@ description: Selamat datang di blog pribadi saya!
     </p>
     <div class="post-excerpt">
       {{ post.excerpt | strip_html | truncatewords: 30 }}
-      <a href="{{ post.url | relative_url }}" class="read-more">Baca Selengkapnya &raquo;</a>
+      <div><a href="{{ post.url | relative_url }}" class="read-more">Baca Selengkapnya &raquo;</a></div>
     </div>
     </div>
   </article>
