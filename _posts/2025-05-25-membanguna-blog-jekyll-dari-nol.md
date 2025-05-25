@@ -168,7 +168,7 @@ layout: default
     </div>
 </article>
 ```
-{% endraw}
+{% endraw %}
 
 _layouts/page.html: (Untuk halaman statis seperti "Tentang Kami", "Kontak")
 
