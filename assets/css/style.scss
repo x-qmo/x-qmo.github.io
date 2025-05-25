@@ -84,6 +84,61 @@ $border-color: #eee;
     border-radius: 8px;
 }
 
+/* Contoh CSS untuk tombol berbagi */
+.share-buttons {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #282828;
+border: 1px solid #786d61;
+}
+
+.share-button {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.share-button.twitter {
+background-color: #3c3836;
+border: 1px solid #615950;
+text-decoration: none;
+}
+.share-button.twitter:hover {
+    background-color: #0c85d0;
+}
+
+.share-button.facebook {
+background-color: #3c3836;
+border: 1px solid #615950;
+text-decoration: none;
+}
+.share-button.facebook:hover {
+    background-color: #145dbb;
+}
+
+.share-button.linkedin {
+background-color: #3c3836;
+border: 1px solid #615950;
+text-decoration: none;
+}
+.share-button.linkedin:hover {
+    background-color: #074b8e;
+}
+
+.share-button.email {
+background-color: #3c3836;
+border: 1px solid #615950;
+text-decoration: none;
+}
+.share-button.email:hover {
+    background-color: #555;
+}
+
 /* Styling Umum */
 .language-plaintext.highlighter-rouge {
   background-color: #3c3836;
