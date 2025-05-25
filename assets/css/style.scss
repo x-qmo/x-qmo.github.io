@@ -333,6 +333,11 @@ border: 1px solid #84776a;
 
 /* Media Queries untuk Responsif */
 @media (min-width: 768px) {
+
+.post-thumbnail {
+  width: 100%;
+  height: auto;
+}
   .menu-icon {
     display: none; /* Sembunyikan ikon hamburger di desktop */
   }
