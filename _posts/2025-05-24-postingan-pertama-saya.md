@@ -12,6 +12,8 @@ Selamat datang di blog baru saya yang dibangun dengan Jekyll! Ini adalah posting
 
 Jekyll adalah generator situs statis yang sederhana dan berorientasi blog. Dengan Jekyll, Anda dapat menulis konten dalam Markdown, dan Jekyll akan mengubahnya menjadi situs web statis yang siap digunakan.
 
+![My image Name](/assets/images/post-thumbnail-1.jpg)
+
 ### Mengapa Menggunakan Jekyll?
 
 * **Gratis dan Open Source:** Anda memiliki kendali penuh.
