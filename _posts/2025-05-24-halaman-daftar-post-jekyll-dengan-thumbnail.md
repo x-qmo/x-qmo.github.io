@@ -251,5 +251,109 @@ Dan tambahkan CSS untuk main-post-image:
 * Klik Postingan: Buka halaman detail postingan untuk melihat gambar utama di sana.
 * Sesuaikan CSS: Mainkan dengan nilai-nilai CSS (width, height, object-fit, margin, padding, dll.) hingga Anda mendapatkan tampilan yang diinginkan.
 
+## Metode Umum Menampilkan Thumbnail
+
+1. **Menggunakan Front Matter untuk Setiap Postingan**
+
+Ini adalah cara yang paling fleksibel karena Anda bisa menentukan thumbnail yang berbeda untuk setiap postingan.
+
+Langkah-langkah:
+
+* Tambahkan thumbnail ke Front Matter postingan Anda:
+* Buka file Markdown (.md atau .markdown) dari setiap postingan dan tambahkan baris thumbnail: di bagian Front Matter (bagian atas file yang diapit oleh ---).
+
+{% raw %}
+```
+---
+layout: post
+title: Judul Postingan Anda
+date: 2023-10-26 10:00:00 +0700
+categories: [web, tutorial]
+thumbnail: /assets/img/thumbnails/gambar-thumbnail-postingan-ini.jpg
+---
+```
+{% endraw %}
+
+Catatan: Pastikan path gambar (/assets/img/thumbnails/gambar-thumbnail-postingan-ini.jpg) sesuai dengan lokasi gambar thumbnail Anda di proyek Jekyll.
+
+* Edit halaman daftar postingan Anda:
+Buka file layout yang menampilkan daftar postingan Anda (misalnya, index.html jika itu halaman beranda, atau file layout kategori/tag Anda). Kemudian, tambahkan kode HTML untuk menampilkan gambar thumbnail di dalam loop yang menampilkan postingan.
+
+{% raw %}
+```
+{% for post in site.posts %}
+  <div class="post-item">
+    {% if post.thumbnail %}
+      <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="post-thumbnail">
+    {% endif %}
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    <a href="{{ post.url | relative_url }}" class="read-more">Baca Selengkapnya</a>
+  </div>
+{% endfor %}
+```
+{% endraw %}
+
+Penjelasan :
+
+{% raw %}
+```
+Kode {% if post.thumbnail %} memastikan bahwa gambar hanya ditampilkan jika properti thumbnail ada di Front Matter postingan. {{ post.thumbnail | relative_url }} akan mengonversi path menjadi URL relatif yang benar.
+```
+{% endraw %}
+
+2. **Menggunakan Default Front Matter**
+
+Jika Anda ingin semua postingan memiliki struktur thumbnail yang serupa, atau Anda ingin mengatur direktori default untuk thumbnail, Anda bisa menggunakan _config.yml.
+
+Langkah-langkah:
+
+* Tambahkan aturan defaults di _config.yml:
+Buka file _config.yml Anda dan tambahkan bagian defaults.
+
+{% raw %}
+```
+# _config.yml
+defaults:
+  - scope:
+      path: "" # Berlaku untuk semua file
+      type: "posts" # Hanya untuk postingan
+    values:
+      thumbnail_dir: "/assets/img/post-thumbnails/" # Direktori default untuk thumbnail
+```
+{% endraw %}
+
+Dengan pengaturan ini, Anda bisa menentukan hanya nama file gambar di Front Matter postingan:
+
+{% raw %}
+```
+---
+layout: post
+title: Judul Postingan Anda
+date: 2023-10-26 10:00:00 +0700
+categories: [web, tutorial]
+thumbnail: gambar-unik-postingan-ini.jpg # Hanya nama file
+---
+```
+{% endraw %}
+
+* Edit halaman daftar postingan Anda:
+Di file layout daftar postingan, Anda perlu menggabungkan thumbnail_dir dan thumbnail.
+
+{% raw %}
+```
+{% for post in site.posts %}
+  <div class="post-item">
+    {% if post.thumbnail %}
+      <img src="{{ post.thumbnail_dir | append: post.thumbnail | relative_url }}" alt="{{ post.title }}" class="post-thumbnail">
+    {% endif %}
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    <a href="{{ post.url | relative_url }}" class="read-more">Baca Selengkapnya</a>
+  </div>
+{% endfor %}
+```
+{% endraw %}
+
 Dengan langkah-langkah ini, blog Jekyll Anda akan menampilkan thumbnail yang menarik, meningkatkan daya tarik visual dan navigasi bagi pengunjung Anda!
 
