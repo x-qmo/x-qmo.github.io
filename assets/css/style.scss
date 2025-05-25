@@ -31,7 +31,7 @@ text-align: center;
 
 .post-thumbnail {
     width: 100%; /* Gambar mengisi lebar container */
-    height: 200px; /* Tinggi tetap untuk thumbnail */
+     /* Tinggi tetap untuk thumbnail */
     object-fit: fill; /* Memastikan gambar mengisi area tanpa terdistorsi */
     display: block; /* Menghilangkan spasi di bawah gambar */
     margin-bottom: 15px; /* Jarak antara gambar dan teks */
@@ -336,7 +336,7 @@ border: 1px solid #84776a;
 
 .post-thumbnail {
   width: 100%;
-  height: auto;
+
 }
   .menu-icon {
     display: none; /* Sembunyikan ikon hamburger di desktop */
