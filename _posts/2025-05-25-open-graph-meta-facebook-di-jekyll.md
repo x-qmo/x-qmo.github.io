@@ -73,7 +73,8 @@ Buat file baru di direktori _includes kamu, misalnya _includes/open-graph.html.
 {% endraw %}
 
 **Penjelasan Kode:**
-
+{% raw %}
+```
 * og:site_name: Nama situs Anda (diambil dari _config.yml).
 * og:type: Tipe objek yang dibagikan. Default website. Untuk postingan blog, kita ubah menjadi article.
 * og:title: Judul konten. Jika page.title ada, gunakan itu; jika tidak, gunakan site.title.
@@ -87,6 +88,8 @@ Buat file baru di direktori _includes kamu, misalnya _includes/open-graph.html.
 * article:author: Tautan ke halaman Facebook penulis (opsional, memerlukan data penulis di _data/authors.yml atau sejenisnya).
 * article:tag / article:section: Tag dan kategori postingan.
 * fb:app_id / fb:admins: Opsional, untuk terhubung ke Facebook App atau Facebook Page Insights (memerlukan pengaturan di _config.yml).
+```
+{% endraw %}
 
 #### Langkah 2: Tambahkan Gambar Default
 
