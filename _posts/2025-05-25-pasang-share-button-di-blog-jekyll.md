@@ -8,6 +8,9 @@ author: Nama Anda
 thumbnail: /assets/images/post-thumbnail-2.jpg
 ---
 
+
+![My image Name](/assets/images/post-thumbnail-2.jpg)
+
 Memasang tombol berbagi (social share buttons) di Jekyll memungkinkan pengunjung situs kamu dengan mudah membagikan kontenmu ke berbagai platform media sosial. Ada beberapa cara untuk melakukannya, mulai dari yang sederhana dengan tautan manual hingga menggunakan JavaScript untuk fungsionalitas yang lebih canggih.
 
 ## Opsi 1: Tombol Berbagi Sederhana (Tautan Manual)
