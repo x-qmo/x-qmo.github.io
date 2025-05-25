@@ -141,10 +141,12 @@ a:hover {
 .main-nav {
   background-color: #3c3836;
   padding: 15px 20px;
-  position: relative;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  top: 0;
+  overflow: hidden;
 }
 
 .main-nav a {
