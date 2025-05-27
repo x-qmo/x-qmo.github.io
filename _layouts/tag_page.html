@@ -1,0 +1,24 @@
+---
+layout: default # Layout dasar yang akan digunakan oleh halaman tag ini
+---
+
+<div class="container">
+  <h1>Postingan dengan Tag: {{ page.tag_name }}</h1>
+  <p>Berikut adalah semua postingan yang ditandai dengan "{{ page.tag_name }}":</p>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      {% if post.tags contains page.tag_name %}
+        <li>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+          <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  ---
+
+  <p><a href="/tags/">Kembali ke semua tag</a></p>
+</div>

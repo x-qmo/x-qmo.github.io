@@ -1,0 +1,16 @@
+---
+layout: category # Menggunakan layout kategori yang baru Anda buat
+title: contoh # Nama kategori ini harus sama persis dengan yang ada di front matter postingan
+permalink: /kategori/contoh/
+---
+
+
+<h2>Postingan Kategori Contoh</h2>
+<ul>
+  {% assign filtered_posts = site.posts | where_exp:"post", "post.categories contains 'contoh'" %}
+  {% for post in filtered_posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
+    </li>
+  {% endfor %}
+</ul>

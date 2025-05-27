@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% comment %}
+  Variabel 'category_name' ini akan diatur oleh halaman kategori individual
+  atau oleh plugin jika Anda menggunakannya.
+{% endcomment %}
+
+{% assign category_name = page.title %}
+
+<h1>Kategori: {{ category_name | capitalize }}</h1>
+
+<ul>
+  {% for post in site.categories[category_name] %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <small>({{ post.date | date: "%Y-%m-%d" }})</small>
+    </li>
+  {% endfor %}
+</ul>

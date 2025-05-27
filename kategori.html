@@ -1,28 +1,17 @@
 ---
 layout: default
-title: Kategori
-description: Temukan postingan berdasarkan kategori.
+title: "Semua Kategori"
+permalink: /kategori/
 ---
 
-<h1 class="page-title">{{ page.title }}</h1>
+<h1>Daftar Kategori</h1>
 
-<ul class="category-list">
-  {% assign categories = site.categories | sort %}
-  {% for category in categories %}
+<ul>
+  {% for category in site.categories %}
+    {% capture category_name %}{{ category | first }}{% endcapture %}
     <li>
-      <h3><a href="#{{ category | first | slugify }}">{{ category | first }} ({{ category | last | size }})</a></h3>
+      <a href="/category/{{ category_name | slugify }}/">{{ category_name | capitalize }}</a>
+      ({{ site.categories[category_name] | size }} postingan)
     </li>
   {% endfor %}
 </ul>
-
-{% for category in categories %}
-  <h2 id="{{ category | first | slugify }}">{{ category | first }}</h2>
-  <ul class="posts-by-category">
-    {% for post in category | last %}
-      <li>
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-{% endfor %}
