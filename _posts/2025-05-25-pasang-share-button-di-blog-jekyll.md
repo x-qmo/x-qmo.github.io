@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Pasang Share Button Di Blog Jekyll
+description: Cara cepat dan mudah mengintegrasikan tombol share ke setiap postingan, mendorong pembaca untuk menyebarkan konten Anda di media sosial.
 date: 2025-05-25 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
