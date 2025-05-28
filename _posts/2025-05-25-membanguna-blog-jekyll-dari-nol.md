@@ -6,9 +6,12 @@ date: 2025-05-25 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
 author: Nama Anda
+thumbnail: /assets/images/membangun-blog-jekyll.jpg
 ---
 
 Membuat template blog Jekyll dari nol dengan fitur lengkap seperti header, menu navigasi, main content, sidebar, footer, tag, kategori, dan kotak pencarian membutuhkan sedikit lebih banyak detail. Mari kita bangun ini langkah demi langkah.
+
+![My image Name](/assets/images/membangun-blog-jekyll.jpg)
 
 ## Persiapan Awal
 
