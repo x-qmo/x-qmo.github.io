@@ -6,9 +6,12 @@ date: 2025-05-25 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
 author: Nama Anda
+thumbnail: /assets/images/pasang-seo-tag-jekyll.jpg
 ---
 
 Memasang SEO meta tag di Jekyll adalah langkah krusial untuk memastikan situs Anda terindeks dengan baik oleh mesin pencari. Jekyll sendiri sangat ramah SEO karena menghasilkan HTML murni.
+
+![My image Name](/assets/images/pasang-seo-tag-jekyll.jpg)
 
 Ada beberapa cara untuk memasang SEO meta tag di Jekyll, mulai dari cara manual hingga menggunakan plugin. Berikut adalah penjelasannya:
 
