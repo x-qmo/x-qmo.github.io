@@ -1,3 +1,14 @@
 <div class="share-buttons">
-
-    </div>
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" rel="noopener noreferrer">
+    Facebook
+  </a>
+  <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener noreferrer">
+    Twitter
+  </a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary={{ page.excerpt | url_encode }}" target="_blank" rel="noopener noreferrer">
+    LinkedIn
+  </a>
+  <a href="https://wa.me/?text={{ page.title }}%20-%20{{ site.url }}{{ page.url }}" target="_blank" rel="noopener noreferrer">
+    WhatsApp
+  </a>
+  </div>
