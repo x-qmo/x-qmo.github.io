@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Memasang Kategori Di Blog Jekyll
+description: Kuasai pemasangan kategori di blog Jekyll tanpa plugin! Panduan ini akan membimbing Anda mengorganisir postingan secara efektif, meningkatkan navigasi, dan menjaga blog tetap ringan.
 date: 2025-05-27 08:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
