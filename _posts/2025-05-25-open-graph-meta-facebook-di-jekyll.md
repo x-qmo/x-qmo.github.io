@@ -6,9 +6,12 @@ date: 2025-05-25 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
 author: Nama Anda
+thumbnail: /assets/images/open-graph-meta-jekyll.jpg
 ---
 
 Memasang Open Graph Meta Tags untuk Facebook di Jekyll adalah praktik SEO dan social media marketing yang sangat penting. Open Graph (OG) tags memberikan kontrol atas bagaimana konten situs kamu muncul ketika dibagikan di Facebook (dan platform media sosial lainnya seperti LinkedIn, Twitter - jika kamu menggunakan og:image dan og:description untuk Twitter Card fallback).
+
+![My image Name](/assets/images/open-graph-meta-jekyll.jpg)
 
 Ini akan memastikan tampilan yang konsisten dan menarik dengan judul, deskripsi, dan gambar yang tepat.
 
