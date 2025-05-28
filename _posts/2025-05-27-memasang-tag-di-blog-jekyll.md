@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Memasang Tag Di Blog Jekyll
+description: Pelajari cara memasang tag di blog Jekyll tanpa plugin. Panduan lengkap ini membantu Anda mengorganisir konten dan meningkatkan navigasi blog dengan mudah dan efisien.
 date: 2025-05-27 08:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
