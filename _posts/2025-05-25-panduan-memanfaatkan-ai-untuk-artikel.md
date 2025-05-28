@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Panduan Memanfaatkan AI Untuk Artikel
+description: Manfaatkan AI untuk artikel blog! Panduan ini akan membantumu memahami cara mengintegrasikan AI secara efektif, meningkatkan efisiensi penulisan, dan menghasilkan konten berkualitas tinggi
 date: 2025-05-25 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
