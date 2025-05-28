@@ -1,0 +1,21 @@
+---
+layout: default
+title: Produk Kami
+---
+
+<div class="produk-list">
+  <h1>Produk Terbaru</h1>
+  <ul>
+    {% for item in site.produk %}
+      <li>
+        <a href="{{ item.url | relative_url }}">
+          <h3>{{ item.title }}</h3>
+          {% if item.image %}
+            <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" style="width: 150px; height: auto;">
+          {% endif %}
+
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -2,15 +2,17 @@
 layout: default # Layout dasar yang akan digunakan oleh halaman tag ini
 ---
 
+<article class="portfolio-item">
+  <h1>{{ page.title }}</h1>
 
-     <h1>{{ page.title }}</h1>
-     {% if page.image %}
-         <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="max-width: 200px; border-radius: 50%;">
-     {% endif %}
-     <p><strong>Peran:</strong> {{ page.role }}</p>
-     <p>{{ content }}</p>
 
-     {% if page.social.twitter %}
-         <p><a href="https://twitter.com/{{ page.social.twitter }}">Twitter</a></p>
-     {% endif %}
-     {# Tambahkan lebih banyak detail atau section di sini #}
+  {% if page.image %}
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="portfolio-image">
+  {% endif %}
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+  <p><a href="/produk/">Kembali ke Produk</a></p>
+</article>
