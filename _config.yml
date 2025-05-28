@@ -19,4 +19,9 @@ plugins:
     - jekyll-seo-tag
     - jekyll-paginate
 
+collections:
+ # Contoh 1: Collection "team"
 
+produk:
+    output: true
+    permalink: /produk/:path/ # ":path" akan menggunakan struktur folder dan nama file
