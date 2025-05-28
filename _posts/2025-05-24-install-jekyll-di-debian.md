@@ -6,7 +6,7 @@ date: 2025-05-24 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
 author: Nama Anda
-thumbnail: /assets/images/install-jekyll-debian.jpg
+image: /assets/images/install-jekyll-debian.jpg
 ---
 
 ## Langkah-langkah install jekyll di debian
@@ -14,8 +14,6 @@ thumbnail: /assets/images/install-jekyll-debian.jpg
 ### Langkah 1: Instal Ruby dan Dependensi
 
 Jekyll membutuhkan Ruby. Debian biasanya memiliki versi Ruby yang tersedia di repositori, tetapi penting untuk menginstal dependensi pengembangan yang diperlukan untuk mengkompilasi gem (paket Ruby) tertentu.
-
-![My image Name](/assets/images/install-jekyll-debian.jpg)
 
 {% raw %}
 ```

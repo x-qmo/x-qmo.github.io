@@ -6,12 +6,10 @@ date: 2025-05-24 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
 author: Nama Anda
-thumbnail: /assets/images/pasang-komentar-di-jekyll.jpg
+image: /assets/images/pasang-komentar-di-jekyll.jpg
 ---
 
 Memasang kotak komentar di blog Jekyll memerlukan penggunaan layanan pihak ketiga karena Jekyll sendiri adalah generator situs statis dan tidak memiliki database bawaan untuk menyimpan komentar. Ada beberapa layanan komentar populer yang dapat Anda integrasikan dengan mudah.
-
-![My image Name](/assets/images/pasang-komentar-di-jekyll.jpg)
 
 Berikut adalah beberapa opsi pasang kotak komentar populer dan cara mengintegrasikannya:
 

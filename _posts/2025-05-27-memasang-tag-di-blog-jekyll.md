@@ -6,12 +6,10 @@ date: 2025-05-27 08:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
 author: Nama Anda
-thumbnail: /assets/images/memasang-tag-jekyll.jpg
+image: /assets/images/memasang-tag-jekyll.jpg
 ---
 
 Memasang tag di blog Jekyll tanpa menggunakan plugin adalah cara yang efisien untuk mengorganisir konten Anda dan meningkatkan navigasi bagi pembaca. Metode ini memanfaatkan fitur bawaan Jekyll seperti front matter dan layout. Berikut adalah panduan langkah demi langkah untuk melakukannya:
-
-![My image Name](/assets/images/memasang-tag-jekyll.jpg)
 
 1. **Struktur Folder dan File Tag**
 

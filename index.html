@@ -8,9 +8,9 @@ description: Selamat datang di blog pribadi saya!
   <h2 class="section-title">Postingan Terbaru</h2>
   {% for post in site.posts %}
   <div class="post-item">
-  {% if post.thumbnail %}
+  {% if post.image %}
   <article class="post-preview">
-    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}<img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="post-thumbnail"></a></h3>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}<img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-thumbnail"></a></h3>
     {% else %}
     <h3><a href="{{ post.url | relative_url }}">{{ post.title }}<img src="{{ '/assets/images/default-thumbnail.jpg' | relative_url }}" alt="{{ post.title }}" class="post-thumbnail"></a></h3>
     {% endif %}

@@ -6,12 +6,10 @@ date: 2025-05-27 08:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
 author: Nama Anda
-thumbnail: /assets/images/memasang-kategori-jekyll.jpg
+image: /assets/images/memasang-kategori-jekyll.jpg
 ---
 
 Mengatur postingan blog Anda dengan kategori di Jekyll tanpa menggunakan plugin itu cukup mudah. Prosesnya mirip dengan penanganan tag. Anda akan menggunakan front matter di postingan Anda dan membuat halaman khusus untuk setiap kategori. Ini menjaga blog Anda tetap ramping dan cepat.
-
-![My image Name](/assets/images/memasang-kategori-jekyll.jpg)
 
 1. **Struktur Folder dan File Kategori**
 

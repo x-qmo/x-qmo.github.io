@@ -6,12 +6,10 @@ date: 2025-05-25 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
 author: Nama Anda
-thumbnail: /assets/images/panduan-ai-artikel.jpg
+image: /assets/images/panduan-ai-artikel.jpg
 ---
 
 Menggunakan Gemini AI untuk menulis konten artikel yang menarik adalah strategi yang sangat efektif. Gemini, dengan kemampuan pemahaman bahasa alami yang canggih dan kemampuan menghasilkan teks yang koheren, bisa menjadi asisten yang luar biasa bagi penulis.
-
-![My image Name](/assets/images/panduan-ai-artikel.jpg)
 
 ## Berikut adalah panduan langkah demi langkah untuk memanfaatkan Gemini AI dalam menulis artikel yang menarik:
 
