@@ -6,9 +6,12 @@ date: 2025-05-24 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
 author: Nama Anda
+thumbnail: /assets/images/post-thumbnail-di-jekyll.jpg
 ---
 
 Membuat halaman postingan di Jekyll dengan thumbnail melibatkan beberapa langkah: Anda perlu menambahkan variabel untuk gambar thumbnail di front matter postingan Anda, kemudian menampilkan gambar tersebut di daftar postingan (misalnya di halaman depan atau halaman arsip) dan juga di halaman postingan itu sendiri.
+
+![My image Name](/assets/images/post-thumbnail-di-jekyll.jpg)
 
 Berikut adalah cara melakukannya secara detail:
 ## Langkah 1: Siapkan Direktori Gambar Thumbnail
