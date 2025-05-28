@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Pasang Seo Meta Tag Di Jekyll
+description: Optimalkan blog Jekyll-mu! Panduan ini mengajarkan cara memasang SEO meta tag untuk meningkatkan visibilitas di mesin pencari. Mudah, tanpa plugin, dan efektif
 date: 2025-05-25 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
