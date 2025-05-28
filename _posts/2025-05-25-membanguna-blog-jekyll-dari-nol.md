@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Membangun Blog Jekyll Dari Nol
+description: Mulai blog Jekyll-mu dari nol! Panduan lengkap ini akan memandumu membangun blog Jekyll dari awal, termasuk instalasi, konfigurasi, hingga publikasi. Sempurna untuk pemula!
 date: 2025-05-25 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]

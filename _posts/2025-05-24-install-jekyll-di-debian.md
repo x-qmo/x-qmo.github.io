@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Install Jekyll Di Debian
+description: Instal Jekyll di Debian dengan mudah! Ikuti panduan langkah demi langkah ini untuk install Jekyll di Debian, mulai dari persiapan hingga siap ngoding. Cepat dan efisien!
 date: 2025-05-24 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]

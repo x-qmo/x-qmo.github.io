@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Postingan Pertama Saya
+description: Mengapa pilih Jekyll? Temukan alasannya! Pelajari keuntungan menggunakan Jekyll untuk blog Anda, mulai dari kecepatan, keamanan, hingga kemudahan pengelolaan tanpa database
 date: 2025-05-24 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]

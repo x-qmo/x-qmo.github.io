@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Pasang Kotak Komentar Di Blog Jekyll
+description: Tambahkan interaksi ke blog Jekyll-mu! Pelajari cara memasang kotak komentar dengan mudah. Panduan ini mencakup solusi tanpa plugin untuk meningkatkan keterlibatan pembaca
 date: 2025-05-24 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]

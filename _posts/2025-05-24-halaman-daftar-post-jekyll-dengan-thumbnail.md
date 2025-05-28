@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Halaman Daftar Post Jekyll Dengan Thumbnail
+description: Buat daftar postingan menarik di Jekyll! Pelajari cara menampilkan halaman daftar post dengan thumbnail agar blogmu lebih visual dan mudah dijelajahi pembaca
 date: 2025-05-24 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]

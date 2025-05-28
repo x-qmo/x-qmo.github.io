@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Open Graph Meta Facebook Di Jekyll
+description: Mudah pasang Open Graph Meta Facebook di Jekyll! Tingkatkan tampilan postingan saat dibagikan di media sosial. Panduan ini simpel, tanpa plugin, dan efektif.
 date: 2025-05-25 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
