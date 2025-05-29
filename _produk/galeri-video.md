@@ -25,4 +25,4 @@ videos:
 
 {% include video_gallery.html videos=page.videos %}
 
-Ini adalah galeri video yang menampilkan beberapa konten menarik.
+Ini adalah galeri video AI yang menampilkan beberapa konten menarik.
