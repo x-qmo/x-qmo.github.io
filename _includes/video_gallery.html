@@ -6,19 +6,18 @@
     gap: 20px; /* Jarak antar video */
     justify-content: space-around; /* Pusatkan item dan berikan ruang di sekitarnya */
     padding: 20px; /* Padding di sekitar galeri */
-    background-color: #f8f8f8; /* Warna latar belakang galeri */
+    background-color: #3c3836; /* Warna latar belakang galeri */
     border-radius: 10px; /* Sudut membulat */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
   }
 
   .video-item {
-    flex: 1 1 calc(33.33% - 20px); /* 3 video per baris dengan jarak */
-    max-width: calc(33.33% - 20px); /* Batasi lebar untuk 3 kolom */
-    background-color: #ffffff; /* Latar belakang item video */
-    border-radius: 8px; /* Sudut membulat untuk setiap item */
-    overflow: hidden; /* Pastikan konten tidak meluap */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Bayangan item */
-    transition: transform 0.3s ease; /* Efek hover */
+background-color: #282828;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+transition: transform 0.3s ease;
+flex-basis: 48%;
   }
 
   .video-item:hover {
@@ -52,12 +51,12 @@
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 1.2em;
-    color: #333;
+    color: #fbf1c7;
   }
 
   .video-item .video-info p {
     font-size: 0.9em;
-    color: #666;
+    color: #c3bc9c;
   }
 
   /* Media queries untuk responsivitas */
