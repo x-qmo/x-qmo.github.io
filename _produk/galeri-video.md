@@ -1,7 +1,9 @@
 ---
 layout: produk_ytb
-youtubeId: nIdP7QYM_gs
-image: http://img.youtube.com/vi/nIdP7QYM_gs/hqdefault.jpg
+title: "Galeri Video"
+date: 2023-10-27 10:00:00 +0700
+categories: [video, tutorial]
+# Definisikan daftar video di front matter
 videos:
   - type: youtube
     id: "nIdP7QYM_gs" # Ganti dengan ID video YouTube Anda
@@ -21,4 +23,6 @@ videos:
     description: "Video ketiga dari YouTube."
 ---
 
-{% include youtubePlayer.html id=page.videos %}
+{% include video_gallery.html videos=page.videos %}
+
+Ini adalah galeri video yang menampilkan beberapa konten menarik.
