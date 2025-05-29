@@ -1,0 +1,118 @@
+<style>
+  /* Gaya dasar untuk kotak pencarian dan hasil */
+  .google-cse-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif; /* Menggunakan font Inter */
+  }
+
+  .google-cse-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  /* Gaya untuk kotak pencarian (input) */
+  .gsc-control-cse .gsc-search-box .gsc-input {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    font-size: 1.1em;
+    width: 100%;
+    box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
+  }
+
+  /* Gaya untuk tombol pencarian */
+  .gsc-control-cse .gsc-search-box .gsc-search-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .gsc-control-cse .gsc-search-box .gsc-search-button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Gaya untuk hasil pencarian */
+  .gsc-control-cse .gsc-results {
+    margin-top: 30px;
+  }
+
+  .gsc-control-cse .gsc-result {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+  .gsc-control-cse .gsc-result .gs-title a {
+    color: #007bff;
+    font-size: 1.3em;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .gsc-control-cse .gsc-result .gs-title a:hover {
+    text-decoration: underline;
+  }
+
+  .gsc-control-cse .gsc-result .gs-snippet {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+
+  .gsc-control-cse .gsc-result .gs-url {
+    color: #008000; /* Warna hijau untuk URL */
+    font-size: 0.85em;
+  }
+
+  /* Media queries untuk responsivitas */
+  @media (max-width: 768px) {
+    .google-cse-container {
+      margin: 20px 15px;
+      padding: 20px;
+    }
+    .google-cse-container h2 {
+      font-size: 1.6em;
+    }
+    .gsc-control-cse .gsc-search-box .gsc-input,
+    .gsc-control-cse .gsc-search-box .gsc-search-button {
+      font-size: 1em;
+      padding: 10px 12px;
+    }
+  }
+</style>
+
+<div class="google-cse-container">
+  <h2>Cari di Blog Ini</h2>
+
+  <div class="gcse-searchbox-only" data-gname="search-box-name"></div>
+
+  <div class="gcse-searchresults-only" data-gname="search-results-name"></div>
+
+
+<script async src="https://cse.google.com/cse.js?cx=d28e1a412e91e40c2">
+</script>
+<div class="gcse-searchresults-only"></div>
+</div>
+
+<script>
+  // Fungsi untuk memastikan Google CSE dimuat setelah elemen div tersedia
+  // Ini mungkin diperlukan jika ada masalah dengan pemuatan asinkron
+  document.addEventListener('DOMContentLoaded', function() {
+    if (typeof google !== 'undefined' && google.search && google.search.cse) {
+      google.search.cse.element.go();
+    }
+  });
+</script>
