@@ -7,20 +7,20 @@ categories: [video, tutorial]
 videos:
   - type: youtube
     id: "nIdP7QYM_gs" # Ganti dengan ID video YouTube Anda
-    title: "Contoh Video YouTube 1"
-    description: "Ini adalah deskripsi singkat untuk video YouTube pertama."
+    title: "We Don't Need To Fight"
+    description: "We Don't Need To Fight by EURODANCE EVOLUTION"
   - type: youtube
-    id: "nIdP7QYM_gs" # Ganti dengan ID video YouTube lainnya
-    title: "Contoh Video YouTube 2"
-    description: "Video kedua dari YouTube yang menarik."
+    id: "E-iz-jzTrfI" # Ganti dengan ID video YouTube lainnya
+    title: "We Are Strong!"
+    description: "We Are Strong! by EURODANCE EVOLUTION"
   - type: local
     filename: "video1.mp4" # Ganti dengan nama file video lokal Anda
     title: "Video Lokal Saya"
     description: "Ini adalah video yang di-host di server saya."
   - type: youtube
-    id: "abcdefg1234" # Ganti dengan ID video YouTube lainnya
-    title: "Contoh Video YouTube 3"
-    description: "Video ketiga dari YouTube."
+    id: "xTt_fhr1Ork" # Ganti dengan ID video YouTube lainnya
+    title: "Together We Won't Fall"
+    description: "Together We Won't Fall by EURODANCE EVOLUTION"
 ---
 
 {% include video_gallery.html videos=page.videos %}
