@@ -11,6 +11,45 @@ $text-color: #9d8f7c;
 $light-grey: #282828;
 $border-color: #eee;
 
+/* css/style.css */
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.25rem; /* Ukuran font paragraf */
+    color: rgba(229, 246, 255, 0.9); /* Warna teks deskripsi yang lebih lembut */
+    max-width: 600px; /* Lebar maksimum paragraf */
+    margin: 0 auto 2rem auto; /* Pusatkan paragraf dan margin bawah */
+    opacity: 0.9;
+}
+
+.hero .hero-button {
+    display: inline-block;
+    background-color: white;
+    color: #0F766E; /* Warna teks tombol (teal-700) */
+    font-weight: 600; /* Tebal sedang */
+    padding: 12px 32px; /* Padding tombol */
+    border-radius: 9999px; /* Bulat sempurna */
+    text-decoration: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Bayangan tombol */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transisi halus */
+}
+
+.hero .hero-button:hover {
+    background-color: #f3f4f6; /* Warna hover sedikit abu-abu */
+    transform: scale(1.05); /* Sedikit membesar saat hover */
+}
+
+
 // _sass/_typography.scss
 p {
   font-family: var(--font-body);
