@@ -12,6 +12,40 @@ $light-grey: #282828;
 $border-color: #eee;
 
 
+/* kotak iklan */
+.iklan-sidebar,
+.iklan-adsense,
+.iklan-teks-sidebar {
+  background-color: #f8f8f8; /* Warna latar belakang */
+  border: 1px solid #ddd; /* Batas */
+  padding: 15px; /* Jarak dalam kotak */
+  margin-bottom: 20px; /* Jarak bawah kotak */
+  text-align: center; /* Teks di tengah */
+  border-radius: 5px; /* Sudut membulat */
+}
+
+.iklan-sidebar h3,
+.iklan-adsense h3,
+.iklan-teks-sidebar h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.iklan-sidebar p,
+.iklan-teks-sidebar p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.iklan-sidebar img {
+  max-width: 100%; /* Pastikan gambar tidak melebihi lebar kotak */
+  height: auto; /* Jaga rasio aspek */
+  display: block; /* Menghilangkan spasi ekstra di bawah gambar */
+  margin: 0 auto 10px auto; /* Pusatkan gambar dan beri jarak bawah */
+}
+
 /* produk */
 
 .produk-list a {
