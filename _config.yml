@@ -30,11 +30,11 @@ pagination:
   sort_reverse: true # Urutan pengurutan (true untuk terbaru ke terlama)
   category: '' # Filter postingan berdasarkan kategori (kosong untuk semua)
   tag: '' # Filter postingan berdasarkan tag (kosong untuk semua)
+  collection: 'posts' # Koleksi yang akan dipaginasi (default: posts)
 
 
 collections:
     produk:
         output: true
         permalink: /produk/:title/
-    posts:
-        output: true
+
