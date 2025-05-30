@@ -2,6 +2,23 @@
 layout: default
 title: Produk Kami
 ---
+<style>
+
+
+.produk-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+.produk-list img {
+  width: 100% !important;
+}
+
+</style>
+
 <h1>Produk Terbaru</h1>
 <div class="produk-list">
     {% for item in site.produk %}
