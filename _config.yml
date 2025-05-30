@@ -24,3 +24,7 @@ collections:
         output: true
         permalink: /produk/:title/
 
+paginate: 5
+paginate_path: ./page:num/
+
+
