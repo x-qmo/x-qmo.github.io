@@ -16,7 +16,7 @@ pagination:
 <div class="posts-list">
   <h2 class="section-title">Postingan Terbaru</h2>
 
-   {% for post in site.posts %}
+   {% for post in paginator.posts %}
   <div class="post-item">
   {% if post.image %}
   <article class="post-preview">
