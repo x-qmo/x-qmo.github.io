@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Membuat Paginator Manual Di Jekyll
-description: Buat daftar postingan menarik di Jekyll! Pelajari cara menampilkan halaman daftar post dengan thumbnail agar blogmu lebih visual dan mudah dijelajahi pembaca
+description: Ingin kontrol penuh atas paginasi blog Jekyll Anda? Pelajari cara membuat paginator manual yang fleksibel dan sesuai keinginan Anda di sini!
 date: 2025-05-30 10:00:00 +0700
 categories: [umum, tutorial]
 tags: [jekyll, blog, panduan]
