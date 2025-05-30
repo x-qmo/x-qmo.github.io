@@ -37,3 +37,4 @@ collections:
         output: true
         permalink: /produk/:title/
     posts:
+        output: true
