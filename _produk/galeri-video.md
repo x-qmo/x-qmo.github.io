@@ -2,6 +2,7 @@
 layout: produk_ytb
 title: "Galeri Video"
 date: 2023-10-27 10:00:00 +0700
+image: /assets/images/thumb-video-gal.jpg
 categories: [video, tutorial]
 # Definisikan daftar video di front matter
 videos:

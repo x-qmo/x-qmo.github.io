@@ -49,13 +49,16 @@ $border-color: #eee;
 /* produk */
 
 .produk-list a {
-  flex-basis: 48%;
+  flex-basis: 47%;
+  background-color: #3c3836;
+  border: 1px solid #615950;
 }
 
 .produk-list {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  text-align: center;
 }
 
 /* css/style.css */
