@@ -1,0 +1,15 @@
+---
+layout: category # Menggunakan layout kategori yang baru Anda buat
+title: bisnis # Nama kategori ini harus sama persis dengan yang ada di front matter postingan
+permalink: /kategori/bisnis/
+---
+
+<h2>Postingan Kategori Bisnis</h2>
+<ul>
+  {% assign filtered_posts = site.posts | where_exp:"post", "post.categories contains 'bisnis'" %}
+  {% for post in filtered_posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
+    </li>
+  {% endfor %}
+</ul>
