@@ -19,12 +19,8 @@ plugins:
     - jekyll-seo-tag
     - jekyll-paginate
 
-# Konfigurasi Paginasi
-
 collections:
     produk:
         output: true
         permalink: /produk/:title/
-    posts:
-        output: true # Pastikan postingan dirender
-        permalink: /:categories/:year/:month/:day/:title/ # Contoh permalink untuk postingan
+
