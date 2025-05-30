@@ -2,6 +2,8 @@
 layout: default
 title: Beranda Blog
 description: Selamat datang di blog pribadi saya!
+pagination:
+  enabled: true
 ---
 <div class="hero">
  <div class="hero-content">
@@ -13,7 +15,8 @@ description: Selamat datang di blog pribadi saya!
 
 <div class="posts-list">
   <h2 class="section-title">Postingan Terbaru</h2>
-  {% for post in site.posts %}
+
+  {% for post in paginator.posts %}
   <div class="post-item">
   {% if post.image %}
   <article class="post-preview">
@@ -36,4 +39,26 @@ description: Selamat datang di blog pribadi saya!
     </div>
   </article>
   {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">Halaman Sebelumnya</a>
+  {% else %}
+    <span class="previous disabled">Halaman Sebelumnya</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="page-number current">{{ page }}</span>
+    {% else %}
+      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}" class="page-number">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}" class="next">Halaman Selanjutnya</a>
+  {% else %}
+    <span class="next disabled">Halaman Selanjutnya</span>
+  {% endif %}
 </div>

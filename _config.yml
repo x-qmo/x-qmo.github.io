@@ -17,7 +17,20 @@ plugins:
     - jekyll-feed
     - jekyll-sitemap
     - jekyll-seo-tag
-    - jekyll-paginate
+    - jekyll-paginate-v2
+
+# Konfigurasi Paginasi
+pagination:
+  enabled: true
+  per_page: 5 # Jumlah postingan per halaman
+  permalink: '/page/:num/' # Struktur URL untuk halaman paginasi (contoh: /page/2/)
+  title: ':title - Halaman :num' # Judul halaman paginasi
+  limit: 0 # Batas jumlah halaman yang dibuat (0 untuk tidak terbatas)
+  sort_field: 'date' # Bidang yang digunakan untuk mengurutkan postingan
+  sort_reverse: true # Urutan pengurutan (true untuk terbaru ke terlama)
+  category: '' # Filter postingan berdasarkan kategori (kosong untuk semua)
+  tag: '' # Filter postingan berdasarkan tag (kosong untuk semua)
+  collection: 'posts' # Koleksi yang akan dipaginasi (default: posts)
 
 collections:
     produk:
