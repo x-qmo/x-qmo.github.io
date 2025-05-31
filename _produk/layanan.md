@@ -9,8 +9,8 @@ layanan:
       nama_judul: "Konveksi Pakaian Jaket, Kemeja Kaos"
       alamat: "Jl. Babakan Baru No. 65"
       harga: "250000"
-      deskripsi_singkat: "Headphone nirkabel dengan kualitas suara jernih."
-      gambar: "/assets/images/default-thumbnail.jpg"
+      deskripsi_singkat: "Mugitex Konveksi: Wujudkan gaya terbaikmu! Kami ahli bikin jaket, kemeja, & kaos berkualitas tinggi, desain custom, dan harga bersaing. Siap produksi seragam, event, atau clothing line-mu. Mugitex, jaminan kepuasan busanamu!"
+      gambar: "/assets/images/mugitex-konveksi.jpg"
       stok: "true"
     - type: konveksi
       id: "kon0002"
