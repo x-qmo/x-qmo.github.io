@@ -12,6 +12,6 @@ deskripsi panjang, fitur, tantangan, dan solusi di sini.
 * Fitur C
 
 **Gambar Proyek:**
-![Gambar proyek](assets/images/default-thumbnail.jpg)
+
 
 Ini adalah bagian akhir dari deskripsi proyek.
