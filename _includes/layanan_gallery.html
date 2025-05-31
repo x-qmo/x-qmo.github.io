@@ -1,0 +1,37 @@
+<style>
+.layan-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #786d61;
+  margin-bottom: 15px;
+}
+.layan-wrapper h2 {
+  margin: 0;
+  text-align: center;
+}
+.layan-info h3 {
+  margin: 0;
+  text-align: center;
+  color: #e0b400;
+}
+.layandesk, .layanalmt {
+  text-align: center;
+}
+</style>
+<div class="layanan-gallery">
+  {% for layan in include.layanan %}
+    <div class="layan-item">
+      <div class="layan-wrapper">
+        {% if layan.type == 'konveksi' %}
+        <div><img src="{{ site.baseurl }}{{ layan.gambar }}" style="width:100%"></div>
+        <h2>{{ layan.nama }}</h2>
+        {% endif %}
+      </div>
+      <div class="layan-info">
+        <h3>{{ layan.nama_judul }}</h3>
+        <div class="layandesk">{{ layan.deskripsi_singkat }}</div>
+        <div class="layanalmt">{{ layan.alamat }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
