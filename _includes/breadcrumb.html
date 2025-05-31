@@ -1,0 +1,73 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="{{ "/" | relative_url }}">Beranda</a>
+    </li>
+
+    {% if page.collection == 'posts' %}
+      {% comment %}
+        Jika ini adalah postingan, tampilkan kategori (opsional) dan judul postingan.
+        Asumsi kategori diambil dari `page.categories` (jika ada multiple) atau `page.category` (jika single).
+      {% endcomment %}
+
+      {% if page.categories %}
+        {% assign category = page.categories | first %}
+        {% assign category_slug = category | slugify %}
+        <li class="breadcrumb-item">
+          <a href="{{ '/categories/' | relative_url }}{{ category_slug }}/">{{ category | capitalize }}</a>
+        </li>
+      {% elsif page.category %}
+        {% assign category = page.category %}
+        {% assign category_slug = category | slugify %}
+        <li class="breadcrumb-item">
+          <a href="{{ '/categories/' | relative_url }}{{ category_slug }}/">{{ category | capitalize }}</a>
+        </li>
+      {% endif %}
+
+      <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+
+    {% elsif page.layout == 'page' and page.url != '/' %}
+      {% comment %}
+        Jika ini adalah halaman statis (bukan beranda)
+      {% endcomment %}
+      <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+
+    {% elsif page.layout == 'category' %}
+        {% comment %}
+          Jika ini adalah halaman kategori (membutuhkan file khusus untuk kategori)
+          Asumsi halaman kategori memiliki `category_name` di front matter
+        {% endcomment %}
+        <li class="breadcrumb-item active" aria-current="page">{{ page.category_name | capitalize }}</li>
+
+    {% elsif page.layout == 'tag' %}
+        {% comment %}
+          Jika ini adalah halaman tag (membutuhkan file khusus untuk tag)
+          Asumsi halaman tag memiliki `tag_name` di front matter
+        {% endcomment %}
+        <li class="breadcrumb-item active" aria-current="page">{{ page.tag_name | capitalize }}</li>
+
+    {% endif %}
+  </ol>
+</nav>
+
+<style>
+  /* Contoh styling dasar untuk breadcrumb */
+  .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #3c3836; /* Contoh background */
+    border-radius: 0.25rem;
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: "/"; /* Pemisah */
+  }
+  .breadcrumb-item.active {
+    color: #6c757d;
+  }
+</style>

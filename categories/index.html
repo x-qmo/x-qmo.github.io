@@ -1,0 +1,18 @@
+---
+layout: default
+title: Artikel Kategori
+---
+
+
+  {% include breadcrumb.html %}
+<h1>Daftar Kategori</h1>
+
+<ul>
+  {% for category in site.categories %}
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <li>
+      <a href="{{ site.baseurl }}/categories/{{ category | first | slugify }}/">{{ category | first }} ({{ category | last | size }})</a>
+      - postingan
+    </li>
+  {% endfor %}
+</ul>
