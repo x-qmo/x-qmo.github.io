@@ -1,7 +1,7 @@
 ---
 layout: produk_layanan
 title: Layanan
-image: /assets/images/default-thumbnail.jpg
+image: /assets/images/layanan-produk.jpg
 layanan:
     - type: konveksi
       id: "kon0001"
