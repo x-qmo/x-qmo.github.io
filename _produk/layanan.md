@@ -1,6 +1,6 @@
 ---
 layout: produk_layanan
-title: Produk Unggulan A
+title: Layanan
 image: /assets/images/default-thumbnail.jpg
 layanan:
     - type: konveksi
