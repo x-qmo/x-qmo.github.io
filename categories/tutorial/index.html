@@ -5,7 +5,7 @@ category_name: Jekyll # Ini penting untuk breadcrumb agar bisa menampilkan nama 
 permalink: /categories/tutorial/ # Ini penting agar URL halaman kategori sesuai
 ---
 {% include breadcrumb.html %}
-<h2>Postingan Kategori Umum</h2>
+<h2>Postingan Kategori Tutorial</h2>
 <ul>
   {% assign filtered_posts = site.posts | where_exp:"post", "post.categories contains 'tutorial'" %}
   {% for post in filtered_posts %}

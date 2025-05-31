@@ -6,7 +6,7 @@ permalink: /categories/bisnis/ # Ini penting agar URL halaman kategori sesuai
 ---
 
 {% include breadcrumb.html %}
-<h2>Postingan Kategori Umum</h2>
+<h2>Postingan Kategori Bisnis</h2>
 <ul>
   {% assign filtered_posts = site.posts | where_exp:"post", "post.categories contains 'bisnis'" %}
   {% for post in filtered_posts %}
