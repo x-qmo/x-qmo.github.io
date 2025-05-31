@@ -63,9 +63,16 @@ $border-color: #eee;
 
 /* css/style.css */
 
+
 .hero {
   text-align: center;
+  max-width: 100%;
+  height: auto;
+  background-color: #3c3836;
+  padding: 15px;
+  border: 1px solid #786d61;
 }
+
 
 .hero h1 {
   font-size: 2.5rem;
@@ -75,11 +82,10 @@ $border-color: #eee;
 }
 
 .hero p {
-    font-size: 1.25rem; /* Ukuran font paragraf */
-    color: rgba(229, 246, 255, 0.9); /* Warna teks deskripsi yang lebih lembut */
-    max-width: 600px; /* Lebar maksimum paragraf */
-    margin: 0 auto 2rem auto; /* Pusatkan paragraf dan margin bawah */
-    opacity: 0.9;
+  color: rgba(229, 246, 255, 0.9);
+  max-width: 600px;
+  margin-bottom: 5px;
+  opacity: 0.9;
 }
 
 .hero .hero-button {
