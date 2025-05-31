@@ -1,3 +1,10 @@
+<style>
+.sid-kat {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+</style>
 <aside class="sidebar">
 
 
@@ -12,12 +19,12 @@
     </ul>
 
     <h3>Kategori</h3>
-    <ul>
+    <div class="sid-kat">
         {% assign categories = site.categories | sort %}
         {% for category in categories %}
-        <li><a href="{{ site.baseurl }}/categories/{{ category | first | slugify }}/">{{ category | first }} ({{ category | last | size }})</a></li>
+        <a href="{{ site.baseurl }}/categories/{{ category | first | slugify }}/">{{ category | first }} ({{ category | last | size }})</a>
         {% endfor %}
-    </ul>
+    </div>
 
     <h3>Ikuti Kami</h3>
     <ul class="social-links">
