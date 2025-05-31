@@ -26,6 +26,6 @@ layanan:
 
 {% include layanan_gallery.html layanan=page.layanan %}
 
-Ini adalah deskripsi lengkap untuk Produk Unggulan A.
-Dibuat dengan bahan premium, menawarkan pengalaman mendengarkan yang imersif dan nyaman.
-Tersedia dalam beberapa pilihan warna.
+## Butuh Layanan Profesional? Kami Punya Informasinya!
+
+Bingung cari penyedia jasa terpercaya untuk kebutuhanmu? Temukan informasi terlengkap seputar layanan terbaik di sini! Dari Konveksi pakaian, renovasi rumah, perbaikan gadget, hingga konsultan bisnis, kami hadirkan detail kontak, ulasan, dan portofolio penyedia jasa profesional yang bisa diandalkan. Hemat waktumu, dapatkan kualitas terbaik. Semua solusi jasa ada dalam genggamanmu!
