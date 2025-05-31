@@ -14,12 +14,12 @@ layanan:
       stok: "true"
     - type: konveksi
       id: "kon0002"
-      nama: "MUGITEX 2 IDODUSTRI"
-      nama_judul: "Konveksi Bandung"
-      alamat: "Jl. Babakan Baru No. 65"
+      nama: "Berkah Sawargi"
+      nama_judul: "Seblak Pedas Nampol, Mie Rebus Hangat, & Basreng Renyah Menanti!"
+      alamat: "Jl. Sawab Baru"
       harga: "250000"
-      deskripsi_singkat: "Headphone nirkabel dengan kualitas suara jernih."
-      gambar: "/assets/images/default-thumbnail.jpg"
+      deskripsi_singkat: "Lapar dan butuh yang nampol? Yuk mampir ke warung kami! Nikmati seblak pedas yang bikin nagih, mie rebus hangat pengusir dingin, basreng super renyah, dan aneka gorengan gurih. Jangan lupa dinginkan dengan minuman dingin favoritmu. Dijamin kenyang, puas, dan pastinya bikin ketagihan!"
+      gambar: "/assets/images/warung-seblak.jpg"
       stok: "true"
 ---
 
