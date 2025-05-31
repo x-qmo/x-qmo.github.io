@@ -36,10 +36,10 @@ Jaket bukan hanya pelindung dari cuaca; ia adalah pernyataan gaya, simbol tim, a
 
 Kemeja adalah simbol profesionalisme, keseragaman, dan corporate identity. Baik untuk seragam kantor, event, atau kebutuhan pribadi, kemeja yang pas dan berkualitas akan meninggalkan kesan mendalam. Mugitex menawarkan berbagai pilihan kemeja yang bisa disesuaikan:
 
-* Kemeja Seragam Kantor: Dirancang untuk memberikan kesan rapi dan profesional bagi karyawan Anda. Pilihan bahan seperti American Drill, Japan Drill, Taipan Drill, atau Oxford menawarkan kenyamanan dan daya tahan untuk penggunaan sehari-hari.
-* Kemeja Lapangan (PDL/PDH): Kuat dan fungsional, ideal untuk pekerjaan outdoor, relawan, atau kegiatan komunitas. Bahan yang tahan banting dan banyak saku utilitas menjadi ciri khasnya.
-* Kemeja Kasual/Polo Shirt: Untuk event santai, seragam outlet, atau pakaian custom yang stylish. Bahan katun atau lacoste dengan sentuhan bordir atau sablon logo Anda akan menciptakan tampilan yang berkelas.
-* Kemeja Flanel/Distro: Tren fashion yang tak ada matinya. Kami bisa membuat kemeja flanel custom dengan pola dan warna sesuai keinginan, cocok untuk brand fashion atau merchandise.
+* **Kemeja Seragam Kantor:** Dirancang untuk memberikan kesan rapi dan profesional bagi karyawan Anda. Pilihan bahan seperti American Drill, Japan Drill, Taipan Drill, atau Oxford menawarkan kenyamanan dan daya tahan untuk penggunaan sehari-hari.
+* **Kemeja Lapangan (PDL/PDH):** Kuat dan fungsional, ideal untuk pekerjaan outdoor, relawan, atau kegiatan komunitas. Bahan yang tahan banting dan banyak saku utilitas menjadi ciri khasnya.
+* **Kemeja Kasual/Polo Shirt:** Untuk event santai, seragam outlet, atau pakaian custom yang stylish. Bahan katun atau lacoste dengan sentuhan bordir atau sablon logo Anda akan menciptakan tampilan yang berkelas.
+* **Kemeja Flanel/Distro:** Tren fashion yang tak ada matinya. Kami bisa membuat kemeja flanel custom dengan pola dan warna sesuai keinginan, cocok untuk brand fashion atau merchandise.
 
 ***Keunggulan Kemeja Mugitex:***
 
@@ -59,12 +59,12 @@ Kaos adalah pakaian paling universal dan fleksibel. Ia bisa menjadi media promos
 
 **Keunggulan Kaos Mugitex:**
 
-* Bahan Katun Terbaik: Kami fokus pada Cotton Combed untuk memastikan kelembutan, daya serap keringat, dan kenyamanan saat dipakai.
-* Teknik Sablon & Bordir Unggul:
-    * Sablon: Kami menawarkan berbagai teknik seperti sablon rubber, plastisol, discharge, DTF (Direct Transfer Film), dan lainnya, yang menghasilkan detail tajam dan warna cerah.
-    * Bordir Komputer: Untuk hasil yang presisi, awet, dan memberikan kesan premium pada logo atau branding.
-* Desain Fleksibel: Bebaskan kreativitas Anda! Dari desain minimalis hingga motif kompleks, kami siap mencetak ide Anda di atas kaos.
-* Harga Bersaing: Kualitas premium tidak harus mahal. Kami menawarkan harga yang kompetitif untuk semua skala produksi.
+* **Bahan Katun Terbaik:** Kami fokus pada Cotton Combed untuk memastikan kelembutan, daya serap keringat, dan kenyamanan saat dipakai.
+* **Teknik Sablon & Bordir Unggul:**
+    * **Sablon:** Kami menawarkan berbagai teknik seperti sablon rubber, plastisol, discharge, DTF (Direct Transfer Film), dan lainnya, yang menghasilkan detail tajam dan warna cerah.
+    * **Bordir Komputer:** Untuk hasil yang presisi, awet, dan memberikan kesan premium pada logo atau branding.
+* **Desain Fleksibel:** Bebaskan kreativitas Anda! Dari desain minimalis hingga motif kompleks, kami siap mencetak ide Anda di atas kaos.
+* **Harga Bersaing:** Kualitas premium tidak harus mahal. Kami menawarkan harga yang kompetitif untuk semua skala produksi.
 
 ### Proses Pemesanan yang Mudah dan Transparan di Mugitex
 
@@ -79,7 +79,7 @@ Kami memahami bahwa proses pemesanan konveksi bisa terasa rumit. Oleh karena itu
 
 ### Investasi pada Kualitas, Gaya, dan Kepercayaan Bersama Mugitex
 
-Memilih Mugitex berarti berinvestasi pada kualitas, gaya, dan kemitraan yang dapat Anda percaya. Kami berkomitmen untuk tidak hanya memenuhi, tetapi melampaui ekspektasi Anda. Baik Anda butuh seragam untuk ribuan karyawan, merchandise untuk brand fashion, atau beberapa potong pakaian custom yang unik, Mugitex adalah pilihan tepat Anda.
+Memilih **Mugitex** berarti berinvestasi pada kualitas, gaya, dan kemitraan yang dapat Anda percaya. Kami berkomitmen untuk tidak hanya memenuhi, tetapi melampaui ekspektasi Anda. Baik Anda butuh seragam untuk ribuan karyawan, merchandise untuk brand fashion, atau beberapa potong pakaian custom yang unik, Mugitex adalah pilihan tepat Anda.
 
 Jangan biarkan branding Anda tertinggal. Wujudkan identitas brand Anda dengan pakaian berkualitas dari Mugitex!
 
