@@ -71,6 +71,11 @@ $border-color: #eee;
   background-color: #3c3836;
   padding: 15px;
   border: 1px solid #786d61;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/hero-jekyll.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 
