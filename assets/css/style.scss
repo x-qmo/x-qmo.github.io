@@ -149,7 +149,7 @@ p img {
      /* Tinggi tetap untuk thumbnail */
     object-fit: fill; /* Memastikan gambar mengisi area tanpa terdistorsi */
     display: block; /* Menghilangkan spasi di bawah gambar */
-    margin-bottom: 15px; /* Jarak antara gambar dan teks */
+    margin: 15px 0px; /* Jarak antara gambar dan teks */
 }
 
 .post-item h3 {
