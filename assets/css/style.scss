@@ -311,7 +311,9 @@ a:hover {
   text-align: center;
 
 }
-
+.site-header a {
+  text-decoration: none;
+}
 .site-title {
   font-size: 80px;
   font-family: cursive;
