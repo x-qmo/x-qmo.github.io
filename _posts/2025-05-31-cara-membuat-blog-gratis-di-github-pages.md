@@ -49,8 +49,8 @@ Proses instalasi sedikit berbeda tergantung sistem operasi yang kamu gunakan.
     * Kunjungi rubyinstaller.org/downloads.
     * Unduh versi terbaru Ruby+Devkit (misalnya, Ruby+Devkit 3.X.X (x64)).
     * Jalankan installer. Saat muncul opsi, centang "Add Ruby executables to your PATH" dan pilih "MSYS2 development toolchain". Ikuti instruksi hingga selesai.
-2. Buka Command Prompt/PowerShell: Cari "Command Prompt" atau "PowerShell" di start menu Windows.
-3. Instal Bundler: Ketik perintah berikut dan tekan Enter:
+2. **Buka Command Prompt/PowerShell:** Cari "Command Prompt" atau "PowerShell" di start menu Windows.
+3. **Instal Bundler:** Ketik perintah berikut dan tekan Enter:
 
     {% raw %}
     ```
@@ -70,8 +70,8 @@ Proses instalasi sedikit berbeda tergantung sistem operasi yang kamu gunakan.
 
 Ruby biasanya sudah terinstal. Jika belum atau versinya lama, kamu bisa menggunakan Homebrew.
 
-1. **Instal Homebrew (jika belum):** Ikuti instruksi di brew.sh.
-2. Instal Ruby (melalui rbenv/rvm disarankan untuk versi terbaru):
+1. **Instal Homebrew (jika belum):** Ikuti instruksi di `brew.sh`.
+2. **Instal Ruby (melalui rbenv/rvm disarankan untuk versi terbaru):**
 
     {% raw %}
     ```
@@ -81,7 +81,7 @@ Ruby biasanya sudah terinstal. Jika belum atau versinya lama, kamu bisa mengguna
     ```
     {% endraw %}
 
-3. Instal Bundler:
+3. **Instal Bundler:**
 
     {% raw %}
     ```
@@ -89,7 +89,7 @@ Ruby biasanya sudah terinstal. Jika belum atau versinya lama, kamu bisa mengguna
     ```
     {% endraw %}
 
-4. Instal Jekyll:
+4. **Instal Jekyll:**
 
     {% raw %}
     ```
@@ -116,7 +116,7 @@ Ruby biasanya sudah terinstal. Jika belum atau versinya lama, kamu bisa mengguna
     ```
     {% endraw %}
 
-3. Konfigurasi PATH (penting!): Tambahkan baris ini di akhir file ~/.bashrc atau ~/.zshrc (tergantung shell-mu):
+3. Konfigurasi PATH (penting!): Tambahkan baris ini di akhir file `~/.bashrc atau ~/.zshrc` (tergantung shell-mu):
 
     {% raw %}
     ```
@@ -124,7 +124,7 @@ Ruby biasanya sudah terinstal. Jika belum atau versinya lama, kamu bisa mengguna
     ```
     {% endraw %}
 
-    Kemudian restart terminal atau jalankan source ~/.bashrc (atau ~/.zshrc).
+    Kemudian restart terminal atau jalankan source `~/.bashrc (atau ~/.zshrc)`.
 
 4. Instal Bundler:
 
@@ -146,7 +146,7 @@ Ruby biasanya sudah terinstal. Jika belum atau versinya lama, kamu bisa mengguna
 
 Sekarang saatnya membuat pondasi blogmu!
 
-1. Buka Terminal/Command Prompt: Navigasi ke direktori tempat kamu ingin menyimpan proyek blogmu (misalnya, Documents/Projects).
+1. Buka Terminal/Command Prompt: Navigasi ke direktori tempat kamu ingin menyimpan proyek blogmu (misalnya, `Documents/Projects`).
 
     {% raw %}
     ```
@@ -192,31 +192,31 @@ Sebelum online, selalu periksa blogmu di komputer sendiri.
     ```
     {% endraw %}
 
-2. Buka Browser: Setelah perintah selesai berjalan, buka browser web-mu dan kunjungi http://localhost:4000.
+2. Buka Browser: Setelah perintah selesai berjalan, buka browser web-mu dan kunjungi `http://localhost:4000`.
 
     * Kamu akan melihat blog Jekyll pertamamu! Jelajahi postingan contoh, halaman, dan navigasinya.
 
-3. Berheti: Untuk menghentikan server lokal, kembali ke terminal dan tekan Ctrl + C.
+3. Berhetni: Untuk menghentikan server lokal, kembali ke terminal dan tekan Ctrl + C.
 
 ### Langkah 4: Kustomisasi Blogmu (Dasar)
 
 Sekarang saatnya sentuhan personal!
 
 1. Buka Proyekmu di Text Editor: Gunakan text editor seperti VS Code, Sublime Text, atau Notepad++ untuk membuka folder namablogmu.
-2. _config.yml: Ini adalah file konfigurasi utama blogmu.
-    * Buka _config.yml.
-    * Ubah title:, description:, author:, dan email: sesuai keinginanmu.
-    * Penting: Perhatikan baseurl: dan url:. Untuk sekarang, biarkan baseurl: "" dan url: "http://localhost:4000" (ini akan kita sesuaikan nanti untuk GitHub Pages).
-3. _posts Folder:
-    * Ini tempat semua postingan blogmu disimpan. Perhatikan format namanya: YYYY-MM-DD-judul-postingan.md.
-    * Buka salah satu file .md (Markdown). Kamu akan melihat "front matter" di bagian atas (blok YAML di antara ---). Ini adalah metadata postingan (judul, tanggal, kategori, dll.).
+2. `_config.yml`: Ini adalah file konfigurasi utama blogmu.
+    * Buka `_config.yml`.
+    * Ubah `title`:, `description`:, `author`:, dan `email`: sesuai keinginanmu.
+    * Penting: Perhatikan `baseurl:` dan `url:`. Untuk sekarang, biarkan `baseurl: ""` dan `url: "http://localhost:4000"` (ini akan kita sesuaikan nanti untuk GitHub Pages).
+3. `_posts` Folder:
+    * Ini tempat semua postingan blogmu disimpan. Perhatikan format namanya: `YYYY-MM-DD-judul-postingan.md`.
+    * Buka salah satu file `.md` (Markdown). Kamu akan melihat "front matter" di bagian atas (blok YAML di antara ---). Ini adalah metadata postingan (judul, tanggal, kategori, dll.).
     * Di bawah front matter, kamu bisa menulis konten postinganmu menggunakan Markdown (sintaks sederhana untuk format teks, seperti ## Judul, *teks miring*, **teks tebal**).
     * Coba buat postingan baru dengan nama file yang benar dan isi kontennya.
-4. index.html dan Halaman Lain:
-    * index.html adalah halaman beranda blogmu.
-    * Kamu juga bisa membuat halaman statis lain, seperti about.md atau contact.md, langsung di root proyekmu.
+4. `index.html` dan Halaman Lain:
+    * `index.html` adalah halaman beranda blogmu.
+    * Kamu juga bisa membuat halaman statis lain, seperti `about.md` atau `contact.md`, langsung di root proyekmu.
 
-Setelah melakukan perubahan, jalankan lagi bundle exec jekyll serve untuk melihat hasilnya.
+Setelah melakukan perubahan, jalankan lagi `bundle exec jekyll serve` untuk melihat hasilnya.
 
 ### Langkah 5: Mengunggah Blog ke GitHub Pages
 
@@ -226,8 +226,8 @@ Ini adalah bagian paling seru: membuat blogmu online!
     * Masuk ke akun GitHub-mu.
     * Klik tombol hijau "New" (atau ikon + di kanan atas lalu "New repository").
     * Nama Repository: Ini sangat penting!
-        * Untuk Blog Pribadi/Portofolio (URL: username.github.io): Namai repository persis seperti username GitHub-mu, diikuti .github.io (misalnya, andisanjaya.github.io).
-        * Untuk Proyek/Organisasi (URL: username.github.io/nama-repo): Namai repository sesukamu (misalnya, my-blog-project).
+        * Untuk Blog Pribadi/Portofolio (URL: `username.github.io`): Namai repository persis seperti username GitHub-mu, diikuti .github.io (misalnya, `x-qmo.github.io`).
+        * Untuk Proyek/Organisasi (URL: `username.github.io/nama-repo`): Namai repository sesukamu (misalnya, my-blog-project).
     * Pilih "Public".
     * Jangan centang "Add a README file" atau lainnya.
     * Klik "Create repository".
@@ -254,7 +254,7 @@ Ini adalah bagian paling seru: membuat blogmu online!
         git commit -m "Initial Jekyll blog setup"
         ```
         {% endraw %}
-    * Tambahkan Remote Origin: Ganti URL_REPOSITORY_MU dengan URL HTTPS repository yang baru kamu buat di GitHub (misalnya, https://github.com/username/  namarepo.git).
+    * Tambahkan Remote Origin: Ganti URL_REPOSITORY_MU dengan URL HTTPS repository yang baru kamu buat di GitHub (misalnya, `https://github.com/username/  namarepo.git`).
 
         {% raw %}
         ```
@@ -282,7 +282,7 @@ Ini adalah bagian paling seru: membuat blogmu online!
     * Klik "Save".
     * GitHub Pages akan mulai membangun situsmu. Ini mungkin butuh beberapa menit.
     * Setelah proses selesai, akan ada pesan "Your site is published at https://username.github.io/namarepo" (atau https://username.github.io jika itu repository pribadi).
-    * Perbarui _config.yml (PENTING untuk proyek): Jika kamu membuat repository proyek (bukan username.github.io), kamu perlu memperbarui _config.yml agar baseurl-nya sesuai:
+    * Perbarui `_config.yml` (PENTING untuk proyek): Jika kamu membuat repository proyek (bukan `username.github.io`), kamu perlu memperbarui `_config.yml` agar baseurl-nya sesuai:
 
         {% raw %}
         ```
@@ -296,9 +296,9 @@ Ini adalah bagian paling seru: membuat blogmu online!
 
 ### Langkah 6: Mengelola dan Memperbarui Blogmu
 
-* Menulis Postingan Baru: Buat file .md baru di folder _posts/ dengan format YYYY-MM-DD-judul-postingan.md. Tulis kontenmu dalam Markdown.
+* Menulis Postingan Baru: Buat file .md baru di folder `_posts/` dengan format `YYYY-MM-DD-judul-postingan.md`. Tulis kontenmu dalam Markdown.
 * Mengubah Konten/Desain: Edit file-file di proyek Jekyll-mu (.md, .html, .css, _config.yml, dll.).
-* Melihat Perubahan Lokal: Selalu jalankan bundle exec jekyll serve untuk melihat pratinjau perubahanmu di http://localhost:4000 sebelum mengunggahnya.
+* Melihat Perubahan Lokal: Selalu jalankan bundle exec jekyll serve untuk melihat pratinjau perubahanmu di `http://localhost:4000` sebelum mengunggahnya.
 * Mengunggah Perubahan: Setelah puas dengan perubahan, simpan file-filemu, lalu di terminal:
 
     {% raw %}
@@ -316,7 +316,7 @@ Selanjutnya: Kustomisasi Lanjutan
 Selamat! Kamu sekarang punya blog gratis di GitHub Pages. Tapi perjalanan tidak berhenti di sini. Kamu bisa:
 
 * **Mengganti Tema:** Jelajahi tema-tema Jekyll gratis di jekyllthemes.org atau jamstackthemes.com.
-* **Domain Kustom:** Hubungkan blogmu ke domain pribadi (misalnya www.namablogmu.com) secara gratis melalui pengaturan GitHub Pages.
+* **Domain Kustom:** Hubungkan blogmu ke domain pribadi (misalnya `www.namablogmu.com`) secara gratis melalui pengaturan GitHub Pages.
 * **Menambah Fitur:** Integrasikan komentar (Disqus, Commento), analitik (Google Analytics), formulir kontak, atau fitur-fitur lain menggunakan layanan pihak ketiga yang kompatibel dengan situs statis.
 * **SEO:** Optimalkan kontenmu dengan kata kunci yang relevan dan struktur yang baik agar mudah ditemukan di mesin pencari.
 
