@@ -12,21 +12,21 @@
     {% if page.image %}
     "{{ page.image | absolute_url }}"
     {% else %}
-    "{{ site.url }}/assets/images/default-thumbnail.jpg" {# Ganti dengan path gambar default Anda #}
+    "{{ site.url }}/assets/images/default-thumbnail.jpg"
     {% endif %}
   ],
   "datePublished": "{{ page.date | date_to_xmlschema }}",
   "dateModified": "{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}",
   "author": {
     "@type": "Person",
-    "name": "{{ site.author.name | default: site.title | escape }}" {# Asumsikan site.author.name atau site.title #}
+    "name": "{{ site.author.name | default: site.title | escape }}"
   },
   "publisher": {
     "@type": "Organization",
     "name": "{{ site.title | escape }}",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ site.url }}/assets/images/logo.png" {# Ganti dengan path logo organisasi/situs Anda #}
+      "url": "{{ site.url }}/assets/images/logo.png"
     }
   }
   {% if page.tags %}
