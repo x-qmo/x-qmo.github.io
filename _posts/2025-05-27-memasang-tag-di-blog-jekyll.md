@@ -15,7 +15,7 @@ Memasang tag di blog Jekyll tanpa menggunakan plugin adalah cara yang efisien un
 
     Langkah pertama adalah membuat struktur folder dan file yang diperlukan untuk tag Anda.
 
-    * Buat Folder _tabs (atau nama lain yang Anda suka): Di root direktori Jekyll Anda, buat folder baru bernama _tabs. Folder ini akan berisi halaman-halaman individual untuk setiap tag yang Anda miliki.
+    * Buat Folder `_tabs` (atau nama lain yang Anda suka): Di root direktori Jekyll Anda, buat folder baru bernama `_tabs`. Folder ini akan berisi halaman-halaman individual untuk setiap tag yang Anda miliki.
 
         {% raw %}
         ```
@@ -31,9 +31,9 @@ Memasang tag di blog Jekyll tanpa menggunakan plugin adalah cara yang efisien un
         ```
         {% endraw %}
 
-    * Buat File Markdown untuk Setiap Tag: Di dalam folder _tabs, buat file Markdown (.md) untuk setiap tag yang ingin Anda gunakan. Nama file harus sesuai dengan nama tag (misalnya, javascript.md, web-development.md).
+    * Buat File Markdown untuk Setiap Tag: Di dalam folder `_tabs`, buat file Markdown (.md) untuk setiap tag yang ingin Anda gunakan. Nama file harus sesuai dengan nama tag (misalnya, `javascript.md`, `web-development.md`).
 
-        Contoh _tabs/javascript.md:
+        Contoh `_tabs/javascript.md`:
 
         {% raw %}
         ```
@@ -45,17 +45,17 @@ Memasang tag di blog Jekyll tanpa menggunakan plugin adalah cara yang efisien un
         ```
         {% endraw %}
 
-    * layout: tag_page: Ini akan menunjuk ke layout khusus yang akan kita buat nanti untuk menampilkan postingan yang terkait dengan tag ini.
-    * title: JavaScript: Ini adalah nama tag yang akan ditampilkan di halaman.
-    * permalink: /tag/javascript/: Ini adalah URL permanen untuk halaman tag ini. Sesuaikan dengan struktur URL yang Anda inginkan.
+    * `layout: tag_page`: Ini akan menunjuk ke layout khusus yang akan kita buat nanti untuk menampilkan postingan yang terkait dengan tag ini.
+    * `title: JavaScript`: Ini adalah nama tag yang akan ditampilkan di halaman.
+    * `permalink: /tag/javascript/`: Ini adalah URL permanen untuk halaman tag ini. Sesuaikan dengan struktur URL yang Anda inginkan.
 
 2. **Buat Layout Khusus untuk Halaman Tag**
 
     Selanjutnya, Anda perlu membuat layout yang akan digunakan oleh semua halaman tag Anda.
 
-    * Buat File _layouts/tag_page.html: Di dalam folder _layouts, buat file baru bernama tag_page.html.
+    * Buat File `_layouts/tag_page.html`: Di dalam folder `_layouts`, buat file baru bernama `tag_page.html`.
 
-        Contoh _layouts/tag_page.html:
+        Contoh `_layouts/tag_page.html`:
 
         {% raw %}
         ```
@@ -82,22 +82,20 @@ Memasang tag di blog Jekyll tanpa menggunakan plugin adalah cara yang efisien un
 
         Penjelasan :
 
-        {% raw %}
-        ```
-        layout: default: Layout ini akan mewarisi layout default blog Anda (misalnya, header, footer, sidebar, dll.). Anda bisa menggantinya dengan layout lain jika Anda punya.
-        <h1>Postingan dengan Tag: {{ page.title }}</h1>: Menampilkan judul tag dari front matter halaman tag (misalnya, "Postingan dengan Tag: JavaScript").
-        {% assign tag_name = page.title | downcase %}: Mengambil judul tag dari front matter halaman tag, mengubahnya menjadi huruf kecil, dan menyimpannya dalam variabel tag_name. Ini penting untuk pencocokan dengan tag di postingan.
-        {% for post in site.posts %}: Mengulang semua postingan di blog Anda.
-        {% if post.tags contains tag_name %}: Memeriksa apakah array tags dalam front matter postingan mengandung tag_name saat ini.
-        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> ...</li>: Menampilkan judul postingan sebagai tautan ke postingan tersebut.
-        ```
-        {% endraw %}
+
+        * `layout: default`: Layout ini akan mewarisi layout default blog Anda (misalnya, header, footer, sidebar, dll.). Anda bisa menggantinya dengan layout lain jika Anda punya.
+        * {% raw %}`<h1>Postingan dengan Tag: {{ page.title }}</h1>:`{% endraw %} Menampilkan judul tag dari front matter halaman tag (misalnya, "Postingan dengan `Tag: JavaScript`").
+        * {% raw %}`{% assign tag_name = page.title | downcase %}`{% endraw %}: Mengambil judul tag dari front matter halaman tag, mengubahnya menjadi huruf kecil, dan menyimpannya dalam variabel `tag_name`. Ini penting untuk pencocokan dengan tag di postingan.
+        * {% raw %}`{% for post in site.posts %}`{% endraw %}: Mengulang semua postingan di blog Anda.
+        * {% raw %}`{% if post.tags contains tag_name %}`{% endraw %}: Memeriksa apakah array `tags` dalam front matter postingan mengandung `tag_name` saat ini.
+        * {% raw %}`<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> ...</li>`{% endraw %}: Menampilkan judul postingan sebagai tautan ke postingan tersebut.
+
 
 3. **Menambahkan Tag ke Postingan Anda**
 
     Sekarang Anda bisa menambahkan tag ke postingan blog Anda menggunakan front matter.
 
-    * Edit _posts/your-post-title.md: Buka file Markdown postingan Anda dan tambahkan tags di bagian front matter. Anda bisa menambahkan satu tag atau beberapa tag dalam bentuk array.
+    * Edit `_posts/your-post-title.md`: Buka file Markdown postingan Anda dan tambahkan tags di bagian front matter. Anda bisa menambahkan satu tag atau beberapa tag dalam bentuk array.
 
         Contoh:
 
@@ -115,15 +113,15 @@ Memasang tag di blog Jekyll tanpa menggunakan plugin adalah cara yang efisien un
         ```
         {% endraw %}
 
-    * tags: [javascript, web-development, front-end]: Pastikan nama tag di sini sesuai dengan nama file Markdown yang Anda buat di folder _tabs (setelah di-lowercase). Misalnya, jika Anda punya _tabs/javascript.md, maka tag-nya adalah javascript.
+    * `tags: [javascript, web-development, front-end]`: Pastikan nama tag di sini sesuai dengan nama file Markdown yang Anda buat di folder `_tabs` (setelah di-lowercase). Misalnya, jika Anda punya `_tabs/javascript.md`, maka tag-nya adalah javascript.
 
 4. **Menampilkan Daftar Tag di Blog Anda (Opsional tapi Direkomendasikan)**
 
     Untuk memudahkan pembaca menemukan tag, Anda bisa membuat halaman atau bagian di sidebar yang menampilkan daftar semua tag yang tersedia.
 
-    * Buat Halaman tags.html (atau tambahkan di sidebar/footer):
+    * Buat Halaman `tags.html` (atau tambahkan di sidebar/footer):
 
-        Contoh tags.html:
+        Contoh `tags.html`:
 
         {% raw %}
         ```
@@ -150,20 +148,18 @@ Memasang tag di blog Jekyll tanpa menggunakan plugin adalah cara yang efisien un
 
         Penjelasan :
 
-        {% raw %}
-        ```
-        {% assign all_tags = site.tags | sort %}: Jekyll secara otomatis mengumpulkan semua tag dari postingan Anda dalam variabel site.tags. sort akan mengurutkan tag secara alfabetis.
-        {% for tag in all_tags %}: Mengulang setiap tag. tag[0] adalah nama tag dan tag[1] adalah array postingan yang terkait dengan tag tersebut.
-        {% if tag[1].size > 0 %}: Memastikan hanya tag yang memiliki setidaknya satu postingan yang ditampilkan.
-        <a href="/tag/{{ tag[0] | slugify }}/">{{ tag[0] }}</a>: Membuat tautan ke halaman tag yang sesuai. slugify mengubah nama tag menjadi format URL yang aman (misalnya, "Web Development" menjadi "web-development"). Pastikan permalink di _tabs/*.md Anda juga menggunakan format slugify ini.
-        ```
-        {% endraw %}
+
+        * {% raw %}`{% assign all_tags = site.tags | sort %}`{% endraw %}: Jekyll secara otomatis mengumpulkan semua tag dari postingan Anda dalam variabel `site.tags`. sort akan mengurutkan tag secara alfabetis.
+        * {% raw %}`{% for tag in all_tags %}`{% endraw %}: Mengulang setiap `tag`. `tag[0]` adalah nama tag dan `tag[1]` adalah array postingan yang terkait dengan tag tersebut.
+        * {% raw %}`{% if tag[1].size > 0 %}`{% endraw %}: Memastikan hanya tag yang memiliki setidaknya satu postingan yang ditampilkan.
+        * {% raw %}`<a href="/tag/{{ tag[0] | slugify }}/">{{ tag[0] }}</a>`{% endraw %}: Membuat tautan ke halaman tag yang sesuai. `slugify` mengubah nama tag menjadi format URL yang aman (misalnya, "Web Development" menjadi "web-development"). Pastikan permalink di `_tabs/*.md` Anda juga menggunakan format `slugify` ini.
+
 
 5. **Menguji dan Deploy**
 
     Setelah Anda menyelesaikan langkah-langkah di atas:
 
-    1. **Jalankan Jekyll:** Buka terminal di root direktori blog Anda dan jalankan bundle exec jekyll serve untuk melihat perubahan secara lokal.
+    1. **Jalankan Jekyll:** Buka terminal di root direktori blog Anda dan jalankan `bundle exec jekyll serve` untuk melihat perubahan secara lokal.
     2. **Periksa Tautan Tag:** Pastikan semua tautan tag berfungsi dengan benar dan mengarahkan ke halaman tag yang sesuai.
     3. **Deploy:** Setelah puas dengan hasilnya, deploy blog Jekyll Anda ke platform hosting pilihan Anda (GitHub Pages, Netlify, dll.).
 
