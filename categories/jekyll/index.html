@@ -1,0 +1,17 @@
+---
+layout: default
+title: Artikel Kategori Umum
+category_name: Jekyll # Ini penting untuk breadcrumb agar bisa menampilkan nama kategori
+permalink: /categories/jekyll/ # Ini penting agar URL halaman kategori sesuai
+---
+
+{% include breadcrumb.html %}
+<h2>Postingan Kategori Jekyll</h2>
+<ul>
+  {% assign filtered_posts = site.posts | where_exp:"post", "post.categories contains 'jekyll'" %}
+  {% for post in filtered_posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
+    </li>
+  {% endfor %}
+</ul>
