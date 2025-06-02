@@ -22,10 +22,10 @@ Panduan ini akan membimbingmu langkah demi langkah, mulai dari nol hingga blog p
 Sebelum kita menyelam lebih jauh, mari pahami mengapa kombinasi ini begitu powerful:
 
 * **Gratis:** Ini adalah alasan terbesar bagi banyak orang. Kamu tidak perlu membayar biaya hosting bulanan.
-* **Cepat:** Karena situs yang dihasilkan statis (hanya file HTML, CSS, JavaScript), mereka dimuat sangat cepat di browser pengunjung.
+* **Cepat:** Karena situs yang dihasilkan statis (hanya file `HTML`, `CSS`, `JavaScript`), mereka dimuat sangat cepat di browser pengunjung.
 * **Aman:** Tidak ada database atau server-side processing yang bisa diretas.
 * **Kontrol Penuh:** Kamu memiliki kontrol penuh atas kode dan desain blogmu.
-* **Manajemen Versi:** Menggunakan Git dan GitHub berarti kamu punya riwayat setiap perubahan. Salah? Tinggal roll back!
+* **Manajemen Versi:** Menggunakan `Git` dan `GitHub` berarti kamu punya riwayat setiap perubahan. Salah? Tinggal roll back!
 * **Mudah Di-deploy:** Proses deployment (mengunggah ke internet) sangat mudah setelah setup awal.
 * **Populer:** Banyak developer dan technical writer menggunakannya, jadi komunitasnya cukup aktif.
 
@@ -46,10 +46,10 @@ Proses instalasi sedikit berbeda tergantung sistem operasi yang kamu gunakan.
 **Untuk Pengguna Windows:**
 
 1. **Instal Ruby:**
-    * Kunjungi rubyinstaller.org/downloads.
-    * Unduh versi terbaru Ruby+Devkit (misalnya, Ruby+Devkit 3.X.X (x64)).
-    * Jalankan installer. Saat muncul opsi, centang "Add Ruby executables to your PATH" dan pilih "MSYS2 development toolchain". Ikuti instruksi hingga selesai.
-2. **Buka Command Prompt/PowerShell:** Cari "Command Prompt" atau "PowerShell" di start menu Windows.
+    * Kunjungi `rubyinstaller.org/downloads`.
+    * Unduh versi terbaru `Ruby+Devkit` (misalnya, `Ruby+Devkit 3.X.X (x64)`).
+    * Jalankan installer. Saat muncul opsi, centang `"Add Ruby executables to your PATH"` dan pilih `"MSYS2 development toolchain"`. Ikuti instruksi hingga selesai.
+2. **Buka Command Prompt/PowerShell:** Cari `"Command Prompt"` atau `"PowerShell"` di start menu Windows.
 3. **Instal Bundler:** Ketik perintah berikut dan tekan Enter:
 
     {% raw %}
@@ -68,7 +68,7 @@ Proses instalasi sedikit berbeda tergantung sistem operasi yang kamu gunakan.
 
 **Untuk Pengguna macOS:**
 
-Ruby biasanya sudah terinstal. Jika belum atau versinya lama, kamu bisa menggunakan Homebrew.
+Ruby biasanya sudah terinstal. Jika belum atau versinya lama, kamu bisa menggunakan `Homebrew`.
 
 1. **Instal Homebrew (jika belum):** Ikuti instruksi di `brew.sh`.
 2. **Instal Ruby (melalui rbenv/rvm disarankan untuk versi terbaru):**
@@ -116,7 +116,7 @@ Ruby biasanya sudah terinstal. Jika belum atau versinya lama, kamu bisa mengguna
     ```
     {% endraw %}
 
-3. Konfigurasi PATH (penting!): Tambahkan baris ini di akhir file `~/.bashrc atau ~/.zshrc` (tergantung shell-mu):
+3. Konfigurasi `PATH` (penting!): Tambahkan baris ini di akhir file `~/.bashrc atau ~/.zshrc` (tergantung shell-mu):
 
     {% raw %}
     ```
@@ -224,16 +224,16 @@ Ini adalah bagian paling seru: membuat blogmu online!
 
 1. Buat Repository GitHub Baru:
     * Masuk ke akun GitHub-mu.
-    * Klik tombol hijau "New" (atau ikon + di kanan atas lalu "New repository").
+    * Klik tombol hijau `"New"` (atau ikon + di kanan atas lalu "New repository").
     * Nama Repository: Ini sangat penting!
         * Untuk Blog Pribadi/Portofolio (URL: `username.github.io`): Namai repository persis seperti username GitHub-mu, diikuti .github.io (misalnya, `x-qmo.github.io`).
-        * Untuk Proyek/Organisasi (URL: `username.github.io/nama-repo`): Namai repository sesukamu (misalnya, my-blog-project).
-    * Pilih "Public".
-    * Jangan centang "Add a README file" atau lainnya.
-    * Klik "Create repository".
-2. Inisialisasi Git dan Hubungkan ke GitHub:
+        * Untuk Proyek/Organisasi (URL: `username.github.io/nama-repo`): Namai repository sesukamu (misalnya, `my-blog-project`).
+    * Pilih `"Public"`.
+    * Jangan centang `"Add a README file"` atau lainnya.
+    * Klik `"Create repository"`.
+2. Inisialisasi `Git` dan Hubungkan ke `GitHub`:
     * Kembali ke terminal/Command Prompt di folder proyek Jekyll-mu (namablogmu).
-    * Inisialisasi Git:
+    * Inisialisasi `Git`:
 
         {% raw %}
         ```
@@ -247,14 +247,14 @@ Ini adalah bagian paling seru: membuat blogmu online!
         git add .
         ```
         {% endraw %}
-    * Buat commit pertama:
+    * Buat `commit` pertama:
 
         {% raw %}
         ```
         git commit -m "Initial Jekyll blog setup"
         ```
         {% endraw %}
-    * Tambahkan Remote Origin: Ganti URL_REPOSITORY_MU dengan URL HTTPS repository yang baru kamu buat di GitHub (misalnya, `https://github.com/username/  namarepo.git`).
+    * Tambahkan `Remote Origin`: Ganti `URL_REPOSITORY_MU` dengan `URL HTTPS repository` yang baru kamu buat di GitHub (misalnya, `https://github.com/username/  namarepo.git`).
 
         {% raw %}
         ```
@@ -262,7 +262,7 @@ Ini adalah bagian paling seru: membuat blogmu online!
         ```
         {% endraw %}
 
-    * Push ke GitHub:
+    * `Push` ke `GitHub`:
 
         {% raw %}
         ```
@@ -271,17 +271,17 @@ Ini adalah bagian paling seru: membuat blogmu online!
         ```
         {% endraw %}
 
-    Kamu mungkin diminta memasukkan username dan password GitHub-mu (atau Personal Access Token jika sudah mengaktifkan 2FA).
+    Kamu mungkin diminta memasukkan `username dan password` GitHub-mu (atau Personal Access Token jika sudah mengaktifkan 2FA).
 
 3. Aktifkan GitHub Pages:
 
     * Pergi ke repository blogmu di GitHub.
-    * Klik tab "Settings".
-    * Di sidebar kiri, klik "Pages".
-    * Di bagian "Branch", pilih main (atau master jika kamu menggunakan nama branch itu) dari dropdown dan pilih folder / (root).
-    * Klik "Save".
+    * Klik tab `"Settings"`.
+    * Di sidebar kiri, klik `"Pages"`.
+    * Di bagian `"Branch"`, pilih main (atau master jika kamu menggunakan nama `branch` itu) dari dropdown dan pilih folder / `(root)`.
+    * Klik `"Save"`.
     * GitHub Pages akan mulai membangun situsmu. Ini mungkin butuh beberapa menit.
-    * Setelah proses selesai, akan ada pesan "Your site is published at https://username.github.io/namarepo" (atau https://username.github.io jika itu repository pribadi).
+    * Setelah proses selesai, akan ada pesan `"Your site is published at https://username.github.io/namarepo"` (atau `https://username.github.io` jika itu repository pribadi).
     * Perbarui `_config.yml` (PENTING untuk proyek): Jika kamu membuat repository proyek (bukan `username.github.io`), kamu perlu memperbarui `_config.yml` agar baseurl-nya sesuai:
 
         {% raw %}
@@ -296,8 +296,8 @@ Ini adalah bagian paling seru: membuat blogmu online!
 
 ### Langkah 6: Mengelola dan Memperbarui Blogmu
 
-* Menulis Postingan Baru: Buat file .md baru di folder `_posts/` dengan format `YYYY-MM-DD-judul-postingan.md`. Tulis kontenmu dalam Markdown.
-* Mengubah Konten/Desain: Edit file-file di proyek Jekyll-mu (.md, .html, .css, _config.yml, dll.).
+* Menulis Postingan Baru: Buat file `.md` baru di folder `_posts/` dengan format `YYYY-MM-DD-judul-postingan.md`. Tulis kontenmu dalam Markdown.
+* Mengubah Konten/Desain: Edit file-file di proyek Jekyll-mu (`.md`, `.html`, `.css`, `_config.yml`, dll.).
 * Melihat Perubahan Lokal: Selalu jalankan bundle exec jekyll serve untuk melihat pratinjau perubahanmu di `http://localhost:4000` sebelum mengunggahnya.
 * Mengunggah Perubahan: Setelah puas dengan perubahan, simpan file-filemu, lalu di terminal:
 
@@ -315,7 +315,7 @@ Selanjutnya: Kustomisasi Lanjutan
 
 Selamat! Kamu sekarang punya blog gratis di GitHub Pages. Tapi perjalanan tidak berhenti di sini. Kamu bisa:
 
-* **Mengganti Tema:** Jelajahi tema-tema Jekyll gratis di jekyllthemes.org atau jamstackthemes.com.
+* **Mengganti Tema:** Jelajahi tema-tema Jekyll gratis di `jekyllthemes.org` atau `jamstackthemes.com`.
 * **Domain Kustom:** Hubungkan blogmu ke domain pribadi (misalnya `www.namablogmu.com`) secara gratis melalui pengaturan GitHub Pages.
 * **Menambah Fitur:** Integrasikan komentar (Disqus, Commento), analitik (Google Analytics), formulir kontak, atau fitur-fitur lain menggunakan layanan pihak ketiga yang kompatibel dengan situs statis.
 * **SEO:** Optimalkan kontenmu dengan kata kunci yang relevan dan struktur yang baik agar mudah ditemukan di mesin pencari.
