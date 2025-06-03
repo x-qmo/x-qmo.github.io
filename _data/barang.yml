@@ -1,0 +1,15 @@
+- nama_barang: Laptop X
+  harga: 12000000
+  deskripsi: Laptop gaming dengan RTX 3060 dan RAM 16GB.
+  gambar_url: /assets/images/laptop-x.jpg
+  stok: 5
+- nama_barang: Monitor Y
+  harga: 3500000
+  deskripsi: Monitor 27 inci 144Hz.
+  gambar_url: /assets/images/monitor-y.jpg
+  stok: 12
+- nama_barang: Mouse Z
+  harga: 500000
+  deskripsi: Mouse ergonomis wireless.
+  gambar_url: /assets/images/mouse-z.jpg
+  stok: 20
