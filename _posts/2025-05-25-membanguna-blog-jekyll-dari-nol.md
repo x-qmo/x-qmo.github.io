@@ -13,7 +13,7 @@ Membuat template blog Jekyll dari nol dengan fitur lengkap seperti header, menu 
 
 ## Persiapan Awal
 
-Pastikan Anda sudah menginstal Ruby dan Jekyll. Jika belum, ikuti panduan instalasi resmi Jekyll: https://jekyllrb.com/docs/installation/
+Pastikan Anda sudah menginstal Ruby dan Jekyll. Jika belum, ikuti panduan instalasi resmi Jekyll: `https://jekyllrb.com/docs/installation/`
 
 ### Langkah 1: Buat Proyek Jekyll Baru
 
@@ -28,9 +28,9 @@ cd my-complete-blog
 
 Ini akan membuat struktur dasar. Anda bisa membersihkan file tema default jika ingin benar-benar memulai dari nol (seperti yang dijelaskan di respons sebelumnya).
 
-### Langkah 2: Konfigurasi _config.yml
+### Langkah 2: Konfigurasi `_config.yml`
 
-Buka _config.yml dan sesuaikan dengan informasi blog Anda. Tambahkan gems untuk fitur tambahan seperti RSS feed dan sitemap, serta permalink yang bagus.
+Buka `_config.yml` dan sesuaikan dengan informasi blog Anda. Tambahkan gems untuk fitur tambahan seperti RSS feed dan sitemap, serta permalink yang bagus.
 
 {% raw %}
 ```
@@ -67,7 +67,7 @@ kramdown:
 
 ### Langkah 3: Bangun Struktur Direktori
 
-Inilah struktur yang akan kita gunakan. Perhatikan penambahan folder _data untuk menu navigasi dan _pages untuk halaman statis.
+Inilah struktur yang akan kita gunakan. Perhatikan penambahan folder `_data` untuk menu navigasi dan `_pages` untuk halaman statis.
 
 {% raw %}
 ```
@@ -102,7 +102,7 @@ my-complete-blog/
 ```
 {% endraw %}
 
-### Langkah 4: Buat Layout Utama (_layouts/default.html)
+### Langkah 4: Buat Layout Utama (`_layouts/default.html`)
 
 Ini adalah kerangka dasar yang akan membungkus semua konten. Perhatikan struktur header, main, sidebar, dan footer.
 
@@ -138,9 +138,9 @@ Ini adalah kerangka dasar yang akan membungkus semua konten. Perhatikan struktur
 ```
 {% endraw %}
 
-### Langkah 5: Buat Layout Postingan (_layouts/post.html) dan Halaman (_layouts/page.html)
+### Langkah 5: Buat Layout Postingan (`_layouts/post.html`) dan Halaman (`_layouts/page.html`)
 
-_layouts/post.html:
+`_layouts/post.html`:
 
 {% raw %}
 ```
@@ -172,7 +172,7 @@ layout: default
 ```
 {% endraw %}
 
-_layouts/page.html: (Untuk halaman statis seperti "Tentang Kami", "Kontak")
+`_layouts/page.html`: (Untuk halaman statis seperti "Tentang Kami", "Kontak")
 
 {% raw %}
 ```
@@ -186,7 +186,7 @@ layout: default
 ```
 {% endraw %}
 
-### Langkah 6: Buat _data/navigation.yml (Data Menu Navigasi)
+### Langkah 6: Buat `_data/navigation.yml` (Data Menu Navigasi)
 
 Ini akan membuat menu Anda lebih mudah dikelola.
 
@@ -209,7 +209,7 @@ Ini akan membuat menu Anda lebih mudah dikelola.
 
 ### Langkah 7: Buat File Includes
 
-_includes/header.html: (Header dan Menu Navigasi)
+`_includes/header.html`: (Header dan Menu Navigasi)
 
 {% raw %}
 ```
@@ -228,7 +228,7 @@ _includes/header.html: (Header dan Menu Navigasi)
 ```
 {% endraw %}
 
-_includes/footer.html:
+`_includes/footer.html`:
 
 {% raw %}
 ```
@@ -240,7 +240,7 @@ _includes/footer.html:
 ```
 {% endraw %}
 
-_includes/post_meta.html: (Untuk menampilkan tag/kategori di postingan dan daftar postingan)
+`_includes/post_meta.html`: (Untuk menampilkan tag/kategori di postingan dan daftar postingan)
 
 {% raw %}
 ```
@@ -270,7 +270,7 @@ _includes/post_meta.html: (Untuk menampilkan tag/kategori di postingan dan dafta
 ```
 {% endraw %}
 
-_includes/sidebar.html: (Konten Sidebar)
+`_includes/sidebar.html`: (Konten Sidebar)
 
 {% raw %}
 ```
@@ -320,7 +320,7 @@ _includes/sidebar.html: (Konten Sidebar)
 ```
 {% endraw %}
 
-_includes/search_box.html: (Kotak Pencarian)
+`_includes/search_box.html`: (Kotak Pencarian)
 
 {% raw %}
 ```
@@ -331,7 +331,7 @@ _includes/search_box.html: (Kotak Pencarian)
 ```
 {% endraw %}
 
-### Langkah 8: Buat Halaman Indeks (index.html)
+### Langkah 8: Buat Halaman Indeks (`index.html`)
 
 {% raw %}
 ```
@@ -363,7 +363,7 @@ title: Home
 
 ### Langkah 9: Buat File Postingan dan Halaman Statis
 
-_posts/2025-05-26-post-pertama.md:
+`_posts/2025-05-26-post-pertama.md`:
 
 {% raw %}
 ```
@@ -382,7 +382,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 ```
 {% endraw %}
 
-_pages/about.md:
+`_pages/about.md`:
 
 {% raw %}
 ```
@@ -397,9 +397,9 @@ Blog ini dibuat untuk berbagi pengetahuan dan pengalaman dalam membangun website
 ```
 {% endraw %}
 
-### Langkah 10: Halaman Tag (tags.html) dan Kategori (categories.html)
+### Langkah 10: Halaman Tag (`tags.html`) dan Kategori (`categories.html`)
 
-tags.html:
+`tags.html`:
 
 {% raw %}
 ```
@@ -437,7 +437,7 @@ permalink: /tags/
 ```
 {% endraw %}
 
-categories.html:
+`categories.html`:
 
 {% raw %}
 ```
@@ -475,11 +475,11 @@ permalink: /categories/
 ```
 {% endraw %}
 
-### Langkah 11: Implementasi Kotak Pencarian (Lunr.js)
+### Langkah 11: Implementasi Kotak Pencarian (`Lunr.js`)
 
-Jekyll adalah generator situs statis, jadi Anda tidak bisa melakukan pencarian real-time di sisi server. Kita akan menggunakan Lunr.js untuk pencarian di sisi klien (browser).
+Jekyll adalah generator situs statis, jadi Anda tidak bisa melakukan pencarian real-time di sisi server. Kita akan menggunakan `Lunr.js` untuk pencarian di sisi klien (browser).
 
-#### A. Buat Halaman Pencarian (search.html)
+#### A. Buat Halaman Pencarian (`search.html`)
 
 Ini akan menjadi halaman yang menampilkan hasil pencarian.
 
@@ -508,9 +508,9 @@ permalink: /search/
 ```
 {% endraw %}
 
-#### B. Buat file assets/js/search.js
+#### B. Buat file `assets/js/search.js`
 
-Anda perlu mengunduh Lunr.js atau menggunakannya dari CDN. Untuk kesederhanaan, kita akan anggap Lunr.js diunduh dan ditempatkan di assets/js/lunr.min.js.
+Anda perlu mengunduh `Lunr.js` atau menggunakannya dari CDN. Untuk kesederhanaan, kita akan anggap `Lunr.js` diunduh dan ditempatkan di `assets/js/lunr.min.js`.
 
 {% raw %}
 ```
@@ -643,10 +643,10 @@ layout: null
 
 **Penting:**
 
-* layout: null agar Jekyll tidak membungkusnya dengan layout HTML.
-* strip_html, strip_newlines, remove_chars, normalize_whitespace digunakan untuk membersihkan konten agar indeks Lunr lebih efektif.
+* `layout: null` agar Jekyll tidak membungkusnya dengan layout HTML.
+* `strip_html`, `strip_newlines`, `remove_chars`, `normalize_whitespace` digunakan untuk membersihkan konten agar indeks Lunr lebih efektif.
 
-### Langkah 12: Styling Lengkap (assets/css/style.css)
+### Langkah 12: Styling Lengkap (`assets/css/style.css`)
 
 Ini adalah CSS yang jauh lebih lengkap untuk mengatur tata letak dan tampilan semua elemen.
 
@@ -1009,10 +1009,10 @@ bundle exec jekyll serve
 ```
 {% endraw %}
 
-Buka http://localhost:4000 di browser Anda. Sekarang Anda akan melihat blog dengan tata letak yang lebih lengkap, termasuk:
+Buka `http://localhost:4000` di browser Anda. Sekarang Anda akan melihat blog dengan tata letak yang lebih lengkap, termasuk:
 
 * Header dengan judul situs dan menu navigasi.
-* Menu Navigasi yang diambil dari _data/navigation.yml.
+* Menu Navigasi yang diambil dari `_data/navigation.yml`.
 * Main Content yang menampilkan postingan atau halaman.
 * Sidebar dengan daftar kategori, tag populer, postingan terbaru, dan kotak pencarian.
 * Footer dengan informasi hak cipta.
@@ -1022,11 +1022,11 @@ Buka http://localhost:4000 di browser Anda. Sekarang Anda akan melihat blog deng
 Tips Lanjutan untuk Pengembangan:
 
 * **Responsiveness:** CSS yang diberikan adalah dasar. Untuk blog yang sepenuhnya responsif, Anda perlu menambahkan lebih banyak media queries untuk menyesuaikan tata letak pada berbagai ukuran layar.
-* **Gambar:** Untuk manajemen gambar yang lebih baik, buat direktori assets/images/ dan referensikan gambar dari sana.
+* **Gambar:** Untuk manajemen gambar yang lebih baik, buat direktori `assets/images/` dan referensikan gambar dari sana.
 * **Formulir Kontak:** Karena Jekyll statis, formulir kontak memerlukan layanan pihak ketiga seperti Formspree, Netlify Forms, atau Getform. Anda cukup membuat formulir HTML dan mengarahkan aksi formulir ke URL layanan tersebut.
 * **Komentar:** Sistem komentar juga memerlukan layanan pihak ketiga seperti Disqus atau Commento.
-* **Analytics:** Integrasikan Google Analytics atau alat analitik lainnya dengan menempatkan kode pelacakan di _includes/footer.html atau langsung di _layouts/default.html.
-* **SEO Lanjutan:** Plugin jekyll-seo-tag sudah membantu. Anda juga bisa secara manual menambahkan meta deskripsi di front matter postingan.
+* **Analytics:** Integrasikan Google Analytics atau alat analitik lainnya dengan menempatkan kode pelacakan di `_includes/footer.html` atau langsung di `_layouts/default.html`.
+* **SEO Lanjutan:** Plugin `jekyll-seo-tag` sudah membantu. Anda juga bisa secara manual menambahkan meta deskripsi di front matter postingan.
 * **Kecepatan:** Optimasi gambar, minifikasi CSS/JS dapat meningkatkan kecepatan load blog Anda.
 
 Selamat membangun blog Jekyll impian Anda! Ini adalah dasar yang kuat untuk Anda kembangkan lebih lanjut.
