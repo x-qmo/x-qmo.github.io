@@ -26,8 +26,8 @@ Ini adalah cara paling mudah dan paling efektif untuk mengelola meta tag SEO di 
 
 **Langkah-langkah:**
 
-1. Tambahkan Plugin ke _config.yml:
-    Buka file _config.yml di root proyek Jekyll Anda dan tambahkan plugin di bagian plugins:
+1. Tambahkan Plugin ke `_config.yml`:
+    Buka file `_config.yml` di root proyek Jekyll Anda dan tambahkan plugin di bagian plugins:
 
     {% raw %}
     ```
@@ -38,11 +38,11 @@ Ini adalah cara paling mudah dan paling efektif untuk mengelola meta tag SEO di 
     ```
     {% endraw %}
 
-    Jika Anda sudah memiliki plugin lain, pastikan jekyll-seo-tag ada di daftar tersebut.
+    Jika Anda sudah memiliki plugin lain, pastikan `jekyll-seo-tag` ada di daftar tersebut.
 
-2. Tambahkan Gem ke Gemfile:
+2. Tambahkan `Gem` ke `Gemfile`:
 
-    Buka file Gemfile di root proyek Anda dan tambahkan baris berikut:
+    Buka file `Gemfile` di root proyek Anda dan tambahkan baris berikut:
 
     {% raw %}
     ```
@@ -52,13 +52,13 @@ Ini adalah cara paling mudah dan paling efektif untuk mengelola meta tag SEO di 
     ```
     {% endraw %}
 
-    Jika Anda tidak memiliki Gemfile, buatlah. Setelah menambahkan baris ini, jalankan bundle install di terminal Anda.
+    Jika Anda tidak memiliki `Gemfile`, buatlah. Setelah menambahkan baris ini, jalankan bundle install di terminal Anda.
 
-3. Sertakan Tag di _layouts/head.html atau _includes/head.html:
+3. Sertakan Tag di `_layouts/head.html` atau `_includes/head.html`:
 
-    Plugin ini bekerja dengan menyuntikkan meta tag ke bagian <head> dari HTML Anda. Cara terbaik untuk melakukannya adalah dengan menambahkannya ke layout atau include yang digunakan di bagian <head> situs Anda.
+    Plugin ini bekerja dengan menyuntikkan meta tag ke bagian `<head>` dari HTML Anda. Cara terbaik untuk melakukannya adalah dengan menambahkannya ke layout atau include yang digunakan di bagian `<head>` situs Anda.
 
-    Cari file seperti _layouts/default.html, _layouts/page.html, atau _includes/head.html (tergantung tema Anda). Di dalam tag <head>, tambahkan baris Liquid berikut:
+    Cari file seperti `_layouts/default.html`, `_layouts/page.html`, atau `_includes/head.html` (tergantung tema Anda). Di dalam tag `<head>`, tambahkan baris Liquid berikut:
 
     {% raw %}
     ```
@@ -74,11 +74,11 @@ Ini adalah cara paling mudah dan paling efektif untuk mengelola meta tag SEO di 
     ```
     {% endraw %}
 
-4. Konfigurasi di Front Matter atau _config.yml:
+4. Konfigurasi di Front Matter atau `_config.yml`:
 
-    Jekyll SEO Tag secara otomatis akan mengambil informasi dari front matter setiap halaman/postingan dan dari _config.yml.
+    Jekyll SEO Tag secara otomatis akan mengambil informasi dari front matter setiap halaman/postingan dan dari `_config.yml`.
 
-    * Di _config.yml:
+    * Di `_config.yml`:
     Ini adalah tempat Anda mengatur informasi SEO global untuk situs Anda.
 
         {% raw %}
@@ -149,8 +149,8 @@ Jika Anda tidak ingin menggunakan plugin, Anda bisa mengatur meta tag secara man
 
 Langkah-langkah:
 
-1. Di _layouts/head.html atau _includes/head.html:
-Sertakan kode berikut di dalam tag <head> Anda:
+1. Di `_layouts/head.html` atau `_includes/head.html`:
+Sertakan kode berikut di dalam tag `<head>` Anda:
 
     {% raw %}
     ```
@@ -192,8 +192,8 @@ Sertakan kode berikut di dalam tag <head> Anda:
     ```
     {% endraw %}
 
-2. Konfigurasi di Front Matter atau _config.yml:
-    Sama seperti dengan plugin, Anda akan mengisi nilai-nilai ini di _config.yml untuk pengaturan global dan di front matter setiap halaman/postingan untuk pengaturan spesifik.
+2. Konfigurasi di Front Matter atau `_config.yml`:
+    Sama seperti dengan plugin, Anda akan mengisi nilai-nilai ini di `_config.yml` untuk pengaturan global dan di front matter setiap halaman/postingan untuk pengaturan spesifik.
 
     {% raw %}
     ```
@@ -223,10 +223,10 @@ Sertakan kode berikut di dalam tag <head> Anda:
 
 **Tips SEO Penting untuk Jekyll:**
 
-1. **URL Kanonis (Canonical URL):** Pastikan setiap halaman memiliki URL kanonis yang benar untuk menghindari masalah konten duplikat. jekyll-seo-tag menanganinya secara otomatis.
-2. **Sitemap.xml:** Gunakan plugin jekyll-sitemap untuk menghasilkan sitemap.xml. Ini membantu mesin pencari menemukan semua halaman di situs Anda.
-Tambahkan gem "jekyll-sitemap" ke Gemfile dan jekyll-sitemap ke plugins di _config.yml.
-3. **Robots.txt:** Buat file robots.txt di root proyek Anda untuk menginstruksikan mesin pencari halaman mana yang boleh atau tidak boleh di-crawl.
+1. **URL Kanonis (Canonical URL):** Pastikan setiap halaman memiliki URL kanonis yang benar untuk menghindari masalah konten duplikat. `jekyll-seo-tag` menanganinya secara otomatis.
+2. **Sitemap.xml:** Gunakan plugin `jekyll-sitemap` untuk menghasilkan `sitemap.xml`. Ini membantu mesin pencari menemukan semua halaman di situs Anda.
+Tambahkan `gem "jekyll-sitemap"` ke Gemfile dan `jekyll-sitemap` ke plugins di `_config.yml`.
+3. **Robots.txt:** Buat file `robots.txt` di root proyek Anda untuk menginstruksikan mesin pencari halaman mana yang boleh atau tidak boleh di-crawl.
     * Contoh dasar:
 
         {% raw %}
@@ -239,11 +239,11 @@ Tambahkan gem "jekyll-sitemap" ke Gemfile dan jekyll-sitemap ke plugins di _conf
 
 4. **Optimalisasi Gambar:** Kompres gambar dan gunakan atribut alt yang deskriptif.
 5. **Kecepatan Situs:** Jekyll secara default sangat cepat. Pastikan CSS dan JavaScript Anda dioptimalkan.
-6. **Struktur Heading (H1, H2, H3):** Gunakan heading secara hierarkis dan logis di dalam konten Anda.
+6. **Struktur Heading `(H1, H2, H3)`:** Gunakan heading secara hierarkis dan logis di dalam konten Anda.
 7. **Konten Berkualitas:** Yang paling penting, buatlah konten yang relevan, informatif, dan menarik bagi audiens Anda.
-8. **Pastikan site.url Diatur dengan Benar:** Ini sangat penting untuk jekyll-seo-tag dan jekyll-sitemap agar URL yang dihasilkan benar (termasuk http:// atau https://).
+8. **Pastikan `site.url` Diatur dengan Benar:** Ini sangat penting untuk `jekyll-seo-tag` dan `jekyll-sitemap` agar URL yang dihasilkan benar (termasuk `http://` atau `https://`).
 
-Dengan mengikuti langkah-langkah ini, terutama menggunakan jekyll-seo-tag plugin, situs Jekyll Anda akan memiliki fondasi SEO yang kuat!
+Dengan mengikuti langkah-langkah ini, terutama menggunakan `jekyll-seo-tag` plugin, situs Jekyll Anda akan memiliki fondasi SEO yang kuat!
 
 
 
