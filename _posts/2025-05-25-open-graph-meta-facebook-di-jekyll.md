@@ -21,11 +21,11 @@ Ini akan memastikan tampilan yang konsisten dan menarik dengan judul, deskripsi,
 
 ### Langkah-langkah Memasang Open Graph Facebook di Jekyll:
 
-Kita akan membuat include terpisah untuk Open Graph tags dan menyertakannya di bagian <head> dari layout kamu.
+Kita akan membuat include terpisah untuk Open Graph tags dan menyertakannya di bagian `<head>` dari layout kamu.
 
 #### Langkah 1: Buat File Include untuk Open Graph Tags
 
-Buat file baru di direktori _includes kamu, misalnya _includes/open-graph.html.
+Buat file baru di direktori `_includes kamu`, misalnya `_includes/open-graph.html`.
 
 {% raw %}
 ```
@@ -75,35 +75,33 @@ Buat file baru di direktori _includes kamu, misalnya _includes/open-graph.html.
 {% endraw %}
 
 **Penjelasan Kode:**
-{% raw %}
-```
-* og:site_name: Nama situs Anda (diambil dari _config.yml).
-* og:type: Tipe objek yang dibagikan. Default website. Untuk postingan blog, kita ubah menjadi article.
-* og:title: Judul konten. Jika page.title ada, gunakan itu; jika tidak, gunakan site.title.
-* og:description: Deskripsi konten. Jika page.description ada (bisa didefinisikan di front matter), gunakan itu; jika tidak, gunakan site.description.
-* og:url: URL kanonis dari halaman yang dibagikan. page.url | absolute_url penting untuk mendapatkan URL lengkap.
-* og:image: Ini sangat penting! URL gambar yang akan ditampilkan.
-* Prioritas: Jika page.image didefinisikan di front matter postingan/halaman (misalnya, image: /assets/img/my-post-image.jpg), gambar itu akan digunakan.
-* Fallback: Jika page.image tidak ada, ini akan menggunakan gambar default yang kamu tentukan (/assets/img/default-share-image.jpg). Pastikan gambar ini ada di lokasi tersebut.
-* og:type: article: Diatur khusus untuk page.layout == 'post' untuk menunjukkan bahwa ini adalah artikel.
-* article:published_time / article:modified_time: Tanggal publikasi dan modifikasi (penting untuk SEO dan histori artikel).
-* article:author: Tautan ke halaman Facebook penulis (opsional, memerlukan data penulis di _data/authors.yml atau sejenisnya).
-* article:tag / article:section: Tag dan kategori postingan.
-* fb:app_id / fb:admins: Opsional, untuk terhubung ke Facebook App atau Facebook Page Insights (memerlukan pengaturan di _config.yml).
-```
-{% endraw %}
+
+* `og:site_name`: Nama situs Anda (diambil dari `_config.yml`).
+* `og:type`: Tipe objek yang dibagikan. Default website. Untuk postingan blog, kita ubah menjadi article.
+* `og:title`: Judul konten. Jika `page.title` ada, gunakan itu; jika tidak, gunakan `site.title`.
+* `og:description`: Deskripsi konten. Jika `page.description` ada (bisa didefinisikan di front matter), gunakan itu; jika tidak, gunakan `site.description`.
+* `og:url`: URL kanonis dari halaman yang dibagikan. `page.url | absolute_url` penting untuk mendapatkan URL lengkap.
+* `og:image`: Ini sangat penting! URL gambar yang akan ditampilkan.
+* Prioritas: Jika `page.image` didefinisikan di front matter postingan/halaman (misalnya, `image: /assets/img/my-post-image.jpg`), gambar itu akan digunakan.
+* Fallback: Jika `page.image` tidak ada, ini akan menggunakan gambar default yang kamu tentukan (`/assets/img/default-share-image.jpg`). Pastikan gambar ini ada di lokasi tersebut.
+* `og:type: article`: Diatur khusus untuk `page.layout == 'post'` untuk menunjukkan bahwa ini adalah artikel.
+* `article:published_time / article:modified_time`: Tanggal publikasi dan modifikasi (penting untuk SEO dan histori artikel).
+* `article:author`: Tautan ke halaman Facebook penulis (opsional, memerlukan data penulis di `_data/authors.yml` atau sejenisnya).
+* `article:tag / article:section`: Tag dan kategori postingan.
+* `fb:app_id / fb:admins`: Opsional, untuk terhubung ke Facebook App atau Facebook Page Insights (memerlukan pengaturan di `_config.yml`).
+
 
 #### Langkah 2: Tambahkan Gambar Default
 
 Pastikan kamu memiliki gambar default yang akan digunakan jika tidak ada gambar spesifik yang ditentukan untuk sebuah postingan/halaman.
 
-* Buat direktori assets/img/ di root proyek Jekyll kamu (jika belum ada).
-* Tempatkan gambar default kamu di sana, beri nama default-share-image.jpg (atau nama lain yang sesuai, pastikan sama dengan yang di open-graph.html).
+* Buat direktori `assets/img/` di root proyek Jekyll kamu (jika belum ada).
+* Tempatkan gambar default kamu di sana, beri nama `default-share-image.jpg` (atau nama lain yang sesuai, pastikan sama dengan yang di `open-graph.html`).
 * Ukuran Rekomendasi: Untuk gambar Open Graph, Facebook merekomendasikan gambar minimal 1200x630 piksel untuk tampilan terbaik.
 
 #### Langkah 3: Sertakan Open Graph Tags di Layout Dasar Jekyll
 
-Buka layout dasar kamu (biasanya _layouts/default.html atau file yang menyertakan bagian <head>), dan tambahkan baris berikut di dalam tag <head>:
+Buka layout dasar kamu (biasanya `_layouts/default.html` atau file yang menyertakan bagian `<head>`), dan tambahkan baris berikut di dalam tag `<head>`:
 
 {% raw %}
 ```
@@ -125,7 +123,7 @@ Buka layout dasar kamu (biasanya _layouts/default.html atau file yang menyertaka
 
 #### Langkah 4: Tentukan Informasi di _config.yml
 
-Pastikan _config.yml kamu memiliki informasi dasar situs:
+Pastikan `_config.yml` kamu memiliki informasi dasar situs:
 
 {% raw %}
 ```
@@ -142,7 +140,7 @@ lang: id # Bahasa situs
 ```
 {% endraw %}
 
-Penting: Atur url di _config.yml ke URL domain lengkap situs kamu, termasuk https://.
+Penting: Atur url di `_config.yml` ke URL domain lengkap situs kamu, termasuk `https://`.
 
 #### Langkah 5: Tambahkan Data ke Front Matter Postingan/Halaman (Opsional tapi Direkomendasikan)
 
@@ -165,7 +163,7 @@ Konten postingan Anda di sini...
 ```
 {% endraw %}
 
-Dengan cara ini, page.title, page.description, dan page.image akan digunakan secara spesifik untuk postingan tersebut. Jika tidak ada, fallback ke site.title, site.description, dan default-share-image.jpg akan digunakan.
+Dengan cara ini, `page.title`, `page.description`, dan `page.image` akan digunakan secara spesifik untuk postingan tersebut. Jika tidak ada, fallback ke `site.title`, `site.description`, dan `default-share-image`.jpg akan digunakan.
 
 ## Menguji Open Graph Tags Anda:
 
