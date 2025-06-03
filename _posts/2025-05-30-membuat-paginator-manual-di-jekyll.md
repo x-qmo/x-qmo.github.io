@@ -9,7 +9,7 @@ author: Nama Anda
 image: /assets/images/membuat-paginator-jekyll.jpg
 ---
 
-Membuat paginasi untuk blog Jekyll tanpa menggunakan plugin sangat mungkin dilakukan, tetapi memerlukan pendekatan yang berbeda dan sedikit lebih banyak pekerjaan manual. Karena GitHub Pages memiliki batasan pada plugin yang didukung, ini adalah solusi yang bagus jika Anda ingin kontrol penuh atau jika Anda memiliki alasan khusus untuk tidak menggunakan jekyll-paginate atau jekyll-paginate-v2.
+Membuat paginasi untuk blog Jekyll tanpa menggunakan plugin sangat mungkin dilakukan, tetapi memerlukan pendekatan yang berbeda dan sedikit lebih banyak pekerjaan manual. Karena GitHub Pages memiliki batasan pada plugin yang didukung, ini adalah solusi yang bagus jika Anda ingin kontrol penuh atau jika Anda memiliki alasan khusus untuk tidak menggunakan `jekyll-paginate` atau `jekyll-paginate-v2`.
 
 Konsep dasarnya adalah Anda akan membuat halaman HTML statis untuk setiap halaman paginasi, alih-alih mengandalkan plugin untuk membuatnya secara dinamis.
 
@@ -17,7 +17,7 @@ Berikut adalah cara melakukannya:
 
 1. **Persiapan Struktur Data (Posts)**
 
-    Pastikan semua postingan blog Anda berada di folder _posts dengan format penamaan yang benar (YYYY-MM-DD-judul-postingan.md). Paginasi akan berdasarkan ini.
+    Pastikan semua postingan blog Anda berada di folder `_posts` dengan format penamaan yang benar (`YYYY-MM-DD-judul-postingan.md`). Paginasi akan berdasarkan ini.
 
 2. **Buat Skrip Pembantu (Opsional, tapi Direkomendasikan)**
 
@@ -25,7 +25,7 @@ Berikut adalah cara melakukannya:
 
     Namun, untuk tujuan Jekyll murni tanpa plugin, kita akan memanfaatkan kemampuan Liquid dan data koleksi.
 
-3. **Konfigurasi _config.yml**
+3. **Konfigurasi `_config.yml`**
 
     Anda tidak perlu mengaktifkan plugin paginasi. Hanya pastikan Jekyll tahu cara mengurutkan postingan Anda.
 
@@ -43,12 +43,12 @@ Berikut adalah cara melakukannya:
 
     Ini adalah bagian inti dari solusi tanpa plugin. Anda perlu membuat halaman untuk setiap nomor halaman.
 
-    Misalkan Anda ingin 5 postingan per halaman dan path-nya adalah /blog/pageX/.
+    Misalkan Anda ingin 5 postingan per halaman dan path-nya adalah `/blog/pageX/`.
 
-    **Langkah A: Buat File index.html (atau index.md) di Folder Blog**
+    **Langkah A: Buat File `index.html` (atau index.md) di Folder Blog**
 
     Ini akan menjadi halaman pertama blog Anda.
-    blog/index.html
+    `blog/index.html`
 
     {% raw %}
     ```
@@ -99,9 +99,9 @@ Berikut adalah cara melakukannya:
 
     **Langkah B: Buat Folder dan File untuk Setiap Halaman Paginasi**
 
-    Ini adalah bagian manualnya. Anda harus membuat folder pageX di dalam blog untuk setiap halaman.
+    Ini adalah bagian manualnya. Anda harus membuat folder `pageX` di dalam blog untuk setiap halaman.
 
-    blog/page2/index.html
+    `blog/page2/index.html`
 
     {% raw %}
     ```
@@ -149,7 +149,7 @@ Berikut adalah cara melakukannya:
     ```
     {% endraw %}
 
-    Ulangi ini untuk blog/page3/index.html, blog/page4/index.html, dan seterusnya, dengan mengubah current_page dan sesuaikan tautan previous dan next sesuai nomor halaman.
+    Ulangi ini untuk `blog/page3/index.html`, `blog/page4/index.html`, dan seterusnya, dengan mengubah `current_page` dan sesuaikan tautan `previous` dan `next` sesuai nomor halaman.
 
     Penjelasan:
 
@@ -167,26 +167,25 @@ Berikut adalah cara melakukannya:
 
     Kekurangan Pendekatan Tanpa Plugin:
 
-    * Manual dan Memakan Waktu: Anda harus membuat file index.html terpisah untuk setiap halaman paginasi. Jika Anda memiliki ratusan postingan, ini akan menjadi pekerjaan yang sangat melelahkan.
-    * Sulit untuk Memelihara: Setiap kali Anda menambah atau menghapus postingan, atau mengubah posts_per_page, Anda harus menghitung ulang dan mungkin membuat ulang semua file paginasi secara manual.
+    * Manual dan Memakan Waktu: Anda harus membuat file `index.html` terpisah untuk setiap halaman paginasi. Jika Anda memiliki ratusan postingan, ini akan menjadi pekerjaan yang sangat melelahkan.
+    * Sulit untuk Memelihara: Setiap kali Anda menambah atau menghapus postingan, atau mengubah `posts_per_page`, Anda harus menghitung ulang dan mungkin membuat ulang semua file paginasi secara manual.
     * Tidak Dinamis: Ini adalah solusi statis.
 
     Kapan Menggunakan Pendekatan Ini?
-
     * Jika Anda memiliki jumlah postingan yang sangat sedikit dan tidak sering memperbarui blog.
-    * Jika Anda benar-benar tidak ingin menggunakan plugin karena batasan lingkungan (seperti GitHub Pages yang tidak mendukung jekyll-paginate-v2) dan Anda tidak ingin menggunakan GitHub Actions untuk build.
+    * Jika Anda benar-benar tidak ingin menggunakan plugin karena batasan lingkungan (seperti GitHub Pages yang tidak mendukung `jekyll-paginate-v2`) dan Anda tidak ingin menggunakan GitHub Actions untuk build.
     * Untuk tujuan pembelajaran tentang bagaimana paginasi bekerja di balik layar.
 
 Rekomendasi: Gunakan GitHub Actions untuk Paginasi Plugin
 
-Jika Anda ingin paginasi bekerja secara otomatis di GitHub Pages dan tetap menggunakan plugin jekyll-paginate-v2 (yang jauh lebih fleksibel daripada bawaan), solusi terbaik adalah menggunakan GitHub Actions.
+Jika Anda ingin paginasi bekerja secara otomatis di GitHub Pages dan tetap menggunakan plugin `jekyll-paginate-v2` (yang jauh lebih fleksibel daripada bawaan), solusi terbaik adalah menggunakan GitHub Actions.
 
 Dengan GitHub Actions, Anda dapat mengkonfigurasi alur kerja yang akan:
 
 * Checkout kode repositori Anda.
-* Menginstal Jekyll dan semua plugin yang Anda butuhkan (termasuk jekyll-paginate-v2).
+* Menginstal Jekyll dan semua plugin yang Anda butuhkan (termasuk `jekyll-paginate-v2`).
 * Membangun situs Jekyll Anda secara lokal (di lingkungan GitHub Actions).
-* Mendorong folder _site yang dihasilkan ke cabang gh-pages (atau cabang main jika itu sumber GitHub Pages Anda).
+* Mendorong folder `_site` yang dihasilkan ke cabang `gh-pages` (atau cabang `main` jika itu sumber GitHub Pages Anda).
 
 Ini memungkinkan Anda menggunakan plugin apa pun yang Anda inginkan, dan situs Anda akan dibangun secara dinamis setiap kali Anda mendorong perubahan, tanpa perlu intervensi manual untuk setiap halaman paginasi. Ini adalah keseimbangan terbaik antara fleksibilitas plugin dan penyebaran otomatis di GitHub Pages.
 
@@ -196,15 +195,15 @@ Apakah Anda tertarik untuk mengetahui lebih lanjut tentang cara menyiapkan GitHu
 
 ## cara pasang dan menggunakan jekyll paginate di blog jekyll
 
-jekyll-paginate adalah plugin yang membagi daftar postingan blog Anda menjadi beberapa halaman, sehingga tidak semua postingan muncul di satu halaman panjang. Ini sangat penting untuk blog dengan banyak konten.
+`jekyll-paginate` adalah plugin yang membagi daftar postingan blog Anda menjadi beberapa halaman, sehingga tidak semua postingan muncul di satu halaman panjang. Ini sangat penting untuk blog dengan banyak konten.
 
-1. Memasang jekyll-paginate
+1. Memasang `jekyll-paginate`
 
-    Meskipun jekyll-paginate adalah plugin bawaan, Anda tetap perlu menambahkannya ke konfigurasi Anda agar Jekyll tahu untuk menggunakannya.
+    Meskipun `jekyll-paginate` adalah plugin bawaan, Anda tetap perlu menambahkannya ke konfigurasi Anda agar Jekyll tahu untuk menggunakannya.
 
-    a. Tambahkan ke Gemfile (Direkomendasikan)
+    a. Tambahkan ke `Gemfile` (Direkomendasikan)
 
-    Jika Anda menggunakan Bundler (cara standar untuk mengelola dependensi Jekyll), tambahkan jekyll-paginate ke Gemfile Anda:
+    Jika Anda menggunakan `Bundler` (cara standar untuk mengelola dependensi Jekyll), tambahkan `jekyll-paginate` ke `Gemfile` Anda:
 
     {% raw %}
     ```
@@ -220,11 +219,11 @@ jekyll-paginate adalah plugin yang membagi daftar postingan blog Anda menjadi be
     ```
     {% endraw %}
 
-    Ini akan menginstal jekyll-paginate dan dependensi lainnya.
+    Ini akan menginstal `jekyll-paginate` dan dependensi lainnya.
 
-    b. Tambahkan ke _config.yml
+    b. Tambahkan ke `_config.yml`
 
-    Selanjutnya, beri tahu Jekyll untuk memuat plugin ini dengan menambahkannya ke file _config.yml Anda:
+    Selanjutnya, beri tahu Jekyll untuk memuat plugin ini dengan menambahkannya ke file `_config.yml` Anda:
 
     {% raw %}
     ```
@@ -244,18 +243,18 @@ jekyll-paginate adalah plugin yang membagi daftar postingan blog Anda menjadi be
 
     Penjelasan:
 
-    * paginate: 5: Ini menentukan bahwa setiap halaman paginasi akan menampilkan maksimal 5 postingan. Anda bisa mengubah angka ini sesuai keinginan Anda (misalnya, 10, 3).
-    * paginate_path: "/page:num/": Ini adalah pola URL untuk halaman-halaman paginasi Anda.
-        * :numadalah placeholder yang akan diganti dengan nomor halaman (misalnya,/page2/,/page3/`).
-        * Halaman pertama (halaman 1) tidak akan menggunakan pola ini; ia akan menggunakan URL dari halaman utama yang dipaginasi (misalnya index.html di root).
+    * `paginate: 5`: Ini menentukan bahwa setiap halaman paginasi akan menampilkan maksimal 5 postingan. Anda bisa mengubah angka ini sesuai keinginan Anda (misalnya, 10, 3).
+    * `paginate_path: "/page:num/"`: Ini adalah pola URL untuk halaman-halaman paginasi Anda.
+        * `:num` adalah placeholder yang akan diganti dengan nomor halaman (misalnya,`/page2/`,`/page3/`).
+        * Halaman pertama (halaman 1) tidak akan menggunakan pola ini; ia akan menggunakan URL dari halaman utama yang dipaginasi (misalnya `index.html` di `root`).
 
 2. Menggunakan Objek Paginasi di Template HTML
 
-    Anda perlu memodifikasi file HTML tempat Anda ingin menampilkan daftar postingan yang dipaginasi. Biasanya, ini adalah index.html (untuk halaman beranda blog Anda) atau blog/index.html.
+    Anda perlu memodifikasi file HTML tempat Anda ingin menampilkan daftar postingan yang dipaginasi. Biasanya, ini adalah `index.html` (untuk halaman beranda blog Anda) atau `blog/index.html`.
 
     a. Struktur File HTML yang Dipaginasi
 
-    Buat atau modifikasi file index.html Anda (misalnya, di root proyek Jekyll Anda):
+    Buat atau modifikasi file `index.html` Anda (misalnya, di `root` proyek Jekyll Anda):
 
     {% raw %}
     ```
@@ -306,7 +305,7 @@ jekyll-paginate adalah plugin yang membagi daftar postingan blog Anda menjadi be
 
     Sebelum mendorong ke GitHub, selalu uji situs Anda secara lokal untuk memastikan semuanya berfungsi dengan baik.
 
-    1. Buka terminal di root folder proyek Jekyll Anda.
+    1. Buka terminal di `root` folder proyek Jekyll Anda.
     2. Jalankan perintah:
 
         {% raw %}
@@ -315,15 +314,15 @@ jekyll-paginate adalah plugin yang membagi daftar postingan blog Anda menjadi be
         ```
         {% endraw %}
 
-    3. Buka browser Anda dan kunjungi http://localhost:4000 (atau alamat yang ditampilkan di terminal).
+    3. Buka browser Anda dan kunjungi `http://localhost:4000` (atau alamat yang ditampilkan di terminal).
     4. Gulir ke bawah halaman blog Anda. Anda seharusnya melihat navigasi paginasi. Klik tautan "Selanjutnya" atau nomor halaman untuk memastikan Anda berpindah antar halaman postingan.
 
 5. Deploy ke GitHub Pages (Jika Menggunakan)
 
-    Jika Anda menghosting blog Jekyll Anda di GitHub Pages, Anda tidak perlu melakukan langkah-langkah khusus tambahan setelah konfigurasi di atas. GitHub Pages secara otomatis mendukung jekyll-paginate.
+    Jika Anda menghosting blog Jekyll Anda di GitHub Pages, Anda tidak perlu melakukan langkah-langkah khusus tambahan setelah konfigurasi di atas. GitHub Pages secara otomatis mendukung `jekyll-paginate`.
 
     1. Pastikan semua perubahan sudah disimpan.
-    2. Tambahkan perubahan ke Git:
+    2. Tambahkan perubahan ke `Git`:
 
         {% raw %}
         ```
@@ -331,7 +330,7 @@ jekyll-paginate adalah plugin yang membagi daftar postingan blog Anda menjadi be
         ```
         {% endraw %}
 
-    3. Commit perubahan:
+    3. `Commit` perubahan:
 
         {% raw %}
         ```
@@ -347,19 +346,19 @@ jekyll-paginate adalah plugin yang membagi daftar postingan blog Anda menjadi be
         ```
         {% endraw %}
 
-GitHub Pages akan mendeteksi perubahan, membangun ulang situs Anda, dan paginasi seharusnya berfungsi di situs live Anda. Anda bisa memantau status build di tab "Actions" di repositori GitHub Anda.
+GitHub Pages akan mendeteksi perubahan, membangun ulang situs Anda, dan paginasi seharusnya berfungsi di situs live Anda. Anda bisa memantau status build di tab `"Actions"` di repositori GitHub Anda.
 
-Batasan jekyll-paginate
+Batasan `jekyll-paginate`
 
-Penting untuk diingat bahwa jekyll-paginate memiliki batasan:
+Penting untuk diingat bahwa `jekyll-paginate` memiliki batasan:
 
-* Hanya Memaginasi posts: Secara default, jekyll-paginate hanya dapat memaginasi koleksi posts. Anda tidak dapat menggunakannya langsung untuk memaginasi koleksi kustom (seperti _projects, _events) atau halaman statis berdasarkan kategori/tag.
+* Hanya Memaginasi posts: Secara default, `jekyll-paginate` hanya dapat memaginasi koleksi `posts`. Anda tidak dapat menggunakannya langsung untuk memaginasi koleksi kustom (seperti `_projects`, `_events`) atau halaman statis berdasarkan `kategori/tag`.
 * Paginasi Global: Ini adalah paginasi untuk semua postingan di situs Anda, bukan paginasi per kategori atau tag.
 
-Jika Anda membutuhkan fitur paginasi yang lebih canggih (seperti paginasi untuk koleksi kustom atau paginasi berdasarkan kategori/tag), Anda mungkin perlu mempertimbangkan:
+Jika Anda membutuhkan fitur paginasi yang lebih canggih (seperti paginasi untuk koleksi kustom atau paginasi berdasarkan `kategori/tag`), Anda mungkin perlu mempertimbangkan:
 
-* Menggunakan plugin jekyll-paginate-v2 (tetapi ini tidak didukung langsung oleh GitHub Pages, jadi Anda harus membangun situs secara lokal dan mendorong output _site ke GitHub Pages, atau menggunakan GitHub Actions).
+* Menggunakan plugin `jekyll-paginate-v2` (tetapi ini tidak didukung langsung oleh GitHub Pages, jadi Anda harus membangun situs secara lokal dan mendorong output `_site` ke GitHub Pages, atau menggunakan GitHub Actions).
 * Menggunakan generator paginasi kustom dengan filter Liquid (lebih kompleks).
 * Menggunakan layanan hosting lain seperti Netlify atau Vercel yang memungkinkan Anda menginstal plugin Jekyll apa pun.
 
-Dengan mengikuti panduan ini, Anda akan dapat berhasil memasang dan menggunakan jekyll-paginate untuk membuat blog Jekyll Anda lebih mudah dinavigasi.
+Dengan mengikuti panduan ini, Anda akan dapat berhasil memasang dan menggunakan `jekyll-paginate` untuk membuat blog Jekyll Anda lebih mudah dinavigasi.
