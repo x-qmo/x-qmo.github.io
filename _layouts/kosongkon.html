@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konveksi Pakaian Profesional - Kemeja, Kaos, Celana</title>
+    <title>Konveksi Pakaian Terbaik Bandung Asli - Kemeja, Kaos, Celana</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter for modern typography -->
@@ -11,176 +11,196 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* Light blue-gray background */
-            color: #334155; /* Dark slate gray text */
+            background-color: #1a202c; /* Dark elegant background */
+            color: #e2e8f0; /* Light text for dark background */
         }
-        .container.kbakon.mx-auto.px-4.flex.justify-between.items-center {
+        .container.konbtn.mx-auto.px-4.flex.justify-between.items-center {
   flex-direction: column;
 }
         .text-gradient-blue-purple {
-            background-image: linear-gradient(to right, #3b82f6, #8b5cf6);
+            background-image: linear-gradient(to right, #63b3ed, #a78bfa); /* Lighter gradient for dark background */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         .btn-primary {
-            background-image: linear-gradient(to right, #3b82f6, #8b5cf6);
+            background-image: linear-gradient(to right, #63b3ed, #a78bfa); /* Lighter gradient for dark background */
             transition: all 0.3s ease;
         }
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+            box-shadow: 0 4px 15px rgba(99, 179, 237, 0.4);
         }
         .card-shadow {
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Darker shadow for dark background */
+        }
+        /* Card hover effect */
+        .card-hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
 <body class="antialiased">
 
     <!-- Header Section -->
-    <header class="bg-white shadow-sm py-4">
-        <div class="container kbakon mx-auto px-4 flex justify-between items-center">
+    <header class="bg-gray-900 shadow-lg py-4">
+        <div class="container konbtn mx-auto px-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-gradient-blue-purple rounded-lg p-2">Konveksi Bandung Asli</a>
             <nav>
                 <ul class="flex space-x-6">
-                    <li><a href="#hero" class="text-gray-700 hover:text-blue-600 font-medium rounded-lg p-2">Beranda</a></li>
-                    <li><a href="#services" class="text-gray-700 hover:text-blue-600 font-medium rounded-lg p-2">Layanan</a></li>
-                    <li><a href="#why-us" class="text-gray-700 hover:text-blue-600 font-medium rounded-lg p-2">Keunggulan</a></li>
-                    <li><a href="#gallery" class="text-gray-700 hover:text-blue-600 font-medium rounded-lg p-2">Galeri</a></li>
-                    <li><a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium rounded-lg p-2">Kontak</a></li>
+                    <li><a href="#hero" class="text-gray-300 hover:text-blue-400 font-medium rounded-lg p-2">Beranda</a></li>
+                    <li><a href="#services" class="text-gray-300 hover:text-blue-400 font-medium rounded-lg p-2">Layanan</a></li>
+                    <li><a href="#why-us" class="text-gray-300 hover:text-blue-400 font-medium rounded-lg p-2">Keunggulan</a></li>
+                    <li><a href="#gallery" class="text-gray-300 hover:text-blue-400 font-medium rounded-lg p-2">Galeri</a></li>
+                    <li><a href="#contact" class="text-gray-300 hover:text-blue-400 font-medium rounded-lg p-2">Kontak</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="relative bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20 md:py-32 overflow-hidden rounded-b-3xl">
+    <section id="hero" class="relative bg-gradient-to-r from-gray-900 to-gray-700 text-white py-20 md:py-32 overflow-hidden rounded-b-3xl">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between z-10 relative">
             <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
                 <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 rounded-lg p-2">
-                    Solusi Konveksi Pakaian <span class="text-yellow-300">Terbaik</span> untuk Anda!
+                    Konveksi Pakaian Terbaik <span class="text-yellow-300">Bandung Asli</span>!
                 </h1>
                 <p class="text-lg md:text-xl mb-8 rounded-lg p-2">
-                    Kami melayani pembuatan kemeja, kaos, dan celana dengan kualitas premium dan harga bersaing.
+                    Kami melayani pembuatan kemeja, kaos, dan celana dengan kualitas premium, desain kustom, dan harga bersaing.
                 </p>
                 <a href="#contact" class="btn-primary inline-block text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
-                    Mulai Proyek Anda
+                    Mulai Proyek Anda Sekarang!
                 </a>
             </div>
             <div class="md:w-1/2 flex justify-center md:justify-end">
                 <!-- Placeholder image for clothing -->
-                <img src="https://placehold.co/500x400/3b82f6/ffffff?text=KONVEKSI+PAKAIAN" alt="Ilustrasi Pakaian Konveksi" class="w-full max-w-md rounded-3xl shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1748977074/konveksi-bandung-asli_m5broq.jpg" alt="[Image of Konveksi Pakaian]" class="w-full max-w-md rounded-3xl shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
             </div>
         </div>
         <!-- Background decorative elements (optional) -->
-        <div class="absolute inset-0 bg-pattern opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23000000\' fill-opacity=\'.05\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM14 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        <div class="absolute inset-0 bg-pattern opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'.05\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM14 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
     </section>
 
     <!-- Services/Products Section -->
-    <section id="services" class="py-16 bg-white rounded-t-3xl -mt-8 relative z-20">
+    <section id="services" class="py-16 bg-gray-800 rounded-t-3xl -mt-8 relative z-20">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Layanan Konveksi Kami</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-12">Layanan Konveksi Kami</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Service 1: Kemeja -->
-                <div class="bg-blue-50 p-6 rounded-xl card-shadow transform hover:scale-105 transition duration-300">
-                    <img src="https://placehold.co/300x200/8b5cf6/ffffff?text=KEMEJA" alt="Gambar Kemeja" class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-semibold mb-3 text-gray-800">Kemeja</h3>
-                    <p class="text-gray-600">Produksi kemeja seragam, formal, casual, hingga kemeja custom dengan berbagai bahan dan model.</p>
+                <div class="bg-gray-700 p-6 rounded-xl card-shadow card-hover-effect">
+                    <img src="https://placehold.co/300x200/3b82f6/e2e8f0?text=KEMEJA" alt="[Image of Kemeja]" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-100">Kemeja</h3>
+                    <p class="text-gray-300">Produksi kemeja seragam, formal, casual, hingga kemeja custom dengan berbagai bahan dan model.</p>
                 </div>
                 <!-- Service 2: Kaos -->
-                <div class="bg-blue-50 p-6 rounded-xl card-shadow transform hover:scale-105 transition duration-300">
-                    <img src="https://placehold.co/300x200/3b82f6/ffffff?text=KAOS" alt="Gambar Kaos" class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-semibold mb-3 text-gray-800">Kaos</h3>
-                    <p class="text-gray-600">Pembuatan kaos oblong, polo shirt, raglan, dan kaos custom untuk event, promosi, atau komunitas.</p>
+                <div class="bg-gray-700 p-6 rounded-xl card-shadow card-hover-effect">
+                    <img src="https://placehold.co/300x200/a78bfa/e2e8f0?text=KAOS" alt="[Image of Kaos]" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-100">Kaos</h3>
+                    <p class="text-gray-300">Pembuatan kaos oblong, polo shirt, raglan, dan kaos custom untuk event, promosi, atau komunitas.</p>
                 </div>
                 <!-- Service 3: Celana -->
-                <div class="bg-blue-50 p-6 rounded-xl card-shadow transform hover:scale-105 transition duration-300">
-                    <img src="https://placehold.co/300x200/8b5cf6/ffffff?text=CELANA" alt="Gambar Celana" class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-semibold mb-3 text-gray-800">Celana</h3>
-                    <p class="text-gray-600">Konveksi celana kerja, celana casual, celana training, dan celana custom lainnya.</p>
+                <div class="bg-gray-700 p-6 rounded-xl card-shadow card-hover-effect">
+                    <img src="https://placehold.co/300x200/63b3ed/e2e8f0?text=CELANA" alt="[Image of Celana]" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-100">Celana</h3>
+                    <p class="text-gray-300">Konveksi celana kerja, celana casual, celana training, dan celana custom lainnya.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Why Choose Us Section -->
-    <section id="why-us" class="py-16 bg-gray-100">
+    <section id="why-us" class="py-16 bg-gray-900">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Mengapa Memilih Konveksi Kami?</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-12">Mengapa Memilih Konveksi Kami?</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Feature 1: Kualitas Premium -->
-                <div class="bg-white p-6 rounded-xl card-shadow transform hover:scale-105 transition duration-300">
-                    <div class="text-blue-600 mb-4">
+                <div class="bg-gray-700 p-6 rounded-xl card-shadow card-hover-effect">
+                    <div class="text-blue-400 mb-4">
                         <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Kualitas Premium</h3>
-                    <p class="text-gray-600">Kami menggunakan bahan terbaik dan proses produksi yang teliti untuk hasil maksimal.</p>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-100">Kualitas Premium</h3>
+                    <p class="text-gray-300">Kami menggunakan bahan terbaik dan proses produksi yang teliti untuk hasil maksimal.</p>
                 </div>
                 <!-- Feature 2: Desain Kustom -->
-                <div class="bg-white p-6 rounded-xl card-shadow transform hover:scale-105 transition duration-300">
-                    <div class="text-blue-600 mb-4">
+                <div class="bg-gray-700 p-6 rounded-xl card-shadow card-hover-effect">
+                    <div class="text-blue-400 mb-4">
                         <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Desain Kustom</h3>
-                    <p class="text-gray-600">Wujudkan ide desain Anda bersama tim ahli kami. Fleksibel dan sesuai kebutuhan.</p>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-100">Desain Kustom</h3>
+                    <p class="text-gray-300">Wujudkan ide desain Anda bersama tim ahli kami. Fleksibel dan sesuai kebutuhan.</p>
                 </div>
                 <!-- Feature 3: Pengiriman Tepat Waktu -->
-                <div class="bg-white p-6 rounded-xl card-shadow transform hover:scale-105 transition duration-300">
-                    <div class="text-blue-600 mb-4">
+                <div class="bg-gray-700 p-6 rounded-xl card-shadow card-hover-effect">
+                    <div class="text-blue-400 mb-4">
                         <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Pengiriman Tepat Waktu</h3>
-                    <p class="text-gray-600">Kami berkomitmen untuk menyelesaikan pesanan Anda sesuai jadwal yang disepakati.</p>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-100">Pengiriman Tepat Waktu</h3>
+                    <p class="text-gray-300">Kami berkomitmen untuk menyelesaikan pesanan Anda sesuai jadwal yang disepakati.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Gallery/Portfolio Section -->
-    <section id="gallery" class="py-16 bg-white">
+    <section id="gallery" class="py-16 bg-gray-800">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Galeri Hasil Produksi Kami</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-12">Galeri Hasil Produksi Kami</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Gallery Item 1 -->
                 <div class="rounded-xl overflow-hidden shadow-lg card-hover-effect">
-                    <img src="https://placehold.co/400x300/3b82f6/ffffff?text=KEMEJA+SERAGAM" alt="Kemeja Seragam" class="w-full h-64 object-cover">
+                    <img src="https://placehold.co/400x300/3b82f6/e2e8f0?text=KEMEJA+SERAGAM" alt="[Image of Kemeja Seragam]" class="w-full h-64 object-cover">
                 </div>
                 <!-- Gallery Item 2 -->
                 <div class="rounded-xl overflow-hidden shadow-lg card-hover-effect">
-                    <img src="https://placehold.co/400x300/8b5cf6/ffffff?text=KAOS+KOMUNITAS" alt="Kaos Komunitas" class="w-full h-64 object-cover">
+                    <img src="https://placehold.co/400x300/a78bfa/e2e8f0?text=KAOS+KOMUNITAS" alt="[Image of Kaos Komunitas]" class="w-full h-64 object-cover">
                 </div>
                 <!-- Gallery Item 3 -->
                 <div class="rounded-xl overflow-hidden shadow-lg card-hover-effect">
-                    <img src="https://placehold.co/400x300/3b82f6/ffffff?text=CELANA+KERJA" alt="Celana Kerja" class="w-full h-64 object-cover">
+                    <img src="https://placehold.co/400x300/63b3ed/e2e8f0?text=CELANA+KERJA" alt="[Image of Celana Kerja]" class="w-full h-64 object-cover">
                 </div>
                 <!-- Gallery Item 4 -->
                 <div class="rounded-xl overflow-hidden shadow-lg card-hover-effect">
-                    <img src="https://placehold.co/400x300/8b5cf6/ffffff?text=KEMEJA+PROMOSI" alt="Kemeja Promosi" class="w-full h-64 object-cover">
+                    <img src="https://placehold.co/400x300/3b82f6/e2e8f0?text=KEMEJA+PROMOSI" alt="[Image of Kemeja Promosi]" class="w-full h-64 object-cover">
                 </div>
                 <!-- Add more gallery items as needed -->
+                <div class="rounded-xl overflow-hidden shadow-lg card-hover-effect">
+                    <img src="https://placehold.co/400x300/a78bfa/e2e8f0?text=KAOS+POLO" alt="[Image of Kaos Polo]" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg card-hover-effect">
+                    <img src="https://placehold.co/400x300/63b3ed/e2e8f0?text=CELANA+TRAINING" alt="[Image of Celana Training]" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg card-hover-effect">
+                    <img src="https://placehold.co/400x300/3b82f6/e2e8f0?text=SERAGAM+KANTOR" alt="[Image of Seragam Kantor]" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg card-hover-effect">
+                    <img src="https://placehold.co/400x300/a78bfa/e2e8f0?text=JAKET+CUSTOM" alt="[Image of Jaket Custom]" class="w-full h-64 object-cover">
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Call to Action / Contact Section -->
-    <section id="contact" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16 text-center rounded-t-3xl mt-8">
+    <section id="contact" class="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-16 text-center rounded-t-3xl mt-8">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">Siap Memulai Proyek Konveksi Anda?</h2>
             <p class="text-lg md:text-xl mb-8">Hubungi kami sekarang untuk konsultasi gratis dan penawaran terbaik!</p>
 
-            <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg text-gray-800">
+            <div class="max-w-xl mx-auto bg-gray-700 p-8 rounded-xl shadow-lg text-gray-100">
                 <form class="space-y-4">
                     <div>
-                        <label for="name" class="block text-left text-sm font-medium text-gray-700">Nama Lengkap</label>
-                        <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Nama Anda">
+                        <label for="name" class="block text-left text-sm font-medium text-gray-300">Nama Lengkap</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-600 rounded-md shadow-sm focus:ring-blue-400 focus:border-blue-400 bg-gray-800 text-white" placeholder="Nama Anda" required>
                     </div>
                     <div>
-                        <label for="email" class="block text-left text-sm font-medium text-gray-700">Email</label>
-                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="email@contoh.com">
+                        <label for="email" class="block text-left text-sm font-medium text-gray-300">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-600 rounded-md shadow-sm focus:ring-blue-400 focus:border-blue-400 bg-gray-800 text-white" placeholder="email@contoh.com" required>
                     </div>
                     <div>
-                        <label for="message" class="block text-left text-sm font-medium text-gray-700">Pesan Anda</label>
-                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Jelaskan kebutuhan konveksi Anda..."></textarea>
+                        <label for="message" class="block text-left text-sm font-medium text-gray-300">Pesan Anda</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-2 border border-gray-600 rounded-md shadow-sm focus:ring-blue-400 focus:border-blue-400 bg-gray-800 text-white" placeholder="Jelaskan kebutuhan konveksi Anda..." required></textarea>
                     </div>
                     <button type="submit" class="btn-primary w-full text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
                         Kirim Pesan
@@ -188,8 +208,8 @@
                 </form>
                 <div class="mt-8 text-center">
                     <p class="text-lg font-semibold">Atau Hubungi Kami Langsung:</p>
-                    <p class="text-xl font-bold mt-2">Telepon: <a href="" class="text-blue-600 hover:underline">0812-1441-7762</a></p>
-                    <p class="text-lg mt-1">Email: <a href="#" class="text-blue-600 hover:underline">#</a></p>
+                    <p class="text-xl font-bold mt-2">Telepon: <a href="tel:+62812-1441-7762" class="text-blue-400 hover:underline">+62 812-1441-7762</a></p>
+                    <p class="text-lg mt-1">Email: <a href="#" class="text-blue-400 hover:underline">#</a></p>
                     <p class="text-lg mt-1">Alamat: Gg. H. Asep Komar, RT.002/RW.008, Sukapada, Kec. Cibeunying Kidul, Kota Bandung, Jawa Barat 40125</p>
                 </div>
             </div>
@@ -197,9 +217,9 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white py-12">
+    <footer class="bg-gray-950 text-white py-12">
         <div class="container mx-auto px-4 text-center">
-            <h3 class="text-2xl font-bold mb-4">Konveksi Bandung Asli</h3>
+            <h3 class="text-2xl font-bold mb-4">Konveksi Jaya Bandung</h3>
             <div class="flex justify-center space-x-6">
                 <a href="#" class="text-gray-400 hover:text-white transition duration-300">
                     <!-- Facebook Icon (example) -->
