@@ -21,7 +21,7 @@ Bagaimana Caranya:
 
 1. **Buat File Include untuk Tombol Berbagi:**
 
-    Buat file baru di direktori _includes kamu (misalnya, _includes/share-buttons.html).
+    Buat file baru di direktori `_includes` kamu (misalnya, `_includes/share-buttons.html`).
 
     {% raw %}
     ```
@@ -43,17 +43,15 @@ Bagaimana Caranya:
     {% endraw %}
 
     **Penjelasan:**
-    {% raw %}
-    ```
-    {{ page.title | url_encode }}: Mengambil judul halaman saat ini dan meng-encode-nya untuk URL.
-    {{ site.url }}{{ page.url | url_encode }}: Menggabungkan URL dasar situs dengan URL relatif halaman saat ini dan meng-encode-nya. Ini penting untuk memastikan tautan berfungsi dengan benar.
-    target="_blank" rel="noopener noreferrer": Memastikan tautan terbuka di tab baru dan aman.
-    ```
-    {% endraw %}
+
+    * {% raw %}`{{ page.title | url_encode }}`{% endraw %}: Mengambil judul halaman saat ini dan meng-encode-nya untuk URL.
+    * {% raw %}`{{ site.url }}{{ page.url | url_encode }}`{% endraw %}: Menggabungkan URL dasar situs dengan URL relatif halaman saat ini dan meng-encode-nya. Ini penting untuk memastikan tautan berfungsi dengan benar.
+    * `target="_blank" rel="noopener noreferrer"`: Memastikan tautan terbuka di tab baru dan aman.
+
 
 2. **Sertakan di Layout Post/Halaman:**
 
-    Buka layout yang kamu gunakan untuk postingan blog atau halaman (biasanya _layouts/post.html atau _layouts/page.html) dan tambahkan baris berikut di tempat kamu ingin tombol berbagi muncul:
+    Buka layout yang kamu gunakan untuk postingan blog atau halaman (biasanya `_layouts/post.html` atau `_layouts/page.html`) dan tambahkan baris berikut di tempat kamu ingin tombol berbagi muncul:
 
     {% raw %}
     ```
@@ -65,7 +63,7 @@ Bagaimana Caranya:
 
 3. **Styling (Opsional):**
 
-    Tambahkan CSS ke file stylesheet kamu (misalnya, assets/css/style.scss) untuk membuat tombol terlihat lebih baik.
+    Tambahkan CSS ke file stylesheet kamu (misalnya, `assets/css/style.scss`) untuk membuat tombol terlihat lebih baik.
 
     {% raw %}
     ```
@@ -140,7 +138,7 @@ Bagaimana Caranya (Contoh dengan AddThis):
 
 2. **Tambahkan Kode JavaScript ke Jekyll:**
 
-    * **Metode 1 (Disarankan):** Tambahkan kode ke layout dasar kamu (_layouts/default.html atau _includes/head.html / _includes/footer.html). Biasanya, kode ini ditempatkan tepat sebelum tag </body> penutup untuk performa yang lebih baik.
+    * **Metode 1 (Disarankan):** Tambahkan kode ke layout dasar kamu (`_layouts/default.html` atau `_includes/head.html / _includes/footer.html`). Biasanya, kode ini ditempatkan tepat sebelum tag `</body>` penutup untuk performa yang lebih baik.
 
 
 
@@ -156,13 +154,13 @@ Bagaimana Caranya (Contoh dengan AddThis):
         ```
         {% endraw %}
 
-        Ganti YOUR_PROFILE_ID dengan ID yang diberikan oleh AddThis.
+        Ganti `YOUR_PROFILE_ID` dengan `ID` yang diberikan oleh AddThis.
 
-    * **Metode 2:** Jika kamu hanya ingin tombol muncul di postingan, kamu bisa menambahkannya langsung ke _layouts/post.html di bagian yang relevan.
+    * **Metode 2:** Jika kamu hanya ingin tombol muncul di postingan, kamu bisa menambahkannya langsung ke `_layouts/post.html` di bagian yang relevan.
 
 3. **Tempatkan Elemen HTML untuk Tombol:**
 
-    Layanan akan memberikanmu elemen HTML (biasanya div dengan class tertentu) di mana tombol akan dirender. Tambahkan elemen ini ke _layouts/post.html atau file include lainnya.
+    Layanan akan memberikanmu elemen HTML (biasanya div dengan class tertentu) di mana tombol akan dirender. Tambahkan elemen ini ke `_layouts/post.html` atau file include lainnya.
 
     {% raw %}
     ```
