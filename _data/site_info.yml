@@ -1,0 +1,12 @@
+name: "x-Qmo Blog"
+url: "https://x-qmo.github.io/"
+logo: "https://x-qmo.github.io/assets/images/logo.png"
+description: "Blog Anda tentang teknologi, tutorial, dan gaya hidup."
+author:
+  name: "Nama Penulis Utama"
+  url: "https://x-qmo.github.io/tentang/" # URL halaman tentang penulis
+  twitter: "https://twitter.com/" # Opsional
+organization:
+  name: "x-Qmo"
+  url: "https://x-qmo.github.io/"
+  logo: "https://x-qmo.github.io/assets/images/org-logo.png"

@@ -1,0 +1,162 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>
+  {% if page.title %}
+    {{ page.title }} | {{ site.title }}
+  {% else %}
+    {{ site.title }}
+  {% endif %}
+</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+{% include open-graph.html %}
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta name="google-site-verification" content="vCTwJ0HHsMQ739xA1y8Zu7V0iQ-_-HgKOdVltGdc-7M">
+    <meta name="google-adsense-account" content="ca-pub-9216057952866489">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9216057952866489"
+     crossorigin="anonymous"></script>
+
+  {% assign current_url = page.url | absolute_url %}
+  {% assign current_title = page.title | default: site.title %}
+  {% assign current_description = page.excerpt | default: site.description | strip_html | truncate: 160 %}
+  {% assign current_image = page.image | default: site.data.site_info.logo | absolute_url %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{ site.data.site_info.url }}/#website",
+        "url": "{{ site.data.site_info.url }}/",
+        "name": "{{ site.data.site_info.name }}",
+        "description": "{{ site.data.site_info.description }}",
+        "publisher": {
+          "@id": "{{ site.data.site_info.url }}/#organization"
+        },
+        "inLanguage": "{{ site.lang | default: "id" }}"
+      },
+      {
+        "@type": "Organization",
+        "@id": "{{ site.data.site_info.url }}/#organization",
+        "name": "{{ site.data.site_info.organization.name | default: site.data.site_info.name }}",
+        "url": "{{ site.data.site_info.organization.url | default: site.data.site_info.url }}",
+        "logo": "{{ site.data.site_info.organization.logo | default: site.data.site_info.logo }}"
+        // Tambahkan properti organisasi lainnya jika ada
+      },
+      {
+        "@type": "WebPage",
+        "@id": "{{ current_url }}#webpage",
+        "url": "{{ current_url }}",
+        "name": "{{ current_title }}",
+        "isPartOf": {
+          "@id": "{{ site.data.site_info.url }}/#website"
+        },
+        "description": "{{ current_description }}",
+        "inLanguage": "{{ site.lang | default: "id" }}",
+        "potentialAction": [{
+          "@type": "ReadAction",
+          "target": ["{{ current_url }}"]
+        }]
+      }
+      {% if page.layout == "post" %}
+      , {
+        "@type": "BlogPosting",
+        "mainEntityOfPage": "{{ current_url }}",
+        "headline": "{{ current_title }}",
+        "description": "{{ current_description }}",
+        "image": {
+          "@type": "ImageObject",
+          "url": "{{ current_image }}"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "{% if page.author %}{{ page.author | default: site.data.site_info.author.name }}{% else %}{{ site.data.site_info.author.name }}{% endif %}",
+          "url": "{% if page.author_url %}{{ page.author_url }}{% else %}{{ site.data.site_info.author.url }}{% endif %}"
+          {% if site.data.site_info.author.twitter %},"sameAs": ["{{ site.data.site_info.author.twitter }}"]{% endif %}
+        },
+        "publisher": {
+          "@id": "{{ site.data.site_info.url }}/#organization"
+        },
+        "datePublished": "{{ page.date | date_to_xmlschema }}",
+        "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}"
+        // Anda bisa menambahkan properti lain seperti "keywords" dari tags/categories
+        // "keywords": [{% for tag in page.tags %}"{{ tag }}"{% unless forloop.last %},{% endunless %}{% endfor %}]
+      }
+      {% endif %}
+    ]
+  }
+  </script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Beranda",
+      "item": "{{ site.url | append: '/' }}"
+    }
+    {% if page.collection == 'posts' %}
+      {% if page.categories %}
+        {% assign category = page.categories | first %}
+        {% assign category_slug = category | slugify %}
+        ,
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ category | capitalize }}",
+          "item": "{{ site.url | append: '/categories/' | append: category_slug | append: '/' }}"
+        }
+        ,
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{{ page.title }}",
+          "item": "{{ site.url | append: page.url }}"
+        }
+      {% elsif page.category %}
+        {% assign category = page.category %}
+        {% assign category_slug = category | slugify %}
+        ,
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ category | capitalize }}",
+          "item": "{{ site.url | append: '/categories/' | append: category_slug | append: '/' }}"
+        }
+        ,
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{{ page.title }}",
+          "item": "{{ site.url | append: page.url }}"
+        }
+      {% else %}
+        ,
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ page.title }}",
+          "item": "{{ site.url | append: page.url }}"
+        }
+      {% endif %}
+    {% elsif page.layout == 'page' and page.url != '/' %}
+      ,
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ page.title }}",
+        "item": "{{ site.url | append: page.url }}"
+      }
+    {% endif %}
+  ]
+}
+</script>
+</head>
