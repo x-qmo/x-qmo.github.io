@@ -123,17 +123,17 @@ Berikut adalah kode yang bisa Anda gunakan:
 
 Cara Menggunakan Kode Ini di Blog Jekyll Anda:
 
-1. Buat File Include:
-    * Di root proyek Jekyll Anda, pastikan ada folder bernama _includes.
-    * Buat file baru di dalam _includes dan beri nama video_gallery.html.
-    * Salin seluruh kode HTML dan CSS di atas ke dalam file _includes/video_gallery.html.
+1. Buat File `Include`:
+    * Di `root` proyek Jekyll Anda, pastikan ada folder bernama `_includes`.
+    * Buat file baru di dalam `_includes` dan beri nama `video_gallery.html`.
+    * Salin seluruh kode HTML dan CSS di atas ke dalam file `_includes/video_gallery.html`.
 
 2. Siapkan Video Lokal (Opsional):
-    * Jika Anda ingin menyertakan video lokal, buat folder assets/videos di root proyek Jekyll Anda.
-    * Tempatkan file video Anda (misalnya, video1.mp4, video2.mp4) di dalam folder assets/videos ini.
+    * Jika Anda ingin menyertakan video lokal, buat folder `assets/videos` di root proyek Jekyll Anda.
+    * Tempatkan file video Anda (misalnya, `video1.mp4`, `video2.mp4`) di dalam folder `assets/videos` ini.
 
 3. Panggil Galeri di Postingan atau Halaman Markdown Anda:
-    * Buka file Markdown (.md) untuk postingan atau halaman tempat Anda ingin menampilkan galeri.
+    * Buka file Markdown (`.md`) untuk postingan atau halaman tempat Anda ingin menampilkan galeri.
     * Di bagian front matter (bagian YAML di bagian atas file Markdown, di antara ---), Anda perlu mendefinisikan data video Anda.
 
 Contoh front matter untuk video YouTube dan lokal:
@@ -173,15 +173,13 @@ Ini adalah galeri video yang menampilkan beberapa konten menarik.
 
 Penjelasan :
 
-{% raw %}
-```
-videos:: Ini adalah array tempat Anda mendefinisikan setiap video.
-type: youtube atau type: local: Menentukan apakah video berasal dari YouTube atau file lokal.
-id:: Untuk video YouTube, ini adalah ID unik dari URL video (misalnya, dQw4w9WgXcQ dari https://www.youtube.com/watch?v=dQw4w9WgXcQ).
-filename:: Untuk video lokal, ini adalah nama file video Anda (misalnya, video1.mp4). Pastikan file ini ada di assets/videos/.
-title: dan description:: Informasi yang akan ditampilkan di bawah setiap video.
-{% include video_gallery.html videos=page.videos %}: Baris ini memanggil file _includes/video_gallery.html dan meneruskan data videos yang telah Anda definisikan di front matter halaman (page.videos) ke dalamnya.
-```
-{% endraw %}
+
+* `videos:` : Ini adalah array tempat Anda mendefinisikan setiap video.
+* `type: youtube` atau `type: local`: Menentukan apakah video berasal dari YouTube atau file lokal.
+* `id:` : Untuk video YouTube, ini adalah ID unik dari URL video (misalnya, `dQw4w9WgXcQ` dari `https://www.youtube.com/watch?v=dQw4w9WgXcQ`).
+* `filename:`: Untuk video lokal, ini adalah nama file video Anda (misalnya, `video1.mp4`). Pastikan file ini ada di `assets/videos/`.
+* `title` dan `description:`: Informasi yang akan ditampilkan di bawah setiap video.
+{% raw %}`{% include video_gallery.html videos=page.videos %}`{% endraw %}: Baris ini memanggil file `_includes/video_gallery.html` dan meneruskan data videos yang telah Anda definisikan di front matter halaman (`page.videos`) ke dalamnya.
+
 
 Setelah Anda menambahkan kode ini dan memperbarui file Markdown Anda, Jekyll akan merender galeri video yang responsif di blog Anda. Anda dapat menyesuaikan CSS untuk mengubah tampilan dan nuansa galeri agar sesuai dengan desain blog Anda.
