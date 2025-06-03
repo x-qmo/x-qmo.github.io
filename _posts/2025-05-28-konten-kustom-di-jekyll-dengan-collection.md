@@ -9,13 +9,13 @@ author: Nama Anda
 image: /assets/images/collection-di-jekyll.jpg
 ---
 
-Memasang Collections di Jekyll adalah cara yang sangat ampuh untuk mengorganisir konten selain postingan blog (_posts) dan halaman (_pages). Collections memungkinkan Anda membuat jenis konten kustom sendiri, seperti portofolio, produk, testimoni, atau bahkan daftar tim.
+Memasang Collections di Jekyll adalah cara yang sangat ampuh untuk mengorganisir konten selain postingan blog (`_posts`) dan halaman (`_pages`). Collections memungkinkan Anda membuat jenis konten kustom sendiri, seperti portofolio, produk, testimoni, atau bahkan daftar tim.
 
 Berikut adalah panduan langkah demi langkah untuk memasang dan menggunakan Collections di Jekyll:
 
 1. **Pahami Konsep Collections**
 
-    Secara default, Jekyll hanya memperlakukan file Markdown di folder _posts sebagai postingan blog. Jika Anda memiliki konten lain yang terstruktur dan ingin dikelola oleh Jekyll, seperti:
+    Secara default, Jekyll hanya memperlakukan file Markdown di folder `_posts` sebagai postingan blog. Jika Anda memiliki konten lain yang terstruktur dan ingin dikelola oleh Jekyll, seperti:
 
     * Daftar anggota tim
     * Portofolio proyek
@@ -25,7 +25,7 @@ Berikut adalah panduan langkah demi langkah untuk memasang dan menggunakan Colle
     ...maka Collections adalah solusinya. Setiap "item" dalam Collection adalah file Markdown (atau format lain yang didukung) dengan front matter sendiri.
 2. **Konfigurasi Collections di _config.yml**
 
-    Langkah pertama adalah memberi tahu Jekyll tentang Collections baru yang ingin Anda buat. Buka file _config.yml Anda (di root direktori proyek Jekyll Anda) dan tambahkan bagian collections seperti ini:
+    Langkah pertama adalah memberi tahu Jekyll tentang Collections baru yang ingin Anda buat. Buka file `_config.yml` Anda (di root direktori proyek Jekyll Anda) dan tambahkan bagian `collections` seperti ini:
 
     {% raw %}
     ```
@@ -46,15 +46,15 @@ Berikut adalah panduan langkah demi langkah untuk memasang dan menggunakan Colle
 
     Penjelasan:
 
-    * team dan projects: Ini adalah nama Collections Anda. Anda bisa menggantinya sesuai kebutuhan. Nama folder untuk Collection ini (misalnya _team dan _projects) harus sesuai dengan nama yang Anda definisikan di _config.yml.
-    * output: true: Ini adalah pengaturan yang paling penting. Jika Anda ingin setiap item dalam Collection memiliki URL-nya sendiri (misalnya /team/john-doe/), Anda harus mengatur output: true. Jika output: false (default), item-item tersebut hanya akan tersedia untuk diulang dalam Liquid (misalnya di halaman daftar), tetapi tidak akan memiliki halaman terpisah yang dihasilkan.
-    * permalink: Mirip dengan permalink untuk _posts, Anda bisa menentukan struktur URL untuk item-item dalam Collection ini.
-        * :name: Menggunakan nama file (tanpa ekstensi) sebagai bagian dari URL.
-        * :path: Menggunakan seluruh jalur file (termasuk subfolder) sebagai bagian dari URL.
+    * `team dan projects:` Ini adalah nama Collections Anda. Anda bisa menggantinya sesuai kebutuhan. Nama folder untuk Collection ini (misalnya `_team` dan `_projects`) harus sesuai dengan nama yang Anda definisikan di `_config.yml`.
+    * `output: true`: Ini adalah pengaturan yang paling penting. Jika Anda ingin setiap item dalam Collection memiliki URL-nya sendiri (misalnya `/team/john-doe/`), Anda harus mengatur `output: true`. Jika `output: false` (default), item-item tersebut hanya akan tersedia untuk diulang dalam Liquid (misalnya di halaman daftar), tetapi tidak akan memiliki halaman terpisah yang dihasilkan.
+    * `permalink:` : Mirip dengan permalink untuk `_posts`, Anda bisa menentukan struktur URL untuk item-item dalam Collection ini.
+        * `:name`: Menggunakan nama file (tanpa ekstensi) sebagai bagian dari URL.
+        * `:path`: Menggunakan seluruh jalur file (termasuk subfolder) sebagai bagian dari URL.
 
 3. **Buat Folder untuk Collections**
 
-    Setelah Anda mendefinisikan Collections di _config.yml, buat folder-folder yang sesuai di root direktori proyek Jekyll Anda. Nama folder harus diawali dengan garis bawah (_) dan sesuai dengan nama Collection yang Anda definisikan.
+    Setelah Anda mendefinisikan Collections di `_config.yml`, buat folder-folder yang sesuai di root direktori proyek Jekyll Anda. Nama folder harus diawali dengan garis bawah (_) dan sesuai dengan nama Collection yang Anda definisikan.
 
     {% raw %}
     ```
@@ -77,7 +77,7 @@ Berikut adalah panduan langkah demi langkah untuk memasang dan menggunakan Colle
 
     Di dalam setiap folder Collection, buat file Markdown (atau format lain yang didukung Jekyll, seperti HTML) untuk setiap item. Setiap file harus memiliki front matter seperti postingan blog.
 
-    Contoh _team/john-doe.md:
+    Contoh `_team/john-doe.md`:
 
     {% raw %}
     ```
@@ -95,7 +95,7 @@ Berikut adalah panduan langkah demi langkah untuk memasang dan menggunakan Colle
     ```
     {% endraw %}
 
-    Contoh _projects/web-app-x.md:
+    Contoh `_projects/web-app-x.md`:
 
     {% raw %}
     ```
@@ -113,9 +113,9 @@ Berikut adalah panduan langkah demi langkah untuk memasang dan menggunakan Colle
 
 5. **Buat Layout Khusus untuk Item Collections (Opsional tapi Direkomendasikan)**
 
-    Jika Anda ingin setiap item Collection memiliki tampilan halamannya sendiri (karena Anda mengatur output: true), Anda perlu membuat layout khusus untuk mereka.
+    Jika Anda ingin setiap item Collection memiliki tampilan halamannya sendiri (karena Anda mengatur `output: true`), Anda perlu membuat layout khusus untuk mereka.
 
-    Contoh _layouts/team_member.html:
+    Contoh `_layouts/team_member.html`:
 
     {% raw %}
     ```
@@ -155,7 +155,7 @@ Berikut adalah panduan langkah demi langkah untuk memasang dan menggunakan Colle
 
     Anda akan sering ingin menampilkan daftar semua item dari sebuah Collection di satu halaman (misalnya halaman "Tim Kami" atau "Portofolio"). Anda bisa melakukannya di halaman Markdown atau HTML mana pun menggunakan Liquid.
 
-    Contoh team.md (di root direktori):
+    Contoh `team.md` (di root direktori):
 
     {% raw %}
     ```
@@ -187,12 +187,10 @@ Berikut adalah panduan langkah demi langkah untuk memasang dan menggunakan Colle
 
     Penjelasan :
 
-    {% raw %}
-    ```
-    {% for member in site.team %}: site.team akan memberi Anda akses ke semua item dalam Collection team. Mirip dengan site.posts.
-    member.url: Ini akan menghasilkan URL untuk item Collection individu jika output: true diatur.
-    ```
-    {% endraw %}
+
+    * {% raw %}`{% for member in site.team %}`{% endraw %}: `site.team` akan memberi Anda akses ke semua item dalam Collection team. Mirip dengan `site.posts`.
+    * `member.url`: Ini akan menghasilkan URL untuk item Collection individu jika `output: true` diatur.
+
 
 7. **Jalankan Jekyll**
 
@@ -206,7 +204,7 @@ Berikut adalah panduan langkah demi langkah untuk memasang dan menggunakan Colle
         ```
         {% endraw %}
 
-    2. Periksa URL: Kunjungi /team/, /projects/, /team/john-doe/, /projects/web-app-x/ (sesuai permalink yang Anda definisikan) di browser Anda untuk memastikan semuanya berfungsi.
+    2. Periksa URL: Kunjungi `/team/`, `/projects/`, `/team/john-doe/`, `/projects/web-app-x/` (sesuai permalink yang Anda definisikan) di browser Anda untuk memastikan semuanya berfungsi.
     3. Deploy: Setelah puas dengan hasilnya, deploy blog Jekyll Anda seperti biasa.
 
 Collections adalah fitur yang sangat fleksibel dan kuat di Jekyll, memungkinkan Anda untuk membangun situs web yang lebih kompleks dan terorganisir di luar sekadar blog.
