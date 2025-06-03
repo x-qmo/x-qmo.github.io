@@ -28,6 +28,9 @@ collections:
     produk:
         output: true
         permalink: /produk/:title/
+    landing_pages:
+        output: true
+        permalink: /landing-pages/:name/
 
 paginate: 5
 paginate_path: ./page:num/
