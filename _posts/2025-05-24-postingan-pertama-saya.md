@@ -34,7 +34,7 @@ jekyll new my-awesome-blog
 cd my-awesome-blog
 ```
 
-    Kita akan membersihkan struktur default untuk memulai dari nol. Hapus semua file dan folder kecuali _config.yml dan Gemfile.
+    Kita akan membersihkan struktur default untuk memulai dari nol. Hapus semua file dan folder kecuali `_config.yml` dan Gemfile.
 
 2. **Struktur File Dasar**
 
@@ -55,7 +55,7 @@ my-awesome-blog/
 ├── index.html
 ```
 
-3. **Konfigurasi Dasar (_config.yml)**
+3. **Konfigurasi Dasar (`_config.yml`)**
 
     Tambahkan konfigurasi dasar untuk blog Anda.
     {% raw %}
@@ -82,7 +82,7 @@ my-awesome-blog/
     ```
     {% endraw %}
 
-4. **Layout Utama** ***(_layouts/default.html)***
+4. **Layout Utama** ***(`_layouts/default.html`)***
 
     Ini adalah kerangka HTML utama untuk semua halaman blog Anda.
     {% raw %}
@@ -119,9 +119,9 @@ my-awesome-blog/
 
     ***Gambar Background Header***
 
-    Siapkan gambar dan letakkan di assets/images/header-bg.jpg.
+    Siapkan gambar dan letakkan di `assets/images/header-bg.jpg`.
 
-    File ***_includes/header.html***
+    File ***`_includes/header.html`***
     {% raw %}
     ```
     <header class="site-header" style="background-image: url('{{ site.header_background | relative_url }}');">
@@ -145,13 +145,13 @@ my-awesome-blog/
     ```
     {% endraw %}
 
-    Data Navigasi (_data/navigation.yml)
+    Data Navigasi (`_data/navigation.yml`)
 
-    Buat file ini di folder ***_data/.***
+    Buat file ini di folder ***`_data/`.***
 
 6. **Sidebar untuk Iklan**
 
-    File ***_includes/sidebar.html***
+    File ***`_includes/sidebar.html`***
     {% raw %}
     ```
     <aside class="sidebar">
@@ -172,11 +172,11 @@ my-awesome-blog/
     </aside>
     ```
     {% endraw %}
-    Siapkan gambar iklan Anda, misalnya ad-banner-1.jpg dan ad-banner-2.jpg, dan letakkan di ***assets/images/.***
+    Siapkan gambar iklan Anda, misalnya `ad-banner-1.jpg` dan `ad-banner-2.jpg`, dan letakkan di ***`assets/images/`.***
 
 7. **Footer Credit**
 
-    File ***_includes/footer.html***
+    File ***`_includes/footer.html`***
 
     {% raw %}
     ```
@@ -189,10 +189,10 @@ my-awesome-blog/
     ```
     {% endraw %}
 
-8. **Styling dengan SCSS** ***(_sass/ dan assets/css/main.scss)***
+8. **Styling dengan SCSS** ***(`_sass/ dan assets/css/main.scss`)***
 
-    Buat folder _sass/ dengan sub-folder base/, components/, dan layouts/.
-    _sass/base/_variables.scss
+    Buat folder `_sass/` dengan sub-folder `base/`, `components/`, dan `layouts/`.
+    `_sass/base/_variables.scss`
 
     {% raw %}
     ```
@@ -214,7 +214,7 @@ my-awesome-blog/
     ```
     {% endraw %}
 
-    ***_sass/base/_base.scss***
+    ***`_sass/base/_base.scss`***
 
     {% raw %}
     ```
@@ -265,7 +265,7 @@ my-awesome-blog/
     ```
     {% endraw %}
 
-    ***_sass/components/_header.scss***
+    ***`_sass/components/_header.scss`***
 
     {% raw %}
     ```
@@ -324,7 +324,7 @@ my-awesome-blog/
     ```
     {% endraw %}
 
-    ***_sass/components/_navigation.scss***
+    ***`_sass/components/_navigation.scss`***
 
     {% raw %}
     ```
@@ -419,7 +419,7 @@ my-awesome-blog/
     ```
     {% endraw %}
 
-    ***_sass/components/_sidebar.scss***
+    ***`_sass/components/_sidebar.scss`***
 
     {% raw %}
     ```
@@ -462,7 +462,7 @@ my-awesome-blog/
     ```
     {% endraw %}
 
-    ***_sass/components/_footer.scss***
+    ***`_sass/components/_footer.scss`***
 
     {% raw %}
     ```
@@ -495,7 +495,7 @@ my-awesome-blog/
     ```
     {% endraw %}
 
-    ***_sass/layouts/_default.scss***
+    ***`_sass/layouts/_default.scss`***
 
     {% raw %}
     ```
@@ -521,7 +521,7 @@ my-awesome-blog/
     ```
     {% endraw %}
 
-    ***_sass/layouts/_post.scss (Contoh untuk halaman postingan)***
+    ***`_sass/layouts/_post.scss` (Contoh untuk halaman postingan)***
 
     {% raw %}
     ```
@@ -562,7 +562,7 @@ my-awesome-blog/
     ```
     {% endraw %}
 
-    ***assets/css/main.scss (File utama SCSS)***
+    ***`assets/css/main.scss` (File utama SCSS)***
 
     {% raw %}
     ```
@@ -585,7 +585,7 @@ my-awesome-blog/
 
 9. **Konten Dummy**
 
-    Halaman Utama ***(index.html)***
+    Halaman Utama ***(`index.html`)***
 
     {% raw %}
     ```
@@ -611,7 +611,7 @@ my-awesome-blog/
     ```
     {% endraw %}
 
-    Contoh Postingan (_posts/2025-05-24-postingan-pertama.md)
+    Contoh Postingan (`_posts/2025-05-24-postingan-pertama.md`)
 
     {% raw %}
     ```
@@ -651,10 +651,10 @@ my-awesome-blog/
     ```
     {% endraw %}
 
-    Siapkan sample-image.jpg dan letakkan di assets/images/.
-    Contoh Halaman Statis (_pages/about.md)
+    Siapkan `sample-image.jpg` dan letakkan di `assets/images/`.
+    Contoh Halaman Statis (`_pages/about.md`)
 
-    Untuk mengaktifkan koleksi pages, Anda perlu menambahkan ini di _config.yml (sudah kita lakukan di bagian awal).
+    Untuk mengaktifkan koleksi pages, Anda perlu menambahkan ini di `_config.yml` (sudah kita lakukan di bagian awal).
 
     {% raw %}
     ```
@@ -675,7 +675,7 @@ my-awesome-blog/
 
 10. **Menguji Blog Anda**
 
-    1. Instal Dependensi: Pastikan semua plugin di Gemfile terinstal. Jika ada plugin baru (jekyll-seo-tag, jekyll-feed), Anda perlu menjalankannya lagi:
+    1. Instal Dependensi: Pastikan semua plugin di Gemfile terinstal. Jika ada plugin baru (`jekyll-seo-tag`, `jekyll-feed`), Anda perlu menjalankannya lagi:
 
         {% raw %}
         ```
@@ -690,7 +690,7 @@ my-awesome-blog/
         bundle exec jekyll serve --livereload
         ```
         {% endraw %}
-        Buka http://localhost:4000 di browser Anda.
+        Buka `http://localhost:4000` di browser Anda.
 
 Ini adalah kerangka dasar yang kuat. Anda bisa menyesuaikan warna, font, menambahkan animasi, atau fitur lainnya sesuai kreativitas Anda!
 

@@ -22,16 +22,16 @@ utterances adalah cara yang privacy-friendly dan modern untuk menambahkan koment
 ## Langkah 1: Instal Aplikasi utterances di Repo GitHub Anda
 
 1. Pastikan repositori GitHub blog Jekyll Anda bersifat publik.
-2. Kunjungi https://utteranc.es/.
-3. Klik "Install Utterances" (atau serupa) dan izinkan aplikasi untuk mengakses repositori blog Anda.
-4. Anda akan diarahkan kembali ke halaman utterances.es.
+2. Kunjungi `https://utteranc.es/`.
+3. Klik "`Install Utterances`" (atau serupa) dan izinkan aplikasi untuk mengakses repositori blog Anda.
+4. Anda akan diarahkan kembali ke halaman `utterances.es`.
 
 ## Langkah 2: Konfigurasi utterances
 
-Di halaman utterances.es:
+Di halaman `utterances.es`:
 
-1. **Repository**: Masukkan nama repositori GitHub Anda (contoh: namausergithub/nama-repo-blog).
-2. **Blog Post <-> Issue Mapping**: Pilih bagaimana postingan blog Anda akan dipetakan ke isu GitHub. Pilihan paling umum adalah "Pathname" atau "URL". "Pathname" biasanya lebih cocok.
+1. **Repository**: Masukkan nama repositori GitHub Anda (contoh: `namausergithub/nama-repo-blog`).
+2. **Blog Post <-> Issue Mapping**: Pilih bagaimana postingan blog Anda akan dipetakan ke isu GitHub. Pilihan paling umum adalah "`Pathname`" atau "`URL`". "`Pathname`" biasanya lebih cocok.
     * **Pathname**: Akan mencari isu dengan judul yang sama dengan path halaman relatif Anda.
     * **URL**: Akan mencari isu dengan judul yang sama dengan URL penuh halaman.
 3. **Theme**: Pilih tema tampilan yang Anda suka.
@@ -39,7 +39,7 @@ Di halaman utterances.es:
 
 ## Langkah 3: Buat Include untuk Komentar utterances
 
-Buat file baru di _includes/ bernama utterances_comments.html:
+Buat file baru di `_includes/` bernama `utterances_comments.html`:
 
 {% raw %}
 ```
@@ -49,11 +49,11 @@ Buat file baru di _includes/ bernama utterances_comments.html:
 </script>
 ```
 {% endraw %}
-Penting: Pastikan untuk mengganti repo, issue-term, dan theme dengan nilai yang Anda dapatkan dari konfigurasi di website utterances.es.
+Penting: Pastikan untuk mengganti `repo`, `issue-term`, dan `theme` dengan nilai yang Anda dapatkan dari konfigurasi di website `utterances.es`.
 
 ## Langkah 4: Tambahkan Komentar utterances ke Layout Postingan Anda
 
-Seperti halnya Disqus, Anda ingin kotak komentar muncul di setiap postingan blog. Buka file layout yang Anda gunakan untuk postingan blog (_layouts/post.html atau _layouts/default.html dengan kondisi page.layout == "post").
+Seperti halnya Disqus, Anda ingin kotak komentar muncul di setiap postingan blog. Buka file layout yang Anda gunakan untuk postingan blog (`_layouts/post.html` atau `_layouts/default.html` dengan kondisi `page.layout == "post"`).
 
 {% raw %}
 ```
