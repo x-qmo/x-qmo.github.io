@@ -1,7 +1,8 @@
 ---
-layout: temp-kerudung
-title: Kalis Kerudung Nyaman Hijab Praktis untuk Aktivitas Seharian
-description: Kalis Kerudung nyaman hijab praktis untuk aktivitas seharian! Anti ribet tetap stylish dan adem Sempurna untuk daily wear hingga acara spesial Yuk miliki Kalis sekarang!
+layout: landingku
+title: Contoh landing
+description: Ini adalah deskripsi singkat tentang penawaran luar biasa kami.
+og_image: /assets/images/default-thumbnail.jpg # Gambar untuk Open Graph
 ---
 
 <section class="hero">

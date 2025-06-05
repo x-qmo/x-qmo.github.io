@@ -1,0 +1,49 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "{{ page.product_name | escape }}",
+  "image": [
+    "{{ page.product_image_1 | absolute_url }}",
+    "{{ page.product_image_2 | absolute_url }}"
+    // Tambahkan URL gambar lain jika ada
+  ],
+  "description": "{{ page.product_description | escape }}",
+  "sku": "{{ page.product_sku | escape }}",
+  "mpn": "{{ page.product_mpn | escape }}",
+  "brand": {
+    "@type": "Brand",
+    "name": "{{ page.product_brand | escape }}"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "{{ page.product_rating_value | escape }}",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "{{ page.product_review_author | escape }}"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ page.product_aggregate_rating_value | escape }}",
+    "reviewCount": "{{ page.product_review_count | escape }}"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "{{ page.url | absolute_url }}",
+    "priceCurrency": "{{ page.product_price_currency | escape }}",
+    "price": "{{ page.product_price | escape }}",
+    "priceValidUntil": "{{ page.product_price_valid_until | escape }}",
+    "itemCondition": "https://schema.org/UsedCondition", // Atau NewCondition, RefurbishedCondition, dll.
+    "availability": "https://schema.org/InStock", // Atau OutOfStock, PreOrder, dll.
+    "seller": {
+      "@type": "Organization",
+      "name": "{{ site.title | escape }}"
+    }
+  }
+}
+</script>
