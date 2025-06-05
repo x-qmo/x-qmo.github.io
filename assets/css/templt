@@ -1,12 +1,75 @@
----
-layout: landingku
-title: Contoh landing
-description: Ini adalah deskripsi singkat tentang penawaran luar biasa kami.
-og_image: /assets/images/default-thumbnail.jpg # Gambar untuk Open Graph
----
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang di Toko Anda!</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<!-- Main Banner/Carousel Area -->
-<section class="main-banner-section container">
+    <div class="grid-container">
+
+        <!-- Top Header (Mirip Shopee) -->
+        <div class="top-header">
+            <div class="link-group">
+                <a href="#">Jual</a>
+                <a href="#">Bantuan</a>
+                <a href="#">Unduh Aplikasi</a>
+            </div>
+            <div class="link-group">
+                <a href="#">Daftar</a>
+                <a href="#">Login</a>
+            </div>
+        </div>
+
+        <!-- Main Header (Search Bar, Logo, Cart) -->
+        <header class="main-header">
+            <div class="main-header-content container">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1>Toko Anda</h1>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-bar-wrapper">
+                    <input type="text" placeholder="Cari di Toko Anda..." class="search-input">
+                    <button class="search-button">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Cart Icon -->
+                <div class="cart-icon-wrapper">
+                    <a href="#" class="cart-icon">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Kategori populer di bawah search bar -->
+            <div class="category-links-container container">
+                <a href="#" class="category-link">Elektronik</a>
+                <a href="#" class="category-link">Fashion Pria</a>
+                <a href="#" class="category-link">Fashion Wanita</a>
+                <a href="#" class="category-link">Perlengkapan Rumah</a>
+                <a href="#" class="category-link">Kesehatan & Kecantikan</a>
+                <a href="#" class="category-link">Olahraga</a>
+                <a href="#" class="category-link">Mainan & Hobi</a>
+                <a href="#" class="category-link">Komputer & Laptop</a>
+            </div>
+        </header>
+
+        <!-- Main Banner/Carousel Area -->
+        <section class="main-banner-section container">
             <div class="banner-grid">
                 <div class="main-banner placeholder-img">
                     Banner Promo Utama
@@ -27,7 +90,7 @@ og_image: /assets/images/default-thumbnail.jpg # Gambar untuk Open Graph
         </section>
 
         <!-- Quick Category Icons -->
-<section class="quick-category-section container">
+        <section class="quick-category-section container">
             <h2 class="section-title">Kategori Pilihan</h2>
             <div class="category-icons-grid">
                 <!-- Contoh ikon kategori -->
@@ -67,7 +130,7 @@ og_image: /assets/images/default-thumbnail.jpg # Gambar untuk Open Graph
         </section>
 
         <!-- Daily Discover / Product Grid -->
-<section class="product-section container">
+        <section class="product-section container">
             <h2 class="section-title">Produk Pilihan Hari Ini</h2>
             <div class="product-grid">
                 <!-- Contoh Kartu Produk -->
@@ -139,3 +202,20 @@ og_image: /assets/images/default-thumbnail.jpg # Gambar untuk Open Graph
                 <button class="view-more-button">Lihat Lainnya</button>
             </div>
         </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content container">
+                <p>&copy; 2025 Toko Anda. Hak Cipta Dilindungi.</p>
+                <div class="footer-links">
+                    <a href="#">Kebijakan Privasi</a>
+                    <a href="#">Syarat & Ketentuan</a>
+                    <a href="#">Hubungi Kami</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
