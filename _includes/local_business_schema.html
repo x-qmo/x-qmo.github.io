@@ -2,10 +2,10 @@
 {
   "@context": "http://schema.org",
   "@type": "LocalBusiness",
-  "name": "{{ site.title }}",
-  "image": "{{ site.url }}{{ site.logo }}",
-  "url": "{{ site.url }}",
-  "telephone": "{{ site.phone }}",
+  "name": "{{ page.title }}",
+  "image": "{{ page.url }}{{ page.logo }}",
+  "url": "{{ page.url }}",
+  "telephone": "{{ page.phone }}",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Jalan Contoh No. 123",
@@ -48,6 +48,6 @@
     "https://www.instagram.com/yourbusiness",
     "https://twitter.com/yourbusiness"
   ],
-  "description": "{{ site.description }}"
+  "description": "{{ page.description }}"
 }
 </script>
