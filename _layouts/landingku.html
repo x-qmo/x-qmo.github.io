@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title | default: site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description }}">
@@ -22,44 +22,88 @@
     <meta name="twitter:title" content="{{ page.title | default: site.title }}">
     <meta name="twitter:description" content="{{ page.description | default: site.description }}">
     <meta name="twitter:image" content="{{ page.og_image | default: site.baseurl | append: '/assets/images/default-og-image.jpg' }}">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-
-{% include local_business_schema.html %}
 </head>
-<body class="landing-page-body">
+<body class="bg-gray-100">
 
-    <header>
-        <div class="header-content container">
-            <a href="#" class="logo">Kalis Kerudung Nyaman Hijab Praktis</a>
-            <nav>
-                <ul>
-                    <li><a href="#produk">Produk</a></li>
-                    <li><a href="#keunggulan">Keunggulan</a></li>
-                    <li><a href="#testimonial">Testimonial</a></li>
-                    <li><a href="#beli-sekarang" class="button">Beli Sekarang</a></li>
-                </ul>
-            </nav>
+    <div class="grid-container mx-auto">
+
+        <!-- Top Header (Mirip Shopee) -->
+        <div class="bg-orange-500 text-white text-xs py-2 px-4 md:px-8 flex justify-between items-center">
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-gray-200">Jual</a>
+                <a href="#" class="hover:text-gray-200">Bantuan</a>
+                <a href="#" class="hover:text-gray-200">Unduh Aplikasi</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-gray-200">Daftar</a>
+                <a href="#" class="hover:text-gray-200">Login</a>
+            </div>
         </div>
-    </header>
 
-    <main class="landing-main">
+        <!-- Main Header (Search Bar, Logo, Cart) -->
+        <header class="bg-orange-500 p-4 shadow-shopee">
+            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+                <!-- Logo -->
+                <div class="flex-shrink-0 mb-4 md:mb-0">
+                    <h1 class="text-white text-3xl font-bold tracking-tight">Toko Anda</h1>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="flex-grow flex items-center bg-white rounded-md overflow-hidden max-w-2xl w-full md:mx-4 relative">
+                    <input type="text" placeholder="Cari di Toko Anda..." class="py-2 pl-4 pr-10 flex-grow outline-none text-gray-700 text-sm">
+                    <button class="bg-orange-500 text-white p-2.5 rounded-r-md absolute right-0 top-0 bottom-0 flex items-center justify-center">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Cart Icon -->
+                <div class="ml-0 md:ml-4 mt-4 md:mt-0">
+                    <a href="#" class="text-white text-2xl relative">
+                        <svg class="icon w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="absolute -top-1 -right-1 bg-white text-orange-500 rounded-full text-xs font-bold w-4 h-4 flex items-center justify-center">0</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Kategori populer di bawah search bar -->
+            <div class="container mx-auto mt-2 flex flex-wrap justify-center md:justify-start">
+                <a href="#" class="category-link">Elektronik</a>
+                <a href="#" class="category-link">Fashion Pria</a>
+                <a href="#" class="category-link">Fashion Wanita</a>
+                <a href="#" class="category-link">Perlengkapan Rumah</a>
+                <a href="#" class="category-link">Kesehatan & Kecantikan</a>
+                <a href="#" class="category-link">Olahraga</a>
+                <a href="#" class="category-link">Mainan & Hobi</a>
+                <a href="#" class="category-link">Komputer & Laptop</a>
+            </div>
+        </header>
+
+<main class="landing-main">
         {{ content }}
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Kalis Kerudung Nyaman Hijab Praktis. Hak Cipta Dilindungi.</p>
-            <div class="social-links">
-                <!-- Anda bisa menambahkan ikon media sosial di sini, contoh: -->
-                <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
-                <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
-                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
-                <a href="#">Instagram</a> | <a href="#">Facebook</a>
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white text-center py-6 mt-8">
+            <div class="container mx-auto text-sm">
+                <p>&copy; 2025 Toko Anda. Hak Cipta Dilindungi.</p>
+                <div class="flex justify-center space-x-4 mt-2">
+                    <a href="#" class="hover:text-gray-300">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-gray-300">Syarat & Ketentuan</a>
+                    <a href="#" class="hover:text-gray-300">Hubungi Kami</a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-
+    </div>
 
 </body>
 </html>
