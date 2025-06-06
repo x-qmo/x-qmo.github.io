@@ -1,0 +1,22 @@
+# _data/yayasan.yml
+
+# Informasi Umum Yayasan
+nama_yayasan: IRM
+slogan_hero: Nyala Asa, Bumi Penuh Cinta
+tagline_hero: Mengulurkan tangan, menebar kebaikan, dan mewujudkan masa depan yang lebih cerah bagi mereka yang membutuhkan.
+deskripsi_singkat: Yayasan Peduli Sesama adalah lembaga sosial kemanusiaan nirlaba yang berdedikasi untuk meringankan beban masyarakat yang kurang beruntung di seluruh Indonesia.
+
+# Kontak
+alamat: Jl. PHH. Mustofa No. 71 B, Sukapada, Cibeunying Kidul, Kota Bandung, Jawa Barat 40291
+telepon: +6281234567890
+email: info@pedulisesama.org
+link_google_maps: https://maps.app.goo.gl/contoh_link_maps # Ganti dengan link Google Maps asli yayasan Anda
+
+# Tautan Sosial Media (biarkan kosong jika tidak ada)
+facebook_url: https://facebook.com/yayasanpedulisesama
+instagram_url: https://instagram.com/yayasanpedulisesama
+twitter_url: https://twitter.com/yayasanpedulisesama
+youtube_url: https://youtube.com/yayasanpedulisesama
+
+# Tautan Donasi (PENTING: Ganti dengan URL asli platform donasi Anda)
+link_donasi: https://link-ke-platform-donasi-anda.com/donasi-pedulisesama

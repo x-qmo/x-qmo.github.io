@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.data.yayasan-irm.nama_yayasan }}</title>
+    <meta name="description" content="{{ page.description | default: site.data.yayasan-irm.deskripsi_singkat }}">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
+
+    <!-- Google Fonts: Poppins (untuk judul) & Open Sans (untuk teks body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Kustom untuk Landing Page -->
+    <link rel="stylesheet" href="{{ '/assets/css/lanpage-irm.css' | relative_url }}">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#beranda" class="logo">{{ site.data.yayasan-irm.nama_yayasan }}</a>
+            <div class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list" id="nav-menu">
+                    <li><a href="#tentang-kami" class="nav-link">Tentang Kami</a></li>
+                    <li><a href="#program" class="nav-link">Program Kami</a></li>
+                    <li><a href="#galeri" class="nav-link">Galeri</a></li>
+                    <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                    <li><a href="{{ site.data.yayasan-irm.link_donasi }}" target="_blank" class="donate-button">Donasi Sekarang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <main class="landing-main">
+        {{ content }}
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-column about-footer">
+                <h4>Tentang Kami</h4>
+                <p>{{ site.data.yayasan-irm.nama_yayasan }} adalah lembaga sosial kemanusiaan yang berdedikasi untuk menciptakan perubahan positif di masyarakat.</p>
+            </div>
+            <div class="footer-column quick-links">
+                <h4>Tautan Cepat</h4>
+                <a href="#tentang-kami">Tentang Kami</a>
+                <a href="#program">Program Kami</a>
+                <a href="#galeri">Galeri</a>
+                <a href="#kontak">Kontak</a>
+                <a href="{{ site.data.yayasan-irm.link_donasi }}" target="_blank">Donasi</a>
+            </div>
+            <div class="footer-column contact-info-footer">
+                <h4>Kontak Kami</h4>
+                <p>Alamat: {{ site.data.yayasan-irm.alamat }}</p>
+                <p>Telepon: <a href="tel:{{ site.data.yayasan-irm.telepon }}">{{ site.data.yayasan-irm.telepon }}</a></p>
+                <p>Email: <a href="mailto:{{ site.data.yayasan-irm.email }}">{{ site.data.yayasan-irm.email }}</a></p>
+                <div class="social-icons">
+                    {% if site.data.yayasan-irm.facebook_url %}<a href="{{ site.data.yayasan-irm.facebook_url }}" target="_blank" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.812c-3.268 0-4.188 1.902-4.188 4.479v2.521z"/></svg></a>{% endif %}
+                    {% if site.data.yayasan-irm.instagram_url %}<a href="{{ site.data.yayasan-irm.instagram_url }}" target="_blank" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.06 1.314.048 2.057.24 2.594.467.54.23 1.05.53 1.517.994.469.465.775.98 1.002 1.516.227.536.419 1.28.467 2.595.048 1.267.06 1.647.06 4.851s-.012 3.584-.06 4.85c-.048 1.314-.24 2.057-.467 2.594-.23.54-.53 1.05-.994 1.517-.465.469-.98.775-1.516 1.002-.536.227-1.28.419-2.595.467-1.267.048-1.647.06-4.851.06s-3.584-.012-4.85-.06c-1.314-.048-2.057-.24-2.594-.467-.54-.23-1.05-.53-1.517-.994-.469-.465-.775-.98-1.002-1.516-.227-.536-.419-1.28-.467-2.595-.048-1.267-.06-1.647-.06-4.851s.012-3.584.06-4.85c.048-1.314.24-2.057.467-2.594.23-.54.53-1.05.994-1.517.465-.469.98-.775 1.516-1.002.536-.227 1.28-.419 2.595-.467 1.267-.048 1.647-.06 4.851-.06zm0-2.163c-3.259 0-3.667.014-4.947.063-1.33.049-2.228.271-2.907.545-.68.275-1.293.757-1.854 1.318-.56.56-.968 1.173-1.243 1.854-.274.68-.496 1.577-.545 2.907-.049 1.28-.063 1.688-.063 4.947s.014 3.667.063 4.947c.049 1.33.271 2.228.545 2.907.275.68.757 1.293 1.318 1.854.56.56.968.968 1.243 1.243.68.274 1.577.496 2.907.545 1.28.049 1.688.063 4.947.063s3.667-.014 4.947-.063c1.33-.049 2.228-.271 2.907-.545.68-.275 1.293-.757 1.854-1.318.56-.56.968-.968 1.243-1.243.274-.68.496-1.577.545-2.907.049-1.28.063-1.688.063-4.947s-.014-3.667-.063-4.947c-.049-1.33-.271-2.228-.545-2.907-.275-.68-.757-1.293-1.318-1.854-.56-.56-.968-.968-1.243-1.243-.68-.274-1.577-.496-2.907-.545-1.28-.049-1.688-.063-4.947-.063zm0 5.485c-2.761 0-5 2.239-5 5s2.239 5 5 5 5-2.239 5-5-2.239-5-5-5zm0 8.2a3.204 3.204 0 00-3.204-3.204c-1.769 0-3.204 1.435-3.204 3.204s1.435 3.204 3.204 3.204c1.769 0 3.204-1.435 3.204-3.204zm5.324-8.791a1.25 1.25 0 01-1.25-1.25c0-.69.56-1.25 1.25-1.25s1.25.56 1.25 1.25c0 .69-.56 1.25-1.25 1.25z"/></svg></a>{% endif %}
+                    {% if site.data.yayasan-irm.twitter_url %}<a href="{{ site.data.yayasan-irm.twitter_url }}" target="_blank" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.594 0-6.494 2.906-6.494 6.493 0 .507.056 1.002.167 1.474-5.419-.272-10.222-2.855-13.435-6.785-.566.975-.898 2.1-.898 3.31 0 2.259 1.157 4.258 2.915 5.424-.852-.026-1.656-.26-2.36-.645-.005.02-.005.04-.005.062 0 3.167 2.262 5.813 5.263 6.425-.548.149-1.125.228-1.722.228-.424 0-.834-.041-1.233-.117.844 2.617 3.273 4.512 6.136 4.567-2.256 1.77-5.109 2.827-8.232 2.827-1.109 0-2.199-.066-3.26-.193 2.923 1.865 6.36 2.943 10.066 2.943 12.074 0 18.629-10.027 18.629-18.627 0-.474-.012-.947-.035-1.41z"/></svg></a>{% endif %}
+                    {% if site.data.yayasan-irm.youtube_url %}<a href="{{ site.data.yayasan-irm.youtube_url }}" target="_blank" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.234 0-2.388.163-3.031 1.004-3.136 3.327-.105 2.322-.105 7.747 0 10.071.105 2.322.748 3.164 3.136 3.326 3.603.246 11.631.245 15.234 0 2.388-.162 3.031-1.004 3.136-3.326.105-2.324.105-7.749 0-10.071-.105-2.323-.748-3.165-3.136-3.327zm-1.066 11.503l-7.469 4.331-7.469-4.331v-8.662l7.469-4.331 7.469 4.331v8.662z"/></svg></a>{% endif %}
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; {{ 'now' | date: "%Y" }} {{ site.data.yayasan-irm.nama_yayasan }}. Semua Hak Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk interaktivitas -->
+    <script src="{{ '/assets/js/yayasan-irm.js' | relative_url }}"></script>
+</body>
+</html>
