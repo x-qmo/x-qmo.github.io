@@ -20,13 +20,13 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
         </p>
         <div class="about-content">
             <div class="about-image">
-                <img src="{{ '/assets/images/about-us-yayasan.jpg' | relative_url }}" alt="Tim Yayasan Beraksi">
+                <img src="{{ '/assets/images/yayasan-irm-background.jpg' | relative_url }}" alt="Tim Yayasan Beraksi">
             </div>
             <div class="about-text">
                 <h3>Visi Kami</h3>
                 <p>Mewujudkan masyarakat yang berdaya, mandiri, dan berkeadilan sosial, dengan menjunjung tinggi nilai-nilai kemanusiaan dan kepedulian terhadap sesama.</p>
                 <h3>Misi Kami</h3>
-                <ul>
+                <ul class="ulmisi">
                     <li>Menyelenggarakan program-program sosial yang berdampak positif dan berkelanjutan.</li>
                     <li>Menggalang dana dan sumber daya secara transparan dan akuntabel.</li>
                     <li>Membangun kemitraan strategis dengan berbagai pihak untuk memperluas jangkauan kebaikan.</li>

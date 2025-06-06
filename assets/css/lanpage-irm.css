@@ -4,7 +4,9 @@
       margin: 0;
       padding: 0;
 }
-
+.ulmisi {
+  list-style-position: inside;
+}
         body {
             font-family: 'Open Sans', sans-serif;
             color: #333;
