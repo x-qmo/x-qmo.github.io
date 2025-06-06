@@ -2,6 +2,7 @@
 layout: kosong
 title: Berkah Sawargi Babakan
 description: Yuk coba Nasi Goreng & Seblak Pedas Berkah Sawargi! Pedasnya nampol, bikin nagih! Rasakan sensasi gurihnya, dijamin ketagihan. Buruan order sekarang!
+og_image: /assets/images/default-thumbnail.jpg # Gambar untuk Open Graph
 ---
 
 <section id="hero" class="hero-section">
