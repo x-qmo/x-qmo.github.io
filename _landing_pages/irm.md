@@ -24,12 +24,13 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
             </div>
             <div class="about-text">
                 <h3>Visi Kami</h3>
-                <p>Menjadi yayasan terdepan yang menginspirasi kebaikan dan mampu menciptakan masyarakat yang berdaya, mandiri, dan sejahtera.</p>
+                <p>Mewujudkan masyarakat yang berdaya, mandiri, dan berkeadilan sosial, dengan menjunjung tinggi nilai-nilai kemanusiaan dan kepedulian terhadap sesama.</p>
                 <h3>Misi Kami</h3>
                 <ul>
                     <li>Menyelenggarakan program-program sosial yang berdampak positif dan berkelanjutan.</li>
                     <li>Menggalang dana dan sumber daya secara transparan dan akuntabel.</li>
                     <li>Membangun kemitraan strategis dengan berbagai pihak untuk memperluas jangkauan kebaikan.</li>
+                    <li>Menyalurkan bantuan kemanusiaan secara cepat dan tepat kepada korban bencana alam atau krisis lainnya, serta berpartisipasi aktif dalam upaya pemulihan pascabencana.</li>
                     <li>Meningkatkan kesadaran masyarakat akan pentingnya kepedulian sosial dan kemanusiaan.</li>
                 </ul>
             </div>
