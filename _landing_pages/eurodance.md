@@ -4,10 +4,160 @@ title: eurodance
 description: Dapatkan paket liburan hemat ke Bali dengan diskon besar!
 ---
 
-# Liburan Impian Anda Dimulai di Sini!
+<section id="hero-video" class="hero-section">
+        <div class="container">
+            <h1 class="text-gradient-gold">
+                Top Youtube
+            </h1>
+            <p>
+                Saksikan konten-konten terbaik yang kami sajikan khusus untuk Anda.
+            </p>
+            <div class="hero-video-card card-shadow">
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/nIdP7QYM_gs"
+                        title="Video Unggulan"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="hero-video-card-content">
+                    <h3>We Don't Need To Fight</h3>
+                    <p>
+                        Deskripsi singkat tentang video unggulan ini. Jelaskan mengapa video ini menarik dan apa yang akan dipelajari penonton.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=nIdP7QYM_gs" target="_blank" class="btn-primary">
+                        Tonton Video Lengkap
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute inset-0 bg-pattern opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23FFD700\' fill-opacity=\'.05\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM14 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    </section>
 
-<p>Jelajahi keindahan Bali tanpa menguras kantong Anda.</p>
+<main id="latest-videos" class="latest-videos-section">
+        <div class="container">
+            <h2>Video Terbaru Kami</h2>
+            <div class="video-grid">
 
+<div class="video-card card-hover-effect">
+                    <h3>Tutorial Edit Video Profesional</h3>
+                    <div class="video-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/video_id_1"
+                            title="Tutorial Edit Video Profesional"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p>
+                        Pelajari teknik editing video tingkat lanjut untuk hasil yang memukau.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=video_id_1" target="_blank" class="watch-link">
+                        Tonton di YouTube →
+                    </a>
+                </div>
 
+<div class="video-card card-hover-effect">
+                    <h3>Ulasan Gadget Mewah 2025</h3>
+                    <div class="video-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/video_id_2"
+                            title="Ulasan Gadget Mewah 2025"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p>
+                        Lihat gadget-gadget paling eksklusif dan inovatif yang wajib Anda miliki.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=video_id_2" target="_blank" class="watch-link">
+                        Tonton di YouTube →
+                    </a>
+                </div>
 
-<p>Segera pesan sebelum kehabisan!</p>
+<div class="video-card card-hover-effect">
+                    <h3>Inspirasi Desain Interior Modern</h3>
+                    <div class="video-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/video_id_3"
+                            title="Inspirasi Desain Interior Modern"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p>
+                        Dapatkan ide-ide segar untuk mengubah rumah Anda menjadi hunian impian.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=video_id_3" target="_blank" class="watch-link">
+                        Tonton di YouTube →
+                    </a>
+                </div>
+
+<div class="video-card card-hover-effect">
+                    <h3>Rahasia Sukses Bisnis Online</h3>
+                    <div class="video-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/video_id_4"
+                            title="Rahasia Sukses Bisnis Online"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p>
+                        Temukan strategi ampuh untuk mengembangkan bisnis online Anda dari nol.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=video_id_4" target="_blank" class="watch-link">
+                        Tonton di YouTube →
+                    </a>
+                </div>
+
+<div class="video-card card-hover-effect">
+                    <h3>Panduan Investasi Emas Pemula</h3>
+                    <div class="video-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/video_id_5"
+                            title="Panduan Investasi Emas Pemula"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p>
+                        Pahami dasar-dasar investasi emas dan mulai bangun portofolio Anda.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=video_id_5" target="_blank" class="watch-link">
+                        Tonton di YouTube →
+                    </a>
+                </div>
+
+<div class="video-card card-hover-effect">
+                    <h3>Kisah Inspiratif Pengusaha Muda</h3>
+                    <div class="video-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/video_id_6"
+                            title="Kisah Inspiratif Pengusaha Muda"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p>
+                        Dengarkan perjalanan sukses pengusaha muda yang penuh tantangan dan inspirasi.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=video_id_6" target="_blank" class="watch-link">
+                        Tonton di YouTube →
+                    </a>
+                </div>
+
+</div>
+            <a href="https://www.youtube.com/channel/YOUR_CHANNEL_ID" target="_blank" class="btn-primary mt-12">
+                Kunjungi Channel YouTube Kami
+            </a>
+        </div>
+    </main>

@@ -28,7 +28,19 @@
             text-decoration: none;
             color: var(--primary-color);
         }
+.linkbtn:link, a:visited {
+  background-color: #00ce3d;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
 
+.linkbtn:hover, a:active {
+  background-color: red;
+}
         button {
             padding: 12px 25px;
             border: none;

@@ -122,6 +122,6 @@ og_image: /assets/images/default-thumbnail.jpg # Gambar untuk Open Graph
         <div class="container">
             <h2>Jelajahi Koleksi Lengkap Kami Sekarang!</h2>
             <p>Jangan lewatkan penawaran spesial dan temukan kerudung impian Anda hari ini.</p>
-            <button onclick="window.location.href='mailto:info@namamerek.com'">Hubungi Kami</button>
+            <a class="linkbtn" href="https://shopee.co.id/melinur1705" target="_blank">This is a link</a>
         </div>
     </section>
