@@ -53,10 +53,10 @@ og_image: /assets/images/default-thumbnail.jpg # Gambar untuk Open Graph
             <h2>Koleksi Kerudung Terbaru</h2>
             <div class="product-grid">
                 <div class="product-item">
-                    <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1749066599/kerudung-kalis-1_baxo7k.jpg" alt="Kerudung Satin Premium">
+                    <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1749066599/kerudung-kalis-1_baxo7k.jpg" alt="Kerudung Plain Square Segi Empat">
                     <div class="product-item-info">
-                        <h3>Kerudung Satin Premium</h3>
-                        <p>Kilau mewah dengan tekstur lembut, cocok untuk tampilan formal.</p>
+                        <h3>Kerudung Plain Square Segi Empat</h3>
+                        <p>Hijab Plain Square: Simpel, elegan, dan nyaman sepanjang hari. Sempurna untuk gaya kasual atau formalmu!</p>
                         <span class="price">Rp 85.000</span>
                     </div>
                 </div>
@@ -64,31 +64,31 @@ og_image: /assets/images/default-thumbnail.jpg # Gambar untuk Open Graph
                     <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1749065020/pashmina-ceruty_n5gdfz.jpg" alt="Kerudung Pashmina Ceruty">
                     <div class="product-item-info">
                         <h3>Kerudung Pashmina Ceruty</h3>
-                        <p>Bahan adem dan mudah dibentuk, nyaman untuk sehari-hari.</p>
+                        <p>Pashmina Ceruty: Lembut, jatuh, dan flowy! Ciptakan tampilan anggunmu dengan mudah. Elegan setiap saat!</p>
                         <span class="price">Rp 65.000</span>
                     </div>
                 </div>
                 <div class="product-item">
-                    <img src="https://placehold.co/300x250/c0392b/ffffff?text=Pashmina+Crinkle" alt="Pashmina Crinkle Airflow">
+                    <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1749185294/pashmina-airflow_aj19nw.jpg" alt="Pashmina Airflow">
                     <div class="product-item-info">
-                        <h3>Pashmina Crinkle Airflow</h3>
-                        <p>Desain modern dengan tekstur unik, ringan dan breathable.</p>
+                        <h3>Pashmina Airflow</h3>
+                        <p>Pashmina Airflow: Adem, ringan, dan anti-gerah! Tampil menawan tanpa khawatir panas. Nyaman seharian!</p>
                         <span class="price">Rp 75.000</span>
                     </div>
                 </div>
                 <div class="product-item">
-                    <img src="https://placehold.co/300x250/27ae60/ffffff?text=Kerudung+Instan" alt="Kerudung Instan Bergo">
+                    <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1749185677/plain-square_dzv56n.jpg" alt="Kerudung Plain Square">
                     <div class="product-item-info">
-                        <h3>Kerudung Instan Bergo</h3>
-                        <p>Praktis dan siap pakai, ideal untuk gaya hidup aktif.</p>
+                        <h3>Kerudung Plain Square</h3>
+                        <p>Plain Square: Simpel, serbaguna, dan mudah ditata! Cocok untuk gaya sehari-hari atau acara spesial. Wajib punya!</p>
                         <span class="price">Rp 50.000</span>
                     </div>
                 </div>
                 <div class="product-item">
-                    <img src="https://placehold.co/300x250/f39c12/ffffff?text=Kerudung+Syari" alt="Kerudung Syar'i Jumbo">
+                    <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1749186145/paris-voal-premium_pe9ncw.jpg" alt="Kerudung Paris Voal Premium">
                     <div class="product-item-info">
-                        <h3>Kerudung Syar'i Jumbo</h3>
-                        <p>Desain anggun dengan ukuran lebar, menutup aurat sempurna.</p>
+                        <h3>Kerudung Paris Voal Premium</h3>
+                        <p>Paris Voal Premium: Ringan, tegak paripurna, dan anti-letoy! Tampil anggun & percaya diri setiap hari. Mewah!</p>
                         <span class="price">Rp 95.000</span>
                     </div>
                 </div>
@@ -107,13 +107,13 @@ og_image: /assets/images/default-thumbnail.jpg # Gambar untuk Open Graph
 
 <section id="about" class="about">
         <div class="container about-content">
-            <h2>Tentang [Nama Merek Anda]</h2>
+            <h2>Tentang Kalis Kerudung Nyaman Hijab Praktis</h2>
             <div class="about-text">
-                <p>Kami percaya bahwa setiap muslimah berhak tampil percaya diri dan menawan. Dengan dedikasi terhadap kualitas dan tren mode, kami menghadirkan koleksi kerudung yang dirancang untuk memancarkan keanggunan dan kenyamanan.</p>
-                <p>Setiap helai kerudung kami adalah wujud dari komitmen kami untuk memberikan produk terbaik bagi Anda.</p>
+                <p>Kalis Kerudung hadir untuk menemani aktivitasmu seharian. Dibuat dari bahan ringan dan adem, anti-gerah dan anti-ribet. Desainnya yang praktis memudahkanmu menata hijab dalam hitungan detik. Tampil stylish dan percaya diri tanpa kompromi. </p>
+                <p>Kalis Kerudung: hijab nyaman yang bikin kamu makin nyaman.</p>
             </div>
             <!-- Placeholder Image: Anda bisa menggantinya dengan gambar asli produk kerudung atau model -->
-            <img src="https://placehold.co/500x300/5a2e6f/f8f0fc?text=Fashion+Muslim" alt="Fashion Muslim" class="about-image">
+            <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1749187269/kalis-logo_mfvmwz.jpg" alt="kalis fashion" class="about-image">
         </div>
     </section>
 

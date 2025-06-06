@@ -145,14 +145,14 @@
         }
 
         .hero h1 {
-            font-size: 3.2rem;
+            font-size: 2.5rem;
             margin-bottom: 25px;
             line-height: 1.2;
             color: var(--dark-bg);
         }
 
         .hero p {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             margin-bottom: 40px;
             color: #555;
         }
@@ -461,7 +461,7 @@
             }
 
             .features h2, .about h2, .cta h2, .product-collection h2 {
-                font-size: 2rem;
+                font-size: 1.3rem;
             }
 
             .product-item {
@@ -481,7 +481,7 @@
             }
 
             .hero h1 {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
             }
 
             .cta p {
