@@ -80,83 +80,83 @@ description: Dapatkan paket liburan hemat ke Bali dengan diskon besar!
                 </div>
 
 <div class="video-card card-hover-effect">
-                    <h3>Inspirasi Desain Interior Modern</h3>
+                    <h3>We Are All The Same</h3>
                     <div class="video-container">
                         <iframe
-                            src="https://www.youtube.com/embed/video_id_3"
-                            title="Inspirasi Desain Interior Modern"
+                            src="https://www.youtube.com/embed/IvaklJo3xBk"
+                            title="We Are All The Same"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
                     </div>
                     <p>
-                        Dapatkan ide-ide segar untuk mengubah rumah Anda menjadi hunian impian.
+                        Best Video AI YouTube Search We Are All The Same
                     </p>
-                    <a href="https://www.youtube.com/watch?v=video_id_3" target="_blank" class="watch-link">
+                    <a href="https://www.youtube.com/watch?v=IvaklJo3xBk" target="_blank" class="watch-link">
                         Tonton di YouTube →
                     </a>
                 </div>
 
 <div class="video-card card-hover-effect">
-                    <h3>Rahasia Sukses Bisnis Online</h3>
+                    <h3>One World One Love One Dance</h3>
                     <div class="video-container">
                         <iframe
-                            src="https://www.youtube.com/embed/video_id_4"
-                            title="Rahasia Sukses Bisnis Online"
+                            src="https://www.youtube.com/embed/MYuZiAnoFdk"
+                            title="One World One Love One Dance"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
                     </div>
                     <p>
-                        Temukan strategi ampuh untuk mengembangkan bisnis online Anda dari nol.
+                        Video AI YouTube ne World One Love One Dance
                     </p>
-                    <a href="https://www.youtube.com/watch?v=video_id_4" target="_blank" class="watch-link">
+                    <a href="https://www.youtube.com/watch?v=MYuZiAnoFdk" target="_blank" class="watch-link">
                         Tonton di YouTube →
                     </a>
                 </div>
 
 <div class="video-card card-hover-effect">
-                    <h3>Panduan Investasi Emas Pemula</h3>
+                    <h3>We Rise Above</h3>
                     <div class="video-container">
                         <iframe
-                            src="https://www.youtube.com/embed/video_id_5"
-                            title="Panduan Investasi Emas Pemula"
+                            src="https://www.youtube.com/embed/wOC55ixISpA"
+                            title="We Rise Above"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
                     </div>
                     <p>
-                        Pahami dasar-dasar investasi emas dan mulai bangun portofolio Anda.
+                        Top YouTube Search We Rise Above
                     </p>
-                    <a href="https://www.youtube.com/watch?v=video_id_5" target="_blank" class="watch-link">
+                    <a href="https://www.youtube.com/watch?v=wOC55ixISpA" target="_blank" class="watch-link">
                         Tonton di YouTube →
                     </a>
                 </div>
 
 <div class="video-card card-hover-effect">
-                    <h3>Kisah Inspiratif Pengusaha Muda</h3>
+                    <h3>Stop The Violence</h3>
                     <div class="video-container">
                         <iframe
-                            src="https://www.youtube.com/embed/video_id_6"
-                            title="Kisah Inspiratif Pengusaha Muda"
+                            src="https://www.youtube.com/embed/xGMm3QTTy3s"
+                            title="Stop The Violence"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
                     </div>
                     <p>
-                        Dengarkan perjalanan sukses pengusaha muda yang penuh tantangan dan inspirasi.
+                        Trend Youtube Search Stop The Violence
                     </p>
-                    <a href="https://www.youtube.com/watch?v=video_id_6" target="_blank" class="watch-link">
+                    <a href="https://www.youtube.com/watch?v=xGMm3QTTy3s" target="_blank" class="watch-link">
                         Tonton di YouTube →
                     </a>
                 </div>
 
 </div>
-            <a href="https://www.youtube.com/channel/YOUR_CHANNEL_ID" target="_blank" class="btn-primary mt-12">
+            <a href="https://youtube.com/@eurodanceevolution?si=xkHJxAK5vUZI2ElS" target="_blank" class="btn-primary mt-12">
                 Kunjungi Channel YouTube Kami
             </a>
         </div>
