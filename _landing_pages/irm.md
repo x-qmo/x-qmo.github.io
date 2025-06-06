@@ -7,7 +7,7 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
 <section class="hero-section" id="beranda">
     <div class="container">
         <h1 class="hero-title">Insan Robithotul Mukhlasin</h1>
-        <p class="hero-subtitle">Menyalakan asa lewat pendidikan, kesehatan, dan pemberdayaan, wujudkan bumi penuh cinta bagi sesama.</p>
+        <p class="hero-subtitle">yayasan ini hadir sebagai jembatan kebaikan, menghubungkan uluran tangan para dermawan dengan kebutuhan mendesak di lapangan</p>
         <a href="#donasi" class="donate-button">Berikan Donasi Anda</a>
     </div>
 </section>
@@ -16,7 +16,7 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
     <div class="container">
         <h2 class="section-title">Tentang Kami</h2>
         <p class="section-description">
-            {{ site.data.yayasan-irm.nama_yayasan | default: 'Nama Yayasan Anda' }} adalah sebuah lembaga sosial kemanusiaan nirlaba yang didirikan pada tahun 2024 dengan misi untuk meringankan beban masyarakat yang kurang beruntung. Kami bergerak di berbagai bidang, mulai dari pendidikan, kesehatan, lingkungan, hingga pemberdayaan ekonomi masyarakat.
+            {{ site.data.yayasan-irm.nama_yayasan | default: 'Nama Yayasan Anda' }} adalah sebuah lembaga sosial kemanusiaan nirlaba yang didirikan pada tahun 2024 dengan misi meng-implementasikan nilai-nilai keagamaan terhadap sesama manusia.
         </p>
         <div class="about-content">
             <div class="about-image">
