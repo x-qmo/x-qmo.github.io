@@ -4,44 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berkah  Sawargi - Nasi Goreng dan Seblak Pedasnya Bikin Nagih!</title>
+    <title>{{ page.title | default: site.title }}</title>
     <meta name="description" content="Cicipi Nasi Goreng & Seblak Berkah Sawargi: pedas gurih, sensasi tak terlupakan! Nikmati ledakan rasa di setiap suapan. Wajib coba! ">
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #fef3f2; /* Light red background */
-        }
+    <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/landing-pageberkahsawargi.css' | relative_url }}">
 
-.container.mnberkah.mx-auto.px-4.flex.justify-between.items-center {
-  flex-direction: column;
-}
-.text-gray-700.hover\:text-red-500.font-medium.rounded-lg.p-2 {
-  padding: 0px;
-}
+    <meta property="og:title" content="{{ page.title | default: site.title }}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:image" content="{{ page.og_image | default: site.baseurl | append: '/assets/images/default-og-image.jpg' }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="website">
 
-        .text-gradient-red-orange {
-            background-image: linear-gradient(to right, #ef4444, #f97316);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .btn-primary {
-            background-image: linear-gradient(to right, #ef4444, #f97316);
-            transition: all 0.3s ease;
-        }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
-        }
-        .card-shadow {
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-        }
-        @media (min-width: 768px) {
-
-        }
-    </style>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+    <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+    <meta name="twitter:image" content="{{ page.og_image | default: site.baseurl | append: '/assets/images/default-og-image.jpg' }}">
 
     <script type="application/ld+json">
     {
@@ -234,139 +213,39 @@
 </head>
 <body class="antialiased">
 
-    <header class="bg-white shadow-sm py-4">
-        <div class="container mnberkah mx-auto px-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-gradient-red-orange rounded-lg p-2">Berkah Sawargi</a>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="site-title">Berkah Sawargi</a>
             <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#hero" class="text-gray-700 hover:text-red-500 font-medium rounded-lg p-2">Beranda</a></li>
-                    <li><a href="#menu" class="text-gray-700 hover:text-red-500 font-medium rounded-lg p-2">Menu</a></li>
-                    <li><a href="#testimonials" class="text-gray-700 hover:text-red-500 font-medium rounded-lg p-2">Testimoni</a></li>
-                    <li><a href="#contact" class="text-gray-700 hover:text-red-500 font-medium rounded-lg p-2">Kontak</a></li>
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Beranda</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimoni</a></li>
+                    <li><a href="#contact" class="nav-link">Kontak</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="hero" class="relative bg-red-600 text-white py-20 md:py-32 overflow-hidden rounded-b-3xl">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between z-10 relative">
-            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 rounded-lg p-2">
-                    Nasi Goreng, Seblak <span class="text-yellow-300">Berkah Sawargi</span> Rasakan Sensasi <span class="text-yellow-300">Pedas</span> dan <span class="text-yellow-300">Gurih</span>
-                </h1>
-                <p class="text-lg md:text-xl mb-8 rounded-lg p-2">
-                    Cicipi Nasi Goreng & Seblak Berkah Sawargi: pedas gurih, sensasi tak terlupakan! Nikmati ledakan rasa di setiap suapan. Wajib coba!
-                </p>
-                <a href="#menu" class="btn-primary inline-block text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
-                    Lihat Menu Kami
+    <main class="landing-main">
+        {{ content }}
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h3 class="footer-heading">Berkah sawargi</h3>
+            <p class="footer-text">Jl. Sawah Baru I, Sukapada, Kec. Cibeunying Kidul, Kota Bandung, Jawa Barat 40125</p>
+            <p class="footer-text">Telepon: <a href="https://wa.me/qr/A3SGJ2S35ZVVA1" class="footer-link">+62838-2124-6664</a></p>
+            <p class="footer-text">Email: <a href="#" class="footer-link">-</a></p>
+            <div class="social-icons">
+                <a href="#" class="social-icon">
+                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" class="social-icon">
+                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C8.683 2 7.82 2.016 7.006 2.046c-.785.03-1.18.113-1.572.261-.392.147-.768.356-1.127.68-.359.324-.664.717-.927 1.18-.263.463-.448.99-.544 1.564-.096.574-.112 1.18-.112 1.954V16.994c0 .774.016 1.38.112 1.954.096.574.281 1.101.544 1.564.263.463.568.856.927 1.18.359.324.735.533 1.127.68.392.147.787.23 1.572.261.816.03 1.679.046 5.006.046s4.19-.016 5.006-.046c.785-.03 1.18-.113 1.572-.261.392-.147.768-.356 1.127-.68.359.324.664-.717.927-1.18.263-.463.448-.99.544-1.564.096-.574.112-1.18.112-1.954V7.006c0-.774-.016-1.38-.112-1.954-.096-.574-.281-1.101-.544-1.564-.263-.463-.568-.856-.927-1.18-.359-.324-.735-.533-1.127-.68-.392-.147-.787-.23-1.572-.261C15.317 2.016 14.32 2 12 2zm0 2.16c3.2 0 3.58.012 4.85.06c.72.028 1.05.11 1.28.2.23.09.43.21.6.38.17.17.29.37.38.6.09.23.17.56.2.98.048 1.27.06 1.65.06 4.85s-.012 3.58-.06 4.85c-.028.72-.11 1.05-.2 1.28-.09.23-.21.43-.38.6-.17.17-.29.37-.38.6-.09.23-.17.56-.2.98-.048 1.27-.06 1.65-.06 4.85s.012-3.58.06-4.85c.028-.72.11-1.05.2-1.28.09-.23.21-.43.38-.6.17-.17.37-.29.6-.38.23-.09.56-.17.98-.2 1.27-.048 1.65-.06 4.85-.06zm0 3.67A4.17 4.17 0 1012 16.17a4.17 4.17 0 000-8.34zm0 6.83a2.66 2.66 0 110-5.32 2.66 2.66 0 010 5.32zm5.32-8.32a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" clip-rule="evenodd" /></svg>
                 </a>
             </div>
-            <div class="md:w-1/2 flex justify-center md:justify-end">
-                <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1748967494/nasi-goreng-bakso_lgn78s.jpg" alt="Gambar Seblak Lezat" class="w-full max-w-md rounded-3xl shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
-            </div>
-        </div>
-        <div class="absolute inset-0 bg-pattern opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23000000\' fill-opacity=\'.05\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM14 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
-    </section>
-
-    <section class="py-16 bg-white rounded-t-3xl -mt-8 relative z-20">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Mengapa Memilih Seblak Kami?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-red-50 p-6 rounded-xl card-shadow transform hover:scale-105 transition duration-300">
-                    <div class="text-red-500 mb-4">
-                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Bahan Segar Pilihan</h3>
-                    <p class="text-gray-600">Kami hanya menggunakan kerupuk, sayuran, dan topping segar berkualitas tinggi setiap hari.</p>
-                </div>
-                <div class="bg-red-50 p-6 rounded-xl card-shadow transform hover:scale-105 transition duration-300">
-                    <div class="text-red-500 mb-4">
-                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Pedasnya Nampol!</h3>
-                    <p class="text-gray-600">Dari level santai hingga level dewa, kami punya tingkat kepedasan yang pas untuk Anda.</p>
-                </div>
-                <div class="bg-red-50 p-6 rounded-xl card-shadow transform hover:scale-105 transition duration-300">
-                    <div class="text-red-500 mb-4">
-                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3-.895-3-2 1.343-2 3-2zM21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Topping Berlimpah</h3>
-                    <p class="text-gray-600">Pilih aneka topping favoritmu: ceker, sosis, bakso, telur, dan masih banyak lagi!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="menu" class="py-16 bg-red-100">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Menu Favorit Kami</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-xl card-shadow hover:shadow-lg transition duration-300">
-                    <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1748968551/nasi-goreng-suki_ytgqyr.jpg" alt="Nasi Goreng Suki" class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-semibold mb-2 text-gray-800">Nasi Goreng Suki</h3>
-                    <p class="text-gray-600 mb-4">Sepiring nasi goreng suki dengan udang, bakso, telur mata sapi, dan taburan bawang goreng.</p>
-                    <span class="text-red-600 font-bold text-xl">Mulai dari Rp 15.000</span>
-                </div>
-                <div class="bg-white p-6 rounded-xl card-shadow hover:shadow-lg transition duration-300">
-                    <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1748969034/mie-seblak-tobrut_hbfmmj.jpg" alt="Seblak Ceker" class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-semibold mb-2 text-gray-800">Mie Seblak Tobrut</h3>
-                    <p class="text-gray-600 mb-4">Mie seblak tobrut, disajikan dalam mangkuk, menampilkan kuah merah pedas dengan mi keriting, bakso, sosis, dan topping brutal</p>
-                    <span class="text-red-600 font-bold text-xl">Mulai dari Rp 18.000</span>
-                </div>
-                <div class="bg-white p-6 rounded-xl card-shadow hover:shadow-lg transition duration-300">
-                    <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1748969984/nasi-goreng-mawut-pisan_huqwh7.jpg" alt="Seblak Komplit" class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-semibold mb-2 text-gray-800">Nasi Goreng Mawut Pisan</h3>
-                    <p class="text-gray-600 mb-4">Sepiring nasi goreng mawut pedas dengan irisan cabai, mie, dan bakso.</p>
-                    <span class="text-red-600 font-bold text-xl">Mulai dari Rp 25.000</span>
-                </div>
-            </div>
-            <a href="#contact" class="btn-primary inline-block text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg mt-12 hover:shadow-xl transition duration-300 ease-in-out">
-                Pesan Sekarang!
-            </a>
-        </div>
-    </section>
-
-    <section id="testimonials" class="py-16 bg-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Apa Kata Pelanggan Kami?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-red-50 p-6 rounded-xl card-shadow">
-                    <p class="text-gray-700 italic mb-4">"Nasi Gorengnya juara! Pedasnya pas, bumbunya medok, dan toppingnya melimpah. Jadi langganan nih!"</p>
-                    <p class="font-semibold text-gray-800">- Sarah, Pecinta Pedas</p>
-                </div>
-                <div class="bg-red-50 p-6 rounded-xl card-shadow">
-                    <p class="text-gray-700 italic mb-4">"Baru kali ini nemu seblak seenak ini. Rasanya autentik banget, bikin ketagihan!"</p>
-                    <p class="font-semibold text-gray-800">- Budi, Penikmat Kuliner</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-red-600 text-white py-16 text-center rounded-t-3xl mt-8">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Jangan Lewatkan Kelezatan Nasi Goreng dan Seblak Kami!</h2>
-            <p class="text-lg md:text-xl mb-8">Pesan sekarang atau kunjungi outlet kami untuk pengalaman rasa yang tak terlupakan.</p>
-            <a href="#contact" class="btn-primary inline-block text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
-                Hubungi Kami
-            </a>
-        </div>
-    </section>
-
-    <footer id="contact" class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4 text-center">
-            <h3 class="text-2xl font-bold mb-4">Berkah sawargi</h3>
-            <p class="mb-2">Jl. Sawah Baru I, Sukapada, Kec. Cibeunying Kidul, Kota Bandung, Jawa Barat 40125</p>
-            <p class="mb-4">Telepon: <a href="https://wa.me/qr/A3SGJ2S35ZVVA1" class="text-red-400 hover:underline">+62838-2124-6664</a></p>
-            <p class="mb-4">Email: <a href="#" class="text-red-400 hover:underline">-</a></p>
-            <div class="flex justify-center space-x-6">
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10z" clip-rule="evenodd" /></svg>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C8.683 2 7.82 2.016 7.006 2.046c-.785.03-1.18.113-1.572.261-.392.147-.768.356-1.127.68-.359.324-.664.717-.927 1.18-.263.463-.448.99-.544 1.564-.096.574-.112 1.18-.112 1.954V16.994c0 .774.016 1.38.112 1.954.096.574.281 1.101.544 1.564.263.463.568.856.927 1.18.359.324.735.533 1.127.68.392.147.787.23 1.572.261.816.03 1.679.046 5.006.046s4.19-.016 5.006-.046c.785-.03 1.18-.113 1.572-.261.392-.147.768-.356 1.127-.68.359-.324.664-.717.927-1.18.263-.463.448-.99.544-1.564.096-.574.112-1.18.112-1.954V7.006c0-.774-.016-1.38-.112-1.954-.096-.574-.281-1.101-.544-1.564-.263-.463-.568-.856-.927-1.18-.359-.324-.735-.533-1.127-.68-.392-.147-.787-.23-1.572-.261C15.317 2.016 14.32 2 12 2zm0 2.16c3.2 0 3.58.012 4.85.06c.72.028 1.05.11 1.28.2.23.09.43.21.6.38.17.17.29.37.38.6.09.23.17.56.2.98.048 1.27.06 1.65.06 4.85s-.012 3.58-.06 4.85c-.028.72-.11 1.05-.2 1.28-.09.23-.21.43-.38.6-.17.17-.37.29-.6.38-.23.09-.56.17-.98.2-1.27.048-1.65.06-4.85.06s-3.58-.012-4.85-.06c-.72-.028-1.05-.11-1.28-.2-.23-.09-.43-.21-.6-.38-.17-.17-.29-.37-.38-.6-.09-.23-.17-.56-.2-.98-.048-1.27-.06-1.65-.06-4.85s.012-3.58.06-4.85c.028-.72.11-1.05.2-1.28.09-.23.21-.43.38-.6.17-.17.37-.29.6-.38.23-.09.56-.17.98-.2 1.27-.048 1.65-.06 4.85-.06zm0 3.67A4.17 4.17 0 1012 16.17a4.17 4.17 0 000-8.34zm0 6.83a2.66 2.66 0 110-5.32 2.66 2.66 0 010 5.32zm5.32-8.32a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" clip-rule="evenodd" /></svg>
-                </a>
-            </div>
-            <p class="mt-8 text-gray-500 text-sm">&copy; 2025 Seblak Mantap. Semua Hak Dilindungi.</p>
+            <p class="copyright-text">&copy; 2025 Seblak Mantap. Semua Hak Dilindungi.</p>
         </div>
     </footer>
 
