@@ -25,7 +25,7 @@ description: Dapatkan paket liburan hemat ke Bali dengan diskon besar!
                 <div class="hero-video-card-content">
                     <h3>We Don't Need To Fight</h3>
                     <p>
-                        Deskripsi singkat tentang video unggulan ini. Jelaskan mengapa video ini menarik dan apa yang akan dipelajari penonton.
+                        Top YouTube Search We Don't Need To Fight by Eurodance.
                     </p>
                     <a href="https://www.youtube.com/watch?v=nIdP7QYM_gs" target="_blank" class="btn-primary">
                         Tonton Video Lengkap
@@ -53,7 +53,7 @@ description: Dapatkan paket liburan hemat ke Bali dengan diskon besar!
                         </iframe>
                     </div>
                     <p>
-                        Pelajari teknik editing video tingkat lanjut untuk hasil yang memukau.
+                        Top YouTube Search We Are Strong by Eurodance.
                     </p>
                     <a href="https://www.youtube.com/watch?v=E-iz-jzTrfI" target="_blank" class="watch-link">
                         Tonton di YouTube →
@@ -61,18 +61,18 @@ description: Dapatkan paket liburan hemat ke Bali dengan diskon besar!
                 </div>
 
 <div class="video-card card-hover-effect">
-                    <h3>Ulasan Gadget Mewah 2025</h3>
+                    <h3>Together We Won't Fall</h3>
                     <div class="video-container">
                         <iframe
                             src="https://www.youtube.com/embed/xTt_fhr1Ork"
-                            title="Ulasan Gadget Mewah 2025"
+                            title="Together We Won't Fall5"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
                     </div>
                     <p>
-                        Lihat gadget-gadget paling eksklusif dan inovatif yang wajib Anda miliki.
+                        Top YouTube Search Together We Won't Fall
                     </p>
                     <a href="https://www.youtube.com/watch?v=xTt_fhr1Ork" target="_blank" class="watch-link">
                         Tonton di YouTube →
