@@ -2,31 +2,6 @@
 layout: kosongyt
 title: eurodance
 description: Dapatkan paket liburan hemat ke Bali dengan diskon besar!
-youtube_video:
-  - id: nIdP7QYM_gs # Ganti dengan ID video YouTube Anda
-    title: We Don't Need To Fight
-    description: We Don't Need To Fight Dive into a world where rhythm never fades and energy never dies. Eurodance Evolution is your ultimate destination for the best of Eurodance, Hi-NRG, 90s club anthems, and modern dance remixes that keep the spirit of the rave alive.
-    upload_date: 2025-06-05T08:00:00+08:00
-    duration: PT5M30S
-    views: 123456
-    channel_name: Eurodance Evolution
-    channel_url: https://youtube.com/@eurodanceevolution?si=cZRVD5z044lLktB9
-  - id: E-iz-jzTrfI # Ganti dengan ID video YouTube Anda
-    title: We Don't Need To Fight
-    description: Deskripsi singkat dan menarik tentang isi video YouTube Anda. Sertakan kata kunci relevan.
-    upload_date: 2023-06-05T08:00:00+08:00
-    duration: PT5M30S
-    views: 123456
-    channel_name: Nama Saluran YouTube Anda
-    channel_url: https://youtube.com/@eurodanceevolution?si=cZRVD5z044lLktB9
-  - id: nIdP7QYM_gs # Ganti dengan ID video YouTube Anda
-    title: We Don't Need To Fight
-    description: Deskripsi singkat dan menarik tentang isi video YouTube Anda. Sertakan kata kunci relevan.
-    upload_date: 2023-06-05T08:00:00+08:00
-    duration: PT5M30S
-    views: 123456
-    channel_name: Nama Saluran YouTube Anda
-    channel_url: https://youtube.com/@eurodanceevolution?si=cZRVD5z044lLktB9
 ---
 
 <section id="hero-video" class="hero-section">
@@ -186,3 +161,4 @@ youtube_video:
             </a>
         </div>
     </main>
+
