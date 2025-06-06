@@ -28,33 +28,33 @@
 </head>
 <body class="bg-gray-100">
 
-    <div class="grid-container mx-auto">
+    <div class="grid-container">
 
         <!-- Top Header (Mirip Shopee) -->
-        <div class="bg-orange-500 text-white text-xs py-2 px-4 md:px-8 flex justify-between items-center">
-            <div class="flex space-x-4">
-                <a href="#" class="hover:text-gray-200">Jual</a>
-                <a href="#" class="hover:text-gray-200">Bantuan</a>
-                <a href="#" class="hover:text-gray-200">Unduh Aplikasi</a>
+        <div class="top-header">
+            <div class="link-group">
+                <a href="#">Jual</a>
+                <a href="#">Bantuan</a>
+                <a href="#">Unduh Aplikasi</a>
             </div>
-            <div class="flex space-x-4">
-                <a href="#" class="hover:text-gray-200">Daftar</a>
-                <a href="#" class="hover:text-gray-200">Login</a>
+            <div class="link-group">
+                <a href="#">Daftar</a>
+                <a href="#">Login</a>
             </div>
         </div>
 
         <!-- Main Header (Search Bar, Logo, Cart) -->
-        <header class="bg-orange-500 p-4 shadow-shopee">
-            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+        <header class="main-header">
+            <div class="main-header-content container">
                 <!-- Logo -->
-                <div class="flex-shrink-0 mb-4 md:mb-0">
-                    <h1 class="text-white text-3xl font-bold tracking-tight">Toko Anda</h1>
+                <div class="logo">
+                    <h1>Toko Anda</h1>
                 </div>
 
                 <!-- Search Bar -->
-                <div class="flex-grow flex items-center bg-white rounded-md overflow-hidden max-w-2xl w-full md:mx-4 relative">
-                    <input type="text" placeholder="Cari di Toko Anda..." class="py-2 pl-4 pr-10 flex-grow outline-none text-gray-700 text-sm">
-                    <button class="bg-orange-500 text-white p-2.5 rounded-r-md absolute right-0 top-0 bottom-0 flex items-center justify-center">
+                <div class="search-bar-wrapper">
+                    <input type="text" placeholder="Cari di Toko Anda..." class="search-input">
+                    <button class="search-button">
                         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="11" cy="11" r="8"></circle>
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -63,19 +63,19 @@
                 </div>
 
                 <!-- Cart Icon -->
-                <div class="ml-0 md:ml-4 mt-4 md:mt-0">
-                    <a href="#" class="text-white text-2xl relative">
-                        <svg class="icon w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <div class="cart-icon-wrapper">
+                    <a href="#" class="cart-icon">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="9" cy="21" r="1"></circle>
                             <circle cx="20" cy="21" r="1"></circle>
                             <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
                         </svg>
-                        <span class="absolute -top-1 -right-1 bg-white text-orange-500 rounded-full text-xs font-bold w-4 h-4 flex items-center justify-center">0</span>
+                        <span class="cart-count">0</span>
                     </a>
                 </div>
             </div>
             <!-- Kategori populer di bawah search bar -->
-            <div class="container mx-auto mt-2 flex flex-wrap justify-center md:justify-start">
+            <div class="category-links-container container">
                 <a href="#" class="category-link">Elektronik</a>
                 <a href="#" class="category-link">Fashion Pria</a>
                 <a href="#" class="category-link">Fashion Wanita</a>
@@ -91,14 +91,14 @@
         {{ content }}
     </main>
 
-        <!-- Footer -->
-        <footer class="bg-gray-800 text-white text-center py-6 mt-8">
-            <div class="container mx-auto text-sm">
+         <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content container">
                 <p>&copy; 2025 Toko Anda. Hak Cipta Dilindungi.</p>
-                <div class="flex justify-center space-x-4 mt-2">
-                    <a href="#" class="hover:text-gray-300">Kebijakan Privasi</a>
-                    <a href="#" class="hover:text-gray-300">Syarat & Ketentuan</a>
-                    <a href="#" class="hover:text-gray-300">Hubungi Kami</a>
+                <div class="footer-links">
+                    <a href="#">Kebijakan Privasi</a>
+                    <a href="#">Syarat & Ketentuan</a>
+                    <a href="#">Hubungi Kami</a>
                 </div>
             </div>
         </footer>

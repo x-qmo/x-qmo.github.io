@@ -28,15 +28,21 @@
 </head>
 <body class="landing-page-body">
 
-    <header>
-        <div class="header-content container">
-            <a href="#" class="logo">Kalis Kerudung Nyaman Hijab Praktis</a>
-            <nav>
+<header class="site-header">
+        <div class="container">
+            <a href="#" class="site-logo">Kalis</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
                 <ul>
-                    <li><a href="#produk">Produk</a></li>
-                    <li><a href="#keunggulan">Keunggulan</a></li>
-                    <li><a href="#testimonial">Testimonial</a></li>
-                    <li><a href="#beli-sekarang" class="button">Beli Sekarang</a></li>
+                    <li><a href="#hero">Beranda</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#features">Keunggulan</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Kontak</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,20 +52,43 @@
         {{ content }}
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Kalis Kerudung Nyaman Hijab Praktis. Hak Cipta Dilindungi.</p>
-            <div class="social-links">
-                <!-- Anda bisa menambahkan ikon media sosial di sini, contoh: -->
-                <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
-                <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
-                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
-                <a href="#">Instagram</a> | <a href="#">Facebook</a>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Kalis. Semua Hak Dilindungi.</p>
+            <div class="footer-links">
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat & Ketentuan</a>
             </div>
         </div>
     </footer>
 
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get references to the menu toggle button and the main navigation links
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
 
+            // Add click event listener to the menu toggle button
+            menuToggle.addEventListener('click', function() {
+                // Toggle the 'active' class on both the toggle button and the navigation menu
+                // The 'active' class controls visibility and animation on mobile
+                menuToggle.classList.toggle('active');
+                mainNav.classList.toggle('active');
+            });
+
+            // Optional: Hide the menu when a navigation link is clicked (for mobile user experience)
+            mainNav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    // Only hide the menu if the screen width is at or below the mobile breakpoint (768px)
+                    if (window.innerWidth <= 768) {
+                        menuToggle.classList.remove('active');
+                        mainNav.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
