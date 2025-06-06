@@ -2,15 +2,40 @@
 layout: kosongyt
 title: eurodance
 description: Dapatkan paket liburan hemat ke Bali dengan diskon besar!
+youtube_video:
+  - id: nIdP7QYM_gs # Ganti dengan ID video YouTube Anda
+    title: We Don't Need To Fight
+    description: We Don't Need To Fight Dive into a world where rhythm never fades and energy never dies. Eurodance Evolution is your ultimate destination for the best of Eurodance, Hi-NRG, 90s club anthems, and modern dance remixes that keep the spirit of the rave alive.
+    upload_date: 2025-06-05T08:00:00+08:00
+    duration: PT5M30S
+    views: 123456
+    channel_name: Eurodance Evolution
+    channel_url: https://youtube.com/@eurodanceevolution?si=cZRVD5z044lLktB9
+  - id: E-iz-jzTrfI # Ganti dengan ID video YouTube Anda
+    title: We Don't Need To Fight
+    description: Deskripsi singkat dan menarik tentang isi video YouTube Anda. Sertakan kata kunci relevan.
+    upload_date: 2023-06-05T08:00:00+08:00
+    duration: PT5M30S
+    views: 123456
+    channel_name: Nama Saluran YouTube Anda
+    channel_url: https://youtube.com/@eurodanceevolution?si=cZRVD5z044lLktB9
+  - id: nIdP7QYM_gs # Ganti dengan ID video YouTube Anda
+    title: We Don't Need To Fight
+    description: Deskripsi singkat dan menarik tentang isi video YouTube Anda. Sertakan kata kunci relevan.
+    upload_date: 2023-06-05T08:00:00+08:00
+    duration: PT5M30S
+    views: 123456
+    channel_name: Nama Saluran YouTube Anda
+    channel_url: https://youtube.com/@eurodanceevolution?si=cZRVD5z044lLktB9
 ---
 
 <section id="hero-video" class="hero-section">
         <div class="container">
             <h1 class="text-gradient-gold">
-                Top Youtube
+                Top Youtube Search
             </h1>
             <p>
-                Saksikan konten-konten terbaik yang kami sajikan khusus untuk Anda.
+                Saksikan konten-konten terbaik AI yang kami sajikan khusus untuk Anda.
             </p>
             <div class="hero-video-card card-shadow">
                 <div class="video-container">
@@ -42,11 +67,11 @@ description: Dapatkan paket liburan hemat ke Bali dengan diskon besar!
             <div class="video-grid">
 
 <div class="video-card card-hover-effect">
-                    <h3>Tutorial Edit Video Profesional</h3>
+                    <h3>We Are Strong!</h3>
                     <div class="video-container">
                         <iframe
-                            src="https://www.youtube.com/embed/video_id_1"
-                            title="Tutorial Edit Video Profesional"
+                            src="https://www.youtube.com/embed/E-iz-jzTrfI"
+                            title="We Are Strong!"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
@@ -55,7 +80,7 @@ description: Dapatkan paket liburan hemat ke Bali dengan diskon besar!
                     <p>
                         Pelajari teknik editing video tingkat lanjut untuk hasil yang memukau.
                     </p>
-                    <a href="https://www.youtube.com/watch?v=video_id_1" target="_blank" class="watch-link">
+                    <a href="https://www.youtube.com/watch?v=E-iz-jzTrfI" target="_blank" class="watch-link">
                         Tonton di YouTube →
                     </a>
                 </div>
@@ -64,7 +89,7 @@ description: Dapatkan paket liburan hemat ke Bali dengan diskon besar!
                     <h3>Ulasan Gadget Mewah 2025</h3>
                     <div class="video-container">
                         <iframe
-                            src="https://www.youtube.com/embed/video_id_2"
+                            src="https://www.youtube.com/embed/xTt_fhr1Ork"
                             title="Ulasan Gadget Mewah 2025"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -74,7 +99,7 @@ description: Dapatkan paket liburan hemat ke Bali dengan diskon besar!
                     <p>
                         Lihat gadget-gadget paling eksklusif dan inovatif yang wajib Anda miliki.
                     </p>
-                    <a href="https://www.youtube.com/watch?v=video_id_2" target="_blank" class="watch-link">
+                    <a href="https://www.youtube.com/watch?v=xTt_fhr1Ork" target="_blank" class="watch-link">
                         Tonton di YouTube →
                     </a>
                 </div>
