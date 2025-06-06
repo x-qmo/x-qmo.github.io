@@ -29,13 +29,13 @@
             color: var(--primary-color);
         }
 .linkbtn:link, a:visited {
-  background-color: #00ce3d;
+  background-color: #5a2e6f;
   color: white;
-  padding: 14px 25px;
+  padding: 12px 12px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .linkbtn:hover, a:active {
