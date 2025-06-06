@@ -3,66 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konveksi Pakaian Terbaik Bandung Asli - Kemeja, Kaos, Jaket, Celana</title>
+    <title>{{ page.title | default: site.title }}</title>
     <meta name="description" content="Kami Konveksi Pakaian Terbaik Bandung asli! melayani pembuatan kemeja, kaos, dan celana dengan kualitas premium, desain kustom, dan harga bersaing">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter for modern typography -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #1a202c; /* Dark elegant background */
-            color: #e2e8f0; /* Light text for dark background */
-        }
-        .container.konbtn.mx-auto.px-4.flex.justify-between.items-center {
-  flex-direction: column;
-}
-
-.text-lg.fntkon.mt-1 {
-  font-size: 16px;
-  line-height: 1.5;
-}
-.text-lg.mt-1 {
-  font-size: 16px;
-}
-.text-xl.font-bold.mt-2 {
-  font-size: 16px;
-}
-.text-lg.fnthkon.font-semibold {
-  font-size: 16px;
-}
-
-
-.text-gray-300.hover\:text-blue-400.font-medium.rounded-lg.p-2 {
-  padding: 5px;
-}
-        .text-gradient-blue-purple {
-            background-image: linear-gradient(to right, #63b3ed, #a78bfa); /* Lighter gradient for dark background */
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .btn-primary {
-            background-image: linear-gradient(to right, #63b3ed, #a78bfa); /* Lighter gradient for dark background */
-            transition: all 0.3s ease;
-        }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(99, 179, 237, 0.4);
-        }
-        .card-shadow {
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Darker shadow for dark background */
-        }
-        /* Card hover effect */
-        .card-hover-effect {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card-hover-effect:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        }
-    </style>
+    <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/landing-pagekba.css' | relative_url }}">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -119,190 +67,37 @@
 <body class="antialiased">
 
     <!-- Header Section -->
-    <header class="bg-gray-900 shadow-lg py-4">
-        <div class="container konbtn mx-auto px-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-gradient-blue-purple rounded-lg p-2">Konveksi Bandung Asli</a>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="site-title">Konveksi Bandung Asli</a>
             <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#hero" class="text-gray-300 hover:text-blue-400 font-medium rounded-lg p-2">Beranda</a></li>
-                    <li><a href="#services" class="text-gray-300 hover:text-blue-400 font-medium rounded-lg p-2">Layanan</a></li>
-                    <li><a href="#gallery" class="text-gray-300 hover:text-blue-400 font-medium rounded-lg p-2">Galeri</a></li>
-                    <li><a href="#contact" class="text-gray-300 hover:text-blue-400 font-medium rounded-lg p-2">Kontak</a></li>
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Beranda</a></li>
+                    <li><a href="#services" class="nav-link">Layanan</a></li>
+                    <li><a href="#gallery" class="nav-link">Galeri</a></li>
+                    <li><a href="#contact" class="nav-link">Kontak</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="relative bg-gradient-to-r from-gray-900 to-gray-700 text-white py-20 md:py-32 overflow-hidden rounded-b-3xl">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between z-10 relative">
-            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 rounded-lg p-2">
-                    <span class="text-yellow-300">Konveksi</span> Pakaian Terbaik <span class="text-yellow-300">Bandung Asli</span>!
-                </h1>
-                <p class="text-lg md:text-xl mb-8 rounded-lg p-2">
-                    Kami Konveksi Pakaian Terbaik Bandung asli! melayani pembuatan kemeja, kaos, dan celana dengan kualitas premium, desain kustom, dan harga bersaing.
-                </p>
-                <a href="#contact" class="btn-primary inline-block text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
-                    Mulai Proyek Anda Sekarang!
-                </a>
-            </div>
-            <div class="md:w-1/2 flex justify-center md:justify-end">
-                <!-- Placeholder image for clothing -->
-                <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1748977074/konveksi-bandung-asli_m5broq.jpg" alt="[Image of Konveksi Pakaian]" class="w-full max-w-md rounded-3xl shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
-            </div>
-        </div>
-        <!-- Background decorative elements (optional) -->
-        <div class="absolute inset-0 bg-pattern opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'.05\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM14 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
-    </section>
-
-    <!-- Services/Products Section -->
-    <section id="services" class="py-16 bg-gray-800 rounded-t-3xl -mt-8 relative z-20">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-12">Layanan Konveksi Kami</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Service 1: Kemeja -->
-                <div class="bg-gray-700 p-6 rounded-xl card-shadow card-hover-effect">
-                    <img src="https://placehold.co/300x200/3b82f6/e2e8f0?text=KEMEJA" alt="[Image of Kemeja]" class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-semibold mb-3 text-gray-100">Kemeja</h3>
-                    <p class="text-gray-300">Produksi kemeja seragam, formal, casual, hingga kemeja custom dengan berbagai bahan dan model.</p>
-                </div>
-                <!-- Service 2: Kaos -->
-                <div class="bg-gray-700 p-6 rounded-xl card-shadow card-hover-effect">
-                    <img src="https://placehold.co/300x200/a78bfa/e2e8f0?text=KAOS" alt="[Image of Kaos]" class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-semibold mb-3 text-gray-100">Kaos</h3>
-                    <p class="text-gray-300">Pembuatan kaos oblong, polo shirt, raglan, dan kaos custom untuk event, promosi, atau komunitas.</p>
-                </div>
-                <!-- Service 3: Celana -->
-                <div class="bg-gray-700 p-6 rounded-xl card-shadow card-hover-effect">
-                    <img src="https://placehold.co/300x200/63b3ed/e2e8f0?text=CELANA" alt="[Image of Celana]" class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-semibold mb-3 text-gray-100">Celana</h3>
-                    <p class="text-gray-300">Konveksi celana kerja, celana casual, celana training, dan celana custom lainnya.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section id="why-us" class="py-16 bg-gray-900">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-12">Mengapa Memilih Konveksi Kami?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Feature 1: Kualitas Premium -->
-                <div class="bg-gray-700 p-6 rounded-xl card-shadow card-hover-effect">
-                    <div class="text-blue-400 mb-4">
-                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-100">Kualitas Premium</h3>
-                    <p class="text-gray-300">Kami menggunakan bahan terbaik dan proses produksi yang teliti untuk hasil maksimal.</p>
-                </div>
-                <!-- Feature 2: Desain Kustom -->
-                <div class="bg-gray-700 p-6 rounded-xl card-shadow card-hover-effect">
-                    <div class="text-blue-400 mb-4">
-                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-100">Desain Kustom</h3>
-                    <p class="text-gray-300">Wujudkan ide desain Anda bersama tim ahli kami. Fleksibel dan sesuai kebutuhan.</p>
-                </div>
-                <!-- Feature 3: Pengiriman Tepat Waktu -->
-                <div class="bg-gray-700 p-6 rounded-xl card-shadow card-hover-effect">
-                    <div class="text-blue-400 mb-4">
-                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-100">Pengiriman Tepat Waktu</h3>
-                    <p class="text-gray-300">Kami berkomitmen untuk menyelesaikan pesanan Anda sesuai jadwal yang disepakati.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery/Portfolio Section -->
-    <section id="gallery" class="py-16 bg-gray-800">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-12">Galeri Hasil Produksi Kami</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Gallery Item 1 -->
-                <div class="rounded-xl overflow-hidden shadow-lg card-hover-effect">
-                    <img src="https://placehold.co/400x300/3b82f6/e2e8f0?text=KEMEJA+SERAGAM" alt="[Image of Kemeja Seragam]" class="w-full h-64 object-cover">
-                </div>
-                <!-- Gallery Item 2 -->
-                <div class="rounded-xl overflow-hidden shadow-lg card-hover-effect">
-                    <img src="https://placehold.co/400x300/a78bfa/e2e8f0?text=KAOS+KOMUNITAS" alt="[Image of Kaos Komunitas]" class="w-full h-64 object-cover">
-                </div>
-                <!-- Gallery Item 3 -->
-                <div class="rounded-xl overflow-hidden shadow-lg card-hover-effect">
-                    <img src="https://placehold.co/400x300/63b3ed/e2e8f0?text=CELANA+KERJA" alt="[Image of Celana Kerja]" class="w-full h-64 object-cover">
-                </div>
-                <!-- Gallery Item 4 -->
-                <div class="rounded-xl overflow-hidden shadow-lg card-hover-effect">
-                    <img src="https://placehold.co/400x300/3b82f6/e2e8f0?text=KEMEJA+PROMOSI" alt="[Image of Kemeja Promosi]" class="w-full h-64 object-cover">
-                </div>
-                <!-- Add more gallery items as needed -->
-                <div class="rounded-xl overflow-hidden shadow-lg card-hover-effect">
-                    <img src="https://placehold.co/400x300/a78bfa/e2e8f0?text=KAOS+POLO" alt="[Image of Kaos Polo]" class="w-full h-64 object-cover">
-                </div>
-                <div class="rounded-xl overflow-hidden shadow-lg card-hover-effect">
-                    <img src="https://placehold.co/400x300/63b3ed/e2e8f0?text=CELANA+TRAINING" alt="[Image of Celana Training]" class="w-full h-64 object-cover">
-                </div>
-                <div class="rounded-xl overflow-hidden shadow-lg card-hover-effect">
-                    <img src="https://placehold.co/400x300/3b82f6/e2e8f0?text=SERAGAM+KANTOR" alt="[Image of Seragam Kantor]" class="w-full h-64 object-cover">
-                </div>
-                <div class="rounded-xl overflow-hidden shadow-lg card-hover-effect">
-                    <img src="https://placehold.co/400x300/a78bfa/e2e8f0?text=JAKET+CUSTOM" alt="[Image of Jaket Custom]" class="w-full h-64 object-cover">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action / Contact Section -->
-    <section id="contact" class="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-16 text-center rounded-t-3xl mt-8">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Siap Memulai Proyek Konveksi Anda?</h2>
-            <p class="text-lg md:text-xl mb-8">Hubungi kami sekarang untuk konsultasi gratis dan penawaran terbaik!</p>
-
-            <div class="max-w-xl mx-auto bg-gray-700 p-8 rounded-xl shadow-lg text-gray-100">
-                <form class="space-y-4">
-                    <div>
-                        <label for="name" class="block text-left text-sm font-medium text-gray-300">Nama Lengkap</label>
-                        <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-600 rounded-md shadow-sm focus:ring-blue-400 focus:border-blue-400 bg-gray-800 text-white" placeholder="Nama Anda" required>
-                    </div>
-                    <div>
-                        <label for="email" class="block text-left text-sm font-medium text-gray-300">Email</label>
-                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-600 rounded-md shadow-sm focus:ring-blue-400 focus:border-blue-400 bg-gray-800 text-white" placeholder="email@contoh.com" required>
-                    </div>
-                    <div>
-                        <label for="message" class="block text-left text-sm font-medium text-gray-300">Pesan Anda</label>
-                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-2 border border-gray-600 rounded-md shadow-sm focus:ring-blue-400 focus:border-blue-400 bg-gray-800 text-white" placeholder="Jelaskan kebutuhan konveksi Anda..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary w-full text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
-                        Kirim Pesan
-                    </button>
-                </form>
-                <div class="mt-8 text-center">
-                    <p class="text-lg fnthkon font-semibold">Atau Hubungi Kami Langsung:</p>
-                    <p class="text-xl font-bold mt-2">Telepon: <a href="tel:+62813-1706-9898" class="text-blue-400 hover:underline">+62813-1706-9898</a></p>
-                    <p class="text-lg mt-1">Email: <a href="#" class="text-blue-400 hover:underline">#</a></p>
-                    <p class="text-lg fntkon mt-1">Alamat: Gg. H. Asep Komar, RT.002/RW.008, Sukapada, Kec. Cibeunying Kidul, Kota Bandung, Jawa Barat 40125</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <main class="landing-main">
+        {{ content }}
+    </main>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-950 text-white py-12">
-        <div class="container mx-auto px-4 text-center">
-            <h3 class="text-2xl font-bold mb-4">Konveksi Bandung Asli</h3>
-            <div class="flex justify-center space-x-6">
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                    <!-- Facebook Icon (example) -->
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10z" clip-rule="evenodd" /></svg>
+    <footer class="footer">
+        <div class="container">
+            <h3 class="footer-heading">Konveksi Bandung Asli</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon-link">
+                    <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10z" clip-rule="evenodd" /></svg>
                 </a>
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                    <!-- Instagram Icon (example) -->
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C8.683 2 7.82 2.016 7.006 2.046c-.785.03-1.18.113-1.572.261-.392.147-.768.356-1.127.68-.359.324-.664.717-.927 1.18-.263.463-.448.99-.544 1.564-.096.574-.112 1.18-.112 1.954V16.994c0 .774.016 1.38.112 1.954.096.574.281 1.101.544 1.564.263.463.568.856.927 1.18.359.324.735.533 1.127.68.392.147.787.23 1.572.261.816.03 1.679.046 5.006.046s4.19-.016 5.006-.046c.785-.03 1.18-.113 1.572-.261.392-.147.768-.356 1.127-.68.359-.324.664-.717.927-1.18.263-.463.448-.99.544-1.564.096-.574.112-1.18.112-1.954V7.006c0-.774-.016-1.38-.112-1.954-.096-.574-.281-1.101-.544-1.564-.263-.463-.568-.856-.927-1.18-.359-.324-.735-.533-1.127-.68-.392-.147-.787-.23-1.572-.261C15.317 2.016 14.32 2 12 2zm0 2.16c3.2 0 3.58.012 4.85.06c.72.028 1.05.11 1.28.2.23.09.43.21.6.38.17.17.29.37.38.6.09.23.17.56.2.98.048 1.27.06 1.65.06 4.85s-.012 3.58-.06 4.85c-.028.72-.11 1.05-.2 1.28-.09.23-.21.43-.38.6-.17.17-.37.29-.6.38-.23.09-.56.17-.98.2-1.27.048-1.65.06-4.85.06s-3.58-.012-4.85-.06c-.72-.028-1.05-.11-1.28-.2-.23-.09-.43-.21-.6-.38-.17-.17-.29-.37-.38-.6-.09-.23-.17-.56-.2-.98-.048-1.27-.06-1.65-.06-4.85s.012-3.58.06-4.85c.028-.72.11-1.05.2-1.28.09-.23.21-.43.38-.6.17-.17.37-.29.6-.38.23-.09.56-.17.98-.2 1.27-.048 1.65-.06 4.85-.06zm0 3.67A4.17 4.17 0 1012 16.17a4.17 4.17 0 000-8.34zm0 6.83a2.66 2.66 0 110-5.32 2.66 2.66 0 010 5.32zm5.32-8.32a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" clip-rule="evenodd" /></svg>
+                <a href="#" class="social-icon-link">
+                    <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C8.683 2 7.82 2.016 7.006 2.046c-.785.03-1.18.113-1.572.261-.392.147-.768.356-1.127.68-.359.324-.664.717-.927 1.18-.263.463-.448.99-.544 1.564-.096.574-.112 1.18-.112 1.954V16.994c0 .774.016 1.38.112 1.954.096.574.281 1.101.544 1.564.263.463.568.856.927 1.18.359.324.735.533 1.127.68.392.147.787.23 1.572.261.816.03 1.679.046 5.006.046s4.19-.016 5.006-.046c.785-.03 1.18-.113 1.572-.261.392-.147.768-.356 1.127-.68.359-.324.664-.717.927-1.18.263-.463.448-.99.544-1.564.096-.574.112-1.18.112-1.954V7.006c0-.774-.016-1.38-.112-1.954-.096-.574-.281-1.101-.544-1.564-.263-.463-.568-.856-.927-1.18-.359-.324-.735-.533-1.127-.68-.392-.147-.787-.23-1.572-.261C15.317 2.016 14.32 2 12 2zm0 2.16c3.2 0 3.58.012 4.85.06c.72.028 1.05.11 1.28.2.23.09.43.21.6.38.17.17.29.37.38.6.09.23.17.56.2.98.048 1.27.06 1.65.06 4.85s-.012 3.58-.06 4.85c-.028.72-.11 1.05-.2 1.28-.09.23-.21.43-.38.6-.17.17-.37.29-.6.38-.23.09-.56.17-.98.2-1.27.048-1.65.06-4.85.06s-3.58-.012-4.85-.06c-.72-.028-1.05-.11-1.28-.2-.23-.09-.43-.21-.6-.38-.17-.17-.29-.37-.38-.6-.09-.23-.17-.56-.2-.98-.048-1.27-.06-1.65-.06-4.85s.012-3.58.06-4.85c.028-.72.11-1.05.2-1.28.09-.23.21-.43.38-.6.17-.17.37-.29.6-.38.23-.09.56-.17.98-.2 1.27-.048 1.65-.06 4.85-.06zm0 3.67A4.17 4.17 0 1012 16.17a4.17 4.17 0 000-8.34zm0 6.83a2.66 2.66 0 110-5.32 2.66 2.66 0 010 5.32zm5.32-8.32a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" clip-rule="evenodd" /></svg>
                 </a>
             </div>
-            <p class="mt-8 text-gray-500 text-sm">&copy; 2025 Konveksi Bandung Asli. Semua Hak Dilindungi.</p>
+            <p class="copyright-text">© 2025 Konveksi Bandung Asli. Semua Hak Dilindungi.</p>
         </div>
     </footer>
 
