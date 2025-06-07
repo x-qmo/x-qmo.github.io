@@ -1,6 +1,6 @@
         /* General Styles & Reset */
         :root {
-            --shopee-orange: #ee4d2d; /* Shopee's primary orange */
+            --shopee-orange: #060e4d; /* Shopee's primary orange */
             --shopee-light-orange: #ffece8; /* Lighter orange for accents */
             --shopee-dark: #333333;
             --shopee-gray-text: #757575;
@@ -66,7 +66,7 @@
 
         .header-top-links a {
             color: var(--white);
-            margin-left: 15px;
+            margin-left: 3px;
             opacity: 0.9;
             transition: opacity 0.2s ease;
         }
@@ -148,7 +148,7 @@
 
         /* Hero Section (Banner) */
         .hero-section {
-            background: url('https://placehold.co/1200x350/EE4D2D/FFFFFF?text=Diskon+Terbesar+Hanya+di+MyToko') center center/cover no-repeat;
+            background-color: #061165;
             color: var(--white);
             text-align: center;
             padding: 60px 20px;
@@ -259,9 +259,9 @@
         .product-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px; /* Smaller gap for products */
+            gap: 10px; /* Smaller gap for products */
             justify-content: flex-start; /* Start from left */
-            padding: 0 15px; /* Internal padding */
+            padding: 0px; /* Internal padding */
         }
 
         .product-card {
@@ -292,7 +292,7 @@
         }
 
         .product-info {
-            padding: 10px;
+            padding: 5px;
             display: flex;
             flex-direction: column;
             flex-grow: 1;
@@ -313,7 +313,7 @@
         .product-price {
             font-size: 18px;
             font-weight: 700;
-            color: var(--shopee-orange);
+            color: #f00;
             margin-top: auto; /* Push price to the bottom */
             display: flex;
             align-items: baseline;
