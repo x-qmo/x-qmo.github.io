@@ -95,9 +95,9 @@ Jika Anda memiliki pertanyaan mengenai S&K ini, silakan hubungi kami di:
 
 PENTING UNTUK DIINGAT:
 
-    Konsultasi Hukum: Draf ini adalah panduan umum. Anda harus berkonsultasi dengan pengacara untuk memastikan S&K Anda memenuhi semua persyaratan hukum yang berlaku di yurisdiksi Anda, terutama terkait dengan perlindungan konsumen, e-commerce, pajak, dan privasi data (misalnya GDPR jika Anda melayani pelanggan di Eropa, atau UU PDP di Indonesia).
-    Kebijakan Tambahan: Pastikan Anda juga memiliki kebijakan terpisah untuk:
-        Kebijakan Privasi
-        Kebijakan Pengembalian dan Penukaran
-        Kebijakan Pengiriman
-    Spesifikasi Produk/Layanan: Jika produk atau layanan Anda memiliki sifat khusus (misalnya produk digital, langganan, produk yang diatur secara khusus), S&K Anda mungkin perlu ketentuan tambahan yang sangat spesifik.
+* Konsultasi Hukum: Draf ini adalah panduan umum. Anda harus berkonsultasi dengan pengacara untuk memastikan S&K Anda memenuhi semua persyaratan hukum yang berlaku di yurisdiksi Anda, terutama terkait dengan perlindungan konsumen, e-commerce, pajak, dan privasi data (misalnya GDPR jika Anda melayani pelanggan di Eropa, atau UU PDP di Indonesia).
+* Kebijakan Tambahan: Pastikan Anda juga memiliki kebijakan terpisah untuk:
+    * Kebijakan Privasi
+    * Kebijakan Pengembalian dan Penukaran
+    * Kebijakan Pengiriman
+* Spesifikasi Produk/Layanan: Jika produk atau layanan Anda memiliki sifat khusus (misalnya produk digital, langganan, produk yang diatur secara khusus), S&K Anda mungkin perlu ketentuan tambahan yang sangat spesifik.

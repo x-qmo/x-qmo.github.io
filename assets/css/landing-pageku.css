@@ -406,6 +406,11 @@ body {
 /* --- Media Queries for Responsiveness --- */
 
 /* Small devices (sm: 640px and up) */
+@media (min-width: 380px) {
+    .product-card {
+  flex-basis: 165px;
+}
+}
 @media (min-width: 640px) {
     .category-icons-grid .category-item {
         flex: 1 1 calc(25% - 1rem); /* 4 items per row */
