@@ -301,9 +301,7 @@ body {
     overflow: hidden;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow */
     transition: box-shadow 0.15s ease-in-out; /* transition-shadow */
-    flex: 1 1 calc(50% - 1rem); /* 2 items per row on mobile, accounting for gap */
-
-
+    flex-basis: 168px;
 }
 
 .product-card:hover {
