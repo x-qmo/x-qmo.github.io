@@ -148,6 +148,7 @@
 
         /* Hero Section (Banner) */
         .hero-section {
+            background: url('https://placehold.co/1200x350/EE4D2D/FFFFFF?text=Diskon+Terbesar+Hanya+di+MyToko') center center/cover no-repeat;
             color: var(--white);
             text-align: center;
             padding: 60px 20px;
@@ -258,9 +259,9 @@
         .product-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px; /* Smaller gap for products */
+            gap: 15px; /* Smaller gap for products */
             justify-content: flex-start; /* Start from left */
-            padding: 0 3px; /* Internal padding */
+            padding: 0 15px; /* Internal padding */
         }
 
         .product-card {
