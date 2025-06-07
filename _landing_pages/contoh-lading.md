@@ -6,125 +6,186 @@ og_image: /assets/images/default-thumbnail.jpg # Gambar untuk Open Graph
 ---
 
 <!-- Main Banner/Carousel Area -->
-<section class="main-banner-section container">
-            <div class="banner-grid">
-                <div class="main-banner placeholder-img">
-                    <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1749307005/banner800x400_b4xzf7.jpg" alt="Main Banner" class="full-img">
-                </div>
-                <div class="small-banners-grid">
-                    <div class="small-banner placeholder-img">
-                        <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1749307182/banner400x200_jlquno.jpg" alt="Small Banner 1" class="full-img">
+<section class="hero-section">
+            <div class="container">
+                <h1>Promo Spektakuler!</h1>
+                <p>Jutaan produk dengan harga terbaik, hanya untuk Anda.</p>
+                <a href="#" class="btn">Lihat Semua Promo</a>
+            </div>
+        </section>
+
+<section class="categories-section">
+            <div class="container">
+                <h2 class="section-title">Kategori Unggulan</h2>
+                <div class="category-list">
+                    <div class="category-item">
+                        <img src="https://placehold.co/60x60/ee4d2d/FFFFFF?text=Fesyen" alt="Fesyen">
+                        <p>Fesyen Pria & Wanita</p>
                     </div>
-                    <div class="small-banner placeholder-img">
-                        <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1749307182/banner400x200_jlquno.jpg" alt="Small Banner 2" class="full-img">
+                    <div class="category-item">
+                        <img src="https://placehold.co/60x60/ee4d2d/FFFFFF?text=Elek" alt="Elektronik">
+                        <p>Elektronik & Gadget</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://placehold.co/60x60/ee4d2d/FFFFFF?text=Rumah" alt="Rumah">
+                        <p>Rumah & Hobi</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://placehold.co/60x60/ee4d2d/FFFFFF?text=Kec" alt="Kecantikan">
+                        <p>Kecantikan & Kesehatan</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://placehold.co/60x60/ee4d2d/FFFFFF?text=Bayi" alt="Bayi">
+                        <p>Ibu & Bayi</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://placehold.co/60x60/ee4d2d/FFFFFF?text=Makanan" alt="Makanan">
+                        <p>Makanan & Minuman</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://placehold.co/60x60/ee4d2d/FFFFFF?text=Oto" alt="Otomotif">
+                        <p>Otomotif</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://placehold.co/60x60/ee4d2d/FFFFFF?text=Olahraga" alt="Olahraga">
+                        <p>Olahraga & Outdoor</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://placehold.co/60x60/ee4d2d/FFFFFF?text=Buku" alt="Buku">
+                        <p>Buku & Alat Tulis</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://placehold.co/60x60/ee4d2d/FFFFFF?text=Lainnya" alt="Lainnya">
+                        <p>Semua Kategori</p>
                     </div>
                 </div>
             </div>
         </section>
 
-
-<section class="quick-category-section container">
-            <h2 class="section-title">Kategori Pilihan</h2>
-            <div class="category-icons-grid">
-                <!-- Contoh ikon kategori -->
-                <div class="category-item">
-                    <img src="https://placehold.co/60x60/FF5722/FFFFFF?text=K1" alt="Kategori 1" class="category-img">
-                    <span class="category-name">Elektronik</span>
-                </div>
-                <div class="category-item">
-                    <img src="https://placehold.co/60x60/2196F3/FFFFFF?text=K2" alt="Kategori 2" class="category-img">
-                    <span class="category-name">Fashion</span>
-                </div>
-                <div class="category-item">
-                    <img src="https://placehold.co/60x60/4CAF50/FFFFFF?text=K3" alt="Kategori 3" class="category-img">
-                    <span class="category-name">Rumah Tangga</span>
-                </div>
-                <div class="category-item">
-                    <img src="https://placehold.co/60x60/9C27B0/FFFFFF?text=K4" alt="Kategori 4" class="category-img">
-                    <span class="category-name">Kecantikan</span>
-                </div>
-                <div class="category-item">
-                    <img src="https://placehold.co/60x60/FFEB3B/000000?text=K5" alt="Kategori 5" class="category-img">
-                    <span class="category-name">Otomotif</span>
-                </div>
-                <div class="category-item">
-                    <img src="https://placehold.co/60x60/795548/FFFFFF?text=K6" alt="Kategori 6" class="category-img">
-                    <span class="category-name">Makanan</span>
-                </div>
-                <div class="category-item">
-                    <img src="https://placehold.co/60x60/E91E63/FFFFFF?text=K7" alt="Kategori 7" class="category-img">
-                    <span class="category-name">Hobi</span>
-                </div>
-                <div class="category-item">
-                    <img src="https://placehold.co/60x60/607D8B/FFFFFF?text=K8" alt="Kategori 8" class="category-img">
-                    <span class="category-name">Olahraga</span>
-                </div>
-            </div>
-        </section>
-
-
-<section class="product-section container">
-            <h2 class="section-title">Produk Pilihan Hari Ini</h2>
-            <div class="product-grid">
-                <!-- Contoh Kartu Produk -->
-                <div class="product-card">
-                    <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1749308400/prod1-200x200_okzi79.jpg" alt="Kalis Plain Square" class="product-img">
-                    <div class="product-info">
-                        <p class="product-name"><img src="{{ '/assets/images/x-qmo-shop.jpg' | relative_url }}">Plain Square</p>
-                        <p class="product-location">Jakarta</p>
-                        <p class="product-price">Rp 123.000</p>
+<section class="products-section">
+            <div class="container">
+                <h2 class="section-title">Flash Sale & Produk Pilihan</h2>
+                <div class="product-grid">
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                        <img src="https://placehold.co/400x400/EE4D2D/FFFFFF?text=Kemeja" alt="Kemeja Pria">
+                        <div class="product-info">
+                            <h3>Kemeja Pria Lengan Panjang Motif Kasual</h3>
+                            <p class="product-price">Rp 89.000 <span class="original">Rp 150.000</span></p>
+                            <p class="product-rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.8 | 1.2rb Terjual
+                            </p>
+                            <p class="product-location">Jakarta</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                        <img src="https://placehold.co/400x400/EE4D2D/FFFFFF?text=Earphone" alt="Earphone Bluetooth">
+                        <div class="product-info">
+                            <h3>Earphone Bluetooth TWS Gaming Low Latency</h3>
+                            <p class="product-price">Rp 129.000 <span class="original">Rp 250.000</span></p>
+                            <p class="product-rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.9 | 3.5rb Terjual
+                            </p>
+                            <p class="product-location">Surabaya</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                        <img src="https://placehold.co/400x400/EE4D2D/FFFFFF?text=Lipstick" alt="Lipstick Matte">
+                        <div class="product-info">
+                            <h3>Lipstick Matte Tahan Lama Waterproof Korea</h3>
+                            <p class="product-price">Rp 45.000 <span class="original">Rp 80.000</span></p>
+                            <p class="product-rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.7 | 800 Terjual
+                            </p>
+                            <p class="product-location">Bandung</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="product-card">
+                        <img src="https://placehold.co/400x400/EE4D2D/FFFFFF?text=Sendal" alt="Sandal Pria">
+                        <div class="product-info">
+                            <h3>Sandal Pria Slide Casual Anti Selip</h3>
+                            <p class="product-price">Rp 35.000 <span class="original">Rp 60.000</span></p>
+                            <p class="product-rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.5 | 2.1rb Terjual
+                            </p>
+                            <p class="product-location">Yogyakarta</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 5 -->
+                    <div class="product-card">
+                        <img src="https://placehold.co/400x400/EE4D2D/FFFFFF?text=Charger" alt="Charger HP">
+                        <div class="product-info">
+                            <h3>Charger HP Fast Charging Type C 20W Original</h3>
+                            <p class="product-price">Rp 55.000 <span class="original">Rp 100.000</span></p>
+                            <p class="product-rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.9 | 5.3rb Terjual
+                            </p>
+                            <p class="product-location">Semarang</p>
+                        </div>
+                    </div>
+                     <!-- Product Card 6 -->
+                    <div class="product-card">
+                        <img src="https://placehold.co/400x400/EE4D2D/FFFFFF?text=Deterjen" alt="Deterjen Cair">
+                        <div class="product-info">
+                            <h3>Deterjen Cair Konsentrat Anti Bau Apek 1 Liter</h3>
+                            <p class="product-price">Rp 27.500 <span class="original">Rp 40.000</span></p>
+                            <p class="product-rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.6 | 1.8rb Terjual
+                            </p>
+                            <p class="product-location">Medan</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 7 -->
+                    <div class="product-card">
+                        <img src="https://placehold.co/400x400/EE4D2D/FFFFFF?text=Celana" alt="Celana Jeans Pria">
+                        <div class="product-info">
+                            <h3>Celana Jeans Pria Slim Fit Premium Quality</h3>
+                            <p class="product-price">Rp 155.000 <span class="original">Rp 250.000</span></p>
+                            <p class="product-rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.7 | 900 Terjual
+                            </p>
+                            <p class="product-location">Makassar</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 8 -->
+                    <div class="product-card">
+                        <img src="https://placehold.co/400x400/EE4D2D/FFFFFF?text=Skincare" alt="Skincare Set">
+                        <div class="product-info">
+                            <h3>Skincare Set Glowing Series BPOM Original</h3>
+                            <p class="product-price">Rp 99.000 <span class="original">Rp 180.000</span></p>
+                            <p class="product-rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.8 | 4.2rb Terjual
+                            </p>
+                            <p class="product-location">Jakarta</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 9 -->
+                    <div class="product-card">
+                        <img src="https://placehold.co/400x400/EE4D2D/FFFFFF?text=Mainan" alt="Mainan Anak">
+                        <div class="product-info">
+                            <h3>Mainan Edukasi Anak Balok Susun Kayu SNI</h3>
+                            <p class="product-price">Rp 75.000 <span class="original">Rp 120.000</span></p>
+                            <p class="product-rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.9 | 1.5rb Terjual
+                            </p>
+                            <p class="product-location">Bekasi</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 10 -->
+                    <div class="product-card">
+                        <img src="https://placehold.co/400x400/EE4D2D/FFFFFF?text=Coffee" alt="Biji Kopi">
+                        <div class="product-info">
+                            <h3>Biji Kopi Arabika House Blend 250gr Fresh Roast</h3>
+                            <p class="product-price">Rp 65.000 <span class="original">Rp 90.000</span></p>
+                            <p class="product-rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.8 | 600 Terjual
+                            </p>
+                            <p class="product-location">Bandung</p>
+                        </div>
                     </div>
                 </div>
-                <div class="product-card">
-                    <img src="https://placehold.co/200x200/2196F3/FFFFFF?text=Produk+2" alt="Produk 2" class="product-img">
-                    <div class="product-info">
-                        <p class="product-name"><img src="{{ '/assets/images/x-qmo-shop.jpg' | relative_url }}">Produk Lainnya yang Menarik</p>
-                        <p class="product-location">Bandung</p>
-                        <p class="product-price">Rp 75.000</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="https://placehold.co/200x200/4CAF50/FFFFFF?text=Produk+3" alt="Produk 3" class="product-img">
-                    <div class="product-info">
-                        <p class="product-name">Aksesoris Wajib Punya</p>
-                        <p class="product-location">Surabaya</p>
-                        <p class="product-price">Rp 30.000</p>
-                    </div>
-                </div>
-                 <div class="product-card">
-                    <img src="https://placehold.co/200x200/FFC107/FFFFFF?text=Produk+4" alt="Produk 4" class="product-img">
-                    <div class="product-info">
-                        <p class="product-name">Diskon Spesial Hari Ini</p>
-                        <p class="product-location">Yogyakarta</p>
-                        <p class="product-price">Rp 99.000</p>
-                    </div>
-                </div>
-                 <div class="product-card">
-                    <img src="https://placehold.co/200x200/9C27B0/FFFFFF?text=Produk+5" alt="Produk 5" class="product-img">
-                    <div class="product-info">
-                        <p class="product-name">Produk Baru Rilis!</p>
-                        <p class="product-location">Medan</p>
-                        <p class="product-price">Rp 150.000</p>
-                    </div>
-                </div>
-                 <div class="product-card">
-                    <img src="https://placehold.co/200x200/607D8B/FFFFFF?text=Produk+6" alt="Produk 6" class="product-img">
-                    <div class="product-info">
-                        <p class="product-name">Barang Unik & Langka</p>
-                        <p class="product-location">Makassar</p>
-                        <p class="product-price">Rp 250.000</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="https://placehold.co/200x200/E91E63/FFFFFF?text=Produk+7" alt="Produk 7" class="product-img">
-                    <div class="product-info">
-                        <p class="product-name">Fashion Terkini Pria</p>
-                        <p class="product-location">Palembang</p>
-                        <p class="product-price">Rp 88.000</p>
-                    </div>
-                </div>
-            </div>
-            <div class="view-more-button-container">
-                <button class="view-more-button">Lihat Lainnya</button>
             </div>
         </section>

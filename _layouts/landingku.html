@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title | default: site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description }}">
-
     <link rel="stylesheet" href="{{ '/assets/css/landing-pageku.css' | relative_url }}">
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
     <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.ico' | relative_url }}">
 
     <meta property="og:title" content="{{ page.title | default: site.title }}">
@@ -26,66 +23,29 @@
 
 
 </head>
-<body class="bg-gray-100">
-
-    <div class="grid-container">
-
-        <!-- Top Header (Mirip Shopee) -->
-        <div class="top-header">
-            <div class="link-group">
-                <a href="#">Jual</a>
-                <a href="#">Bantuan</a>
-                <a href="#">Unduh Aplikasi</a>
+<header class="header">
+        <div class="container">
+            <div class="header-top-links">
+                <a href="#">Pusat Penjual</a>
+                <a href="#">Mulai Berjualan</a>
+                <a href="#">Download</a>
+                <a href="#">Ikuti Kami di</a>
+                <!-- Social media icons can be added here or integrated with footer -->
             </div>
-            <div class="link-group">
-                <a href="#">Daftar</a>
-                <a href="#">Login</a>
+            <div class="main-header-row">
+                <div class="logo">MyToko</div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Cari produk di MyToko...">
+                    <button aria-label="Cari"><!-- Search Icon --><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></button>
+                </div>
+                <div class="header-icons">
+                    <a href="#" aria-label="Keranjang Belanja"><!-- Cart Icon --><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17 18.5c-.825 0-1.5.675-1.5 1.5s.675 1.5 1.5 1.5 1.5-.675 1.5-1.5-.675-1.5-1.5-1.5zm-11 0c-.825 0-1.5.675-1.5 1.5s.675 1.5 1.5 1.5 1.5-.675 1.5-1.5-.675-1.5-1.5-1.5zm16.14-14.85l-3.6-8.25c-.24-.525-.75-.85-1.32-.85H5.4c-.75 0-1.38.54-1.485 1.275L2.34 11.235c-.135.66.24 1.305.885 1.485l.09.015h12.18c.615 0 1.125-.435 1.275-1.035l.045-.165 2.19-9.135c.105-.435-.15-.885-.585-1.02z"/></svg></a>
+                    <a href="#" aria-label="Notifikasi"><!-- Notification Icon --><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 10c0-3.31-2.69-6-6-6s-6 2.69-6 6v5l-2 2v1h16v-1l-2-2v-5zm-6 11c-1.1 0-2-.9-2-2h4c0 1.1-.9 2-2 2z"/></svg></a>
+                    <a href="#" aria-label="Pesan"><!-- Chat Icon --><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg></a>
+                </div>
             </div>
         </div>
-
-        <!-- Main Header (Search Bar, Logo, Cart) -->
-        <header class="main-header">
-            <div class="main-header-content container">
-                <!-- Logo -->
-                <div class="logo">
-                    <h1>x-Qmo Shop</h1>
-                </div>
-
-                <!-- Search Bar -->
-                <div class="search-bar-wrapper">
-                    <input type="text" placeholder="Cari di Toko Anda..." class="search-input">
-                    <button class="search-button">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                        </svg>
-                    </button>
-                </div>
-
-                <!-- Cart Icon -->
-                <div class="cart-icon-wrapper">
-                    <a href="#" class="cart-icon">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="9" cy="21" r="1"></circle>
-                            <circle cx="20" cy="21" r="1"></circle>
-                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                        </svg>
-                        <span class="cart-count">0</span>
-                    </a>
-                </div>
-            </div>
-            <!-- Kategori populer di bawah search bar -->
-            <div class="category-links-container container">
-                <a href="#" class="category-link">Elektronik</a>
-                <a href="#" class="category-link">Fashion Pria</a>
-                <a href="#" class="category-link">Fashion Wanita</a>
-                <a href="#" class="category-link">Perlengkapan Rumah</a>
-                <a href="#" class="category-link">Kesehatan & Kecantikan</a>
-                <a href="#" class="category-link">Olahraga</a>
-                <a href="#" class="category-link">Mainan & Hobi</a>
-                <a href="#" class="category-link">Komputer & Laptop</a>
-            </div>
-        </header>
+    </header>
 
 <main class="landing-main">
         {{ content }}
@@ -93,15 +53,46 @@
 
          <!-- Footer -->
         <footer class="footer">
-            <div class="footer-content container">
-                <p>&copy; 2025 x-Qmo Shop. Hak Cipta Dilindungi.</p>
-                <div class="footer-links">
-                    <a href="#">Kebijakan Privasi</a>
-                    <a href="/landing-pages/sk/">Syarat & Ketentuan</a>
-                    <a href="#">Hubungi Kami</a>
+        <div class="container">
+            <div class="footer-column">
+                <h4>Layanan Pelanggan</h4>
+                <ul>
+                    <li><a href="#">Bantuan</a></li>
+                    <li><a href="#">Metode Pembayaran</a></li>
+                    <li><a href="#">Gratis Ongkir</a></li>
+                    <li><a href="#">Kebijakan Pengembalian Produk</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Tentang MyToko</h4>
+                <ul>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                    <li><a href="#">Blog MyToko</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Pembayaran</h4>
+                <!-- Placeholder for payment icons -->
+                <p style="margin-top: 10px;">Visa, Mastercard, Bank Transfer, dll.</p>
+                <h4>Pengiriman</h4>
+                <!-- Placeholder for shipping icons -->
+                <p style="margin-top: 10px;">JNE, J&T, SiCepat, dll.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Ikuti Kami</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><!-- Facebook Icon --><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.815c-3.234 0-4.185 1.259-4.185 4.172v2.828z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><!-- Instagram Icon --><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.645.07 4.85s-.012 3.584-.07 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.251-.148-4.77-1.691-4.919-4.919-.058-1.265-.07-1.645-.07-4.85s.012-3.584.07-4.85c.149-3.227 1.664-4.771 4.919-4.919 1.266-.058 1.644-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.073 4.948.073s3.668-.014 4.948-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    <a href="#" aria-label="Twitter"><!-- Twitter Icon --><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.799-1.574 2.164-2.722-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.594 0-6.49 2.903-6.49 6.49 0 .507.055.996.162 1.465-5.392-.27-10.187-2.868-13.387-6.815-.561.968-.881 2.09-.881 3.292 0 2.254 1.141 4.249 2.873 5.426-.84-.025-1.625-.26-2.31-.637v.08c0 3.154 2.234 5.767 5.195 6.362-.544.148-1.117.225-1.702.225-.418 0-.823-.041-1.22-.116.823 2.572 3.204 4.45 6.037 4.498-2.218 1.748-5.02 2.791-8.087 2.791-2.635 0-5.151-.767-7.244-2.105.74.204 1.487.323 2.254.323"/></svg></a>
                 </div>
             </div>
-        </footer>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 MyToko. Semua Hak Dilindungi Undang-Undang.
+        </div>
+    </footer>
 
     </div>
 
