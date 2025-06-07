@@ -407,8 +407,8 @@ body {
 /* Small devices (sm: 640px and up) */
 @media (min-width: 380px) {
     .product-card {
-  flex-basis: 135px;
-}
+        flex-basis: 165px;
+    }
 }
 @media (min-width: 640px) {
     .category-icons-grid .category-item {
