@@ -319,11 +319,12 @@ body {
 
 .product-info {
     padding: 0px 0.5rem; /* p-2 */
+    display: flex;
+    flex-direction: column;
 }
 
 .product-name {
     font-size: 0.875rem; /* text-sm */
-    font-weight: 600; /* font-semibold */
     color: #333; /* text-gray-800 */
     /* line-clamp-2 equivalent */
     display: -webkit-box;
@@ -331,6 +332,7 @@ body {
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin: 0;
+    flex-basis: 47px;
 }
 .product-name img {
   margin-right: 5px;
@@ -351,6 +353,7 @@ body {
     font-size: 0.75rem; /* text-xs */
     color: #a0a0a0; /* text-gray-400 */
     margin: 0;
+    flex-basis: 27px;
 }
 
 .view-more-button-container {
