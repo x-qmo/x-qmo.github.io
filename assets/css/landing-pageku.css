@@ -408,7 +408,7 @@ body {
 /* Small devices (sm: 640px and up) */
 @media (min-width: 380px) {
     .product-card {
-  flex-basis: 165px;
+  flex-basis: 135px;
 }
 }
 @media (min-width: 640px) {
