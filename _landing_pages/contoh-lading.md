@@ -9,24 +9,20 @@ og_image: /assets/images/default-thumbnail.jpg # Gambar untuk Open Graph
 <section class="main-banner-section container">
             <div class="banner-grid">
                 <div class="main-banner placeholder-img">
-                    Banner Promo Utama
-                    <!-- Anda bisa mengganti ini dengan gambar asli -->
-                    <!-- <img src="https://placehold.co/800x400/FF5722/FFFFFF?text=Promo+Besar" alt="Main Banner" class="full-img"> -->
+                    <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1749307005/banner800x400_b4xzf7.jpg" alt="Main Banner" class="full-img">
                 </div>
                 <div class="small-banners-grid">
                     <div class="small-banner placeholder-img">
-                        Banner Kecil 1
-                        <!-- <img src="https://placehold.co/400x200/FF9800/FFFFFF?text=Promo+Ekstra" alt="Small Banner 1" class="full-img"> -->
+                        <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1749307182/banner400x200_jlquno.jpg" alt="Small Banner 1" class="full-img">
                     </div>
                     <div class="small-banner placeholder-img">
-                        Banner Kecil 2
-                        <!-- <img src="https://placehold.co/400x200/FFC107/FFFFFF?text=Diskon+Terbaru" alt="Small Banner 2" class="full-img"> -->
+                        <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1749307182/banner400x200_jlquno.jpg" alt="Small Banner 2" class="full-img">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Quick Category Icons -->
+
 <section class="quick-category-section container">
             <h2 class="section-title">Kategori Pilihan</h2>
             <div class="category-icons-grid">
@@ -66,72 +62,72 @@ og_image: /assets/images/default-thumbnail.jpg # Gambar untuk Open Graph
             </div>
         </section>
 
-        <!-- Daily Discover / Product Grid -->
+
 <section class="product-section container">
             <h2 class="section-title">Produk Pilihan Hari Ini</h2>
             <div class="product-grid">
                 <!-- Contoh Kartu Produk -->
                 <div class="product-card">
-                    <img src="https://placehold.co/200x200/FF5722/FFFFFF?text=Produk+1" alt="Produk 1" class="product-img">
+                    <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1749308400/prod1-200x200_okzi79.jpg" alt="Kalis Plain Square" class="product-img">
                     <div class="product-info">
-                        <p class="product-name">Nama Produk Keren dan Panjang Sekali</p>
-                        <p class="product-price">Rp 123.000</p>
+                        <p class="product-name"><img src="{{ '/assets/images/x-qmo-shop.jpg' | relative_url }}">Plain Square</p>
                         <p class="product-sold">Terjual 100+</p>
                         <p class="product-location">Jakarta</p>
+                        <p class="product-price">Rp 123.000</p>
                     </div>
                 </div>
                 <div class="product-card">
                     <img src="https://placehold.co/200x200/2196F3/FFFFFF?text=Produk+2" alt="Produk 2" class="product-img">
                     <div class="product-info">
-                        <p class="product-name">Produk Lainnya yang Menarik</p>
-                        <p class="product-price">Rp 75.000</p>
+                        <p class="product-name"><img src="{{ '/assets/images/x-qmo-shop.jpg' | relative_url }}">Produk Lainnya yang Menarik</p>
                         <p class="product-sold">Terjual 50</p>
                         <p class="product-location">Bandung</p>
+                        <p class="product-price">Rp 75.000</p>
                     </div>
                 </div>
                 <div class="product-card">
                     <img src="https://placehold.co/200x200/4CAF50/FFFFFF?text=Produk+3" alt="Produk 3" class="product-img">
                     <div class="product-info">
                         <p class="product-name">Aksesoris Wajib Punya</p>
-                        <p class="product-price">Rp 30.000</p>
                         <p class="product-sold">Terjual 200</p>
                         <p class="product-location">Surabaya</p>
+                        <p class="product-price">Rp 30.000</p>
                     </div>
                 </div>
                  <div class="product-card">
                     <img src="https://placehold.co/200x200/FFC107/FFFFFF?text=Produk+4" alt="Produk 4" class="product-img">
                     <div class="product-info">
                         <p class="product-name">Diskon Spesial Hari Ini</p>
-                        <p class="product-price">Rp 99.000</p>
                         <p class="product-sold">Terjual 80</p>
                         <p class="product-location">Yogyakarta</p>
+                        <p class="product-price">Rp 99.000</p>
                     </div>
                 </div>
                  <div class="product-card">
                     <img src="https://placehold.co/200x200/9C27B0/FFFFFF?text=Produk+5" alt="Produk 5" class="product-img">
                     <div class="product-info">
                         <p class="product-name">Produk Baru Rilis!</p>
-                        <p class="product-price">Rp 150.000</p>
                         <p class="product-sold">Terjual 30</p>
                         <p class="product-location">Medan</p>
+                        <p class="product-price">Rp 150.000</p>
                     </div>
                 </div>
                  <div class="product-card">
                     <img src="https://placehold.co/200x200/607D8B/FFFFFF?text=Produk+6" alt="Produk 6" class="product-img">
                     <div class="product-info">
                         <p class="product-name">Barang Unik & Langka</p>
-                        <p class="product-price">Rp 250.000</p>
                         <p class="product-sold">Terjual 15</p>
                         <p class="product-location">Makassar</p>
+                        <p class="product-price">Rp 250.000</p>
                     </div>
                 </div>
                 <div class="product-card">
                     <img src="https://placehold.co/200x200/E91E63/FFFFFF?text=Produk+7" alt="Produk 7" class="product-img">
                     <div class="product-info">
                         <p class="product-name">Fashion Terkini Pria</p>
-                        <p class="product-price">Rp 88.000</p>
                         <p class="product-sold">Terjual 90</p>
                         <p class="product-location">Palembang</p>
+                        <p class="product-price">Rp 88.000</p>
                     </div>
                 </div>
             </div>
