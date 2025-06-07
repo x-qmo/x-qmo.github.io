@@ -259,9 +259,9 @@
         .product-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px; /* Smaller gap for products */
+            gap: 15px; /* Smaller gap for products */
             justify-content: flex-start; /* Start from left */
-            padding: 0px; /* Internal padding */
+            padding: 0 10px; /* Internal padding */
         }
 
         .product-card {
