@@ -148,7 +148,6 @@
 
         /* Hero Section (Banner) */
         .hero-section {
-            background: url('https://placehold.co/1200x350/EE4D2D/FFFFFF?text=Diskon+Terbesar+Hanya+di+MyToko') center center/cover no-repeat;
             color: var(--white);
             text-align: center;
             padding: 60px 20px;
