@@ -260,12 +260,12 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px; /* Smaller gap for products */
-            justify-content: flex-start; /* Start from left */
+            justify-content: space-between; /* Start from left */
             padding: 0 5px; /* Internal padding */
         }
 
         .product-card {
-            flex: 0 0 calc(20% - 12px); /* 5 items per row on desktop */
+
             max-width: calc(20% - 12px);
             background-color: var(--white);
             border: 1px solid var(--shopee-border);
@@ -273,8 +273,7 @@
             overflow: hidden;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
-            display: flex;
-            flex-direction: column;
+
             cursor: pointer;
         }
 
