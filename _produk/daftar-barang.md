@@ -14,7 +14,7 @@ title: Daftar Produk Kami
         <img src="{{ item.gambar_url | relative_url }}" alt="{{ item.nama_barang }}" class="product-image">
       {% endif %}
       <h2>{{ item.nama_barang }}</h2>
-      <p class="price">Harga: Rp {{ item.harga | number_with_delimiter }}</p>
+      <p class="price">Harga: Rp. {{ item.harga | number_with_delimiter }}</p>
       <p class="description">{{ item.deskripsi }}</p>
       <p class="stock">Stok: {{ item.stok }}</p>
       {% if item.stok > 0 %}
@@ -51,7 +51,7 @@ title: Daftar Produk Kami
     font-size: 1.5em;
     margin-top: 0;
     margin-bottom: 10px;
-    color: #333;
+    color: #ffd700;
   }
   .product-card .price {
     font-size: 1.2em;
