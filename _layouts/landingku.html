@@ -301,7 +301,6 @@ img {
     flex-wrap: wrap;
     gap: 15px; /* Jarak antar kartu produk */
     justify-content: space-between; /* Menyesuaikan jarak agar rata */
-    padding: 0 10px;
 }
 
 .product-card {
@@ -309,7 +308,6 @@ img {
     max-width: calc(20% - 15px);
     background-color: var(--white-color);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -328,11 +326,10 @@ img {
     height: 200px; /* Tinggi gambar konsisten */
     object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
     border-bottom: 1px solid var(--border-color);
-    border-radius: 8px 8px 0 0;
 }
 
 .product-info {
-    padding: 12px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     flex-grow: 1; /* Memastikan info produk memenuhi sisa ruang */
@@ -647,7 +644,7 @@ img {
         max-width: calc(33.33% - 10px);
     }
     .product-card {
-        flex-basis: 155px;
+        flex-basis: 165px;
         max-width: calc(100% - 15px);
     }
     .product-card img {
