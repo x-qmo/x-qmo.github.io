@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title | default: site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description }}">
-    <link rel="stylesheet" href="{{ '/assets/css/landing-pageku.css' | relative_url }}">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.ico' | relative_url }}">
 
@@ -20,7 +20,252 @@
     <meta name="twitter:description" content="{{ page.description | default: site.description }}">
     <meta name="twitter:image" content="{{ page.og_image | default: site.baseurl | append: '/assets/images/default-og-image.jpg' }}">
 
+<style>
+/* General Resets & Typography */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --dark-bg: #343a40;
+    --white: #fff;
+    --gap: 20px;
+}
 
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--white);
+}
+
+.lp-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--gap);
+}
+
+h1, h2, h3, h4 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Buttons */
+.lp-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.lp-button:hover {
+    background-color: #0056b3;
+}
+
+.lp-button-secondary {
+    background-color: var(--secondary-color);
+}
+
+.lp-button-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Header */
+.lp-header {
+    background-color: var(--dark-bg);
+    color: var(--white);
+    padding: var(--gap) 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.lp-header .lp-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.lp-header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.lp-header nav a {
+    color: var(--white);
+    margin-left: var(--gap);
+    font-weight: 600;
+}
+
+.lp-header nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.lp-hero {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 80px var(--gap);
+    display: flex; /* Use flex for vertical centering */
+    justify-content: center;
+    align-items: center;
+    min-height: 400px; /* Adjust as needed */
+}
+
+.lp-hero h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.lp-hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Recent Posts Section */
+.lp-recent-posts {
+    background-color: var(--light-bg);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.lp-recent-posts h3 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.lp-post-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap); /* Space between cards */
+    justify-content: center; /* Center cards if they don't fill a row */
+}
+
+.lp-post-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    padding: var(--gap);
+    text-align: left;
+    flex: 1 1 calc(33.333% - var(--gap) * 2 / 3); /* 3 cards per row, accounting for gap */
+    min-width: 280px; /* Minimum width before wrapping */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+}
+
+.lp-post-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.lp-post-card h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.lp-post-card h4 a {
+    color: var(--text-color);
+}
+
+.lp-post-card h4 a:hover {
+    color: var(--primary-color);
+}
+
+.lp-post-card p {
+    font-size: 0.95em;
+    flex-grow: 1; /* Allow paragraph to take up available space */
+}
+
+.lp-view-all {
+    margin-top: 40px;
+}
+
+/* Footer */
+.lp-footer {
+    background-color: var(--dark-bg);
+    color: var(--white);
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.lp-footer .lp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.lp-footer .lp-social-links a {
+    color: var(--white);
+    margin: 0 10px;
+}
+
+.lp-footer .lp-social-links a:hover {
+    color: var(--primary-color);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .lp-header .lp-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .lp-header h1 {
+        margin-bottom: 10px;
+    }
+    .lp-header nav {
+        margin-top: 10px;
+    }
+    .lp-header nav a {
+        margin: 0 10px;
+    }
+
+    .lp-hero h2 {
+        font-size: 2.2em;
+    }
+
+    .lp-post-card {
+        flex: 1 1 calc(50% - var(--gap) / 2); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .lp-hero {
+        padding: 60px var(--gap);
+    }
+    .lp-hero h2 {
+        font-size: 1.8em;
+    }
+    .lp-post-card {
+        flex: 1 1 100%; /* 1 card per row */
+    }
+}
+
+</style>
 
 </head>
 <header class="lp-header">
