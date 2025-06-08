@@ -35,7 +35,7 @@ title: Daftar Produk Kami
     padding: 20px 0;
   }
   .product-card {
-    border: 1px solid #ddd;
+    border: 1px solid #786d61;
     border-radius: 8px;
     padding: 15px;
     text-align: center;
@@ -61,7 +61,7 @@ title: Daftar Produk Kami
   }
   .product-card .description {
     font-size: 0.9em;
-    color: #555;
+    color: #bbb496;
     margin-bottom: 15px;
   }
   .product-card .stock {
