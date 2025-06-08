@@ -1,593 +1,639 @@
-/* General Styles & Reset */
-    :root {
-        --shopee-orange: #ee4d2d; /* Shopee's primary orange, corrected */
-        --shopee-light-orange: #ffece8; /* Lighter orange for accents */
-        --shopee-dark: #333333;
-        --shopee-gray-text: #757575;
-        --shopee-light-gray-bg: #f5f5f5;
-        --shopee-border: #e0e0e0;
-        --white: #ffffff;
-    }
+/* Variabel CSS untuk warna */
+:root {
+    --primary-color: #ee4d2d; /* Orange khas Shopee */
+    --light-primary-color: #ffece8; /* Orange lebih terang */
+    --dark-text-color: #333333;
+    --gray-text-color: #757575;
+    --background-light: #f5f5f5;
+    --border-color: #e0e0e0;
+    --white-color: #ffffff;
+    --dark-footer-bg: #2d2d2d; /* Warna footer lebih gelap */
+    --footer-link-color: #bbbbbb;
+}
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+/* Reset dan gaya dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    body {
-        font-family: 'Inter', sans-serif;
-        line-height: 1.6;
-        color: var(--shopee-dark);
-        background-color: var(--shopee-light-gray-bg);
-    }
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-text-color);
+    background-color: var(--background-light);
+    min-height: 100vh; /* Memastikan body mengisi seluruh viewport */
+    display: flex;
+    flex-direction: column;
+}
 
-    a {
-        text-decoration: none;
-        color: var(--shopee-orange);
-    }
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
 
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 8px;
-    }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
 
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 15px; /* Adjusted padding for better fit */
-    }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
-    /* Header */
-    .header {
-        background-color: var(--shopee-orange);
-        padding: 10px 0;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        color: var(--white);
-    }
+/* Header */
+.header {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    color: var(--white-color);
+}
 
+.header .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top-links {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    width: 100%; /* Ambil lebar penuh */
+    justify-content: flex-end; /* Pindahkan ke kanan */
+    margin-bottom: 10px;
+}
+
+.header-top-links a {
+    color: var(--white-color);
+    margin-left: 15px;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.header-top-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.main-header-row {
+    display: flex;
+    flex-wrap: wrap; /* Izinkan wrap pada ukuran kecil */
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-right: 20px;
+    padding: 5px 0;
+    white-space: nowrap;
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 700px; /* Batasi lebar search bar */
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    color: var(--dark-text-color);
+}
+
+.search-bar button {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.search-bar button:hover {
+    background-color: var(--light-primary-color);
+    color: var(--primary-color);
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.header-icons a {
+    color: var(--white-color);
+    font-size: 24px;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.header-icons a:hover {
+    color: var(--light-primary-color);
+}
+
+/* Hero Section (Banner) */
+.hero-section {
+    background-image: url('https://placehold.co/1200x350/ee4d2d/FFFFFF?text=Diskon+Besar+Besaran'); /* Gambar latar belakang contoh */
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .btn {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.hero-section .btn:hover {
+    background-color: var(--dark-text-color);
+    color: var(--white-color);
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--dark-text-color);
+    margin-bottom: 25px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+/* Product Categories */
+.categories-section {
+    background-color: var(--white-color);
+    padding: 25px 0;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap; /* Izinkan item wrap ke baris baru */
+    justify-content: flex-start; /* Mulai dari kiri */
+    gap: 15px; /* Jarak antar item */
+    padding: 0 10px;
+}
+
+.category-item {
+    flex: 0 0 calc(10% - 15px); /* 10 item per baris di desktop */
+    min-width: 80px;
+    max-width: 110px;
+    text-align: center;
+    padding: 10px 5px;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+    border: 1px solid var(--border-color); /* Border default */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color); /* Border orange saat hover */
+}
+
+.category-item img {
+    width: 70px; /* Ukuran ikon kategori */
+    height: 70px;
+    object-fit: contain;
+    border-radius: 50%; /* Bulat */
+    margin: 0 auto 10px auto;
+    background-color: var(--light-primary-color); /* Latar belakang untuk ikon */
+    padding: 5px;
+}
+
+.category-item p {
+    font-weight: 500;
+    color: var(--dark-text-color);
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* Featured Products */
+.products-section {
+    background-color: var(--white-color);
+    padding: 25px 0;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Jarak antar kartu produk */
+    justify-content: space-between; /* Menyesuaikan jarak agar rata */
+    padding: 0 10px;
+}
+
+.product-card {
+    flex: 0 0 calc(20% - 15px); /* 5 item per baris di desktop */
+    max-width: calc(20% - 15px);
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px; /* Tinggi gambar konsisten */
+    object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 8px 8px 0 0;
+}
+
+.product-info {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Memastikan info produk memenuhi sisa ruang */
+}
+
+.product-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--dark-text-color);
+    height: 3.2em; /* Batasi judul hingga 2 baris */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: auto; /* Mendorong harga ke bawah */
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap; /* Izinkan harga asli wrap jika terlalu panjang */
+}
+
+.product-price span.original {
+    font-size: 15px;
+    color: var(--gray-text-color);
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+
+.product-rating {
+    font-size: 14px;
+    color: var(--gray-text-color);
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+.product-rating svg {
+    color: #ffc107; /* Warna emas untuk bintang */
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.product-location {
+    font-size: 13px;
+    color: var(--gray-text-color);
+    margin-top: 5px;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 50px 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-section .btn {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cta-section .btn:hover {
+    background-color: var(--dark-text-color);
+    color: var(--white-color);
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--dark-footer-bg);
+    color: var(--footer-link-color);
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #4a4a4a;
+    margin-top: auto; /* Mendorong footer ke bagian bawah halaman */
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--white-color);
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: var(--footer-link-color);
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    opacity: 1;
+    color: var(--white-color);
+    text-decoration: underline;
+}
+
+/* Payment & Shipping Icons in Footer */
+.payment-icons, .shipping-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    justify-content: flex-start; /* Sejajarkan ke kiri di desktop */
+}
+.payment-icons img, .shipping-icons img {
+    height: 28px;
+    width: auto;
+    border-radius: 4px;
+    background-color: var(--white-color);
+    padding: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    object-fit: contain;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: var(--white-color);
+    font-size: 26px;
+    transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #3a3a3a;
+    font-size: 13px;
+    color: #999999;
+}
+
+
+/* Responsive Design dengan Flexbox */
+/* Tablet & Desktop Kecil */
+@media (max-width: 992px) {
     .header .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
     }
-
     .header-top-links {
-        display: flex;
-        align-items: center;
-        font-size: 14px;
-        margin-bottom: 10px;
-        width: 100%;
-        justify-content: flex-end; /* Align to right */
+        justify-content: center;
+        margin-bottom: 15px;
     }
-
-    .header-top-links a {
-        color: var(--white);
-        margin-left: 15px;
-        opacity: 0.9;
-        transition: opacity 0.2s ease;
-    }
-
-    .header-top-links a:hover {
-        opacity: 1;
-        text-decoration: underline;
-    }
-
     .main-header-row {
-        display: flex;
+        flex-direction: column;
         align-items: center;
-        width: 100%;
-        justify-content: space-between;
     }
-
     .logo {
-        font-size: 32px;
-        font-weight: 700;
-        color: var(--white);
-        margin-right: 20px;
-        padding: 5px 0;
-        white-space: nowrap; /* Prevent logo from wrapping */
-    }
-
-    .search-bar {
-        flex-grow: 1;
-        margin: 0 20px;
-        display: flex;
-        align-items: center;
-        max-width: 700px; /* Slightly wider search bar */
-        background-color: var(--white);
-        border-radius: 4px;
-        overflow: hidden;
-    }
-
-    .search-bar input[type="text"] {
-        flex-grow: 1;
-        padding: 10px 15px;
-        border: none;
-        font-size: 16px;
-        outline: none;
-        color: var(--shopee-dark);
-    }
-
-    .search-bar button {
-        background-color: var(--white); /* White button background */
-        color: var(--shopee-orange); /* Orange icon color */
-        border: none;
-        padding: 10px 15px;
-        cursor: pointer;
-        font-size: 18px;
-        transition: background-color 0.2s ease, color 0.2s ease;
-    }
-
-    .search-bar button:hover {
-        background-color: var(--shopee-light-orange);
-        color: var(--shopee-orange);
-    }
-
-    .header-icons {
-        display: flex;
-        align-items: center;
-        margin-left: 15px;
-    }
-
-    .header-icons a {
-        color: var(--white);
-        font-size: 24px; /* Larger icons */
-        margin-left: 25px;
-        display: flex;
-        align-items: center;
-        transition: color 0.2s ease;
-    }
-
-    .header-icons a:hover {
-        color: var(--shopee-light-orange);
-    }
-
-    /* Edit Mode Button */
-    .edit-mode-btn {
-        background-color: var(--white);
-        color: var(--shopee-orange);
-        border: 1px solid var(--shopee-orange);
-        padding: 8px 15px;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 14px;
-        font-weight: 500;
-        margin-left: 20px;
-        transition: background-color 0.2s ease, color 0.2s ease;
-    }
-
-    .edit-mode-btn:hover {
-        background-color: var(--shopee-light-orange);
-    }
-
-
-    /* Hero Section (Banner) */
-    .hero-section {
-        background-image: url('https://placehold.co/1200x300/ee4d2d/FFFFFF?text=Promo+MyToko'); /* Example background image */
-        background-size: cover;
-        background-position: center;
-        color: var(--white);
+        margin: 0 0 15px 0;
         text-align: center;
-        padding: 60px 20px;
-        margin-bottom: 25px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .search-bar {
+        width: 100%;
+        margin: 0 0 15px 0;
+        max-width: 100%;
+    }
+    .header-icons {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .header-icons a {
+        margin: 0 15px;
     }
 
+    .hero-section {
+        padding: 60px 15px;
+    }
     .hero-section h1 {
-        font-size: 44px;
-        margin-bottom: 10px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 40px;
     }
-
     .hero-section p {
         font-size: 18px;
-        margin-bottom: 25px;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
-
-    .hero-section .btn {
-        background-color: var(--white);
-        color: var(--shopee-orange);
-        padding: 12px 25px;
-        border-radius: 4px;
-        font-weight: 600;
-        transition: background-color 0.2s ease, color 0.2s ease;
-    }
-
-    .hero-section .btn:hover {
-        background-color: var(--shopee-dark);
-        color: var(--white);
-    }
-
-    /* Section Titles */
     .section-title {
-        font-size: 24px;
-        font-weight: 600;
-        color: var(--shopee-dark);
-        margin-bottom: 20px;
-        text-align: left; /* Shopee often has left-aligned titles */
-        padding-left: 20px; /* Indent slightly */
-        padding-top: 10px;
-    }
-
-    /* Product Categories */
-    .categories-section {
-        background-color: var(--white);
-        padding: 20px 0;
-        margin-bottom: 25px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    }
-
-    .category-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start; /* Start from left */
-        gap: 15px; /* Smaller gap */
-        padding: 0 10px; /* Add internal padding */
+        font-size: 26px;
+        padding-left: 15px;
     }
 
     .category-item {
-        flex: 0 0 auto;
-        width: calc(10% - 15px); /* 10 items per row on desktop */
-        min-width: 80px; /* Minimum width for very small screens */
-        max-width: 100px; /* Max width to keep them compact */
-        text-align: center;
-        padding: 10px 5px;
-        background-color: var(--white); /* White background */
-        border-radius: 6px;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        cursor: pointer;
-        border: 1px solid transparent; /* No border by default */
+        flex: 0 0 calc(16.66% - 15px); /* 6 kategori per baris */
+        max-width: calc(16.66% - 15px);
     }
-
-    .category-item:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-        border-color: var(--shopee-orange); /* Orange border on hover */
-    }
-
-    .category-item img {
-        width: 60px; /* Smaller category images */
-        height: 60px;
-        object-fit: contain; /* Contain to show full icon */
-        border-radius: 50%; /* Circular */
-        margin: 0 auto 8px auto;
-        border: 1px solid var(--shopee-border); /* Subtle border */
-    }
-
-    .category-item p {
-        font-weight: 400; /* Lighter font weight */
-        color: var(--shopee-dark);
-        font-size: 14px;
-        line-height: 1.3;
-    }
-
-    /* Featured Products */
-    .products-section {
-        background-color: var(--white);
-        padding: 25px 0;
-        margin-bottom: 25px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    }
-
-    .product-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px; /* Smaller gap for products */
-        justify-content: space-between; /* Start from left */
-        padding: 0 5px; /* Internal padding */
-    }
-
     .product-card {
-        flex: 0 0 calc(20% - 12px); /* 5 items per row on desktop */
-        max-width: calc(20% - 12px);
-        background-color: var(--white);
-        border: 1px solid var(--shopee-border);
-        border-radius: 44px; /* Slightly less rounded */
-        overflow: hidden;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
+        flex: 0 0 calc(33.33% - 15px); /* 3 produk per baris */
+        max-width: calc(33.33% - 15px);
     }
+}
 
-    .product-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* Tablet Kecil & Mobile */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 15px;
     }
-
+    .hero-section h1 {
+        font-size: 34px;
+    }
+    .hero-section p {
+        font-size: 16px;
+    }
+    .section-title {
+        font-size: 24px;
+        padding-left: 10px;
+    }
+    .category-item {
+        flex: 0 0 calc(25% - 15px); /* 4 kategori per baris */
+        max-width: calc(25% - 15px);
+    }
+    .category-item img {
+        width: 60px;
+        height: 60px;
+    }
+    .product-card {
+        flex: 0 0 calc(50% - 15px); /* 2 produk per baris */
+        max-width: calc(50% - 15px);
+    }
     .product-card img {
-        width: 100%;
-        height: 180px; /* Consistent image height */
-        object-fit: cover;
-        border-bottom: 1px solid var(--shopee-border);
-        border-radius: 4px 4px 0 0;
+        height: 180px;
     }
-
-    .product-info {
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-    }
-
     .product-info h3 {
         font-size: 15px;
-        margin-bottom: 5px;
-        color: var(--shopee-dark);
-        height: 3em; /* Limit title to 2 lines */
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
     }
-
     .product-price {
         font-size: 18px;
-        font-weight: 700;
-        color: var(--shopee-orange);
-        margin-top: auto; /* Push price to the bottom */
-        display: flex;
-        align-items: baseline;
     }
-
     .product-price span.original {
-        font-size: 14px;
-        color: var(--shopee-gray-text);
-        text-decoration: line-through;
-        margin-left: 8px;
-    }
-
-    .product-rating {
         font-size: 13px;
-        color: var(--shopee-gray-text);
-        margin-top: 5px;
     }
-    .product-rating svg {
-        color: #ffc107; /* Gold color for stars */
-        width: 14px;
-        height: 14px;
-        vertical-align: middle;
-        margin-right: 3px;
-    }
-    .product-location {
+    .product-rating, .product-location {
         font-size: 12px;
-        color: var(--shopee-gray-text);
-        margin-top: 5px;
     }
-
-    /* Styles for editable content */
-    .editable-content[contenteditable="true"] {
-        border: 1px dashed var(--shopee-orange);
-        padding: 2px 5px;
-        min-width: 50px; /* Ensure editable area is visible */
-        display: inline-block; /* For proper padding/border */
-    }
-    /* Specific adjustments for product-info elements when editable */
-    .product-info h3.editable-content[contenteditable="true"] {
-        height: auto; /* Allow height to adjust */
-        -webkit-line-clamp: unset; /* Remove line clamp in edit mode */
-    }
-    .product-price .current-price.editable-content[contenteditable="true"],
-    .product-rating .rating-text.editable-content[contenteditable="true"],
-    .product-location.editable-content[contenteditable="true"] {
-        white-space: nowrap; /* Prevent wrapping for price/rating/location during edit */
-    }
-
-
-    /* Footer */
-    .footer {
-        background-color: var(--shopee-dark);
-        color: var(--white);
-        padding: 30px 0;
-        text-align: center;
-        border-top: 1px solid #4a4a4a;
-    }
-
-    .footer .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 20px;
-    }
-
     .footer-column {
-        flex: 1;
-        min-width: 180px;
-        text-align: left;
+        flex: 0 0 100%; /* Kolom footer bertumpuk */
+        text-align: center;
     }
-
-    .footer-column h4 {
-        font-size: 18px;
-        margin-bottom: 15px;
-        color: var(--shopee-light-orange);
+    .payment-icons, .shipping-icons, .social-icons {
+        justify-content: center; /* Sejajarkan ke tengah di mobile */
     }
+}
 
-    .footer-column ul {
-        list-style: none;
+/* Mobile Kecil */
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 28px;
     }
-
-    .footer-column ul li {
-        margin-bottom: 8px;
-    }
-
-    .footer-column ul li a {
-        color: var(--white);
-        opacity: 0.7;
-        transition: opacity 0.2s ease;
+    .hero-section p {
         font-size: 14px;
     }
-
-    .footer-column ul li a:hover {
-        opacity: 1;
-        text-decoration: underline;
+    .hero-section .btn {
+        padding: 12px 25px;
+        font-size: 16px;
     }
-
-    /* Payment & Shipping Icons in Footer */
-    .payment-icons img, .shipping-icons img {
-        height: 30px; /* Adjust height as needed */
-        width: auto;
-        border-radius: 4px;
-        margin-right: 8px;
-        margin-bottom: 8px; /* For stacking on smaller screens */
-        object-fit: contain;
-        background-color: var(--white);
-        padding: 3px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    .section-title {
+        font-size: 20px;
+        padding-left: 10px;
     }
-    .payment-icons, .shipping-icons {
-        display: flex;
-        flex-wrap: wrap; /* Allow wrapping of icons */
-        gap: 5px; /* Small gap between icons */
+    .category-item {
+        flex: 0 0 calc(33.33% - 10px); /* 3 kategori per baris */
+        max-width: calc(33.33% - 10px);
     }
-
-
-    .social-icons a {
-        color: var(--white);
-        font-size: 22px;
-        margin-right: 12px;
-        transition: color 0.2s ease;
+    .product-card {
+        flex: 0 0 calc(100% - 15px); /* 1 produk per baris */
+        max-width: calc(100% - 15px);
     }
-
-    .social-icons a:hover {
-        color: var(--shopee-orange);
+    .product-card img {
+        height: 220px; /* Biarkan sedikit lebih tinggi di HP */
     }
-
-    .footer-bottom {
-        margin-top: 25px;
-        padding-top: 15px;
-        border-top: 1px solid #5a5a5a;
-        font-size: 13px;
-        color: #ccc;
+    .product-info h3 {
+        font-size: 16px;
     }
-
-
-
-/* Responsive Design */
-    @media (max-width: 992px) {
-        .header .container {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        .header-top-links {
-            justify-content: center;
-            margin-bottom: 15px;
-        }
-        .main-header-row {
-            flex-direction: column;
-            align-items: center;
-        }
-        .logo {
-            margin: 0 0 15px 0;
-            text-align: center;
-        }
-        .search-bar {
-            width: 100%;
-            margin: 0 0 15px 0;
-            max-width: 100%;
-        }
-        .header-icons {
-            width: 100%;
-            justify-content: center;
-            margin-left: 0;
-        }
-        .header-icons a {
-            margin: 0 15px;
-        }
-        .edit-mode-btn {
-            margin: 15px auto 0; /* Center button on smaller screens */
-            width: fit-content;
-        }
-
-        .category-item {
-            width: calc(16.66% - 12.5px); /* 6 categories per row */
-        }
-        .product-card {
-            flex: 0 0 calc(25% - 11.25px); /* 4 items per row */
-            max-width: calc(25% - 11.25px);
-        }
+    .product-price {
+        font-size: 20px;
     }
-
-    @media (max-width: 768px) {
-        .hero-section {
-            padding: 40px 15px;
-        }
-        .hero-section h1 {
-            font-size: 36px;
-        }
-        .hero-section p {
-            font-size: 16px;
-        }
-        .section-title {
-            font-size: 22px;
-            padding-left: 15px;
-        }
-        .category-item {
-            width: calc(20% - 12px); /* 5 categories per row */
-            min-width: unset; /* Remove min-width for more flexibility */
-            max-width: unset;
-        }
-        .product-card {
-            flex: 0 0 calc(33.33% - 10px); /* 3 items per row */
-            max-width: calc(33.33% - 10px);
-        }
-        .footer-column {
-            min-width: 120px;
-            text-align: center;
-        }
-    }
-
-    @media (max-width: 576px) {
-        .container {
-            padding: 0 3px;
-        }
-        .hero-section {
-            padding: 30px 10px;
-        }
-        .hero-section h1 {
-            font-size: 28px;
-        }
-        .hero-section p {
-            font-size: 14px;
-        }
-        .section-title {
-            font-size: 20px;
-            padding-left: 10px;
-        }
-        .category-item {
-            width: calc(25% - 11.25px); /* 4 categories per row */
-        }
-        .product-card {
-            flex: 0 0 calc(50% - 7.5px); /* 2 items per row */
-            max-width: calc(50% - 7.5px);
-        }
-        .product-card img {
-            height: 150px;
-        }
-        .product-info h3 {
-            font-size: 14px;
-            height: 3em; /* Ensure 2 lines */
-        }
-        .product-price {
-            font-size: 15px;
-        }
-        .product-price span.original {
-            font-size: 12px;
-        }
-        .product-rating, .product-location {
-            font-size: 11px;
-        }
-        .footer-column {
-            flex: 0 0 100%; /* Stack columns */
-            text-align: center;
-        }
-    }
+}
