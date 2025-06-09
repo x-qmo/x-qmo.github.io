@@ -1,15 +1,12 @@
 - nama_barang: Laptop X
   harga: 3000000
-  deskripsi: Siap tempur! Lenovo ThinkPad T460p Core i5, Performa andal, bodi baja, keyboard nyaman. Ideal untuk kerja keras dan mobilitas tinggi. Andal & kokoh!.
-  gambar_url: /assets/images/laptop.jpg
+  gambar_url: /assets/images/laptop1.jpg
   stok: 5
 - nama_barang: Monitor Y
   harga: 3500000
-  deskripsi: Monitor 27 inci 144Hz.
-  gambar_url: /assets/images/monitor-y.jpg
+  gambar_url: /assets/images/laptop1.jpg
   stok: 12
 - nama_barang: Mouse Z
   harga: 500000
-  deskripsi: Mouse ergonomis wireless.
-  gambar_url: /assets/images/mouse-z.jpg
+  gambar_url: /assets/images/laptop1.jpg
   stok: 20

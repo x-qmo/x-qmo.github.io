@@ -1,0 +1,99 @@
+<style>
+  /* CSS untuk galeri video yang responsif */
+  .product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    padding: 5px; /* Padding di sekitar galeri */
+    background-color: #3c3836; /* Warna latar belakang galeri */
+    justify-content: space-between;
+  }
+
+  .product-card-item {
+background-color: #282828;
+flex-basis: 47%;
+margin-bottom: 10px;
+  }
+
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+}
+.price {
+  flex-basis: 30px;
+}
+.description {
+  flex-basis: 115px;
+}
+.stock {
+  flex-basis: 15px;
+}
+.buy-button {
+  flex-basis: 30px;
+}
+.product-info h2 {
+  margin: 0;
+}
+
+
+  .product-card-item .product-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #fbf1c7;
+  }
+
+  .product-card-item .product-info p {
+    font-size: 0.9em;
+    color: #c3bc9c;
+  }
+
+  /* Media queries untuk responsivitas */
+  @media (max-width: 992px) {
+
+  }
+
+  @media (max-width: 768px) {
+.product-gallery {
+  flex-direction: row;
+  padding: 0px;
+}
+.price {
+  flex-basis: 30px;
+}
+.product-image {
+  width: 160px;
+}
+.stock {
+  flex-basis: 15px;
+}
+.buy-button {
+  flex-basis: 30px;
+}
+  }
+</style>
+
+<div class="product-gallery">
+  {% for item in site.data.barang %}
+    <div class="product-card-item">
+      <div class="product-wrapper">
+        {% if item.gambar_url %}
+            <img src="{{ item.gambar_url | relative_url }}" alt="{{ item.nama_barang }}" class="product-image">
+        {% endif %}
+      </div>
+      <div class="product-info">
+        <h2>{{ item.nama_barang }}</h2>
+        <p class="price">Harga: Rp. {{ item.harga | number_with_delimiter }}</p>
+        <p class="stock">Stok: {{ item.stok }}</p>
+        {% if item.stok > 0 %}
+            <button class="buy-button">Beli Sekarang</button>
+        {% else %}
+            <button class="out-of-stock-button" disabled>Stok Habis</button>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
