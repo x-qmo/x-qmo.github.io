@@ -74,7 +74,7 @@ if (workbox) {
     { url: '/index.html', revision: '1' }, // Jekyll generates index.html
     { url: '/tentang/', revision: '1' }, // Example page
     // Add more important pages/posts you want to be offline
-    '/assets/css/style.scss',
+    '/assets/css/style.css',
     '/assets/js/',
     // Don't forget your manifest file and icons
     '/manifest.json',
