@@ -1,12 +1,12 @@
 - nama_barang: Laptop X
   harga: 3000000
-  gambar_url: /assets/images/laptop1.jpg
+  gambar_url: /assets/images/laptop2.jpg
   stok: 5
 - nama_barang: Monitor Y
   harga: 3500000
-  gambar_url: /assets/images/laptop1.jpg
+  gambar_url: /assets/images/laptop2.jpg
   stok: 12
 - nama_barang: Mouse Z
   harga: 500000
-  gambar_url: /assets/images/laptop1.jpg
+  gambar_url: /assets/images/laptop2.jpg
   stok: 20
