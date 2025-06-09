@@ -103,8 +103,8 @@ og_image: /assets/images/default-thumbnail.jpg # Gambar untuk Open Graph
         <div class="container">
             <h2 class="cta-title">Jangan Lewatkan Kelezatan Nasi Goreng dan Seblak Kami!</h2>
             <p class="cta-description">Pesan sekarang atau kunjungi outlet kami untuk pengalaman rasa yang tak terlupakan.</p>
-            <a href="#contact" class="btn-primary">
-                Hubungi Kami
+            <a href="https://gofood.link/a/G24QBLG" class="btn-primary">
+                Pesan Gofood
             </a>
         </div>
     </section>
