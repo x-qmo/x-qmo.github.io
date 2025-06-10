@@ -1,12 +1,11 @@
-- nama_barang: Laptop X
-  harga: 3000000
-  gambar_url: /assets/images/laptop2.jpg
-  stok: 5
-- nama_barang: Monitor Y
-  harga: 3500000
-  gambar_url: /assets/images/laptop2.jpg
-  stok: 12
-- nama_barang: Mouse Z
-  harga: 500000
-  gambar_url: /assets/images/laptop2.jpg
-  stok: 20
+- nama_barang: Refill Kasturi Jasmine Wangi Mewah Tahan Lama 35ml
+  harga: 60000
+  gambar_url: /assets/images/kasturijasminespray.jpg
+  stok: 1
+  jenis: Spray
+- nama_barang: Refill Kasturi Jasmine Wangi Mewah Tahan Lama 10ml
+  harga: 20000
+  gambar_url: /assets/images/kasturijasminroll.jpg
+  stok: 1
+  jenis: Roll On
+

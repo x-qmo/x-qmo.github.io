@@ -1,5 +1,5 @@
 ---
-layout: default # Atau layout lain yang Anda gunakan
+layout: produk_kami # Atau layout lain yang Anda gunakan
 title: Daftar Produk Kami
 ---
 
