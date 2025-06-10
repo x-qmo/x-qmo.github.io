@@ -23,6 +23,8 @@
   {% assign current_description = page.excerpt | default: site.description | strip_html | truncate: 160 %}
   {% assign current_image = page.image | default: site.data.site_info.logo | absolute_url %}
 
+  {% include article_schema.html %}
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
