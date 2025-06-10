@@ -74,7 +74,7 @@
         "author": {
           "@type": "Person",
           "name": "{% if page.author %}{{ page.author | default: site.data.site_info.author.name }}{% else %}{{ site.data.site_info.author.name }}{% endif %}",
-          "url": "{% if page.author_url %}{{ page.author_url }}{% else %}{{ site.data.site_info.author.url }}{% endif %}"
+          "url": "{% if page.author.url %}{{ page.author.url }}{% else %}{{ site.data.site_info.author.url }}{% endif %}"
           {% if site.data.site_info.author.twitter %},"sameAs": ["{{ site.data.site_info.author.twitter }}"]{% endif %}
         },
         "publisher": {
