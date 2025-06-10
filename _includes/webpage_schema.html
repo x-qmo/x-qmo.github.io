@@ -1,0 +1,28 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "{{ page.title | default: site.title | escape }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "{{ page.description | default: site.description | strip_html | strip_newlines | truncate: 160 | escape }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "inLanguage": "id-ID",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "{{ site.url }}/",
+    "name": "{{ site.title | escape }}",
+    "description": "{{ site.description | escape }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title | escape }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/images/logo.png"
+    }
+  }
+}
+</script>
