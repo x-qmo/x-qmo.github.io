@@ -1,6 +1,7 @@
 ---
 layout: produk_kami # Atau layout lain yang Anda gunakan
 title: Daftar Produk Kami
+image: /assets/images/produk-kami-wallp.jpg
 ---
 
 <style>
