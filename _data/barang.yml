@@ -1,10 +1,10 @@
 - nama_barang: Refill Kasturi Jasmine Wangi Mewah Tahan Lama 35ml
-  harga: 60000
+  harga: "60.000"
   gambar_url: /assets/images/kasturijasminespray.jpg
   stok: 1
   jenis: Spray
 - nama_barang: Refill Kasturi Jasmine Wangi Mewah Tahan Lama 10ml
-  harga: 20000
+  harga: "20.000"
   gambar_url: /assets/images/kasturijasminroll.jpg
   stok: 1
   jenis: Roll On
