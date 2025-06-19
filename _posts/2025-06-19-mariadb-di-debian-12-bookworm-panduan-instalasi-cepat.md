@@ -4,7 +4,7 @@ title: "MariaDB di Debian 12 Bookworm: Panduan Instalasi Cepat"
 description: Instal MariaDB di Debian 12 Bookworm dengan mudah! Panduan singkat ini bantu Anda set up database dalam sekejap. Cepat, tepat, tanpa ribet!
 date: 2025-06-19 10:00:00 +0700
 categories: [tutorial]
-tags: [umum]
+tags: [tutorial]
 author: Nama Anda
 image: /assets/images/belajar-mysql.jpg
 ---
