@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter Audio ke MP3 Gratis</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for Inter font and overall aesthetics */
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5; /* Light gray background */
+        }
+        .container {
+            max-width: 90%;
+            width: 500px;
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 1rem; /* Rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            text-align: center;
+        }
+        input[type="file"] {
+            display: none; /* Hide default file input */
+        }
+        .custom-file-upload {
+            border: 2px dashed #cbd5e1; /* Dashed border */
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            cursor: pointer;
+            display: block;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            color: #4a5568; /* Darker gray text */
+        }
+        .custom-file-upload:hover {
+            border-color: #93c5fd; /* Light blue on hover */
+            background-color: #f7fafc; /* Very light gray on hover */
+        }
+        button {
+            transition: all 0.3s ease;
+            background-image: linear-gradient(to right, #6b7280, #4b5563); /* Gradient background */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Shadow for buttons */
+        }
+        button:hover {
+            background-image: linear-gradient(to right, #4b5563, #374151); /* Darker gradient on hover */
+        }
+        .download-link {
+            display: inline-block;
+            background-color: #4CAF50; /* Green background */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 0.75rem;
+            margin-top: 1.5rem;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        .download-link:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+        /* Message box styling */
+        .message-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            display: none; /* Hidden by default */
+        }
+    </style>
+    <!-- LAMEjs for MP3 encoding -->
+    <script src="https://cdn.jsdelivr.net/npm/lamejs@1.2.0/lame.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-3xl font-bold mb-6 text-gray-800">Konverter Audio ke MP3</h1>
+
+        <label for="audioFile" class="custom-file-upload">
+            <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 0115.9 6L16 6a3 3 0 013 3v10a2 2 0 01-2 2H7a2 2 0 01-2-2v-5a2 2 0 012-2z"></path>
+            </svg>
+            <p class="mt-2 text-sm">Seret & lepas file audio di sini atau <span class="font-medium text-indigo-600">telusuri</span></p>
+            <p id="fileName" class="text-xs text-gray-500 mt-1">Belum ada file yang dipilih</p>
+        </label>
+        <input type="file" id="audioFile" accept="audio/*">
+
+        <button id="convertButton" class="w-full bg-gray-700 text-white py-3 px-6 rounded-lg text-lg font-semibold cursor-pointer shadow-md opacity-50" disabled>Konversi ke MP3</button>
+
+        <div id="messageBox" class="message-box"></div>
+
+        <div id="progressContainer" class="mt-4 hidden">
+            <p class="text-sm text-gray-600 mb-2">Mengonversi...</p>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div id="progressBar" class="bg-blue-600 h-2.5 rounded-full" style="width: 0%;"></div>
+            </div>
+            <p id="progressText" class="text-xs text-gray-500 mt-1">0%</p>
+        </div>
+
+        <div id="downloadContainer" class="mt-6 hidden">
+            <a id="downloadLink" class="download-link" href="#" download="converted_audio.mp3">Unduh MP3</a>
+        </div>
+    </div>
+
+    <script>
+        // Get references to HTML elements
+        const audioFile = document.getElementById('audioFile');
+        const fileNameSpan = document.getElementById('fileName');
+        const convertButton = document.getElementById('convertButton');
+        const messageBox = document.getElementById('messageBox');
+        const progressContainer = document.getElementById('progressContainer');
+        const progressBar = document.getElementById('progressBar');
+        const progressText = document.getElementById('progressText');
+        const downloadContainer = document.getElementById('downloadContainer');
+        const downloadLink = document.getElementById('downloadLink');
+        const customFileUpload = document.querySelector('.custom-file-upload');
+
+        let audioContext;
+        let fileReader;
+        let selectedFile = null;
+
+        // Function to display messages in the message box
+        function showMessage(message, type = 'warning') {
+            messageBox.textContent = message;
+            messageBox.style.display = 'block';
+            messageBox.className = 'message-box'; // Reset classes
+            if (type === 'error') {
+                messageBox.classList.add('bg-red-100', 'border-red-400', 'text-red-700');
+            } else if (type === 'success') {
+                messageBox.classList.add('bg-green-100', 'border-green-400', 'text-green-700');
+            } else {
+                messageBox.classList.add('bg-yellow-100', 'border-yellow-400', 'text-yellow-700');
+            }
+        }
+
+        // Function to hide the message box
+        function hideMessageBox() {
+            messageBox.style.display = 'none';
+        }
+
+        // Handle file selection
+        audioFile.addEventListener('change', (event) => {
+            selectedFile = event.target.files[0];
+            if (selectedFile) {
+                fileNameSpan.textContent = selectedFile.name;
+                convertButton.disabled = false;
+                convertButton.classList.remove('opacity-50'); // Enable button visual
+                hideMessageBox();
+                downloadContainer.classList.add('hidden'); // Hide previous download link
+                progressContainer.classList.add('hidden'); // Hide progress bar
+            } else {
+                fileNameSpan.textContent = 'Belum ada file yang dipilih';
+                convertButton.disabled = true;
+                convertButton.classList.add('opacity-50'); // Disable button visual
+            }
+        });
+
+        // Handle drag and drop
+        customFileUpload.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            customFileUpload.classList.add('border-indigo-500', 'bg-blue-50');
+        });
+
+        customFileUpload.addEventListener('dragleave', (e) => {
+            customFileUpload.classList.remove('border-indigo-500', 'bg-blue-50');
+        });
+
+        customFileUpload.addEventListener('drop', (e) => {
+            e.preventDefault();
+            customFileUpload.classList.remove('border-indigo-500', 'bg-blue-50');
+            selectedFile = e.dataTransfer.files[0];
+            if (selectedFile) {
+                // Manually assign to the file input to trigger its change event listener
+                const dataTransfer = new DataTransfer();
+                dataTransfer.items.add(selectedFile);
+                audioFile.files = dataTransfer.files;
+                fileNameSpan.textContent = selectedFile.name;
+                convertButton.disabled = false;
+                convertButton.classList.remove('opacity-50');
+                hideMessageBox();
+                downloadContainer.classList.add('hidden');
+                progressContainer.classList.add('hidden');
+            }
+        });
+
+        // Conversion logic
+        convertButton.addEventListener('click', async () => {
+            if (!selectedFile) {
+                showMessage('Pilih file audio terlebih dahulu.', 'warning');
+                return;
+            }
+
+            hideMessageBox();
+            downloadContainer.classList.add('hidden');
+            progressContainer.classList.remove('hidden');
+            progressBar.style.width = '0%';
+            progressText.textContent = '0%';
+            convertButton.disabled = true; // Disable button during conversion
+            convertButton.classList.add('opacity-50');
+
+            try {
+                if (!audioContext) {
+                    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                }
+
+                fileReader = new FileReader();
+
+                fileReader.onload = async (e) => {
+                    const audioData = e.target.result; // ArrayBuffer
+
+                    // Decode audio data
+                    const audioBuffer = await audioContext.decodeAudioData(audioData);
+
+                    // Initialize LAMEjs
+                    const mp3encoder = new lamejs.Mp3Encoder(
+                        audioBuffer.numberOfChannels,
+                        audioBuffer.sampleRate,
+                        128 // Bitrate in kbps (e.g., 128, 192, 256, 320)
+                    );
+
+                    const samples = audioBuffer.getChannelData(0); // Get samples from the first channel
+
+                    // LAMEjs expects samples to be 16-bit integers, so we need to convert
+                    const LAME_SAMPLES_SIZE = 1152; // LAMEjs internal buffer size
+                    const mp3Data = [];
+                    let remainingSamples = samples.length;
+                    let offset = 0;
+
+                    while (remainingSamples >= LAME_SAMPLES_SIZE) {
+                        const monoSamples = new Int16Array(LAME_SAMPLES_SIZE);
+                        for (let i = 0; i < LAME_SAMPLES_SIZE; i++) {
+                            monoSamples[i] = Math.max(-1, Math.min(1, samples[offset + i])) * 0x7FFF;
+                        }
+
+                        const mp3buf = mp3encoder.encodeBuffer(monoSamples);
+                        if (mp3buf.length > 0) {
+                            mp3Data.push(mp3buf);
+                        }
+
+                        offset += LAME_SAMPLES_SIZE;
+                        remainingSamples -= LAME_SAMPLES_SIZE;
+
+                        // Update progress bar
+                        const progress = Math.min(100, Math.floor((offset / samples.length) * 100));
+                        progressBar.style.width = `${progress}%`;
+                        progressText.textContent = `${progress}%`;
+                    }
+
+                    // Flush any remaining samples
+                    const tail = mp3encoder.flush();
+                    if (tail.length > 0) {
+                        mp3Data.push(tail);
+                    }
+
+                    // Create Blob and download link
+                    const blob = new Blob(mp3Data, { type: 'audio/mp3' });
+                    const url = URL.createObjectURL(blob);
+                    downloadLink.href = url;
+                    downloadLink.download = selectedFile.name.replace(/\.[^/.]+$/, "") + '.mp3'; // Set download file name
+                    downloadContainer.classList.remove('hidden');
+                    progressContainer.classList.add('hidden'); // Hide progress bar
+                    showMessage('Konversi berhasil!', 'success');
+                    convertButton.disabled = false; // Re-enable button
+                    convertButton.classList.remove('opacity-50');
+                };
+
+                fileReader.onerror = () => {
+                    showMessage('Gagal membaca file.', 'error');
+                    progressContainer.classList.add('hidden');
+                    convertButton.disabled = false;
+                    convertButton.classList.remove('opacity-50');
+                };
+
+                fileReader.readAsArrayBuffer(selectedFile);
+
+            } catch (error) {
+                console.error("Error during conversion:", error);
+                showMessage(`Terjadi kesalahan saat konversi: ${error.message}`, 'error');
+                progressContainer.classList.add('hidden');
+                convertButton.disabled = false;
+                convertButton.classList.remove('opacity-50');
+            }
+        });
+    </script>
+</body>
+</html>
