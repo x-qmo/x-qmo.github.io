@@ -14,6 +14,16 @@ layanan:
       stok: "true"
       link: /bisnis/2025/05/29/konveksi-mugitex-jaket-kemeja-kaos.html
     - type: konveksi
+      id: "kon0003"
+      nama: "KONVEKSI BANDUNG ASLI"
+      nama_judul: "Konveksi Pakaian Jaket, Kemeja dan Kaos"
+      alamat: "Gg. H. Asep Komar, RT.002/RW.008, Sukapada, Kec. Cibeunying Kidul, Kota Bandung, Jawa Barat 40125"
+      harga: "250000"
+      deskripsi_singkat: "Bandung asli! Konveksi spesialis kemeja & kaos. Kualitas premium, harga bersaing. Wujudkan desain impianmu sekarang!"
+      gambar: "/assets/images/konveksi-bandung-asli.jpg"
+      stok: "true"
+      link: /landing-pages/konveksi-bandung-asli
+    - type: konveksi
       id: "kon0002"
       nama: "Berkah Sawargi"
       nama_judul: "Seblak Pedas Nampol, Mie Rebus Hangat, & Basreng Renyah Menanti!"
