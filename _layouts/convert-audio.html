@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konverter Audio ke MP3 Gratis</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         /* Custom styles for Inter font and overall aesthetics */
         body {
@@ -15,6 +14,9 @@
             align-items: center;
             min-height: 100vh;
             background-color: #f0f2f5; /* Light gray background */
+            margin: 0; /* Menghilangkan margin default body */
+            padding: 20px; /* Padding agar konten tidak terlalu mepet tepi layar pada mobile */
+            box-sizing: border-box; /* Pastikan padding tidak menambah lebar elemen */
         }
         .container {
             max-width: 90%;
@@ -28,6 +30,8 @@
         input[type="file"] {
             display: none; /* Hide default file input */
         }
+
+        /* Styles for the custom file upload area */
         .custom-file-upload {
             border: 2px dashed #cbd5e1; /* Dashed border */
             border-radius: 0.75rem;
@@ -42,14 +46,116 @@
             border-color: #93c5fd; /* Light blue on hover */
             background-color: #f7fafc; /* Very light gray on hover */
         }
-        button {
-            transition: all 0.3s ease;
+        .custom-file-upload svg { /* Icon inside custom file upload */
+            margin-left: auto;
+            margin-right: auto;
+            height: 3rem; /* h-12 */
+            width: 3rem;  /* w-12 */
+            color: #a0aec0; /* text-gray-400 */
+        }
+        .custom-file-upload p.upload-text { /* "Seret & lepas..." text */
+            margin-top: 0.5rem; /* mt-2 */
+            font-size: 0.875rem; /* text-sm */
+        }
+        .custom-file-upload p.upload-text span { /* "telusuri" text */
+            font-weight: 500; /* font-medium */
+            color: #6366f1;   /* text-indigo-600 */
+        }
+        .custom-file-upload p.file-name { /* "Belum ada file..." text */
+            font-size: 0.75rem; /* text-xs */
+            color: #a0aec0;     /* text-gray-500 */
+            margin-top: 0.25rem; /* mt-1 */
+        }
+        /* Styles for dragover state */
+        .custom-file-upload.drag-over {
+            border-color: #6366f1; /* border-indigo-500 */
+            background-color: #eff6ff; /* bg-blue-50 */
+        }
+
+        /* Styles for the main title */
+        .main-title {
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 700;    /* font-bold */
+            margin-bottom: 1.5rem; /* mb-6 */
+            color: #2d3748;      /* text-gray-800 */
+        }
+
+        /* Styles for the convert button */
+        .convert-button {
+            width: 100%;         /* w-full */
             background-image: linear-gradient(to right, #6b7280, #4b5563); /* Gradient background */
+            color: #ffffff;      /* text-white */
+            padding: 0.75rem 1.5rem; /* py-3 px-6 */
+            border-radius: 0.5rem; /* rounded-lg */
+            font-size: 1.125rem; /* text-lg */
+            font-weight: 600;    /* font-semibold */
+            cursor: pointer;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Shadow for buttons */
+            transition: all 0.3s ease;
+            border: none;
         }
-        button:hover {
-            background-image: linear-gradient(to right, #4b5563, #374151); /* Darker gradient on hover */
+        .convert-button:hover:not(:disabled) { /* Darker gradient on hover, only if not disabled */
+            background-image: linear-gradient(to right, #4b5563, #374151);
         }
+        .convert-button:disabled {
+            opacity: 0.5; /* opacity-50 */
+            cursor: not-allowed;
+        }
+
+        /* Styles for the message box */
+        .message-box {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            display: none; /* Hidden by default */
+            border-width: 1px;
+            border-style: solid;
+        }
+        .message-box.warning {
+            background-color: #fff3cd; /* bg-yellow-100 */
+            border-color: #ffeeba; /* border-yellow-400 */
+            color: #856404; /* text-yellow-700 */
+        }
+        .message-box.error {
+            background-color: #fce7e7; /* bg-red-100 */
+            border-color: #f8bbbb; /* border-red-400 */
+            color: #be2e2e; /* text-red-700 */
+        }
+        .message-box.success {
+            background-color: #d4edda; /* bg-green-100 */
+            border-color: #c3e6cb; /* border-green-400 */
+            color: #155724; /* text-green-700 */
+        }
+
+        /* Styles for progress container */
+        .progress-container {
+            margin-top: 1rem; /* mt-4 */
+            display: none; /* hidden */
+        }
+        .progress-container p.progress-label { /* "Mengonversi..." text */
+            font-size: 0.875rem; /* text-sm */
+            color: #4a5568; /* text-gray-600 */
+            margin-bottom: 0.5rem; /* mb-2 */
+        }
+        .progress-bar-wrapper {
+            width: 100%; /* w-full */
+            background-color: #e2e8f0; /* bg-gray-200 */
+            border-radius: 9999px; /* rounded-full */
+            height: 0.625rem; /* h-2.5 */
+        }
+        #progressBar {
+            background-color: #3b82f6; /* bg-blue-600 */
+            border-radius: 9999px; /* rounded-full */
+            height: 0.625rem; /* h-2.5 */
+            width: 0%; /* Initial width */
+        }
+        .progress-container p.progress-percentage { /* "0%" text */
+            font-size: 0.75rem; /* text-xs */
+            color: #a0aec0; /* text-gray-500 */
+            margin-top: 0.25rem; /* mt-1 */
+        }
+
+        /* Styles for download link */
         .download-link {
             display: inline-block;
             background-color: #4CAF50; /* Green background */
@@ -65,46 +171,53 @@
         .download-link:hover {
             background-color: #45a049; /* Darker green on hover */
         }
-        /* Message box styling */
-        .message-box {
-            background-color: #fff3cd;
-            border: 1px solid #ffeeba;
-            color: #856404;
-            padding: 1rem;
-            border-radius: 0.5rem;
-            margin-top: 1rem;
-            display: none; /* Hidden by default */
+        .download-container { /* Parent div for download link */
+            margin-top: 1.5rem; /* mt-6 */
+            display: none; /* hidden */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem;
+            }
+            .main-title {
+                font-size: 1.5rem; /* Adjust for smaller screens */
+            }
+            .convert-button {
+                font-size: 1rem;
+                padding: 0.6rem 1.2rem;
+            }
         }
     </style>
-    <!-- LAMEjs for MP3 encoding -->
     <script src="https://cdn.jsdelivr.net/gh/x-qmo/x-qmo-cdn@refs/heads/main/lame.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1 class="text-3xl font-bold mb-6 text-gray-800">Konverter Audio ke MP3</h1>
+        <h1 class="main-title">Konverter Audio ke MP3</h1>
 
         <label for="audioFile" class="custom-file-upload">
             <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 0115.9 6L16 6a3 3 0 013 3v10a2 2 0 01-2 2H7a2 2 0 01-2-2v-5a2 2 0 012-2z"></path>
             </svg>
-            <p class="mt-2 text-sm">Seret & lepas file audio di sini atau <span class="font-medium text-indigo-600">telusuri</span></p>
-            <p id="fileName" class="text-xs text-gray-500 mt-1">Belum ada file yang dipilih</p>
+            <p class="upload-text">Seret & lepas file audio di sini atau <span class="font-medium text-indigo-600">telusuri</span></p>
+            <p id="fileName" class="file-name">Belum ada file yang dipilih</p>
         </label>
         <input type="file" id="audioFile" accept="audio/*">
 
-        <button id="convertButton" class="w-full bg-gray-700 text-white py-3 px-6 rounded-lg text-lg font-semibold cursor-pointer shadow-md opacity-50" disabled>Konversi ke MP3</button>
+        <button id="convertButton" class="convert-button" disabled>Konversi ke MP3</button>
 
         <div id="messageBox" class="message-box"></div>
 
-        <div id="progressContainer" class="mt-4 hidden">
-            <p class="text-sm text-gray-600 mb-2">Mengonversi...</p>
-            <div class="w-full bg-gray-200 rounded-full h-2.5">
-                <div id="progressBar" class="bg-blue-600 h-2.5 rounded-full" style="width: 0%;"></div>
+        <div id="progressContainer" class="progress-container">
+            <p class="progress-label">Mengonversi...</p>
+            <div class="progress-bar-wrapper">
+                <div id="progressBar" class="progress-bar" style="width: 0%;"></div>
             </div>
-            <p id="progressText" class="text-xs text-gray-500 mt-1">0%</p>
+            <p id="progressText" class="progress-percentage">0%</p>
         </div>
 
-        <div id="downloadContainer" class="mt-6 hidden">
+        <div id="downloadContainer" class="download-container">
             <a id="downloadLink" class="download-link" href="#" download="converted_audio.mp3">Unduh MP3</a>
         </div>
     </div>
@@ -131,13 +244,7 @@
             messageBox.textContent = message;
             messageBox.style.display = 'block';
             messageBox.className = 'message-box'; // Reset classes
-            if (type === 'error') {
-                messageBox.classList.add('bg-red-100', 'border-red-400', 'text-red-700');
-            } else if (type === 'success') {
-                messageBox.classList.add('bg-green-100', 'border-green-400', 'text-green-700');
-            } else {
-                messageBox.classList.add('bg-yellow-100', 'border-yellow-400', 'text-yellow-700');
-            }
+            messageBox.classList.add(type); // Add type class (warning, error, success)
         }
 
         // Function to hide the message box
@@ -145,36 +252,42 @@
             messageBox.style.display = 'none';
         }
 
+        // Function to update button state
+        function updateConvertButtonState() {
+            if (selectedFile) {
+                convertButton.disabled = false;
+            } else {
+                convertButton.disabled = true;
+            }
+        }
+
         // Handle file selection
         audioFile.addEventListener('change', (event) => {
             selectedFile = event.target.files[0];
             if (selectedFile) {
                 fileNameSpan.textContent = selectedFile.name;
-                convertButton.disabled = false;
-                convertButton.classList.remove('opacity-50'); // Enable button visual
                 hideMessageBox();
-                downloadContainer.classList.add('hidden'); // Hide previous download link
-                progressContainer.classList.add('hidden'); // Hide progress bar
+                downloadContainer.style.display = 'none'; // Hide previous download link
+                progressContainer.style.display = 'none'; // Hide progress bar
             } else {
                 fileNameSpan.textContent = 'Belum ada file yang dipilih';
-                convertButton.disabled = true;
-                convertButton.classList.add('opacity-50'); // Disable button visual
             }
+            updateConvertButtonState();
         });
 
         // Handle drag and drop
         customFileUpload.addEventListener('dragover', (e) => {
             e.preventDefault();
-            customFileUpload.classList.add('border-indigo-500', 'bg-blue-50');
+            customFileUpload.classList.add('drag-over');
         });
 
         customFileUpload.addEventListener('dragleave', (e) => {
-            customFileUpload.classList.remove('border-indigo-500', 'bg-blue-50');
+            customFileUpload.classList.remove('drag-over');
         });
 
         customFileUpload.addEventListener('drop', (e) => {
             e.preventDefault();
-            customFileUpload.classList.remove('border-indigo-500', 'bg-blue-50');
+            customFileUpload.classList.remove('drag-over');
             selectedFile = e.dataTransfer.files[0];
             if (selectedFile) {
                 // Manually assign to the file input to trigger its change event listener
@@ -182,12 +295,11 @@
                 dataTransfer.items.add(selectedFile);
                 audioFile.files = dataTransfer.files;
                 fileNameSpan.textContent = selectedFile.name;
-                convertButton.disabled = false;
-                convertButton.classList.remove('opacity-50');
                 hideMessageBox();
-                downloadContainer.classList.add('hidden');
-                progressContainer.classList.add('hidden');
+                downloadContainer.style.display = 'none';
+                progressContainer.style.display = 'none';
             }
+            updateConvertButtonState();
         });
 
         // Conversion logic
@@ -198,12 +310,11 @@
             }
 
             hideMessageBox();
-            downloadContainer.classList.add('hidden');
-            progressContainer.classList.remove('hidden');
+            downloadContainer.style.display = 'none';
+            progressContainer.style.display = 'block';
             progressBar.style.width = '0%';
             progressText.textContent = '0%';
             convertButton.disabled = true; // Disable button during conversion
-            convertButton.classList.add('opacity-50');
 
             try {
                 if (!audioContext) {
@@ -264,18 +375,16 @@
                     const url = URL.createObjectURL(blob);
                     downloadLink.href = url;
                     downloadLink.download = selectedFile.name.replace(/\.[^/.]+$/, "") + '.mp3'; // Set download file name
-                    downloadContainer.classList.remove('hidden');
-                    progressContainer.classList.add('hidden'); // Hide progress bar
+                    downloadContainer.style.display = 'block';
+                    progressContainer.style.display = 'none'; // Hide progress bar
                     showMessage('Konversi berhasil!', 'success');
                     convertButton.disabled = false; // Re-enable button
-                    convertButton.classList.remove('opacity-50');
                 };
 
                 fileReader.onerror = () => {
                     showMessage('Gagal membaca file.', 'error');
-                    progressContainer.classList.add('hidden');
+                    progressContainer.style.display = 'none';
                     convertButton.disabled = false;
-                    convertButton.classList.remove('opacity-50');
                 };
 
                 fileReader.readAsArrayBuffer(selectedFile);
@@ -283,9 +392,8 @@
             } catch (error) {
                 console.error("Error during conversion:", error);
                 showMessage(`Terjadi kesalahan saat konversi: ${error.message}`, 'error');
-                progressContainer.classList.add('hidden');
+                progressContainer.style.display = 'none';
                 convertButton.disabled = false;
-                convertButton.classList.remove('opacity-50');
             }
         });
     </script>
