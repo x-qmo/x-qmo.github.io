@@ -12,6 +12,7 @@ layanan:
       deskripsi_singkat: "Mugitex Konveksi: Wujudkan gaya terbaikmu! Kami ahli bikin jaket, kemeja, & kaos berkualitas tinggi, desain custom, dan harga bersaing. Siap produksi seragam, event, atau clothing line-mu. Mugitex, jaminan kepuasan busanamu!"
       gambar: "/assets/images/mugitex-konveksi.jpg"
       stok: "true"
+      link: /bisnis/2025/05/29/konveksi-mugitex-jaket-kemeja-kaos.html
     - type: konveksi
       id: "kon0002"
       nama: "Berkah Sawargi"
@@ -21,6 +22,7 @@ layanan:
       deskripsi_singkat: "Lapar dan butuh yang nampol? Yuk mampir ke warung kami! Nikmati seblak pedas yang bikin nagih, mie rebus hangat pengusir dingin, basreng super renyah, dan aneka gorengan gurih. Jangan lupa dinginkan dengan minuman dingin favoritmu. Dijamin kenyang, puas, dan pastinya bikin ketagihan!"
       gambar: "/assets/images/warung-seblak.jpg"
       stok: "true"
+      link: /landing-pages/berkah-sawargi
 ---
 
 
