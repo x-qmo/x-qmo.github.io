@@ -67,6 +67,32 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
 
 <section class="gallery-section" id="galeri">
     <div class="container">
+        <h2 class="section-title">Video Kegiatan</h2>
+        <p class="section-description">
+            Lihatlah dampak positif yang telah kita ciptakan bersama melalui dokumentasi kegiatan kami.
+        </p>
+        <div class="video-card card-hover-effect">
+                    <div class="video-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/SKrfo5yjqDA"
+                            title="We Are Strong!"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p>
+                        Kunjungi Channel Kami
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=SKrfo5yjqDA" target="_blank" class="watch-link">
+                        Tonton di YouTube →
+                    </a>
+                </div>
+    </div>
+</section>
+
+<section class="gallery-section" id="galeri">
+    <div class="container">
         <h2 class="section-title">Aksi Nyata Kami dalam Gambar</h2>
         <p class="section-description">
             Lihatlah dampak positif yang telah kita ciptakan bersama melalui dokumentasi kegiatan kami.
