@@ -8,7 +8,7 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
     <div class="container">
         <h1 class="hero-title">Insan Robithotul Mukhlasin</h1>
         <p class="hero-subtitle">yayasan ini hadir sebagai jembatan kebaikan, menghubungkan uluran tangan para dermawan dengan kebutuhan mendesak di lapangan</p>
-        <a href="#donasi" class="donate-button">Berikan Donasi Anda</a>
+        <a href="#donasi" class="donate-button">Program Kegiatan</a>
     </div>
 </section>
 
@@ -16,7 +16,7 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
     <div class="container">
         <h2 class="section-title">Tentang Kami</h2>
         <p class="section-description">
-            {{ site.data.yayasan-irm.nama_yayasan | default: 'Nama Yayasan Anda' }} adalah sebuah lembaga sosial kemanusiaan nirlaba yang didirikan pada tahun 2024 dengan misi meng-implementasikan nilai-nilai keagamaan terhadap sesama manusia.
+            {{ site.data.yayasan-irm.nama_yayasan | default: 'Nama Yayasan Anda' }} adalah sebuah lembaga sosial kemanusiaan nirlaba yang didirikan pada tahun 2024 dengan misi meng-implementasikan nilai-nilai keagamaan terhadap sesama manusia dibawah naungan <b>Yayasan Makhsus Nusantara</b>.
         </p>
         <div class="about-content">
             <div class="about-image">
@@ -94,8 +94,8 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
 <section class="cta-section" id="donasi">
     <div class="container">
         <h2 class="hero-title">Ulurkan Tangan Anda, Berikan Harapan!</h2>
-        <p class="hero-subtitle">Setiap rupiah yang Anda berikan adalah nafas baru bagi mereka yang membutuhkan.</p>
-        <a href="https://link-ke-platform-donasi-anda.com" target="_blank" class="donate-button">Donasi Sekarang</a>
+        <p class="hero-subtitle"></p>
+        <a href="https://link-ke-platform-donasi-anda.com" target="_blank" class="donate-button">Gallery Photo Kegiatan</a>
     </div>
 </section>
 
@@ -107,7 +107,7 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
         </p>
         <div class="contact-info">
             <p><strong>Alamat:</strong> {{ site.data.yayasan-irm.address | default: 'Jl. PHH. Mustofa No. 71B, Kota Bandung, Jawa Barat' }}</p>
-            <p><strong>Telepon:</strong> <a href="tel:{{ site.data.yayasan-irm.phone | default: '+628123456789' }}" class="nav-link">{{ site.data.yayasan-irm.phone | default: '+62 000-0000-000' }}</a></p>
+            <p><strong>Telepon:</strong> <a href="tel:{{ site.data.yayasan-irm.phone | default: '+628123456789' }}" class="nav-link">{{ site.data.yayasan-irm.phone | default: '+62 881-0230-39034' }}</a></p>
             <p><strong>Email:</strong> <a href="mailto:{{ site.data.yayasan-irm.email | default: 'info@namayayasan.org' }}" class="nav-link">{{ site.data.yayasan-irm.email | default: 'info@namayayasan.org' }}</a></p>
             <p style="margin-top:1.5rem;">
                 <a href="{{ site.data.yayasan-irm.Maps_link }}" target="_blank" class="donate-button" style="padding: 0.5rem 1rem; font-size:0.9rem;">Lihat di Google Maps</a>
