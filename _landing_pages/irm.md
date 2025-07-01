@@ -72,8 +72,8 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
             Lihatlah dampak positif yang telah kita ciptakan bersama melalui dokumentasi kegiatan kami.
         </p>
         <div class="program-grid"> <div class="program-card">
-                <img src="{{ '/assets/images/galeri-1.jpg' | relative_url }}" alt="Galeri Aksi 1" style="max-width:100%; border-radius:5px; margin-bottom:1rem;">
-                <p>Distribusi bantuan pangan di daerah terdampak.</p>
+                <img src="{{ 'https://res.cloudinary.com/db2lct8xv/image/upload/v1751359389/berbagi_makan_gratis_jv2rd7.jpg' | relative_url }}" alt="Galeri Aksi 1" style="max-width:100%; border-radius:5px; margin-bottom:1rem;">
+                <p>Berbagi Makan Gratis 14/10/2024 Di Babakan Baru</p>
             </div>
             <div class="program-card">
                 <img src="{{ '/assets/images/galeri-2.jpg' | relative_url }}" alt="Galeri Aksi 2" style="max-width:100%; border-radius:5px; margin-bottom:1rem;">
