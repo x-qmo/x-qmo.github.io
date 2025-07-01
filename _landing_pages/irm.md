@@ -65,30 +65,77 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
     </div>
 </section>
 
-<section class="gallery-section" id="galeri">
-    <div class="container">
-        <h2 class="section-title">Video Kegiatan</h2>
-        <p class="section-description">
-        </p>
-        <div class="video-card card-hover-effect">
-                    <div class="video-container">
-                        <iframe
-                            src="https://www.youtube.com/embed/SKrfo5yjqDA"
-                            title="We Are Strong!"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <p>
-                        Kunjungi Channel Kami
-                    </p>
-                    <a href="https://www.youtube.com/watch?v=SKrfo5yjqDA" target="_blank" class="watch-link">
-                        Tonton di YouTube →
-                    </a>
+<div class="video-gallery-container">
+        <h3 class="gallery-title text-4xl font-extrabold">Video Kegiatan Yayasan</h3>
+        <div class="video-grid">
+            <!-- Contoh Video 1 -->
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <!-- Ganti 'VIDEO_ID_1' dengan ID video YouTube Anda -->
+                    <iframe src="https://www.youtube.com/embed/SKrfo5yjqDA?controls=0" allowfullscreen></iframe>
                 </div>
+                <div class="video-info">
+                    <h3>Berbagi Makan Gratis</h3>
+                    <p>Berbagi makan gratis: Membantu sesama dengan makanan lezat. Wujudkan kepedulian & kebersamaan dalam setiap hidangan.</p>
+                </div>
+            </div>
+            <!-- Contoh Video 2 -->
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <!-- Ganti 'VIDEO_ID_2' dengan ID video YouTube Anda -->
+                    <iframe src="https://www.youtube.com/embed/sH-XN_dtzGM?controls=0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Belanja Untuk Berbagi Sembako</h3>
+                    <p>Belanja untuk berbagi sembako: Salurkan kebaikan lewat pangan. Mari bantu sesama yang membutuhkan dengan paket kebutuhan pokok. Wujudkan harapan mereka!</p>
+                </div>
+            </div>
+            <!-- Contoh Video 3 -->
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <!-- Ganti 'VIDEO_ID_3' dengan ID video YouTube Anda -->
+                    <iframe src="https://www.youtube.com/embed/g_CuQ61UwIU?controls=0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Makan Gratis</h3>
+                    <p>Berbagi makan gratis: Membantu sesama dengan makanan lezat. Wujudkan kepedulian & kebersamaan dalam setiap hidangan. Yuk, tebar kebaikan!</p>
+                </div>
+            </div>
+            <!-- Contoh Video 4 -->
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <!-- Ganti 'VIDEO_ID_4' dengan ID video YouTube Anda -->
+                    <iframe src="https://www.youtube.com/embed/7HgJZGeugj4?controls=0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Terima Kasih</h3>
+                    <p>Terima kasih kepada para donatur dermawan! Berkat kebaikan Anda, kami dapat terus berbagi. Bantuan Anda sangat berarti bagi mereka yang membutuhkan.</p>
+                </div>
+            </div>
+            <!-- Contoh Video 5 -->
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <!-- Ganti 'VIDEO_ID_5' dengan ID video YouTube Anda -->
+                    <iframe src="https://www.youtube.com/embed/Wha6qAN8vKE?controls=0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Makan Bersama Dan Gratis</h3>
+                    <p>Makan bersama dan gratis: Mari hangatkan kebersamaan dan nikmati hidangan lezat tanpa biaya. Sambut senyum ceria, jalin persaudaraan!</p>
+                </div>
+            </div>
+            <!-- Contoh Video 6 -->
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <!-- Ganti 'VIDEO_ID_6' dengan ID video YouTube Anda -->
+                    <iframe src="https://www.youtube.com/embed/U3Td_8Y3wrg?controls=0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Berbagi Takjil</h3>
+                    <p>Berbagi takjil: Mari hangatkan indahnya Ramadhan dengan kebaikan. Sedekah takjil buka puasa, semoga berkah berlimpah untuk sesama.</p>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
 
 <section class="gallery-section" id="galeri">
     <div class="container">

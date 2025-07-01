@@ -8,30 +8,98 @@
   list-style-position: inside;
 }
 
-.card-hover-effect {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card-hover-effect:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+/* Styling untuk container galeri */
+        .video-gallery-container {
+            background-color: #ffffff; /* Latar belakang putih untuk container */
+            border-radius: 1rem; /* Sudut membulat */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+            padding: 2rem; /* Padding internal */
+            width: 100%; /* Lebar penuh pada ukuran kecil */
+            box-sizing: border-box;
         }
 
-        .video-container {
+        /* Styling untuk judul galeri */
+        .gallery-title {
+            color: #1a202c; /* Warna teks gelap */
+            margin-bottom: 2rem; /* Jarak bawah */
+            text-align: center;
+        }
+
+        /* Styling untuk grid video */
+        .video-grid {
+            display: grid;
+            gap: 1.5rem; /* Jarak antar video */
+            /* Mengatur kolom responsif: 1 kolom di mobile, 2 di tablet, 3 di desktop */
+            grid-template-columns: repeat(1, minmax(0, 1fr)); /* Default 1 kolom */
+        }
+
+        /* Media queries untuk responsivitas */
+        @media (min-width: 640px) { /* breakpoint sm */
+            .video-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 kolom di layar kecil ke atas */
+            }
+        }
+
+        @media (min-width: 1024px) { /* breakpoint lg */
+            .video-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 kolom di layar besar ke atas */
+            }
+        }
+
+        /* Styling untuk setiap item video */
+        .video-item {
+            background-color: #f9fafb; /* Latar belakang abu-abu sangat muda */
+            border-radius: 0.75rem; /* Sudut membulat */
+            overflow: hidden; /* Memastikan konten tidak keluar dari batas */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Bayangan item */
+            transition: transform 0.2s ease-in-out; /* Transisi halus saat hover */
+        }
+
+        .video-item:hover {
+            transform: translateY(-5px); /* Efek angkat saat hover */
+        }
+
+        /* Styling untuk container video responsif */
+        .video-wrapper {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%; /* Rasio aspek 16:9 (tinggi / lebar * 100%) */
             height: 0;
             overflow: hidden;
-            border-radius: 0.75rem; /* rounded-lg */
         }
-        .video-container iframe {
+
+        .video-wrapper iframe {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            border: 0;
+            border: 0; /* Menghilangkan border iframe */
+            border-radius: 0.75rem 0.75rem 0 0; /* Sudut membulat di atas */
         }
+
+        /* Styling untuk judul dan deskripsi video */
+        .video-info {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .video-info h3 {
+            font-size: 1.25rem; /* Ukuran font judul */
+            font-weight: 600; /* Tebal */
+            color: #2d3748; /* Warna teks gelap */
+            margin-bottom: 0.5rem;
+        }
+
+        .video-info p {
+            font-size: 0.9rem; /* Ukuran font deskripsi */
+            color: #4a5568; /* Warna teks sedang */
+            line-height: 1.5;
+        }
+
+
+
+
 
         body {
             font-family: 'Open Sans', sans-serif;
