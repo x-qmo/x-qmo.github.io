@@ -16,7 +16,7 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
     <div class="container">
         <h2 class="section-title">Tentang Kami</h2>
         <p class="section-description">
-            {{ site.data.yayasan-irm.nama_yayasan | default: 'Nama Yayasan Anda' }} adalah sebuah lembaga sosial kemanusiaan nirlaba yang didirikan pada tahun 2024 dengan misi meng-implementasikan nilai-nilai keagamaan terhadap sesama manusia dibawah naungan <b>Yayasan Makhsus Nusantara</b>.
+            {{ site.data.yayasan-irm.nama_yayasan | default: 'Nama Yayasan Anda' }} adalah sebuah lembaga sosial kemanusiaan nirlaba yang didirikan pada tahun 2024 dengan misi meng-implementasikan nilai-nilai keagamaan terhadap sesama manusia dibawah naungan <b>Yayasan Makhsus Nusantara</b> dan dibawah <b>bimbingan ahli silsilah</b>.
         </p>
         <div class="about-content">
             <div class="about-image">
