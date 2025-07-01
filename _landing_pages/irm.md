@@ -107,7 +107,7 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
         </p>
         <div class="contact-info">
             <p><strong>Alamat:</strong> {{ site.data.yayasan-irm.address | default: 'Jl. PHH. Mustofa No. 71B, Kota Bandung, Jawa Barat' }}</p>
-            <p><strong>Telepon:</strong> <a href="tel:{{ site.data.yayasan-irm.phone | default: '+628123456789' }}" class="nav-link">{{ site.data.yayasan-irm.phone | default: '+62 881-0230-39034' }}</a></p>
+            <p><strong>Telepon:</strong> <a href="tel:{{ site.data.yayasan-irm.phone | default: '+62881023039034' }}" class="nav-link">{{ site.data.yayasan-irm.phone | default: '+62 881-0230-39034' }}</a></p>
             <p><strong>Email:</strong> <a href="mailto:{{ site.data.yayasan-irm.email | default: 'info@namayayasan.org' }}" class="nav-link">{{ site.data.yayasan-irm.email | default: 'info@namayayasan.org' }}</a></p>
             <p style="margin-top:1.5rem;">
                 <a href="{{ site.data.yayasan-irm.Maps_link }}" target="_blank" class="donate-button" style="padding: 0.5rem 1rem; font-size:0.9rem;">Lihat di Google Maps</a>
