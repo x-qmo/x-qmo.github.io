@@ -20,7 +20,7 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
         </p>
         <div class="about-content">
             <div class="about-image">
-                <img src="{{ '/assets/images/background-yayasan-irm-1.jpg' | relative_url }}" alt="Tim Yayasan Beraksi">
+                <img src="{{ '/assets/images/background-yayasan-irm-2.jpg' | relative_url }}" alt="Tim Yayasan Beraksi">
             </div>
             <div class="about-text">
                 <h3>Visi Kami</h3>
