@@ -76,8 +76,8 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
                 <p>Berbagi Makan Gratis 14/10/2024 Di Babakan Baru</p>
             </div>
             <div class="program-card">
-                <img src="{{ '/assets/images/galeri-2.jpg' | relative_url }}" alt="Galeri Aksi 2" style="max-width:100%; border-radius:5px; margin-bottom:1rem;">
-                <p>Program bimbingan belajar untuk anak-anak desa.</p>
+                <img src="{{ 'https://res.cloudinary.com/db2lct8xv/image/upload/v1751360591/berbagi-makan-gratis-1_q1nmca.jpg' | relative_url }}" alt="Galeri Aksi 2" style="max-width:100%; border-radius:5px; margin-bottom:1rem;">
+                <p>Berbagi Makan Gratis 09/12/2024 Di Babakan Baru</p>
             </div>
             <div class="program-card">
                 <img src="{{ '/assets/images/galeri-3.jpg' | relative_url }}" alt="Galeri Aksi 3" style="max-width:100%; border-radius:5px; margin-bottom:1rem;">
