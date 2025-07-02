@@ -40,7 +40,7 @@ layanan:
       alamat: "Jl. PHH. Mustofa No. 71B, Kota Bandung, Jawa Barat"
       harga: "250000"
       deskripsi_singkat: "Yayasan Insan Robithotul Mukhlasin: Jembatan kebaikan, hubungkan dermawan dengan kebutuhan mendesak di lapangan. Salurkan uluran tangan untuk dampak nyata."
-      gambar: "/assets/images/thumbnail-yayasan.jpg"
+      gambar: "/assets/images/thumbnail-yayasan-irm.jpg"
       stok: "true"
       link: /landing-pages/irm
 ---
