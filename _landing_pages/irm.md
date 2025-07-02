@@ -155,10 +155,6 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
                 <img src="{{ 'https://res.cloudinary.com/db2lct8xv/image/upload/v1751361225/pembagian-sembako_z1uo1i.jpg' }}" alt="Galeri Aksi 3" style="max-width:100%; border-radius:5px; margin-bottom:1rem;">
                 <p>Pembagian Sembako 25/05/2024 Di Babakan Baru</p>
             </div>
-            <div class="program-card">
-                <img src="{{ '/assets/images/galeri-4.jpg' | relative_url }}" alt="Galeri Aksi 4" style="max-width:100%; border-radius:5px; margin-bottom:1rem;">
-                <p>Tim medis sukarelawan memberikan pelayanan kesehatan.</p>
-            </div>
         </div>
     </div>
 </section>

@@ -1,3 +1,20 @@
+/* Contoh di CSS */
+html {
+  font-size: 100%; /* Atau 62.5% untuk mempermudah perhitungan: 1rem = 10px */
+}
+
+body {
+  font-size: 1rem; /* Ini akan jadi 16px */
+}
+
+h1 {
+  font-size: 2.5rem; /* Ini akan jadi 40px (jika 1rem = 16px) */
+}
+
+p {
+  font-size: 1.125rem; /* Ini akan jadi 18px */
+  line-height: 1.6; /* Ini berarti 18px * 1.6 = 28.8px jarak antar baris */
+}
 /* CSS Reset Sederhana */
 * {
       box-sizing: border-box;
@@ -395,6 +412,12 @@
 
         /* --- Responsif --- */
         @media (max-width: 768px) {
+              body {
+    font-size: 1.125rem; /* 18px */
+  }
+  h1 {
+    font-size: 3rem; /* 48px */
+  }
             .hero-title {
                 font-size: 2.2rem;
             }
