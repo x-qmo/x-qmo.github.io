@@ -22,7 +22,8 @@ p {
       padding: 0;
 }
 .ulmisi {
-  list-style-position: inside;
+  list-style-position: outside;
+padding-left: 15px;
 }
 
 /* Styling untuk container galeri */
