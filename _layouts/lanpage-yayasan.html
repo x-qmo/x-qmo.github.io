@@ -32,9 +32,9 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "{{ site.url | append: site.baseurl | default: site.url }}/#organization",
+      "@id": "{{ site.data.yayasan-irm.url-yayasan | append: site.baseurl | default: site.url }}/#organization",
       "name": "{{ site.data.yayasan-irm.nama-yayasan }}",
-      "url": "{{ site.url | append: site.baseurl | default: site.url }}",
+      "url": "{{ site.data.yayasan-irm.url-yayasan | append: site.baseurl | default: site.url }}",
       "logo": {
         "@type": "ImageObject",
         "url": "{{ site.url | append: site.baseurl | default: site.url }}/assets/images/logo-yayasan.png",
