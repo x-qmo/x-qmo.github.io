@@ -94,11 +94,11 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
             <div class="video-item">
                 <div class="video-wrapper">
                     <!-- Ganti 'VIDEO_ID_3' dengan ID video YouTube Anda -->
-                    <iframe src="https://www.youtube.com/embed/g_CuQ61UwIU?controls=0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/SAQcq9eOhec?controls=0" allowfullscreen></iframe>
                 </div>
                 <div class="video-info">
-                    <h3>Makan Gratis</h3>
-                    <p>Berbagi makan gratis: Membantu sesama dengan makanan lezat. Wujudkan kepedulian & kebersamaan dalam setiap hidangan. Yuk, tebar kebaikan!</p>
+                    <h3>Kegiatan Jualan BABE</h3>
+                    <p>Jual barang bekas layak pakai Anda di "Kegiatan Jualan BABE"! Bersihkan lemari, hasilkan uang, dan bantu kurangi limbah. Ayo gabung!</p>
                 </div>
             </div>
             <!-- Contoh Video 4 -->
