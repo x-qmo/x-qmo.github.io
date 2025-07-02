@@ -66,7 +66,7 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
 </section>
 
 <div class="video-gallery-container">
-        <h3 class="gallery-title text-4xl font-extrabold">Video Kegiatan Yayasan</h3>
+        <h2 class="section-title">Video Kegiatan Yayasan</h2>
         <div class="video-grid">
             <!-- Contoh Video 1 -->
             <div class="video-item">
