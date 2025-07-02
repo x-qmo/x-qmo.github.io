@@ -21,9 +21,9 @@ youtube_url: https://youtube.com/yayasanpedulisesama
 # Tautan Donasi (PENTING: Ganti dengan URL asli platform donasi Anda)
 link_donasi: https://drive.google.com/drive/folders/1WBvEnNgS0DTGMogJnpbZUh6WcwEFBbXt?usp=drive_link
 
-nama-yayasan: Nama Yayasan Kemanusiaan Anda
-description-yayasan: Misi dan tujuan singkat yayasan Anda.
-url-yayasan: https://www.namawebsiteanda.org # Ganti dengan URL domain Anda
+nama-yayasan: Insan Robithotul Mukhlasin
+description-yayasan: "Yayasan Insan Robithotul Mukhlasin: Jembatan kebaikan, hubungkan dermawan dengan kebutuhan mendesak di lapangan. Salurkan uluran tangan untuk dampak nyata."
+url-yayasan: https://x-qmo.github.io/landing-pages/irm/ # Ganti dengan URL domain Anda
 baseurl: "/landing-pages/irm" # Biarkan kosong jika website Anda di root domain (misal: example.org), isi "/blog" jika di subdirektori
 email-yayasan: makhshusnusantara@gmail.com
 phone-number-yayasan: "+62881023039034" # Format internasional

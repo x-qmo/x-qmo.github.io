@@ -52,14 +52,14 @@
       ],
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "{{ site.phone_number }}",
+        "telephone": "{{ site.data.yayasan-irm.phone-number-yayasan }}",
         "contactType": "customer service",
-        "email": "{{ site.email }}"
+        "email": "{{ site.data.yayasan-irm.email-yayasan }}"
       },
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "{{ site.address.street }}",
-        "addressLocality": "{{ site.address.locality }}",
+        "streetAddress": "{{ site.data.yayasan-irm.address-yayasan.street-yayasan }}",
+        "addressLocality": "{{ site.data.yayasan-irm.address-yayasan.locality-yayasan }}",
         "addressRegion": "{{ site.address.region }}",
         "postalCode": "{{ site.address.postal_code }}",
         "addressCountry": "{{ site.address.country }}"
