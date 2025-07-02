@@ -33,6 +33,16 @@ layanan:
       gambar: "/assets/images/warung-seblak.jpg"
       stok: "true"
       link: /landing-pages/berkah-sawargi
+    - type: konveksi
+      id: "org0001"
+      nama: "Insan Robithotul Mukhlasin"
+      nama_judul: "Yayasan IRM (Insan Robithotul Mukhlasin)"
+      alamat: "Jl. PHH. Mustofa No. 71B, Kota Bandung, Jawa Barat"
+      harga: "250000"
+      deskripsi_singkat: "Yayasan Insan Robithotul Mukhlasin: Jembatan kebaikan, hubungkan dermawan dengan kebutuhan mendesak di lapangan. Salurkan uluran tangan untuk dampak nyata."
+      gambar: "/assets/images/thumbnail-yayasan.jpg"
+      stok: "true"
+      link: /landing-pages/irm
 ---
 
 
