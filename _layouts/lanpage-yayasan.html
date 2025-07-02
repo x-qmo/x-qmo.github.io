@@ -43,11 +43,11 @@
       },
       "description": "{{ site.data.yayasan-irm.description-yayasan }}",
       "sameAs": [
-        "{{ site.social.facebook }}",
-        "{{ site.social.twitter }}",
-        "{{ site.social.instagram }}",
-        "{{ site.social.youtube }}",
-        "{{ site.social.linkedin }}"
+        "{{ site.data.yayasan-irm.social.facebook-yayasan }}",
+        "{{ site.data.yayasan-irm.social.twitter-yayasan }}",
+        "{{ site.data.yayasan-irm.social.instagram-yayasan }}",
+        "{{ site.data.yayasan-irm.social.youtube-yayasan }}",
+        "{{ site.data.yayasan-irm.social.linkedin-yayasan }}"
         // Tambahkan URL media sosial lainnya sesuai yang Anda miliki di _config.yml
       ],
       "contactPoint": {
@@ -82,12 +82,12 @@
     },
     {
       "@type": "WebPage",
-      "@id": "{{ site.url | append: site.baseurl | default: site.url }}/#webpage",
-      "url": "{{ site.url | append: site.baseurl | default: site.url }}",
+      "@id": "{{ site.data.yayasan-irm.url-yayasan | append: site.baseurl | default: site.url }}/#webpage",
+      "url": "{{ site.data.yayasan-irm.url-yayasan | append: site.baseurl | default: site.url }}",
       "name": "{{ page.title | default: site.title }}",
       "description": "{{ page.description | default: site.description }}",
       "isPartOf": {
-        "@id": "{{ site.url | append: site.baseurl | default: site.url }}/#website"
+        "@id": "{{ site.data.yayasan-irm.url-yayasan | append: site.baseurl | default: site.url }}/#website"
       },
       "inLanguage": "id-ID",
       "primaryImageOfPage": {
