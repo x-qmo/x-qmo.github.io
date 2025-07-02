@@ -23,7 +23,7 @@ link_donasi: https://drive.google.com/drive/folders/1WBvEnNgS0DTGMogJnpbZUh6WcwE
 
 nama-yayasan: Insan Robithotul Mukhlasin
 description-yayasan: "Yayasan Insan Robithotul Mukhlasin: Jembatan kebaikan, hubungkan dermawan dengan kebutuhan mendesak di lapangan. Salurkan uluran tangan untuk dampak nyata."
-url-yayasan: https://x-qmo.github.io/landing-pages/irm/ # Ganti dengan URL domain Anda
+url-yayasan: https://x-qmo.github.io/landing-pages/irm # Ganti dengan URL domain Anda
 baseurl: "/landing-pages/irm" # Biarkan kosong jika website Anda di root domain (misal: example.org), isi "/blog" jika di subdirektori
 email-yayasan: makhshusnusantara@gmail.com
 phone-number-yayasan: "+62881023039034" # Format internasional

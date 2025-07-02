@@ -60,17 +60,17 @@
         "@type": "PostalAddress",
         "streetAddress": "{{ site.data.yayasan-irm.address-yayasan.street-yayasan }}",
         "addressLocality": "{{ site.data.yayasan-irm.address-yayasan.locality-yayasan }}",
-        "addressRegion": "{{ site.address.region }}",
-        "postalCode": "{{ site.address.postal_code }}",
-        "addressCountry": "{{ site.address.country }}"
+        "addressRegion": "{{ site.data.yayasan-irm.address-yayasan.region-yayasan }}",
+        "postalCode": "{{ site.data.yayasan-irm.address-yayasan.postal-code-yayasan }}",
+        "addressCountry": "{{ site.data.yayasan-irm.address-yayasan.country-yayasan }}"
       }
     },
     {
       "@type": "WebSite",
       "@id": "{{ site.url | append: site.baseurl | default: site.url }}/#website",
-      "url": "{{ site.url | append: site.baseurl | default: site.url }}",
-      "name": "{{ site.title }}",
-      "description": "{{ site.description }}",
+      "url": "{{ site.data.yayasan-irm.url-yayasan | append: site.baseurl | default: site.url }}",
+      "name": "{{ site.data.yayasan-irm.nama-yayasan }}",
+      "description": "{{ site.data.yayasan-irm.description-yayasan }}",
       "publisher": {
         "@id": "{{ site.url | append: site.baseurl | default: site.url }}/#organization"
       },
