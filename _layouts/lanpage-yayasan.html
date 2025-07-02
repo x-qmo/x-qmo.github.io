@@ -24,6 +24,84 @@
     <meta name="twitter:title" content="{{ page.title | default: site.title }}">
     <meta name="twitter:description" content="{{ page.description | default: site.description }}">
     <meta name="twitter:image" content="{{ page.og_image | default: site.baseurl | append: '/assets/images/default-og-image.jpg' }}">
+
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "{{ site.url | append: site.baseurl | default: site.url }}/#organization",
+      "name": "{{ site.data.yayasan-irm.nama-yayasan }}",
+      "url": "{{ site.url | append: site.baseurl | default: site.url }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url | append: site.baseurl | default: site.url }}/assets/images/logo-yayasan.png",
+        "width": 250,
+        "height": 250
+      },
+      "description": "{{ site.data.yayasan-irm.description-yayasan }}",
+      "sameAs": [
+        "{{ site.social.facebook }}",
+        "{{ site.social.twitter }}",
+        "{{ site.social.instagram }}",
+        "{{ site.social.youtube }}",
+        "{{ site.social.linkedin }}"
+        // Tambahkan URL media sosial lainnya sesuai yang Anda miliki di _config.yml
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "{{ site.phone_number }}",
+        "contactType": "customer service",
+        "email": "{{ site.email }}"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ site.address.street }}",
+        "addressLocality": "{{ site.address.locality }}",
+        "addressRegion": "{{ site.address.region }}",
+        "postalCode": "{{ site.address.postal_code }}",
+        "addressCountry": "{{ site.address.country }}"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url | append: site.baseurl | default: site.url }}/#website",
+      "url": "{{ site.url | append: site.baseurl | default: site.url }}",
+      "name": "{{ site.title }}",
+      "description": "{{ site.description }}",
+      "publisher": {
+        "@id": "{{ site.url | append: site.baseurl | default: site.url }}/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ site.url | append: site.baseurl | default: site.url }}/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "{{ site.url | append: site.baseurl | default: site.url }}/#webpage",
+      "url": "{{ site.url | append: site.baseurl | default: site.url }}",
+      "name": "{{ page.title | default: site.title }}",
+      "description": "{{ page.description | default: site.description }}",
+      "isPartOf": {
+        "@id": "{{ site.url | append: site.baseurl | default: site.url }}/#website"
+      },
+      "inLanguage": "id-ID",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "{{ site.url | append: site.baseurl | default: site.url }}{{ site.social_image }}",
+        "width": 1200,
+        "height": 630
+      },
+      "datePublished": "{{ site.time | date_to_xmlschema }}",
+      "dateModified": "{{ site.time | date_to_xmlschema }}"
+    }
+  ]
+}
+</script>
 </head>
 <body>
     <header class="header">
