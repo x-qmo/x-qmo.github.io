@@ -411,21 +411,22 @@ padding-left: 15px;
         /* --- Responsif --- */
         @media (max-width: 768px) {
               body {
-    font-size: 1.125rem; /* 18px */
+    font-size: 1rem; /* 18px */
   }
   h1 {
-    font-size: 3rem; /* 48px */
+    font-size: 1.75rem; /* 48px */
   }
             .hero-title {
-                font-size: 2.2rem;
+                font-size: 1.75rem;
             }
 
-            .hero-subtitle {
-                font-size: 1.2rem;
+            .hero-subtitle, .section-description, .about-text p, .program-card p {
+                font-size: 1rem;
+                letter-spacing: 0.005rem;
             }
 
             .section-title {
-                font-size: 2rem;
+                font-size: 1.75rem;
             }
 
             .nav-list {
