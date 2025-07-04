@@ -67,16 +67,16 @@
     },
     {
       "@type": "WebSite",
-      "@id": "{{ site.url | append: site.baseurl | default: site.url }}/#website",
+      "@id": "{{ site.data.yayasan-irm.url-yayasan | append: site.baseurl | default: site.url }}/#website",
       "url": "{{ site.data.yayasan-irm.url-yayasan | append: site.baseurl | default: site.url }}",
       "name": "{{ site.data.yayasan-irm.nama-yayasan }}",
       "description": "{{ site.data.yayasan-irm.description-yayasan }}",
       "publisher": {
-        "@id": "{{ site.url | append: site.baseurl | default: site.url }}/#organization"
+        "@id": "{{ site.data.yayasan-irm.url-yayasan | append: site.baseurl | default: site.url }}/#organization"
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "{{ site.url | append: site.baseurl | default: site.url }}/search?q={search_term_string}",
+        "target": "{{ site.data.yayasan-irm.url-yayasan | append: site.baseurl | default: site.url }}/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     },
