@@ -420,7 +420,7 @@ padding-left: 15px;
                 font-size: 1.75rem;
             }
 
-            .hero-subtitle, .section-description, .about-text p, .program-card p {
+            .hero-subtitle, .section-description, .about-text p, .program-card p, p {
                 font-size: 1rem;
                 letter-spacing: 0.005rem;
             }
