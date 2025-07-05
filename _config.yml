@@ -31,6 +31,9 @@ collections:
     landing_pages:
         output: true
         permalink: /landing-pages/:name/
+    pages:
+        output: true
+        permalink: /pages/:title/
 
 paginate: 5
 paginate_path: ./page:num/

@@ -1,9 +1,11 @@
-- nama_barang: Refill KiNe Spray Wangi Mewah Tahan Lama 35ml
+- type: parfum
+  nama_barang: Refill KiNe Spray Wangi Mewah Tahan Lama 35ml
   harga: "60.000"
   gambar_url: /assets/images/kasturijasminespray.jpg
   stok: 1
   jenis: Spray
-- nama_barang: Refill KiNe Roll On Wangi Mewah Tahan Lama 10ml
+- type: pakaian
+  nama_barang: Refill KiNe Roll On Wangi Mewah Tahan Lama 10ml
   harga: "20.000"
   gambar_url: /assets/images/kasturijasminroll.jpg
   stok: 1
