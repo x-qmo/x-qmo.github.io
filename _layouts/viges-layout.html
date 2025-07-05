@@ -3,134 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Shorts - Kanal Anda</title>
+    <title>TikTok Clone Layout</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/viges-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Mengatur agar video tidak bisa di-fullscreen secara default oleh browser */
-        video::-webkit-media-controls-fullscreen-button {
-            display: none !important;
-        }
-        video::-webkit-media-controls-play-button {
-            display: none !important;
-        }
-        video::-webkit-media-controls-timeline {
-            display: none !important;
-        }
-        video::-webkit-media-controls-current-time-display {
-            display: none !important;
-        }
-        video::-webkit-media-controls-time-remaining-display {
-            display: none !important;
-        }
-        video::-webkit-media-controls-mute-button {
-            display: none !important;
-        }
-        video::-webkit-media-controls-volume-slider {
-            display: none !important;
-        }
-        /* Jika Anda ingin menyembunyikan semua kontrol bawaan */
-        video::-webkit-media-controls {
-            display: none !important;
-        }
-        video::controls {
-             display: none !important;
-        }
-    </style>
 </head>
 <body>
-    <div class="shorts-container">
-        <header class="shorts-header">
+    <div class="tiktok-container">
+        <header class="tiktok-header">
             <div class="logo">
-                <h1>Viges</h1>
+                <h1>TikTok</h1>
             </div>
-            <div class="channel-name">
-                <a href="https://www.youtube.com/channel/YOUR_CHANNEL_ID" target="_blank">
-                    <i class="fab fa-youtube"></i> Channel
-                </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari...">
+                <i class="fas fa-search"></i>
             </div>
         </header>
 
-        <main class="shorts-main-content">
+        <main class="tiktok-main-content">
             {{ content }}
         </main>
 
-        <footer class="shorts-footer-nav">
-            <div class="nav-item">
-                <a href="{{ site.baseurl }}/">
-                    <i class="fas fa-blog"></i>
-                    <span>Blog Utama</span>
-                </a>
-            </div>
+        <footer class="tiktok-footer-nav">
             <div class="nav-item active">
-                <a href="{{ site.baseurl }}/shorts/">
-                    <i class="fas fa-video"></i>
-                    <span>Shorts</span>
-                </a>
+                <i class="fas fa-home"></i>
+                <span>Beranda</span>
             </div>
             <div class="nav-item">
-                <a href="https://www.youtube.com/channel/YOUR_CHANNEL_ID" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                    <span>YouTube</span>
-                </a>
+                <i class="fas fa-compass"></i>
+                <span>Jelajahi</span>
+            </div>
+            <div class="nav-item add-button">
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-inbox"></i>
+                <span>Kotak Masuk</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profil</span>
             </div>
         </footer>
     </div>
-
-    <script>
-        // JavaScript untuk mengelola pemutaran video
-        const mainContent = document.querySelector('.shorts-main-content');
-        const shortItems = document.querySelectorAll('.short-item');
-
-        // Fungsi untuk menghentikan semua video kecuali yang sedang aktif
-        function stopAllVideosExcept(activeVideoWrapper) {
-            shortItems.forEach(item => {
-                const iframe = item.querySelector('iframe');
-                if (iframe && iframe.contentWindow && item.querySelector('.video-wrapper') !== activeVideoWrapper) {
-                    iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-                }
-            });
-        }
-
-        // Observer untuk mendeteksi video mana yang sedang terlihat
-        const observerOptions = {
-            root: mainContent, // Mengamati di dalam main-content
-            rootMargin: '0px',
-            threshold: 0.8 // Saat 80% video terlihat
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const activeIframe = entry.target.querySelector('iframe');
-                    if (activeIframe && activeIframe.contentWindow) {
-                        stopAllVideosExcept(entry.target.querySelector('.video-wrapper'));
-                        // Memulai video yang sedang terlihat
-                        activeIframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-                    }
-                } else {
-                    // Menghentikan video yang tidak terlihat
-                    const inactiveIframe = entry.target.querySelector('iframe');
-                    if (inactiveIframe && inactiveIframe.contentWindow) {
-                        inactiveIframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-                    }
-                }
-            });
-        }, observerOptions);
-
-        shortItems.forEach(item => {
-            observer.observe(item);
-        });
-
-        // Pastikan autoplay pertama kali berjalan saat halaman dimuat
-        document.addEventListener('DOMContentLoaded', () => {
-            if (shortItems.length > 0) {
-                const firstIframe = shortItems[0].querySelector('iframe');
-                if (firstIframe && firstIframe.contentWindow) {
-                    firstIframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-                }
-            }
-        });
-    </script>
 </body>
 </html>

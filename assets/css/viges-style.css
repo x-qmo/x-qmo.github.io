@@ -1,5 +1,3 @@
-/* assets/css/shorts-style.css */
-
 /* Reset CSS dasar */
 * {
     margin: 0;
@@ -8,35 +6,29 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif; /* Ganti font sesuai selera Anda */
-    background-color: #000; /* Latar belakang gelap khas TikTok/YouTube Shorts */
+    font-family: 'Poppins', sans-serif; /* Anda bisa mengganti font */
+    background-color: #000; /* Latar belakang gelap khas TikTok */
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden; /* Mencegah scroll body, hanya konten utama yang bisa scroll */
+    overflow: hidden; /* Mencegah scroll body jika konten di-scroll */
 }
 
-a {
-    color: inherit; /* Inherit warna teks dari parent */
-    text-decoration: none; /* Hilangkan underline default link */
-}
-
-/* Kontainer utama untuk tampilan mobile-like */
-.shorts-container {
+.tiktok-container {
     width: 100%;
     max-width: 450px; /* Lebar maksimal untuk simulasi tampilan HP */
     height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #000;
-    position: relative;
+    position: relative; /* Untuk footer-nav agar tetap di bawah */
     overflow: hidden; /* Mencegah scroll container, video feed yang di-scroll */
 }
 
 /* Header */
-.shorts-header {
+.tiktok-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,65 +40,71 @@ a {
     z-index: 10;
 }
 
-.shorts-header .logo h1 {
+.tiktok-header .logo h1 {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
 }
 
-.shorts-header .channel-name a {
+.tiktok-header .search-bar {
     display: flex;
     align-items: center;
-    font-size: 1em;
-    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 5px 15px;
 }
 
-.shorts-header .channel-name i {
-    margin-right: 8px;
-    color: #FF0000; /* Warna merah YouTube */
-    font-size: 1.2em;
+.tiktok-header .search-bar input {
+    background: none;
+    border: none;
+    color: #fff;
+    outline: none;
+    padding-right: 10px;
+}
+
+.tiktok-header .search-bar i {
+    color: #fff;
 }
 
 /* Main Content (Video Feed) */
-.shorts-main-content {
+.tiktok-main-content {
     flex-grow: 1; /* Mengisi ruang yang tersedia */
     overflow-y: scroll; /* Scrollable untuk video feed */
     scroll-snap-type: y mandatory; /* Efek snap saat scroll antar video */
     -webkit-overflow-scrolling: touch; /* Smooth scrolling di iOS */
-    position: relative; /* Penting untuk penempatan absolut child */
 }
 
-.short-item {
+.video-item {
     width: 100%;
     height: 100vh; /* Setiap video mengambil tinggi layar penuh */
     position: relative;
     display: flex;
     align-items: flex-end; /* Konten di bawah video */
     scroll-snap-align: start; /* Snap ke awal setiap video */
-    background-color: #000;
+    background-color: #000; /* Background fallback */
 }
 
-.video-wrapper {
+.video-player {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex; /* Untuk memusatkan iframe */
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
 }
-
-.video-wrapper iframe {
-    /* Sesuaikan ukuran iframe agar sesuai dengan proporsi video vertikal */
-    width: 100%; /* Lebar penuh */
-    height: 100%; /* Tinggi penuh */
-    object-fit: cover; /* Penting agar video mengisi area tanpa distorsi */
-    transform: scale(1.1); /* Sedikit zoom untuk menghilangkan batas hitam jika ada */
-    /* Anda mungkin perlu menyesuaikan nilai ini tergantung bagaimana YouTube merender Short */
+.video-player iframe { /* Tambahkan ini */
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Pastikan mengisi div induk */
+    top: 0;
+    left: 0;
+    /* object-fit: cover; /* Ini mungkin tidak akan berfungsi pada iframe, tapi patut dicoba jika ada masalah */ */
 }
-
+.video-player video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan video mengisi area tanpa distorsi */
+}
 
 .video-details {
     position: absolute;
@@ -141,6 +139,16 @@ a {
 .username-and-desc p {
     font-size: 0.9em;
     line-height: 1.3;
+}
+
+.audio-info {
+    font-size: 0.8em;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.audio-info i {
+    margin-right: 5px;
 }
 
 .interaction-sidebar {
@@ -182,7 +190,7 @@ a {
 }
 
 /* Footer Nav */
-.shorts-footer-nav {
+.tiktok-footer-nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -205,13 +213,6 @@ a {
     transition: color 0.3s ease;
 }
 
-.nav-item a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: inherit;
-}
-
 .nav-item i {
     font-size: 1.5em;
     margin-bottom: 5px;
@@ -219,4 +220,20 @@ a {
 
 .nav-item.active {
     color: #fff; /* Warna ikon aktif */
+}
+
+.add-button {
+    background-color: #25f4ee; /* Warna khas tombol TikTok */
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-button i {
+    font-size: 1.8em;
+    margin: 0;
 }
