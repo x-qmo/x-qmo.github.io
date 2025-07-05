@@ -6,6 +6,37 @@
     <title>V-Ges</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/viges-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+        /* Mengatur agar video tidak bisa di-fullscreen secara default oleh browser */
+        video::-webkit-media-controls-fullscreen-button {
+            display: none !important;
+        }
+        video::-webkit-media-controls-play-button {
+            display: none !important;
+        }
+        video::-webkit-media-controls-timeline {
+            display: none !important;
+        }
+        video::-webkit-media-controls-current-time-display {
+            display: none !important;
+        }
+        video::-webkit-media-controls-time-remaining-display {
+            display: none !important;
+        }
+        video::-webkit-media-controls-mute-button {
+            display: none !important;
+        }
+        video::-webkit-media-controls-volume-slider {
+            display: none !important;
+        }
+        /* Jika Anda ingin menyembunyikan semua kontrol bawaan */
+        video::-webkit-media-controls {
+            display: none !important;
+        }
+        video::controls {
+             display: none !important;
+        }
+    </style>
 </head>
 <body>
     <div class="tiktok-container">
