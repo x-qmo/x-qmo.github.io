@@ -1,0 +1,222 @@
+/* assets/css/shorts-style.css */
+
+/* Reset CSS dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Ganti font sesuai selera Anda */
+    background-color: #000; /* Latar belakang gelap khas TikTok/YouTube Shorts */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Mencegah scroll body, hanya konten utama yang bisa scroll */
+}
+
+a {
+    color: inherit; /* Inherit warna teks dari parent */
+    text-decoration: none; /* Hilangkan underline default link */
+}
+
+/* Kontainer utama untuk tampilan mobile-like */
+.shorts-container {
+    width: 100%;
+    max-width: 450px; /* Lebar maksimal untuk simulasi tampilan HP */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    position: relative;
+    overflow: hidden; /* Mencegah scroll container, video feed yang di-scroll */
+}
+
+/* Header */
+.shorts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Agak transparan */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.shorts-header .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.shorts-header .channel-name a {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.shorts-header .channel-name i {
+    margin-right: 8px;
+    color: #FF0000; /* Warna merah YouTube */
+    font-size: 1.2em;
+}
+
+/* Main Content (Video Feed) */
+.shorts-main-content {
+    flex-grow: 1; /* Mengisi ruang yang tersedia */
+    overflow-y: scroll; /* Scrollable untuk video feed */
+    scroll-snap-type: y mandatory; /* Efek snap saat scroll antar video */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling di iOS */
+    position: relative; /* Penting untuk penempatan absolut child */
+}
+
+.short-item {
+    width: 100%;
+    height: 100vh; /* Setiap video mengambil tinggi layar penuh */
+    position: relative;
+    display: flex;
+    align-items: flex-end; /* Konten di bawah video */
+    scroll-snap-align: start; /* Snap ke awal setiap video */
+    background-color: #000;
+}
+
+.video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Untuk memusatkan iframe */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    /* Sesuaikan ukuran iframe agar sesuai dengan proporsi video vertikal */
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    object-fit: cover; /* Penting agar video mengisi area tanpa distorsi */
+    transform: scale(1.1); /* Sedikit zoom untuk menghilangkan batas hitam jika ada */
+    /* Anda mungkin perlu menyesuaikan nilai ini tergantung bagaimana YouTube merender Short */
+}
+
+
+.video-details {
+    position: absolute;
+    bottom: 80px; /* Sedikit di atas footer-nav */
+    left: 20px;
+    width: calc(100% - 100px); /* Ruang untuk sidebar kanan */
+    z-index: 5;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Agar teks lebih terbaca */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #fff;
+}
+
+.username-and-desc h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.username-and-desc p {
+    font-size: 0.9em;
+    line-height: 1.3;
+}
+
+.interaction-sidebar {
+    position: absolute;
+    bottom: 80px; /* Sejajar dengan video-details */
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+    color: #fff;
+}
+
+.interaction-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.interaction-button i {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.interaction-button span {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.profile-circle img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer Nav */
+.shorts-footer-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #888; /* Warna ikon tidak aktif */
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: inherit;
+}
+
+.nav-item i {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.nav-item.active {
+    color: #fff; /* Warna ikon aktif */
+}
