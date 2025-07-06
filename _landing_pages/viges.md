@@ -16,7 +16,6 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
         </div>
         <div class="video-details">
             <div class="user-info">
-                <img src="https://via.placeholder.com/40" alt="User Profile">
                 <div class="username-and-desc">
                     <h3>@username_short_1</h3>
                     <p>Short pertama yang lagi viral! #fyp #shorts</p>
@@ -25,10 +24,10 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
             </div>
         </div>
         <div class="interaction-sidebar">
+            <div class="interaction-button profile-circle"><img src="https://via.placeholder.com/30" alt="User Profile"></div>
             <div class="interaction-button"><div class="icon">❤️</div><span>1.5M</span></div>
             <div class="interaction-button"><div class="icon">💬</div><span>70K</span></div>
             <div class="interaction-button"><div class="icon">🔗</div><span>30K</span></div>
-            <div class="interaction-button profile-circle"><img src="https://via.placeholder.com/30" alt="User Profile"></div>
         </div>
     </div>
     <div class="video-item">
@@ -42,7 +41,6 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
         </div>
         <div class="video-details">
             <div class="user-info">
-                <img src="https://via.placeholder.com/40" alt="User Profile">
                 <div class="username-and-desc">
                     <h3>@another_creator</h3>
                     <p>Tutorial singkat bikin kopi ini! #tutorial #coffee</p>
@@ -51,10 +49,10 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
             </div>
         </div>
         <div class="interaction-sidebar">
+            <div class="interaction-button profile-circle"><img src="https://via.placeholder.com/30" alt="User Profile"></div>
             <div class="interaction-button"><div class="icon">❤️</div><span>1.5M</span></div>
             <div class="interaction-button"><div class="icon">💬</div><span>70K</span></div>
             <div class="interaction-button"><div class="icon">🔗</div><span>30K</span></div>
-            <div class="interaction-button profile-circle"><img src="https://via.placeholder.com/30" alt="User Profile"></div>
         </div>
     </div>
                 </div>
