@@ -125,7 +125,7 @@ body {
 .user-info {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 45px;
 }
 
 .user-info img {
@@ -159,7 +159,7 @@ body {
 
 .interaction-sidebar {
     position: absolute;
-    bottom: 80px; /* Sejajar dengan video-details */
+    bottom: 100px; /* Sejajar dengan video-details */
     right: 20px;
     display: flex;
     flex-direction: column;
