@@ -73,6 +73,12 @@ body {
     scroll-snap-type: y mandatory; /* Efek snap saat scroll antar video */
     -webkit-overflow-scrolling: touch; /* Smooth scrolling di iOS */
 }
+.icon {
+    font-size: 2em;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease;
+}
 
 .video-item {
     width: 100%;
@@ -188,7 +194,16 @@ body {
     border: 3px solid #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-
+/* Ikon TikTok Palsu */
+.tiktok-icons {
+    position: absolute;
+    bottom: 100px; /* Sedikit di atas CTA */
+    right: 20px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 /* Footer Nav */
 .tiktok-footer-nav {
     display: flex;
