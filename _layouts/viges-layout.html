@@ -42,7 +42,7 @@
     <div class="tiktok-container">
         <header class="tiktok-header">
             <div class="logo">
-                <h1>ViGes</h1>
+                <h1>Viges</h1>
             </div>
             <div class="search-bar">
                 <input type="text" placeholder="Cari...">
@@ -76,38 +76,37 @@
             </div>
         </footer>
     </div>
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
     <script>
         // Inisialisasi Wistia API secara asynchronous
-        // Ini adalah bagian penting yang memungkinkan Anda mengontrol pemutar Wistia dengan JavaScript.
         window._wq = window._wq || [];
 
         // Pastikan DOM sudah dimuat sebelum menjalankan skrip
         document.addEventListener('DOMContentLoaded', () => {
             const videoItems = document.querySelectorAll('.video-item');
             const mainContent = document.querySelector('.tiktok-main-content');
-            let activeVideoId = null; // Menyimpan ID video Wistia yang sedang aktif
+            let activeVideoPlayer = null; // Menyimpan objek pemutar Wistia yang sedang aktif
 
-            // Fungsi untuk memutar video Wistia
-            function playWistiaVideo(iframeId) {
-                // Gunakan _wq.push untuk berinteraksi dengan pemutar Wistia
+            // Fungsi untuk memutar video Wistia dan mematikannya
+            function playAndMuteWistiaVideo(iframeId) {
                 _wq.push({
                     id: iframeId,
                     onReady: function(video) {
                         video.play();
-                        video.mute(); // Mulai video dalam keadaan muted (disarankan untuk autoplay)
+                        activeVideoPlayer = video; // Simpan referensi ke pemutar yang aktif
                         console.log(`Playing and muting video: ${iframeId}`);
                     }
                 });
             }
 
             // Fungsi untuk menghentikan dan mereset video Wistia
-            function pauseWistiaVideo(iframeId) {
+            function pauseAndResetWistiaVideo(iframeId) {
                 _wq.push({
                     id: iframeId,
                     onReady: function(video) {
                         video.pause();
                         video.time(0); // Atur ulang waktu video ke awal
-                        console.log(`Pausing video: ${iframeId}`);
+                        console.log(`Pausing and resetting video: ${iframeId}`);
                     }
                 });
             }
@@ -129,19 +128,18 @@
 
                     if (entry.isIntersecting) {
                         // Jika video ini masuk ke dalam viewport (terlihat)
-                        if (activeVideoId && activeVideoId !== currentVideoId) {
-                            // Jika ada video lain yang sedang aktif, jeda video tersebut
-                            pauseWistiaVideo(activeVideoId);
+                        if (activeVideoPlayer && activeVideoPlayer.hashedId() !== currentVideoId) {
+                            // Jika ada video lain yang sedang aktif, jeda dan reset video tersebut
+                            pauseAndResetWistiaVideo(activeVideoPlayer.hashedId());
                         }
-                        // Putar video yang baru terlihat
-                        playWistiaVideo(currentVideoId);
-                        activeVideoId = currentVideoId; // Tetapkan video ini sebagai yang aktif
+                        // Putar video yang baru terlihat dan set sebagai aktif
+                        playAndMuteWistiaVideo(currentVideoId);
                     } else {
                         // Jika video ini keluar dari viewport (tidak terlihat)
-                        if (activeVideoId === currentVideoId) {
-                            // Jika video yang keluar adalah video yang sedang aktif, jeda video tersebut
-                            pauseWistiaVideo(currentVideoId);
-                            activeVideoId = null; // Reset activeVideoId
+                        if (activeVideoPlayer && activeVideoPlayer.hashedId() === currentVideoId) {
+                            // Jika video yang keluar adalah video yang sedang aktif, jeda dan reset video tersebut
+                            pauseAndResetWistiaVideo(currentVideoId);
+                            activeVideoPlayer = null; // Reset activeVideoPlayer
                         }
                     }
                 });
@@ -155,10 +153,9 @@
             // Opsional: Putar video pertama secara otomatis saat halaman pertama kali dimuat
             // Ini untuk memastikan ada video yang langsung diputar tanpa perlu scroll
             if (videoItems.length > 0) {
-                const firstVideoPlayer = videoItems[0].querySelector('.video-player iframe');
-                if (firstVideoPlayer) {
-                    playWistiaVideo(firstVideoPlayer.id);
-                    activeVideoId = firstVideoPlayer.id;
+                const firstVideoPlayerIframe = videoItems[0].querySelector('.video-player iframe');
+                if (firstVideoPlayerIframe) {
+                    playAndMuteWistiaVideo(firstVideoPlayerIframe.id);
                 }
             }
         });
