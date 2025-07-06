@@ -150,6 +150,39 @@
                 observer.observe(item);
             });
 
+            // --- LOGIKA BARU: Transparansi Teks Saat Disentuh ---
+    videoItems.forEach(item => {
+        const videoPlayerDiv = item.querySelector('.video-player');
+        const videoDetailsDiv = item.querySelector('.video-details .username-and-desc');
+        const interactionSidebarDiv = item.querySelector('.interaction-sidebar');
+
+        if (videoPlayerDiv && videoDetailsDiv && interactionSidebarDiv) {
+            // Menggunakan 'touchstart' untuk perangkat sentuh
+            // Menggunakan 'click' untuk desktop atau sebagai fallback
+            videoPlayerDiv.addEventListener('touchstart', (e) => {
+                // Mencegah scroll default saat sentuhan pertama jika diperlukan
+                // e.preventDefault();
+
+                // Toggle class 'transparent' pada teks dan sidebar
+                videoDetailsDiv.classList.toggle('transparent');
+                interactionSidebarDiv.classList.toggle('transparent');
+
+                // Jika Anda ingin teks hanya transparan sesaat,
+                // Anda bisa menambahkan setTimeout untuk mengembalikannya setelah beberapa detik:
+                // setTimeout(() => {
+                //     videoDetailsDiv.classList.remove('transparent');
+                //     interactionSidebarDiv.classList.remove('transparent');
+                // }, 2000); // Teks akan muncul lagi setelah 2 detik
+            });
+
+            // Tambahkan juga event click untuk kompatibilitas desktop
+            videoPlayerDiv.addEventListener('click', () => {
+                videoDetailsDiv.classList.toggle('transparent');
+                interactionSidebarDiv.classList.toggle('transparent');
+            });
+        }
+    });
+
             // Opsional: Putar video pertama secara otomatis saat halaman pertama kali dimuat
             // Ini untuk memastikan ada video yang langsung diputar tanpa perlu scroll
             if (videoItems.length > 0) {
