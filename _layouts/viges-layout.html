@@ -76,5 +76,92 @@
             </div>
         </footer>
     </div>
+    <script>
+        // Inisialisasi Wistia API secara asynchronous
+        // Ini adalah bagian penting yang memungkinkan Anda mengontrol pemutar Wistia dengan JavaScript.
+        window._wq = window._wq || [];
+
+        // Pastikan DOM sudah dimuat sebelum menjalankan skrip
+        document.addEventListener('DOMContentLoaded', () => {
+            const videoItems = document.querySelectorAll('.video-item');
+            const mainContent = document.querySelector('.tiktok-main-content');
+            let activeVideoId = null; // Menyimpan ID video Wistia yang sedang aktif
+
+            // Fungsi untuk memutar video Wistia
+            function playWistiaVideo(iframeId) {
+                // Gunakan _wq.push untuk berinteraksi dengan pemutar Wistia
+                _wq.push({
+                    id: iframeId,
+                    onReady: function(video) {
+                        video.play();
+                        video.mute(); // Mulai video dalam keadaan muted (disarankan untuk autoplay)
+                        console.log(`Playing and muting video: ${iframeId}`);
+                    }
+                });
+            }
+
+            // Fungsi untuk menghentikan dan mereset video Wistia
+            function pauseWistiaVideo(iframeId) {
+                _wq.push({
+                    id: iframeId,
+                    onReady: function(video) {
+                        video.pause();
+                        video.time(0); // Atur ulang waktu video ke awal
+                        console.log(`Pausing video: ${iframeId}`);
+                    }
+                });
+            }
+
+            // Opsi untuk Intersection Observer
+            const observerOptions = {
+                root: mainContent, // Element yang akan menjadi viewport (scroll container)
+                rootMargin: '0px',
+                threshold: 0.7 // Video akan dianggap 'terlihat' jika 70% dari video berada dalam viewport
+            };
+
+            // Buat Intersection Observer
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const videoPlayerIframe = entry.target.querySelector('.video-player iframe');
+                    if (!videoPlayerIframe) return; // Pastikan ada iframe di dalam video-item
+
+                    const currentVideoId = videoPlayerIframe.id;
+
+                    if (entry.isIntersecting) {
+                        // Jika video ini masuk ke dalam viewport (terlihat)
+                        if (activeVideoId && activeVideoId !== currentVideoId) {
+                            // Jika ada video lain yang sedang aktif, jeda video tersebut
+                            pauseWistiaVideo(activeVideoId);
+                        }
+                        // Putar video yang baru terlihat
+                        playWistiaVideo(currentVideoId);
+                        activeVideoId = currentVideoId; // Tetapkan video ini sebagai yang aktif
+                    } else {
+                        // Jika video ini keluar dari viewport (tidak terlihat)
+                        if (activeVideoId === currentVideoId) {
+                            // Jika video yang keluar adalah video yang sedang aktif, jeda video tersebut
+                            pauseWistiaVideo(currentVideoId);
+                            activeVideoId = null; // Reset activeVideoId
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            // Mulai mengamati setiap elemen video-item
+            videoItems.forEach(item => {
+                observer.observe(item);
+            });
+
+            // Opsional: Putar video pertama secara otomatis saat halaman pertama kali dimuat
+            // Ini untuk memastikan ada video yang langsung diputar tanpa perlu scroll
+            if (videoItems.length > 0) {
+                const firstVideoPlayer = videoItems[0].querySelector('.video-player iframe');
+                if (firstVideoPlayer) {
+                    playWistiaVideo(firstVideoPlayer.id);
+                    activeVideoId = firstVideoPlayer.id;
+                }
+            }
+        });
+    </script>
 </body>
 </html>
