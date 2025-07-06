@@ -8,10 +8,10 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
 <div class="video-feed">
                 <div class="video-item">
                     <div class="video-player">
-                        <iframe src="https://fast.wistia.net/embed/iframe/etopxlq5gk?web_component=true&seo=true"
+                        <div class="wistia_responsive_padding" style="padding:177.78% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/etopxlq5gk?web_component=true&seo=true"
                                 title="Kegiatan Jual Barang Bekas 2024 Video"
                                 allow="fullscreen" allowtransparency="true" frameborder="0" scrolling="no"
-                                class="wistia_embed" name="wistia_embed_1" id="wistia_embed_etopxlq5gk"></iframe>
+                                class="wistia_embed" name="wistia_embed_1" id="wistia_embed_etopxlq5gk"></iframe></div></div>
                     </div>
                     <div class="video-details">
                         <div class="user-info">
