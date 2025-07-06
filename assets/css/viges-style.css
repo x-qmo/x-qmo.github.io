@@ -205,17 +205,19 @@ body {
     gap: 20px;
 }
 /* Footer Nav */
+/* Aturan dasar untuk desktop */
 .tiktok-footer-nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
-    padding: 10px 0;
-    background-color: #000;
-    position: absolute;
+    position: fixed; /* Penting agar footer selalu di bawah */
     bottom: 0;
-    z-index: 10;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Contoh warna latar belakang */
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    z-index: 1000; /* Pastikan footer di atas konten lain */
 }
 
 .nav-item {
