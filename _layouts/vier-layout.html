@@ -170,6 +170,7 @@
 
         videoPlayer.src = videoSources[currentVideoIndex];
         videoPlayer.load(); // Memuat video baru
+        videoPlayer.muted = false;
         videoPlayer.play(); // Otomatis putar
         playPauseBtn.classList.remove('paused'); // Pastikan tombol menunjukkan 'pause'
     };
