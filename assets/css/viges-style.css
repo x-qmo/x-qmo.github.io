@@ -219,7 +219,9 @@ body {
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
     z-index: 1000; /* Pastikan footer di atas konten lain */
 }
-
+.tiktok-footer-nav a {
+  text-decoration: navajowhite;
+}
 .nav-item {
     display: flex;
     flex-direction: column;
