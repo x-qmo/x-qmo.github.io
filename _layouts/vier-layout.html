@@ -3,263 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Player Mirip TikTok</title>
-    <style>
-    body {
-    margin: 0;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #000; /* Latar belakang hitam seperti TikTok */
-    overflow: hidden; /* Mencegah scrolling */
-}
-
-.video-container {
-    position: relative;
-    width: 100%;
-    max-width: 400px; /* Lebar maksimum seperti di perangkat seluler */
-    height: 100vh; /* Mengisi tinggi viewport */
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.video-player {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Pastikan video mengisi wadah tanpa terdistorsi */
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.controls {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 50px;
-    z-index: 10;
-}
-
-.control-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-    outline: none;
-    padding: 0;
-    margin: 0;
-}
-
-.play-pause-btn::before {
-    content: '❚❚'; /* Ikon Pause */
-}
-
-.play-pause-btn.paused::before {
-    content: '▶'; /* Ikon Play */
-}
-
-.volume-control {
-    display: flex;
-    align-items: center;
-}
-
-.volume-slider {
-    width: 80px;
-    -webkit-appearance: none; /* Hapus gaya default browser */
-    appearance: none;
-    height: 5px;
-    background: #d3d3d3;
-    outline: none;
-    border-radius: 5px;
-}
-
-.volume-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #fff;
-    cursor: pointer;
-}
-
-.volume-slider::-moz-range-thumb {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #fff;
-    cursor: pointer;
-}
-
-.sidebar {
-    position: absolute;
-    right: 15px;
-    bottom: 120px; /* Atur posisi agar tidak menimpa kontrol */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    color: white;
-    font-size: 28px;
-    z-index: 10;
-}
-
-.sidebar-item {
-    cursor: pointer;
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
-}
+    <title>V-Ges</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/viges-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+        /* Mengatur agar video tidak bisa di-fullscreen secara default oleh browser */
+        video::-webkit-media-controls-fullscreen-button {
+            display: none !important;
+        }
+        video::-webkit-media-controls-play-button {
+            display: none !important;
+        }
+        video::-webkit-media-controls-timeline {
+            display: none !important;
+        }
+        video::-webkit-media-controls-current-time-display {
+            display: none !important;
+        }
+        video::-webkit-media-controls-time-remaining-display {
+            display: none !important;
+        }
+        video::-webkit-media-controls-mute-button {
+            display: none !important;
+        }
+        video::-webkit-media-controls-volume-slider {
+            display: none !important;
+        }
+        /* Jika Anda ingin menyembunyikan semua kontrol bawaan */
+        video::-webkit-media-controls {
+            display: none !important;
+        }
+        video::controls {
+             display: none !important;
+        }
     </style>
 </head>
 <body>
-    <div class="video-container">
-        <video id="videoPlayer" class="video-player" loop autoplay muted playsinline>
-            Maaf, browser Anda tidak mendukung tag video.
-        </video>
-        <div class="controls">
-            <button id="playPauseBtn" class="control-btn play-pause-btn"></button>
-            <div class="volume-control">
-                <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.01" value="0.5">
+    <div class="tiktok-container">
+        <header class="tiktok-header">
+            <div class="logo">
+                <h1>ViGes</h1>
             </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari...">
+                <i class="fas fa-search"></i>
             </div>
-        <div class="sidebar">
-            <div class="sidebar-item">❤️</div>
-            <div class="sidebar-item">💬</div>
-            <div class="sidebar-item">⬆️</div>
-        </div>
+        </header>
 
+        <main class="tiktok-main-content">
+            <div class="video-feed">
+                <div class="video-item">
+                    <div class="video-player">
+                        <div class="wistia_responsive_padding" style="padding:177.78% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/etopxlq5gk?web_component=true&seo=true"
+                                    title="Kegiatan Jual Barang Bekas 2024 Video"
+                                    allow="fullscreen" allowtransparency="true" frameborder="0" scrolling="no"
+                                    class="wistia_embed" name="wistia_embed_1" id="wistia_embed_etopxlq5gk"></iframe></div></div>
+                    </div>
+                    <div class="video-details">
+                        <div class="user-info">
+                            <div class="username-and-desc">
+                                <h3>Kegiatan Jualan BABE 2024</h3>
+                                <p>Jual barang bekas layak pakai Anda di Kegiatan Jualan BABE! #tutorial #coffee</p>
+                                <p class="audio-info"><i class="fas fa-music"></i> Kopi Enak</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="interaction-sidebar">
+                        <div class="interaction-button profile-circle"><img src="https://via.placeholder.com/30" alt="User Profile"></div>
+                        <div class="interaction-button"><div class="icon">❤️</div><span>1.5M</span></div>
+                        <div class="interaction-button"><div class="icon">💬</div><span>70K</span></div>
+                        <div class="interaction-button"><div class="icon">🔗</div><span>30K</span></div>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-player">
+                        <div class="wistia_responsive_padding" style="padding:177.78% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/cnb58awg7w?web_component=true&seo=true"
+                                    title="Berbagi Makanan Nasi Box Bulan Juni Video"
+                                    allow="fullscreen" allowtransparency="true" frameborder="0" scrolling="no"
+                                    class="wistia_embed" name="wistia_embed_2" id="wistia_embed_cnb58awg7w"></iframe></div></div>
+                    </div>
+                    <div class="video-details">
+                        <div class="user-info">
+                            <div class="username-and-desc">
+                                <h3>Berbagi Nasi Box</h3>
+                                <p>Bagi-bagi nasi box di bulan juni #tutorial #coffee</p>
+                                <p class="audio-info"><i class="fas fa-music"></i> Kopi Enak</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="interaction-sidebar">
+                        <div class="interaction-button profile-circle"><img src="https://via.placeholder.com/30" alt="User Profile"></div>
+                        <div class="interaction-button"><div class="icon">❤️</div><span>1.5M</span></div>
+                        <div class="interaction-button"><div class="icon">💬</div><span>70K</span></div>
+                        <div class="interaction-button"><div class="icon">🔗</div><span>30K</span></div>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-player">
+                        <div class="wistia_responsive_padding" style="padding:183.78% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/b9seo14989?web_component=true&seo=true" title="Berbagi Nasi Box Mei 2025 Video" allow="fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed_3" id="wistia_embed_b9seo14989" width="100%" height="100%"></iframe></div></div>
+                    </div>
+                    <div class="video-details">
+                        <div class="user-info">
+                            <div class="username-and-desc">
+                                <h3>@another_creator</h3>
+                                <p>Tutorial singkat bikin kopi ini! #tutorial #coffee</p>
+                                <p class="audio-info"><i class="fas fa-music"></i> Kopi Enak</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="interaction-sidebar">
+                        <div class="interaction-button profile-circle"><img src="https://via.placeholder.com/30" alt="User Profile"></div>
+                        <div class="interaction-button"><div class="icon">❤️</div><span>1.5M</span></div>
+                        <div class="interaction-button"><div class="icon">💬</div><span>70K</span></div>
+                        <div class="interaction-button"><div class="icon">🔗</div><span>30K</span></div>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-player">
+                        <div class="wistia_responsive_padding" style="padding:177.78% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/reya71g9t6?web_component=true&seo=true" title="Makan Gratis Video" allow="fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed_4" id="wistia_embed_reya71g9t6" width="100%" height="100%"></iframe></div></div>
+                    </div>
+                    <div class="video-details">
+                        <div class="user-info">
+                            <div class="username-and-desc">
+                                <h3>@another_creator</h3>
+                                <p>Tutorial singkat bikin kopi ini! #tutorial #coffee</p>
+                                <p class="audio-info"><i class="fas fa-music"></i> Kopi Enak</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="interaction-sidebar">
+                        <div class="interaction-button profile-circle"><img src="https://via.placeholder.com/30" alt="User Profile"></div>
+                        <div class="interaction-button"><div class="icon">❤️</div><span>1.5M</span></div>
+                        <div class="interaction-button"><div class="icon">💬</div><span>70K</span></div>
+                        <div class="interaction-button"><div class="icon">🔗</div><span>30K</span></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="tiktok-footer-nav">
+            <div class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Beranda</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-compass"></i>
+                <span>Jelajahi</span>
+            </div>
+            <div class="nav-item add-button">
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-inbox"></i>
+                <span>Kotak Masuk</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profil</span>
+            </div>
+        </footer>
     </div>
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-    const videoPlayer = document.getElementById('videoPlayer');
-    const playPauseBtn = document.getElementById('playPauseBtn');
-    const volumeSlider = document.getElementById('volumeSlider');
-    const videoContainer = document.querySelector('.video-container');
+        // Inisialisasi Wistia API secara asynchronous
+        window._wq = window._wq || [];
 
-    // --- Daftar Video Anda ---
-    // Ganti URL ini dengan path ke video Anda sendiri
-    // Pastikan video-video ini ada di folder yang sama atau gunakan URL lengkap
-    const videoSources = [
-        "https://fast.wistia.net/embed/iframe/reya71g9t6", // Contoh: video di dalam folder 'video'
-        "/assets/video/makan-gratis.mp4",
-        "https://fast.wistia.net/embed/iframe/reya71g9t6",
-        "/assets/video/berbagi-nasi-box.mp4" // Contoh: URL eksternal
-    ];
-    let currentVideoIndex = 0; // Indeks video yang sedang diputar
+        // Pastikan DOM sudah dimuat sebelum menjalankan skrip
+        document.addEventListener('DOMContentLoaded', () => {
+            const videoItems = document.querySelectorAll('.video-item');
+            const mainContent = document.querySelector('.tiktok-main-content');
+            let activeVideoPlayer = null; // Menyimpan objek pemutar Wistia yang sedang aktif
 
-    // Fungsi untuk memuat dan memutar video berdasarkan indeks
-    const loadAndPlayVideo = (index) => {
-        // Pastikan indeks berada dalam batas array
-        if (index < 0) {
-            currentVideoIndex = videoSources.length - 1; // Kembali ke video terakhir jika swipe ke atas dari video pertama
-        } else if (index >= videoSources.length) {
-            currentVideoIndex = 0; // Kembali ke video pertama jika swipe ke bawah dari video terakhir
-        } else {
-            currentVideoIndex = index;
-        }
+            // Fungsi untuk memutar video Wistia dan mematikannya
+            function playAndMuteWistiaVideo(iframeId) {
+                _wq.push({
+                    id: iframeId,
+                    onReady: function(video) {
+                        video.play();
+                        activeVideoPlayer = video; // Simpan referensi ke pemutar yang aktif
+                        console.log(`Playing and muting video: ${iframeId}`);
+                    }
+                });
+            }
 
-        videoPlayer.src = videoSources[currentVideoIndex];
-        videoPlayer.load(); // Memuat video baru
-        videoPlayer.muted = false;
-        videoPlayer.play(); // Otomatis putar
-        playPauseBtn.classList.remove('paused'); // Pastikan tombol menunjukkan 'pause'
-    };
+            // Fungsi untuk menghentikan dan mereset video Wistia
+            function pauseAndResetWistiaVideo(iframeId) {
+                _wq.push({
+                    id: iframeId,
+                    onReady: function(video) {
+                        video.pause();
+                        video.time(0); // Atur ulang waktu video ke awal
+                        console.log(`Pausing and resetting video: ${iframeId}`);
+                    }
+                });
+            }
 
-    // Muat video pertama saat halaman dimuat
-    loadAndPlayVideo(currentVideoIndex);
+            // Opsi untuk Intersection Observer
+            const observerOptions = {
+                root: mainContent, // Element yang akan menjadi viewport (scroll container)
+                rootMargin: '0px',
+                threshold: 0.7 // Video akan dianggap 'terlihat' jika 70% dari video berada dalam viewport
+            };
 
-    // --- Fitur Play/Pause ---
-    playPauseBtn.addEventListener('click', () => {
-        if (videoPlayer.paused) {
-            videoPlayer.play();
-            playPauseBtn.classList.remove('paused');
-        } else {
-            videoPlayer.pause();
-            playPauseBtn.classList.add('paused');
-        }
-    });
+            // Buat Intersection Observer
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const videoPlayerIframe = entry.target.querySelector('.video-player iframe');
+                    if (!videoPlayerIframe) return; // Pastikan ada iframe di dalam video-item
 
-    // Otomatis jeda jika video tidak terlihat sepenuhnya (opsional, untuk UX yang lebih baik)
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-                videoPlayer.pause();
-                playPauseBtn.classList.add('paused');
-            } else {
-                // Hanya putar jika belum dijeda secara manual
-                if (playPauseBtn.classList.contains('paused')) {
-                    // Biarkan dijeda jika pengguna yang menjeda
-                } else {
-                    videoPlayer.play();
+                    const currentVideoId = videoPlayerIframe.id;
+
+                    if (entry.isIntersecting) {
+                        // Jika video ini masuk ke dalam viewport (terlihat)
+                        if (activeVideoPlayer && activeVideoPlayer.hashedId() !== currentVideoId) {
+                            // Jika ada video lain yang sedang aktif, jeda dan reset video tersebut
+                            pauseAndResetWistiaVideo(activeVideoPlayer.hashedId());
+                        }
+                        // Putar video yang baru terlihat dan set sebagai aktif
+                        playAndMuteWistiaVideo(currentVideoId);
+                    } else {
+                        // Jika video ini keluar dari viewport (tidak terlihat)
+                        if (activeVideoPlayer && activeVideoPlayer.hashedId() === currentVideoId) {
+                            // Jika video yang keluar adalah video yang sedang aktif, jeda dan reset video tersebut
+                            pauseAndResetWistiaVideo(currentVideoId);
+                            activeVideoPlayer = null; // Reset activeVideoPlayer
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            // Mulai mengamati setiap elemen video-item
+            videoItems.forEach(item => {
+                observer.observe(item);
+            });
+
+            // Opsional: Putar video pertama secara otomatis saat halaman pertama kali dimuat
+            // Ini untuk memastikan ada video yang langsung diputar tanpa perlu scroll
+            if (videoItems.length > 0) {
+                const firstVideoPlayerIframe = videoItems[0].querySelector('.video-player iframe');
+                if (firstVideoPlayerIframe) {
+                    playAndMuteWistiaVideo(firstVideoPlayerIframe.id);
                 }
             }
         });
-    }, { threshold: 0.8 }); // Video harus 80% terlihat untuk dianggap "intersecting"
-
-    observer.observe(videoContainer);
-
-    // --- Fitur Volume ---
-    volumeSlider.addEventListener('input', () => {
-        videoPlayer.volume = volumeSlider.value;
-    });
-
-    // Sinkronkan slider dengan volume video awal (jika muted di HTML)
-    videoPlayer.volume = volumeSlider.value;
-
-
-    // --- Gestur Swipe ---
-    let startY = 0;
-    let endY = 0;
-    const swipeThreshold = 50; // Minimal pergerakan Y untuk dianggap swipe
-
-    videoContainer.addEventListener('touchstart', (e) => {
-        startY = e.touches[0].clientY;
-    });
-
-    videoContainer.addEventListener('touchmove', (e) => {
-        // Mencegah scrolling default browser saat swipe vertikal
-        e.preventDefault();
-    });
-
-    videoContainer.addEventListener('touchend', (e) => {
-        endY = e.changedTouches[0].clientY;
-        const deltaY = endY - startY;
-
-        if (deltaY > swipeThreshold) { // Swipe ke bawah: video sebelumnya
-            loadAndPlayVideo(currentVideoIndex - 1);
-        } else if (deltaY < -swipeThreshold) { // Swipe ke atas: video berikutnya
-            loadAndPlayVideo(currentVideoIndex + 1);
-        }
-    });
-
-    // --- Fitur Pause/Play saat klik di mana saja pada video ---
-    videoPlayer.addEventListener('click', () => {
-        if (videoPlayer.paused) {
-            videoPlayer.play();
-            playPauseBtn.classList.remove('paused');
-        } else {
-            videoPlayer.pause();
-            playPauseBtn.classList.add('paused');
-        }
-    });
-
-    // --- Initial setup for play/pause button state ---
-    if (videoPlayer.paused) {
-        playPauseBtn.classList.add('paused');
-    } else {
-        playPauseBtn.classList.remove('paused');
-    }
-});
     </script>
 </body>
 </html>
