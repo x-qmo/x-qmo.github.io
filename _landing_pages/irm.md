@@ -8,7 +8,7 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
     <div class="container">
         <h1 class="hero-title">Insan Robithotul Mukhlasin</h1>
         <p class="hero-subtitle">yayasan ini hadir sebagai jembatan kebaikan, menghubungkan uluran tangan para dermawan dengan kebutuhan mendesak di lapangan</p>
-        <a href="https://x-qmo.github.io/landing-pages/viges/" class="donate-button">Program Kegiatan</a>
+        <a href="https://x-qmo.github.io/landing-pages/viges/" class="donate-button">Video Kegiatan</a>
     </div>
 </section>
 
