@@ -76,5 +76,89 @@
             </div>
         </footer>
     </div>
+    <script>
+        // Memuat Wistia API secara asynchronous
+        window._wq = window._wq || [];
+        _wq.push({ id: "_all", onReady: function(video) {
+            // Video Wistia sudah siap, bisa dilakukan inisialisasi jika perlu
+        }});
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const videoItems = document.querySelectorAll('.video-item');
+            const mainContent = document.querySelector('.tiktok-main-content');
+            let activeVideo = null; // Menyimpan referensi video yang sedang aktif
+
+            // Fungsi untuk memutar video Wistia
+            function playWistiaVideo(iframeId) {
+                _wq.push({
+                    id: iframeId,
+                    onReady: function(video) {
+                        video.play();
+                        video.mute(); // Mulai dalam keadaan muted
+                        console.log(`Playing and muting video: ${iframeId}`);
+                    }
+                });
+            }
+
+            // Fungsi untuk menghentikan video Wistia
+            function pauseWistiaVideo(iframeId) {
+                _wq.push({
+                    id: iframeId,
+                    onReady: function(video) {
+                        video.pause();
+                        video.time(0); // Kembali ke awal video
+                        console.log(`Pausing video: ${iframeId}`);
+                    }
+                });
+            }
+
+            const observerOptions = {
+                root: mainContent, // Mengamati di dalam main-content
+                rootMargin: '0px',
+                threshold: 0.8 // Video akan dianggap 'terlihat' jika 80% dari video berada dalam viewport
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const videoPlayer = entry.target.querySelector('.video-player iframe');
+                    if (!videoPlayer) return;
+
+                    const iframeId = videoPlayer.id;
+
+                    if (entry.isIntersecting) {
+                        // Jika video ini terlihat
+                        if (activeVideo && activeVideo !== iframeId) {
+                            // Hentikan video sebelumnya yang aktif (jika ada dan berbeda)
+                            pauseWistiaVideo(activeVideo);
+                        }
+                        playWistiaVideo(iframeId);
+                        activeVideo = iframeId; // Tetapkan video ini sebagai yang aktif
+                    } else {
+                        // Jika video ini tidak terlihat lagi
+                        if (activeVideo === iframeId) {
+                            // Jika video yang tidak terlihat adalah video yang sedang aktif, hentikan
+                            pauseWistiaVideo(iframeId);
+                            activeVideo = null; // Setel ulang activeVideo
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            // Mulai mengamati setiap video-item
+            videoItems.forEach(item => {
+                observer.observe(item);
+            });
+
+            // Putar video pertama secara manual saat halaman dimuat (jika ada)
+            // Ini untuk memastikan ada video yang diputar saat pertama kali landing
+            if (videoItems.length > 0) {
+                const firstVideoPlayer = videoItems[0].querySelector('.video-player iframe');
+                if (firstVideoPlayer) {
+                    playWistiaVideo(firstVideoPlayer.id);
+                    activeVideo = firstVideoPlayer.id;
+                }
+            }
+        });
+    </script>
 </body>
 </html>
