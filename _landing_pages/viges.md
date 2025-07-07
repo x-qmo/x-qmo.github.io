@@ -13,9 +13,9 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
                                     allow="fullscreen" allowtransparency="true" frameborder="0" scrolling="no"
                                     class="wistia_embed" name="wistia_embed_1" id="wistia_embed_etopxlq5gk"></iframe></div></div>
                     </div>
-                    <div class="video-details">
+                    <div class="video-details touch-area touch-text">
                         <div class="user-info">
-                            <div class="username-and-desc">
+                            <div class="username-and-desc" id="interactiveText">
                                 <h3>Kegiatan Jualan BABE 2024</h3>
                                 <p>Jual barang bekas layak pakai Anda di Kegiatan Jualan BABE! #tutorial #coffee</p>
                                 <p class="audio-info"><i class="fas fa-music"></i> Kopi Enak</p>

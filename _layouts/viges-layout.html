@@ -150,38 +150,6 @@
                 observer.observe(item);
             });
 
-            // --- LOGIKA BARU: Transparansi Teks Saat Disentuh ---
-    videoItems.forEach(item => {
-        const videoPlayerDiv = item.querySelector('.video-player');
-        const videoDetailsDiv = item.querySelector('.video-details .username-and-desc');
-        const interactionSidebarDiv = item.querySelector('.interaction-sidebar');
-
-        if (videoPlayerDiv && videoDetailsDiv && interactionSidebarDiv) {
-            // Menggunakan 'touchstart' untuk perangkat sentuh
-            // Menggunakan 'click' untuk desktop atau sebagai fallback
-            videoPlayerDiv.addEventListener('touchstart', (e) => {
-                // Mencegah scroll default saat sentuhan pertama jika diperlukan
-                // e.preventDefault();
-
-                // Toggle class 'transparent' pada teks dan sidebar
-                videoDetailsDiv.classList.toggle('transparent');
-                interactionSidebarDiv.classList.toggle('transparent');
-
-                // Jika Anda ingin teks hanya transparan sesaat,
-                // Anda bisa menambahkan setTimeout untuk mengembalikannya setelah beberapa detik:
-                // setTimeout(() => {
-                //     videoDetailsDiv.classList.remove('transparent');
-                //     interactionSidebarDiv.classList.remove('transparent');
-                // }, 2000); // Teks akan muncul lagi setelah 2 detik
-            });
-
-            // Tambahkan juga event click untuk kompatibilitas desktop
-            videoPlayerDiv.addEventListener('click', () => {
-                videoDetailsDiv.classList.toggle('transparent');
-                interactionSidebarDiv.classList.toggle('transparent');
-            });
-        }
-    });
 
             // Opsional: Putar video pertama secara otomatis saat halaman pertama kali dimuat
             // Ini untuk memastikan ada video yang langsung diputar tanpa perlu scroll
@@ -192,6 +160,45 @@
                 }
             }
         });
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const interactiveText = document.getElementById('interactiveText');
+    const touchArea = document.querySelector('.touch-area'); // Area yang akan disentuh
+
+    if (!interactiveText || !touchArea) {
+        console.error('Elemen tidak ditemukan. Pastikan ID "interactiveText" dan kelas "touch-area" ada.');
+        return;
+    }
+
+    // Fungsi untuk membuat teks transparan
+    const makeTransparent = () => {
+        interactiveText.style.opacity = '0.3'; // Misalnya, 30% transparan
+    };
+
+    // Fungsi untuk mengembalikan teks menjadi tidak transparan
+    const makeOpaque = () => {
+        interactiveText.style.opacity = '1'; // Kembali penuh
+    };
+
+    // Event listener untuk 'touchstart' (saat disentuh)
+    touchArea.addEventListener('touchstart', (event) => {
+        // event.preventDefault() bisa ditambahkan di sini jika Anda ingin mencegah perilaku default browser
+        // seperti zoom atau menampilkan menu konteks saat disentuh lama.
+        // Namun, gunakan dengan hati-hati karena bisa mengganggu aksesibilitas.
+        makeTransparent();
+    });
+
+    // Event listener untuk 'touchend' (saat dilepas)
+    touchArea.addEventListener('touchend', () => {
+        makeOpaque();
+    });
+
+    // Opsional: 'touchcancel' jika sentuhan dibatalkan (misalnya, panggilan masuk)
+    touchArea.addEventListener('touchcancel', () => {
+        makeOpaque();
+    });
+});
     </script>
 </body>
 </html>

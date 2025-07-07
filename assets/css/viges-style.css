@@ -4,7 +4,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.touch-area {
+            cursor: pointer; /* Menandakan bisa diklik/disentuh */
+            user-select: none; /* Mencegah teks terpilih saat disentuh */
+            -webkit-user-select: none; /* Untuk kompatibilitas Safari */
+            touch-action: manipulation; /* Meningkatkan respons sentuhan */
+        }
+        .touch-text {
+            transition: opacity 0.3s ease-in-out; /* Transisi halus untuk opacity */
+            opacity: 1; /* Opacity awal */
+        }
 body {
     font-family: 'Poppins', sans-serif; /* Anda bisa mengganti font */
     background-color: #000; /* Latar belakang gelap khas TikTok */
