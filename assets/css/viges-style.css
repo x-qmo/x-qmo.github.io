@@ -4,7 +4,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+#teksLandingPage {
+  /* Gaya dasar teks Anda */
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  transition: opacity 0.5s ease-in-out; /* Transisi untuk efek halus */
+}
 
+/* Class CSS yang akan ditambahkan/dihapus oleh JavaScript */
+.transparan {
+  opacity: 0; /* Teks menjadi sepenuhnya transparan */
+}
 body {
     font-family: 'Poppins', sans-serif; /* Anda bisa mengganti font */
     background-color: #000; /* Latar belakang gelap khas TikTok */

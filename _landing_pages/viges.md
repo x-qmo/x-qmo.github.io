@@ -15,7 +15,7 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
                     </div>
                     <div class="video-details">
                         <div class="user-info">
-                            <div class="username-and-desc">
+                            <div id="teksLandingPage" class="username-and-desc">
                                 <h3>Kegiatan Jualan BABE 2024</h3>
                                 <p>Jual barang bekas layak pakai Anda di Kegiatan Jualan BABE! #tutorial #coffee</p>
                                 <p class="audio-info"><i class="fas fa-music"></i> Kopi Enak</p>
@@ -38,7 +38,7 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
                     </div>
                     <div class="video-details">
                         <div class="user-info">
-                            <div class="username-and-desc">
+                            <div id="teksLandingPage" class="username-and-desc">
                                 <h3>Berbagi Nasi Box</h3>
                                 <p>Bagi-bagi nasi box di bulan juni #tutorial #coffee</p>
                                 <p class="audio-info"><i class="fas fa-music"></i> Kopi Enak</p>
@@ -58,7 +58,7 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
                     </div>
                     <div class="video-details">
                         <div class="user-info">
-                            <div class="username-and-desc">
+                            <div id="teksLandingPage" class="username-and-desc">
                                 <h3>@another_creator</h3>
                                 <p>Tutorial singkat bikin kopi ini! #tutorial #coffee</p>
                                 <p class="audio-info"><i class="fas fa-music"></i> Kopi Enak</p>
