@@ -193,25 +193,5 @@
             }
         });
     </script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const teksLandingPage = document.getElementById('teksLandingPage');
-
-      function handleTouchStart() {
-        teksLandingPage.classList.add('transparan');
-      }
-
-      function handleTouchEnd() {
-        teksLandingPage.classList.remove('transparan');
-      }
-
-      if (teksLandingPage) {
-        teksLandingPage.addEventListener('touchstart', handleTouchStart);
-        teksLandingPage.addEventListener('touchend', handleTouchEnd);
-      } else {
-        console.error("Elemen 'teksLandingPage' tidak ditemukan!");
-      }
-    });
-  </script>
 </body>
 </html>
