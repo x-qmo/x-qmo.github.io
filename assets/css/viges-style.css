@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 .touch-area {
+            width: 100%;
+            height: 100%;
             cursor: pointer; /* Menandakan bisa diklik/disentuh */
             user-select: none; /* Mencegah teks terpilih saat disentuh */
             -webkit-user-select: none; /* Untuk kompatibilitas Safari */
