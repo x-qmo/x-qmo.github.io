@@ -17,7 +17,7 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
                         <div class="user-info">
                             <div class="username-and-desc" id="interactiveText">
                                 <h3>Kegiatan Jualan BABE 2024</h3>
-                                <p>Jual barang bekas layak pakai Anda di Kegiatan Jualan BABE! #tutorial #coffee</p>
+                                <p>Jual barang bekas layak pakai Anda di Kegiatan Jualan BABE! #irm #babe</p>
                                 <p class="audio-info"><i class="fas fa-music"></i> Kopi Enak</p>
                             </div>
                         </div>
@@ -40,7 +40,7 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
                         <div class="user-info">
                             <div class="username-and-desc">
                                 <h3>Berbagi Nasi Box</h3>
-                                <p>Bagi-bagi nasi box di bulan juni #tutorial #coffee</p>
+                                <p>Bagi-bagi nasi box di bulan juni #irm #berbagi</p>
                                 <p class="audio-info"><i class="fas fa-music"></i> Kopi Enak</p>
                             </div>
                         </div>
@@ -59,8 +59,8 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
                     <div class="video-details">
                         <div class="user-info">
                             <div class="username-and-desc">
-                                <h3>@another_creator</h3>
-                                <p>Tutorial singkat bikin kopi ini! #tutorial #coffee</p>
+                                <h3>Berbagi Nasi Box 2025</h3>
+                                <p>Berbagi Nasi Box #irm</p>
                                 <p class="audio-info"><i class="fas fa-music"></i> Kopi Enak</p>
                             </div>
                         </div>
@@ -79,8 +79,8 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
                     <div class="video-details">
                         <div class="user-info">
                             <div class="username-and-desc">
-                                <h3>@another_creator</h3>
-                                <p>Tutorial singkat bikin kopi ini! #tutorial #coffee</p>
+                                <h3>Makan Gratis</h3>
+                                <p>Yuk, makan gratis #irm #makangratis</p>
                                 <p class="audio-info"><i class="fas fa-music"></i> Kopi Enak</p>
                             </div>
                         </div>
