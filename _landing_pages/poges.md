@@ -13,12 +13,12 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
    <div class="user-info">
     <div class="username-and-desc">
      <h3>Makan Gratis 14/10/2024</h3>
-     <p>Berbagi Makan Gratis 14/10/2024 Di Babakan Baru #irm #makangratis</p>
+     <p>Yayasan IRM menyalurkan makanan gratis bagi yang membutuhkan. Berbagi kebaikan, menyebarkan kebahagiaan bersama.</p>
      </div>
    </div>
   </div>
   <div class="interaction-sidebar">
-   <div class="interaction-button profile-circle"><img src="https://via.placeholder.com/30" alt="User Profile"></div>
+   <div class="interaction-button profile-circle"><img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1751921285/logo-irm-100x100_lm460s.png" alt="User Profile"></div>
    <div class="interaction-button"><div class="icon">❤️</div><span>1.5K</span></div> <div class="interaction-button"><div class="icon">💬</div><span>70</span> </div>
    <div class="interaction-button"><div class="icon">🔗</div><span>30</span> </div>
   </div>
@@ -30,13 +30,13 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
   <div class="touch-area"></div> <div class="video-details">
    <div class="user-info">
     <div class="username-and-desc">
-     <h3>Kegiatan Jualan BABE 2024</h3>
-     <p>Kegiatan jual barang bekas yang seru! #irm #babe</p>
+     <h3>Berbagi Makan 2024</h3>
+     <p>Kegiatan berbagi makan gratis #irm #makangratis</p>
      </div>
    </div>
   </div>
   <div class="interaction-sidebar">
-   <div class="interaction-button profile-circle"><img src="https://via.placeholder.com/30" alt="User Profile"></div>
+   <div class="interaction-button profile-circle"><img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1751921285/logo-irm-100x100_lm460s.png" alt="User Profile"></div>
    <div class="interaction-button"><div class="icon">❤️</div><span>1.5K</span></div> <div class="interaction-button"><div class="icon">💬</div><span>70</span> </div>
    <div class="interaction-button"><div class="icon">🔗</div><span>30</span> </div>
   </div>
@@ -48,13 +48,13 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
   <div class="touch-area"></div> <div class="video-details">
    <div class="user-info">
     <div class="username-and-desc">
-     <h3>Kegiatan Jualan BABE 2024</h3>
-     <p>Kegiatan jual barang bekas yang seru! #irm #babe</p>
+     <h3>Berbagi Sembako 2024</h3>
+     <p>Kegiatan Berbagi Sembako 2024 di Babakan Baru #irm #berbagisembako</p>
      </div>
    </div>
   </div>
   <div class="interaction-sidebar">
-   <div class="interaction-button profile-circle"><img src="https://via.placeholder.com/30" alt="User Profile"></div>
+   <div class="interaction-button profile-circle"><img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1751921285/logo-irm-100x100_lm460s.png" alt="User Profile"></div>
    <div class="interaction-button"><div class="icon">❤️</div><span>1.5K</span></div> <div class="interaction-button"><div class="icon">💬</div><span>70</span> </div>
    <div class="interaction-button"><div class="icon">🔗</div><span>30</span> </div>
   </div>

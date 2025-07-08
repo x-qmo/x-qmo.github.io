@@ -23,7 +23,7 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
                         </div>
                     </div>
                     <div class="interaction-sidebar">
-                        <div class="interaction-button profile-circle"><img src="https://via.placeholder.com/30" alt="User Profile"></div>
+                        <div class="interaction-button profile-circle"><img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1751921285/logo-irm-100x100_lm460s.png" alt="User Profile"></div>
                         <div class="interaction-button"><div class="icon">❤️</div><span>1.5M</span></div>
                         <div class="interaction-button"><div class="icon">💬</div><span>70K</span></div>
                         <div class="interaction-button"><div class="icon">🔗</div><span>30K</span></div>
@@ -46,7 +46,7 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
                         </div>
                     </div>
                     <div class="interaction-sidebar">
-                        <div class="interaction-button profile-circle"><img src="https://via.placeholder.com/30" alt="User Profile"></div>
+                        <div class="interaction-button profile-circle"><img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1751921285/logo-irm-100x100_lm460s.png" alt="User Profile"></div>
                         <div class="interaction-button"><div class="icon">❤️</div><span>1.5M</span></div>
                         <div class="interaction-button"><div class="icon">💬</div><span>70K</span></div>
                         <div class="interaction-button"><div class="icon">🔗</div><span>30K</span></div>
@@ -66,7 +66,7 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
                         </div>
                     </div>
                     <div class="interaction-sidebar">
-                        <div class="interaction-button profile-circle"><img src="https://via.placeholder.com/30" alt="User Profile"></div>
+                        <div class="interaction-button profile-circle"><img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1751921285/logo-irm-100x100_lm460s.png" alt="User Profile"></div>
                         <div class="interaction-button"><div class="icon">❤️</div><span>1.5M</span></div>
                         <div class="interaction-button"><div class="icon">💬</div><span>70K</span></div>
                         <div class="interaction-button"><div class="icon">🔗</div><span>30K</span></div>
@@ -86,7 +86,7 @@ description: Viges Video Geser menghadirkan cuplikan menarik kegiatan Yayasan In
                         </div>
                     </div>
                     <div class="interaction-sidebar">
-                        <div class="interaction-button profile-circle"><img src="https://via.placeholder.com/30" alt="User Profile"></div>
+                        <div class="interaction-button profile-circle"><img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1751921285/logo-irm-100x100_lm460s.png" alt="User Profile"></div>
                         <div class="interaction-button"><div class="icon">❤️</div><span>1.5M</span></div>
                         <div class="interaction-button"><div class="icon">💬</div><span>70K</span></div>
                         <div class="interaction-button"><div class="icon">🔗</div><span>30K</span></div>
