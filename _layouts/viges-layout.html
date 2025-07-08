@@ -36,6 +36,11 @@
         video::controls {
              display: none !important;
         }
+        .video-player img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
     </style>
 </head>
 <body>
@@ -55,21 +60,21 @@
         </main>
 
         <footer class="tiktok-footer-nav">
-            <a href="https://x-qmo.github.io/landing-pages/irm/" class="nav-item active">
+            <a href="{{ site.baseurl }}/landing-pages/irm/" class="nav-item" id="navHIRM">
                 <i class="fas fa-home"></i>
                 <span>IRM</span>
             </a>
-            <div class="nav-item">
+            <a href="{{ site.baseurl }}/landing-pages/poges/" class="nav-item" id="navPhoto">
                 <i class="fas fa-compass"></i>
-                <span>Jelajahi</span>
-            </div>
+                <span>Photo</span>
+            </a>
             <div class="nav-item add-button">
                 <i class="fas fa-plus"></i>
             </div>
-            <div class="nav-item">
+            <a href="{{ site.baseurl }}/landing-pages/viges/" class="nav-item" id="navIRM">
                 <i class="fas fa-inbox"></i>
-                <span>Kotak Masuk</span>
-            </div>
+                <span>Video</span>
+            </a>
             <div class="nav-item">
                 <i class="fas fa-user"></i>
                 <span>Profil</span>
@@ -200,5 +205,74 @@
     });
 });
     </script>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Tangkap semua item navigasi yang bisa diaktifkan
+    const navItems = document.querySelectorAll('.tiktok-footer-nav .nav-item');
+
+    navItems.forEach(item => {
+        // Pastikan kita hanya menambahkan listener ke item yang relevan (bukan tombol 'add-button')
+        if (!item.classList.contains('add-button')) {
+            item.addEventListener('click', function(event) {
+                // *** TETAPKAN event.preventDefault() di sini ***
+                // Ini akan menghentikan perilaku default browser (perpindahan halaman otomatis)
+                // sehingga kita bisa mengelola animasi atau efek visual terlebih dahulu.
+                event.preventDefault();
+
+                // Hapus kelas 'active' dari semua item navigasi
+                navItems.forEach(nav => {
+                    nav.classList.remove('active');
+                });
+
+                // Tambahkan kelas 'active' ke item yang diklik
+                this.classList.add('active');
+
+                // Dapatkan URL dari atribut href
+                const targetUrl = this.href;
+
+                // *** PICU PERPINDAHAN HALAMAN SECARA MANUAL SETELAH SEDIKIT JEDA ***
+                // Anda bisa menambahkan jeda singkat (misalnya 100-300 ms)
+                // agar efek "active" terlihat sebelum halaman berpindah.
+                setTimeout(() => {
+                    if (targetUrl) { // Pastikan ada URL yang valid
+                        window.location.href = targetUrl; // Arahkan browser ke URL baru
+                    }
+                }, 150); // Jeda 150 milidetik (0.15 detik)
+
+                // Opsional: Anda bisa menambahkan logika lain di sini sebelum perpindahan halaman
+                if (this.id === 'navIRM') {
+                    console.log('Tombol IRM aktif dan akan berpindah halaman!');
+                } else if (this.id === 'navJelajahi') {
+                    console.log('Tombol Jelajahi aktif dan akan berpindah halaman!');
+                }
+            });
+        }
+    });
+
+    // Periksa URL saat ini saat halaman dimuat
+    // Ini memastikan tombol yang benar aktif jika pengguna langsung membuka URL tersebut
+    const currentPath = window.location.pathname;
+
+    navItems.forEach(item => {
+        if (!item.classList.contains('add-button') && item.href) {
+            // Bandingkan pathname dari href item dengan pathname saat ini
+            const itemPath = new URL(item.href).pathname;
+            if (currentPath.includes(itemPath) && itemPath !== '/') { // Hindari konflik dengan root path
+                item.classList.add('active');
+            } else if (currentPath === '/' && itemPath === '/') { // Handle root path specifically
+                 item.classList.add('active');
+            }
+        }
+    });
+
+    // Tambahan: Pastikan tombol 'IRM' (yang kemungkinan adalah home) aktif secara default jika tidak ada yang lain
+    // Ini penting jika path awal hanya '/' dan tidak cocok persis dengan 'itemPath'
+    const irmButton = document.getElementById('navIRM');
+    const anyActive = Array.from(navItems).some(item => item.classList.contains('active'));
+    if (!anyActive && irmButton) {
+        irmButton.classList.add('active');
+    }
+});
+</script>
 </body>
 </html>
