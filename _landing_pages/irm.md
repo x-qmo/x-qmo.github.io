@@ -93,7 +93,7 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
     <div class="container">
         <h2 class="hero-title">Ulurkan Tangan Anda, Berikan Harapan!</h2>
         <p class="hero-subtitle"></p>
-        <a href="{{ site.baseurl }}/landing-pages/viges/" target="_blank" class="donate-button">Gallery Photo dan Video Kegiatan</a>
+        <a href="{{ site.baseurl }}/landing-pages/viges/" class="donate-button">Gallery Photo dan Video Kegiatan</a>
     </div>
 </section>
 
