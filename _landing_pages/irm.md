@@ -2,6 +2,7 @@
 layout: lanpage-yayasan
 title: irm
 description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kemanusiaan, fokus membantu sesama dengan program pendidikan, kesehatan, dan pemberdayaan masyarakat kurang mampu di Bandung.
+og_image: /assets/images/thumbnail-yayasan-irm.jpg
 ---
 
 <section class="hero-section" id="beranda">
