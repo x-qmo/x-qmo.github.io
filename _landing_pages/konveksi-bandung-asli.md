@@ -30,17 +30,17 @@ og_image: /assets/images/default-thumbnail.jpg # Gambar untuk Open Graph
             <h2 class="section-heading">Layanan Konveksi Kami</h2>
             <div class="service-grid">
                 <div class="service-card">
-                    <img src="https://placehold.co/300x200/3b82f6/e2e8f0?text=KEMEJA" alt="[Image of Kemeja]" class="service-image">
+                    <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1752047522/konveksi-kemeja_fln8qv.jpg" alt="[Image of Kemeja]" class="service-image">
                     <h3 class="service-title">Kemeja</h3>
                     <p class="service-description">Produksi kemeja seragam, formal, casual, hingga kemeja custom dengan berbagai bahan dan model.</p>
                 </div>
                 <div class="service-card">
-                    <img src="https://placehold.co/300x200/a78bfa/e2e8f0?text=KAOS" alt="[Image of Kaos]" class="service-image">
+                    <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1752047509/konveksi-kaos_zfwtmv.jpg" alt="[Image of Kaos]" class="service-image">
                     <h3 class="service-title">Kaos</h3>
                     <p class="service-description">Pembuatan kaos oblong, polo shirt, raglan, dan kaos custom untuk event, promosi, atau komunitas.</p>
                 </div>
                 <div class="service-card">
-                    <img src="https://placehold.co/300x200/63b3ed/e2e8f0?text=CELANA" alt="[Image of Celana]" class="service-image">
+                    <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1752047494/konveksi-celana_ynoaup.jpg" alt="[Image of Celana]" class="service-image">
                     <h3 class="service-title">Celana</h3>
                     <p class="service-description">Konveksi celana kerja, celana casual, celana training, dan celana custom lainnya.</p>
                 </div>

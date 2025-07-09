@@ -172,8 +172,6 @@
         /* Services/Products Section */
         .services-section {
             background-color: #2d3748; /* bg-gray-800 */
-            border-top-left-radius: 2rem; /* rounded-t-3xl */
-            border-top-right-radius: 2rem; /* rounded-t-3xl */
             margin-top: -2rem; /* -mt-8 */
             position: relative;
             z-index: 20;
