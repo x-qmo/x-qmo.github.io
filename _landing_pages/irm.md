@@ -17,7 +17,7 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
     <div class="container">
         <h2 class="section-title">Tentang Kami</h2>
         <p class="section-description">
-            {{ site.data.yayasan-irm.nama_yayasan | default: 'Nama Yayasan Anda' }} adalah sebuah lembaga sosial kemanusiaan nirlaba yang didirikan pada tahun 2024 dengan misi meng-implementasikan nilai-nilai keagamaan terhadap sesama manusia dibawah naungan <b>Yayasan Makhsus Nusantara</b> dan dibawah <b>bimbingan ahli silsilah Gurunda Syaikh Al-'Allamah Masy'ur Kyai Dr. Fahmi Ahmad Fajar Abou Saad, MA Hafidzahullahu Ta'ala</b>.
+            {{ site.data.yayasan-irm.nama_yayasan | default: 'Nama Yayasan Anda' }} atau Yayasan Insan Robithotul Mukhlasin adalah sebuah lembaga sosial kemanusiaan nirlaba yang didirikan pada tahun 2024 dengan misi meng-implementasikan nilai-nilai keagamaan terhadap sesama manusia dibawah naungan <b>Yayasan Makhsus Nusantara</b> dan dibawah <b>bimbingan ahli silsilah Gurunda Syaikh Al-'Allamah Masy'ur Kyai Dr. Fahmi Ahmad Fajar Abou Saad, MA Hafidzahullahu Ta'ala</b>.
         </p>
         <div class="about-content">
             <div class="about-image">
