@@ -1,3 +1,67 @@
+/* ===================================== */
+/* CSS Lengkap untuk Ukuran Font Responsif */
+/* ===================================== */
+
+/* * CATATAN PENTING:
+ * - Gunakan pendekatan Mobile-First: Atur gaya dasar untuk perangkat mobile terlebih dahulu,
+ * lalu gunakan media queries untuk menyesuaikan pada layar yang lebih besar (tablet, desktop).
+ * - Unit 'rem' sangat direkomendasikan karena berbasis pada ukuran font root (html),
+ * memudahkan penskalaan keseluruhan.
+ * - Fungsi 'clamp()' adalah cara terbaik untuk responsivitas font, karena menetapkan
+ * ukuran minimum, ukuran preferensi (berbasis viewport), dan ukuran maksimum.
+ */
+
+/* =========================== */
+/* 1. Pengaturan Dasar HTML */
+/* =========================== */
+
+html {
+  /* * Ukuran font dasar untuk semua elemen.
+   * 1rem akan setara dengan 16px (default browser).
+   * Anda bisa menyesuaikannya jika ingin font dasar lebih besar/kecil.
+   */
+  font-size: 16px;
+  line-height: 1.6; /* Line-height default untuk keterbacaan yang baik */
+  font-family: 'Arial', sans-serif; /* Ganti dengan font pilihan Anda */
+  color: #333; /* Warna teks default */
+}
+
+/* =========================== */
+/* 2. Ukuran Font untuk Mobile (Default/Base) */
+/* =========================== */
+
+/* Judul Utama (H1) - Paling besar dan menarik perhatian */
+h1 {
+  /* * clamp(min, preferred, max)
+   * Minimum: 1.8rem (sekitar 29px)
+   * Preferred: 8vw (8% dari lebar viewport) - akan responsif terhadap lebar layar mobile
+   * Maximum: 2.5rem (sekitar 40px)
+   */
+  font-size: clamp(1.8rem, 8vw, 2.5rem);
+  line-height: 1.2;
+  margin-bottom: 0.8em; /* Spasi bawah relatif terhadap ukuran font sendiri */
+}
+
+/* Sub-judul (H2) - Untuk bagian utama */
+h2 {
+  font-size: clamp(1.4rem, 6vw, 2rem);
+  line-height: 1.3;
+  margin-bottom: 0.7em;
+}
+
+/* Sub-judul (H3) - Untuk sub-bagian atau poin penting */
+h3 {
+  font-size: clamp(1.2rem, 5vw, 1.5rem);
+  line-height: 1.4;
+  margin-bottom: 0.6em;
+}
+
+/* Teks Paragraf (p) - Teks utama untuk konten */
+p {
+  font-size: 1rem; /* 16px */
+  line-height: 1.7; /* Sedikit lebih renggang untuk keterbacaan di mobile */
+  margin-bottom: 1em;
+}
 /* CSS Reset Sederhana */
         * {
             box-sizing: border-box;
@@ -139,7 +203,6 @@
         .hero-image {
             width: 100%;
             max-width: 480px; /* max-w-md */
-            border-radius: 1.5rem; /* rounded-3xl */
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl */
             transform: scale(1);
             transition: transform 0.3s ease-in-out; /* hover:scale-105 */
@@ -437,6 +500,35 @@
 
         /* Responsive Adjustments (using Media Queries) */
         @media (min-width: 768px) { /* md breakpoint */
+              html {
+    /* Opsional: Jika Anda ingin font dasar sedikit lebih besar di tablet */
+    /* font-size: 17px; */
+  }
+
+  h1 {
+    /* * Minimum: 2.5rem (sekitar 40px)
+     * Preferred: 6vw (6% dari lebar viewport)
+     * Maximum: 4rem (sekitar 64px)
+     */
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    line-height: 1.15;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    line-height: 1.35;
+  }
+
+  p {
+    font-size: 1.1rem; /* Sekitar 17.6px */
+    line-height: 1.6;
+  }
+
             .header .container {
                 flex-direction: row;
             }
