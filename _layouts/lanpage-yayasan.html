@@ -23,7 +23,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ page.title | default: site.title }}">
     <meta name="twitter:description" content="{{ page.description | default: site.description }}">
-    <meta name="twitter:image" content="{{ page.og_image | default: site.baseurl | append: '/assets/thumbnail-yayasan-irm.jpg' }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ page.og_image | default: '/assets/images/thumbnail-yayasan-irm.jpg' }}">
 
 
     <script type="application/ld+json">
