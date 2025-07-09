@@ -8,7 +8,7 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
     <div class="container">
         <h1 class="hero-title">Insan Robithotul Mukhlasin</h1>
         <p class="hero-subtitle">yayasan ini hadir sebagai jembatan kebaikan, menghubungkan uluran tangan para dermawan dengan kebutuhan mendesak di lapangan</p>
-        <a href="https://x-qmo.github.io/landing-pages/viges/" class="donate-button">Video Kegiatan</a>
+        <a href="#video-kegiatan" class="donate-button">Video Kegiatan</a>
     </div>
 </section>
 
@@ -55,7 +55,7 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
     </div>
 </section>
 
-<div class="video-gallery-container">
+<div class="video-gallery-container" id="video-kegiatan">
     <h2 class="section-title">Video Kegiatan Yayasan</h2>
     <div class="video-grid">
         {% for video in site.data.video-yayasan-irm %}
@@ -91,9 +91,10 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
 
 <section class="cta-section" id="donasi">
     <div class="container">
-        <h2 class="hero-title">Ulurkan Tangan Anda, Berikan Harapan!</h2>
-        <p class="hero-subtitle"></p>
-        <a href="{{ site.baseurl }}/landing-pages/viges/" class="donate-button">Gallery Photo dan Video Kegiatan</a>
+        <h2 class="hero-title">Galeri Photo Dan Video Kegiatan</h2>
+        <p class="hero-subtitle">Lihat momen-momen kegiatan kami melalui foto dan video</p>
+        <a href="{{ site.baseurl }}/landing-pages/viges/" class="donate-button">Gallery Video</a>
+        <a href="{{ site.baseurl }}/landing-pages/poges/" class="donate-button">Gallery Photo</a>
     </div>
 </section>
 
