@@ -669,6 +669,12 @@ ul {
         }
 
 /* visi-misi yayasan */
+.ul-isi-misi-yayasan {
+  line-height: 1.6;
+}
+.isi-visi-yayasan {
+  line-height: 1.6;
+}
 .visi-text-yayasan {
   display: flex;
   align-items: flex-start;
@@ -690,7 +696,7 @@ ul {
 .section-title-visi-misi {
   font-size: 2rem;
   text-transform: uppercase;
-  padding-top: 10px;
+  margin: 0;
 }
 .judul-visi-yayasan {
   flex: 0 0 200px;
@@ -701,6 +707,9 @@ ul {
     flex: 0 0 200px;
     text-align: right;
     padding-top: 10px;
+}
+.hero-title {
+    margin-bottom: 2.5rem;
 }
 /* end visi misi yayasan */
 
@@ -868,17 +877,48 @@ ul {
   h1 {
     font-size: 1.75rem; /* 48px */
   }
+  .logo-yayasan-irm {
+  width: 80px;
+  height: auto;
+}
+section {
+    padding: 0.75rem 0.5rem;
+}
+.section-title-visi-misi {
+    font-size: 1rem;
+}
+.ul-isi-misi-yayasan {
+  font-size: 0.875rem;
+}
+/* visi-misi yayasan */
+
+.visi-text-yayasan {
+  flex-direction: column;
+}
+.misi-text-yayasan {
+    flex-direction: column;
+}
+.judul-visi-yayasan {
+    flex: 0;
+}
+.judul-misi-yayasan {
+    flex: 0;
+}
+
+/* end visi-misi yayasan */
             .hero-title {
-                font-size: 1.75rem;
+                font-size: 1rem;
+                margin-bottom: 1rem;
             }
 
             .hero-subtitle, .section-description, .about-text p, .program-card p, p {
-                font-size: 1rem;
+                font-size: 0.875rem;
                 letter-spacing: 0.005rem;
             }
 
             .section-title {
-                font-size: 1.75rem;
+                font-size: 1rem;
+                margin-bottom: 1rem;
             }
 
             .nav-list {

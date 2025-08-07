@@ -49,7 +49,6 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
         <h1 class="hero-title">SEBAIK-BAIK MANUSIA ADALAH YANG PALING BANYAK
 MANFAATNYA BAGI KEHIDUPAN</h1>
         <p class="hero-subtitle">Yayasan Insan Robithotul Mukhlasin adalah lembaga sosial non profit yang menjadi wadah untuk memberikan kebermanfaatan bagi sesama manusia.</p>
-        <a href="#video-kegiatan" class="donate-button">Video Kegiatan</a>
     </div>
 </section>
 
@@ -69,7 +68,7 @@ MANFAATNYA BAGI KEHIDUPAN</h1>
                 <div class="judul-visi-yayasan">
                 <h3 class="section-title-visi-misi">Visi Kami</h3>
                 </div>
-                <div class="isi-visi-yayasan">"
+                <div class="isi-visi-yayasan">
                 <p>Mewujudkan lembaga yang konsisten menebar manfaat bagi kesejahteraan umat dalam aspek sosial, keagamaan, kesehatan dan kesejahteraan, sebagai wujud pengabdian terbaik manusia kepada Allah SWT</p>
                 </div>
             </div>
@@ -79,11 +78,10 @@ MANFAATNYA BAGI KEHIDUPAN</h1>
                 </div>
                 <div class="isi-misi-yayasan">
                 <ul class="ul-isi-misi-yayasan">
-                    <li>Menyelenggarakan program-program sosial yang berdampak positif dan berkelanjutan.</li>
-                    <li>Menggalang dana dan sumber daya secara transparan dan akuntabel.</li>
-                    <li>Membangun kemitraan strategis dengan berbagai pihak untuk memperluas jangkauan kebaikan.</li>
-                    <li>Menyalurkan bantuan kemanusiaan secara cepat dan tepat kepada korban bencana alam atau krisis lainnya, serta berpartisipasi aktif dalam upaya pemulihan pascabencana.</li>
-                    <li>Meningkatkan kesadaran masyarakat akan pentingnya kepedulian sosial dan kemanusiaan.</li>
+                    <li>Menyelenggarakan tata kelola Lembaga Yayasan yang selalu cepat tanggap dan memiliki jiwa solidaritas yang tinggi terhadap lingkungan.</li>
+                    <li>Memberikan bantuan kepada siapaun yang membutuhkan bantuan sosial, kemanusiaan dan kesehatan dengan tulus dan tanpa pamrih.</li>
+                    <li>Melibatkan berbagai elemen masyarakat untuk ikut serta berperan aktif dalam berbagai kegiatan sosial dan kesejahteraan.</li>
+                    <li>Meningkatkan kapasitas keilmuan pengurus, anggota Yayasan dan masyarakat dalam bidang keagamaan dan wawasan keislaman.</li>
                 </ul>
             </div>
         </div>
