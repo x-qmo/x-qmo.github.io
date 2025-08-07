@@ -83,7 +83,7 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
                 </p>
             </div>
             <div id="our-team" class="tab-content">
-                <h2>Tim Kami</h2>
+                <h2 class="section-title">Tim Kami</h2>
                 <p>
                     Tim kami terdiri dari para profesional yang berdedikasi dan berpengalaman di bidangnya masing-masing.
                 </p>
@@ -92,7 +92,7 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
                 </p>
             </div>
             <div id="our-mission" class="tab-content">
-                <h2>Visi & Misi</h2>
+                <h2 class="section-title">Visi & Misi</h2>
                 <p>
                     <strong>Visi:</strong> <p>Mewujudkan lembaga yang konsisten menebar manfaat bagi kesejahteraan umat dalam aspek sosial, keagamaan, kesehatan dan kesejahteraan, sebagai wujud pengabdian terbaik manusia kepada Allah SWT</p>
                 </p>
