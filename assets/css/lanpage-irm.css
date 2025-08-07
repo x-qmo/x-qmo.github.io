@@ -193,8 +193,8 @@ padding-left: 15px;
 /* The dots/bullets/indicators */
 .dot-irm-d {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 11px;
+  width: 11px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -778,7 +778,7 @@ ul {
     }
 
     .main-header .main-nav-desktop {
-        padding: 10px 20px;
+        padding: 0.75rem 0;
     }
 
     .main-header .top-nav-icons {
@@ -808,7 +808,7 @@ ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 20px;
+        padding: 0.75rem 0;
         border-bottom: 1px solid #ddd;
     }
 
