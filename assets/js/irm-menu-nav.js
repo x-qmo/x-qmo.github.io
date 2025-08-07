@@ -1,43 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerMenu = document.getElementById('hamburger-menu');
-    const sidebar = document.getElementById('sidebar');
-    const backButton = document.getElementById('back-button');
-    const overlay = document.getElementById('overlay');
-    const submenuTriggers = document.querySelectorAll('.has-submenu > a');
+    const navItems = document.querySelectorAll('.nav-itemku');
+    const tabContents = document.querySelectorAll('.tab-content');
 
-    // Buka/tutup sidebar
-    hamburgerMenu.addEventListener('click', function() {
-        sidebar.classList.add('open');
-        overlay.classList.add('visible');
-    });
+    navItems.forEach(item => {
+        item.addEventListener('click', function(event) {
+            event.preventDefault(); // Mencegah halaman melompat ke id
 
-    backButton.addEventListener('click', function() {
-        sidebar.classList.remove('open');
-        overlay.classList.remove('visible');
-    });
+            // Hapus kelas 'active-tab' dari semua tab
+            navItems.forEach(nav => nav.classList.remove('active-tab'));
 
-    overlay.addEventListener('click', function() {
-        sidebar.classList.remove('open');
-        overlay.classList.remove('visible');
-    });
+            // Tambahkan kelas 'active-tab' ke tab yang diklik
+            this.classList.add('active-tab');
 
-    // Buka/tutup submenu di sidebar
-    submenuTriggers.forEach(trigger => {
-        trigger.addEventListener('click', function(e) {
-            e.preventDefault();
-            const parentLi = this.parentElement;
-            const submenu = parentLi.querySelector('.submenu');
+            // Sembunyikan semua konten tab
+            tabContents.forEach(content => content.classList.remove('active-content'));
 
-            if (submenu) {
-                submenu.classList.toggle('open');
-                const icon = this.querySelector('i');
-                if (submenu.classList.contains('open')) {
-                    icon.classList.remove('fa-chevron-right');
-                    icon.classList.add('fa-chevron-down');
-                } else {
-                    icon.classList.remove('fa-chevron-down');
-                    icon.classList.add('fa-chevron-right');
-                }
+            // Ambil ID dari href tab yang diklik
+            const targetId = this.getAttribute('href');
+            const targetContent = document.querySelector(targetId);
+
+            // Tampilkan konten yang sesuai
+            if (targetContent) {
+                targetContent.classList.add('active-content');
             }
         });
     });
