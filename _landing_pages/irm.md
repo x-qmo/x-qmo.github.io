@@ -127,54 +127,6 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<section class="about-section" id="tentang-kami">
-    <div class="container">
-        <h2 class="section-title">Tentang Kami</h2>
-        <p class="section-description">
-            Yayasan Insan Robithotul Mukhlasin (IRM) adalah sebuah lembaga sosial kemanusiaan yang didirikan pada tahun 2024 dibawah naungan <b>Yayasan Makhsus Nusantara</b> dan dibawah <b>bimbingan ahli silsilah Gurunda Syaikh Al-'Allamah Masy'ur Kyai Dr. Fahmi Ahmad Fajar Abou Saad, MA Hafidzahullahu Ta'ala</b>.
-        </p>
-    </div>
-</section>
-
-<section class="visi-misi-yayasan">
-    <div class="container">
-        <div class="visi-misi-content">
-            <div class="visi-text-yayasan">
-                <div class="judul-visi-yayasan">
-                    <h3 class="section-title-visi-misi">Visi Kami</h3>
-                </div>
-                <div class="isi-visi-yayasan">
-                    <p>Mewujudkan lembaga yang konsisten menebar manfaat bagi kesejahteraan umat dalam aspek sosial, keagamaan, kesehatan dan kesejahteraan, sebagai wujud pengabdian terbaik manusia kepada Allah SWT</p>
-                </div>
-            </div>
-            <div class="misi-text-yayasan">
-                <div class="judul-misi-yayasan">
-                    <h3 class="section-title-visi-misi">Misi Kami</h3>
-                </div>
-                <div class="isi-misi-yayasan">
-                    <ul class="ul-isi-misi-yayasan">
-                        <li>Menyelenggarakan tata kelola Lembaga Yayasan yang selalu cepat tanggap dan memiliki jiwa solidaritas yang tinggi terhadap lingkungan.</li>
-                        <li>Memberikan bantuan kepada siapaun yang membutuhkan bantuan sosial, kemanusiaan dan kesehatan dengan tulus dan tanpa pamrih.</li>
-                        <li>Melibatkan berbagai elemen masyarakat untuk ikut serta berperan aktif dalam berbagai kegiatan sosial dan kesejahteraan.</li>
-                        <li>Meningkatkan kapasitas keilmuan pengurus, anggota Yayasan dan masyarakat dalam bidang keagamaan dan wawasan keislaman.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="programs-section" id="program">
     <div class="container">
         <h2 class="section-title">Program Kegiatan Kami</h2>
@@ -235,19 +187,3 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
     </div>
 </section>
 
-<section class="contact-section" id="kontak">
-    <div class="container">
-        <h2 class="section-title">Hubungi Kami</h2>
-        <p class="section-description">
-            Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan, ingin berkolaborasi, atau memerlukan informasi lebih lanjut tentang yayasan kami.
-        </p>
-        <div class="contact-info">
-            <p><strong>Alamat:</strong> {{ site.data.yayasan-irm.address | default: 'Jl. PHH. Mustofa No. 71B, Kota Bandung, Jawa Barat' }}</p>
-            <p><strong>Telepon:</strong> <a href="tel:{{ site.data.yayasan-irm.phone | default: '+62881023039034' }}" class="nav-link">{{ site.data.yayasan-irm.phone | default: '+62 881-0230-39034' }}</a></p>
-            <p><strong>Email:</strong> <a href="mailto:{{ site.data.yayasan-irm.email | default: 'info@namayayasan.org' }}" class="nav-link">{{ site.data.yayasan-irm.email | default: 'info@namayayasan.org' }}</a></p>
-            <p style="margin-top:1.5rem;">
-                <a href="{{ site.data.yayasan-irm.Maps_link }}" target="_blank" class="donate-button" style="padding: 0.5rem 1rem; font-size:0.9rem;">Lihat di Google Maps</a>
-            </p>
-        </div>
-    </div>
-</section>
