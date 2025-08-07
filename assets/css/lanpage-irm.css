@@ -879,6 +879,40 @@ ul {
 
 /* accordion-tentang kami */
 /* Navigasi Tab */
+.about-us-navku {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #e0e0e0;
+    flex-wrap: wrap;
+}
+
+.nav-itemku-irm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #555;
+    padding: 15px 10px;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+.nav-itemku-irm svg {
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+    color: #888;
+}
+.nav-itemku-irm.active-page svg {
+    color: #00796b;
+    transform: scale(1.1);
+}
+.spn-text-accku {
+  font-size: 0.6rem;
+}
+
 .about-us-nav {
     display: flex;
     justify-content: space-around;
