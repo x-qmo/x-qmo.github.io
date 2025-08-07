@@ -656,9 +656,9 @@ ul {
         padding: 10px 20px;
         border-bottom: 1px solid #ddd;
     }
-    /*.logo-desktop {
+    .logo-desktop {
         display: none;
-    }*/
+    }
     .main-nav-desktop {
         display: flex;
         justify-content: flex-end;
@@ -722,9 +722,9 @@ ul {
         align-items: center;
     }
 
-    /*.main-header > div:first-child .logo-desktop {
+    .main-header > div:first-child .logo-desktop {
         display: none;
-    }*/
+    }
 
     .main-header > div:first-child .logo-mobile {
         display: block;
