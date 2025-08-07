@@ -9,36 +9,32 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
 
 <section class="irm-slide-show-section" id="s-slideshow-irm">
 <div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="img_nature_wide.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="img_snow_wide.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="img_mountains_wide.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-</div>
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754577197/slide-3-irm_jspipd.jpg" style="width:100%">
+            <div class="text">Caption untuk Slide 1</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754577176/slide-2-irm_udbczm.jpg" style="width:100%">
+            <div class="text">Caption untuk Slide 2</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754577154/slide-1-irm_lx5rbd.jpg" style="width:100%">
+            <div class="text">Caption untuk Slide 3</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
 <br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
 </section>
 
 <section class="hero-section" id="beranda">
@@ -54,9 +50,39 @@ MANFAATNYA BAGI KEHIDUPAN</h1>
 
 <section class="about-section" id="tentang-kami">
     <div class="container">
+    <nav class="about-us-nav">
+  <a href="#company-history" class="nav-itemku">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+      <path d="M2 17l10 5 10-5"></path>
+      <path d="M2 12l10 5 10-5"></path>
+    </svg>
+    <span class="spn-text-acc">Tentang Kami</span>
+  </a>
+  <a href="#our-team" class="nav-itemku">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+      <circle cx="12" cy="7" r="4"></circle>
+    </svg>
+    <span class="spn-text-acc">Tim Kami</span>
+  </a>
+  <a href="#our-mission" class="nav-itemku">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
+      <path d="M12 6v6l4 2"></path>
+    </svg>
+    <span class="spn-text-acc">Misi & Visi</span>
+  </a>
+  <a href="#contact-us" class="nav-itemku">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-5.37-5.37 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+    <span class="spn-text-acc">Hubungi Kami</span>
+  </a>
+</nav>
         <h2 class="section-title">Tentang Kami</h2>
         <p class="section-description">
-            {{ site.data.yayasan-irm.nama_yayasan | default: 'Nama Yayasan Anda' }} atau Yayasan Insan Robithotul Mukhlasin adalah sebuah lembaga sosial kemanusiaan nirlaba yang didirikan pada tahun 2024 dengan misi meng-implementasikan nilai-nilai keagamaan terhadap sesama manusia dibawah naungan <b>Yayasan Makhsus Nusantara</b> dan dibawah <b>bimbingan ahli silsilah Gurunda Syaikh Al-'Allamah Masy'ur Kyai Dr. Fahmi Ahmad Fajar Abou Saad, MA Hafidzahullahu Ta'ala</b>.
+            Yayasan Insan Robithotul Mukhlasin (IRM) adalah sebuah lembaga sosial kemanusiaan yang didirikan pada tahun 2024 dibawah naungan <b>Yayasan Makhsus Nusantara</b> dan dibawah <b>bimbingan ahli silsilah Gurunda Syaikh Al-'Allamah Masy'ur Kyai Dr. Fahmi Ahmad Fajar Abou Saad, MA Hafidzahullahu Ta'ala</b>.
         </p>
     </div>
 </section>
