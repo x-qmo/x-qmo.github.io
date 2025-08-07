@@ -723,7 +723,7 @@ ul {
     }
 
     .main-header > div:first-child .logo-desktop {
-        display: none;
+        display: initial;
     }
 
     .main-header > div:first-child .logo-mobile {
