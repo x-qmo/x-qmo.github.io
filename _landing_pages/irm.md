@@ -5,22 +5,20 @@ description: Yayasan Insan Robithotul Mukhlasin bergerak di bidang sosial & kema
 og_image: /assets/images/thumbnail-yayasan-irm.jpg
 ---
 
-
-
 <section class="irm-slide-show-section" id="s-slideshow-irm">
-<div class="slideshow-container">
+    <div class="slideshow-container">
         <div class="mySlides fade">
-            <div class="numbertext">1 / 4</div>
+            <div class="numbertext">1 / 3</div>
             <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754577197/slide-3-irm_jspipd.jpg" style="width:100%">
             <div class="text">Caption untuk Slide 1</div>
         </div>
         <div class="mySlides fade">
-            <div class="numbertext">2 / 4</div>
+            <div class="numbertext">2 / 3</div>
             <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754577176/slide-2-irm_udbczm.jpg" style="width:100%">
             <div class="text">Caption untuk Slide 2</div>
         </div>
         <div class="mySlides fade">
-            <div class="numbertext">3 / 4</div>
+            <div class="numbertext">3 / 3</div>
             <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754577154/slide-1-irm_lx5rbd.jpg" style="width:100%">
             <div class="text">Caption untuk Slide 3</div>
         </div>
@@ -33,52 +31,51 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-<br>
+    <br>
 </section>
 
 <section class="hero-section" id="beranda">
     <div class="container">
         <div class="hero-logo">
-                <img class="logo-yayasan-irm" src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754565183/logo-yayasan_nbzplq.png" alt="Logo IRM">
+            <img class="logo-yayasan-irm" src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754565183/logo-yayasan_nbzplq.png" alt="Logo IRM">
         </div>
-        <h1 class="hero-title">SEBAIK-BAIK MANUSIA ADALAH YANG PALING BANYAK
-MANFAATNYA BAGI KEHIDUPAN</h1>
+        <h1 class="hero-title">SEBAIK-BAIK MANUSIA ADALAH YANG PALING BANYAK MANFAATNYA BAGI KEHIDUPAN</h1>
         <p class="hero-subtitle">Yayasan Insan Robithotul Mukhlasin adalah lembaga sosial non profit yang menjadi wadah untuk memberikan kebermanfaatan bagi sesama manusia.</p>
     </div>
 </section>
 
 <section class="about-section" id="tentang-kami">
     <div class="container">
-    <nav class="about-us-nav">
-  <a href="#company-history" class="nav-itemku">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-      <path d="M2 17l10 5 10-5"></path>
-      <path d="M2 12l10 5 10-5"></path>
-    </svg>
-    <span class="spn-text-acc">Tentang Kami</span>
-  </a>
-  <a href="#our-team" class="nav-itemku">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-      <circle cx="12" cy="7" r="4"></circle>
-    </svg>
-    <span class="spn-text-acc">Tim Kami</span>
-  </a>
-  <a href="#our-mission" class="nav-itemku">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
-      <path d="M12 6v6l4 2"></path>
-    </svg>
-    <span class="spn-text-acc">Misi & Visi</span>
-  </a>
-  <a href="#contact-us" class="nav-itemku">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-5.37-5.37 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-    </svg>
-    <span class="spn-text-acc">Hubungi Kami</span>
-  </a>
-</nav>
+        <nav class="about-us-nav">
+            <a href="#company-history" class="nav-itemku">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="spn-text-acc">Tentang Kami</span>
+            </a>
+            <a href="#our-team" class="nav-itemku">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <span class="spn-text-acc">Tim Kami</span>
+            </a>
+            <a href="#our-mission" class="nav-itemku">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
+                    <path d="M12 6v6l4 2"></path>
+                </svg>
+                <span class="spn-text-acc">Misi & Visi</span>
+            </a>
+            <a href="#contact-us" class="nav-itemku">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-5.37-5.37 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span class="spn-text-acc">Hubungi Kami</span>
+            </a>
+        </nav>
         <h2 class="section-title">Tentang Kami</h2>
         <p class="section-description">
             Yayasan Insan Robithotul Mukhlasin (IRM) adalah sebuah lembaga sosial kemanusiaan yang didirikan pada tahun 2024 dibawah naungan <b>Yayasan Makhsus Nusantara</b> dan dibawah <b>bimbingan ahli silsilah Gurunda Syaikh Al-'Allamah Masy'ur Kyai Dr. Fahmi Ahmad Fajar Abou Saad, MA Hafidzahullahu Ta'ala</b>.
@@ -87,31 +84,31 @@ MANFAATNYA BAGI KEHIDUPAN</h1>
 </section>
 
 <section class="visi-misi-yayasan">
-<div class="container">
-    <div class="visi-misi-content">
+    <div class="container">
+        <div class="visi-misi-content">
             <div class="visi-text-yayasan">
                 <div class="judul-visi-yayasan">
-                <h3 class="section-title-visi-misi">Visi Kami</h3>
+                    <h3 class="section-title-visi-misi">Visi Kami</h3>
                 </div>
                 <div class="isi-visi-yayasan">
-                <p>Mewujudkan lembaga yang konsisten menebar manfaat bagi kesejahteraan umat dalam aspek sosial, keagamaan, kesehatan dan kesejahteraan, sebagai wujud pengabdian terbaik manusia kepada Allah SWT</p>
+                    <p>Mewujudkan lembaga yang konsisten menebar manfaat bagi kesejahteraan umat dalam aspek sosial, keagamaan, kesehatan dan kesejahteraan, sebagai wujud pengabdian terbaik manusia kepada Allah SWT</p>
                 </div>
             </div>
             <div class="misi-text-yayasan">
                 <div class="judul-misi-yayasan">
-                <h3 class="section-title-visi-misi">Misi Kami</h3>
+                    <h3 class="section-title-visi-misi">Misi Kami</h3>
                 </div>
                 <div class="isi-misi-yayasan">
-                <ul class="ul-isi-misi-yayasan">
-                    <li>Menyelenggarakan tata kelola Lembaga Yayasan yang selalu cepat tanggap dan memiliki jiwa solidaritas yang tinggi terhadap lingkungan.</li>
-                    <li>Memberikan bantuan kepada siapaun yang membutuhkan bantuan sosial, kemanusiaan dan kesehatan dengan tulus dan tanpa pamrih.</li>
-                    <li>Melibatkan berbagai elemen masyarakat untuk ikut serta berperan aktif dalam berbagai kegiatan sosial dan kesejahteraan.</li>
-                    <li>Meningkatkan kapasitas keilmuan pengurus, anggota Yayasan dan masyarakat dalam bidang keagamaan dan wawasan keislaman.</li>
-                </ul>
+                    <ul class="ul-isi-misi-yayasan">
+                        <li>Menyelenggarakan tata kelola Lembaga Yayasan yang selalu cepat tanggap dan memiliki jiwa solidaritas yang tinggi terhadap lingkungan.</li>
+                        <li>Memberikan bantuan kepada siapaun yang membutuhkan bantuan sosial, kemanusiaan dan kesehatan dengan tulus dan tanpa pamrih.</li>
+                        <li>Melibatkan berbagai elemen masyarakat untuk ikut serta berperan aktif dalam berbagai kegiatan sosial dan kesejahteraan.</li>
+                        <li>Meningkatkan kapasitas keilmuan pengurus, anggota Yayasan dan masyarakat dalam bidang keagamaan dan wawasan keislaman.</li>
+                    </ul>
+                </div>
             </div>
         </div>
-</div>
-</div>
+    </div>
 </section>
 
 <section class="programs-section" id="program">
@@ -167,7 +164,7 @@ MANFAATNYA BAGI KEHIDUPAN</h1>
 
 <section class="cta-section" id="donasi">
     <div class="container">
-        <h2 class="hero-title">Galeri Photo Dan Video Kegiatan</h2>
+        <h2 class="section-title">Galeri Photo Dan Video Kegiatan</h2>
         <p class="hero-subtitle">Lihat momen-momen kegiatan kami melalui foto dan video</p>
         <a href="{{ site.baseurl }}/landing-pages/viges/" class="donate-button">Gallery Video</a>
         <a href="{{ site.baseurl }}/landing-pages/poges/" class="donate-button">Gallery Photo</a>
