@@ -26,6 +26,7 @@ p {
 padding-left: 15px;
 }
 
+
 .history-content {
     max-width: 800px;
     margin: 0 auto;
@@ -909,9 +910,7 @@ ul {
     color: #00796b;
     transform: scale(1.1);
 }
-.spn-text-accku {
-  font-size: 0.6rem;
-}
+
 
 .about-us-nav {
     display: flex;
@@ -990,6 +989,9 @@ ul {
     .spn-text-acc {
         font-size: 0.9em;
     }
+    .spn-text-accku {
+  font-size: 0.6rem;
+}
     .about-us-nav {
         justify-content: space-between;
     }
