@@ -44,9 +44,7 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
     </div>
 </section>
 
-<section class="about-section" id="tentang-kami">
-    <div class="container">
-        <nav class="about-us-nav">
+<nav class="about-us-nav">
             <a href="#company-history" class="nav-itemku">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
@@ -76,6 +74,9 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
                 <span class="spn-text-acc">Hubungi Kami</span>
             </a>
         </nav>
+
+<section class="about-section" id="tentang-kami">
+    <div class="container">
         <h2 class="section-title">Tentang Kami</h2>
         <p class="section-description">
             Yayasan Insan Robithotul Mukhlasin (IRM) adalah sebuah lembaga sosial kemanusiaan yang didirikan pada tahun 2024 dibawah naungan <b>Yayasan Makhsus Nusantara</b> dan dibawah <b>bimbingan ahli silsilah Gurunda Syaikh Al-'Allamah Masy'ur Kyai Dr. Fahmi Ahmad Fajar Abou Saad, MA Hafidzahullahu Ta'ala</b>.
@@ -113,7 +114,7 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
 
 <section class="programs-section" id="program">
     <div class="container">
-        <h2 class="section-title">Program Unggulan Kami</h2>
+        <h2 class="section-title">Program Kegiatan Kami</h2>
         <p class="section-description">
             Kami menjalankan berbagai program yang berfokus pada kebutuhan dasar dan pembangunan berkelanjutan untuk komunitas yang kami layani.
         </p>
