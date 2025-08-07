@@ -203,9 +203,9 @@ Rangkuman kegiatan-kegiatan yang telah di laksanakan
 
 <section class="gallery-section" id="galeri">
     <div class="container">
-        <h2 class="section-title">Aksi Nyata Kami dalam Gambar</h2>
+        <h2 class="section-title">Laporan Penyaluran</h2>
         <p class="section-description">
-            Lihatlah dampak positif yang telah kita ciptakan bersama melalui dokumentasi kegiatan kami.
+            Laporan penyaluran kepada penerima manfaat
         </p>
         <div class="program-grid">
             {% for item in site.data.gallery-yayasan-irm %}
