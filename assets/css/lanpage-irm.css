@@ -26,7 +26,17 @@ p {
 padding-left: 15px;
 }
 
+.history-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
+.history-content p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
 /* slideshow yayasan -irm */
 /* Container untuk slideshow */
 .slideshow-container {
@@ -109,7 +119,7 @@ padding-left: 15px;
 }
 
 /* Lingkaran yang aktif */
-.active, .dot:hover {
+.dot:hover {
     background-color: #717171;
 }
 
