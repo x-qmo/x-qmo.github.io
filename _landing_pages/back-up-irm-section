@@ -43,12 +43,8 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
 
 <section class="hero-section" id="beranda">
     <div class="container">
-        <div class="hero-logo">
-                <img class="logo-yayasan-irm" src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754565183/logo-yayasan_nbzplq.png" alt="Logo IRM">
-        </div>
-        <h1 class="hero-title">SEBAIK-BAIK MANUSIA ADALAH YANG PALING BANYAK
-MANFAATNYA BAGI KEHIDUPAN</h1>
-        <p class="hero-subtitle">Yayasan Insan Robithotul Mukhlasin adalah lembaga sosial non profit yang menjadi wadah untuk memberikan kebermanfaatan bagi sesama manusia.</p>
+        <h1 class="hero-title">Insan Robithotul Mukhlasin</h1>
+        <p class="hero-subtitle">yayasan ini hadir sebagai jembatan kebaikan, menghubungkan uluran tangan para dermawan dengan kebutuhan mendesak di lapangan</p>
         <a href="#video-kegiatan" class="donate-button">Video Kegiatan</a>
     </div>
 </section>
@@ -59,26 +55,15 @@ MANFAATNYA BAGI KEHIDUPAN</h1>
         <p class="section-description">
             {{ site.data.yayasan-irm.nama_yayasan | default: 'Nama Yayasan Anda' }} atau Yayasan Insan Robithotul Mukhlasin adalah sebuah lembaga sosial kemanusiaan nirlaba yang didirikan pada tahun 2024 dengan misi meng-implementasikan nilai-nilai keagamaan terhadap sesama manusia dibawah naungan <b>Yayasan Makhsus Nusantara</b> dan dibawah <b>bimbingan ahli silsilah Gurunda Syaikh Al-'Allamah Masy'ur Kyai Dr. Fahmi Ahmad Fajar Abou Saad, MA Hafidzahullahu Ta'ala</b>.
         </p>
-    </div>
-</section>
-
-<section class="visi-misi-yayasan">
-<div class="container">
-    <div class="visi-misi-content">
-            <div class="visi-text-yayasan">
-                <div class="judul-visi-yayasan">
-                <h3 class="section-title-visi-misi">Visi Kami</h3>
-                </div>
-                <div class="isi-visi-yayasan">"
-                <p>Mewujudkan lembaga yang konsisten menebar manfaat bagi kesejahteraan umat dalam aspek sosial, keagamaan, kesehatan dan kesejahteraan, sebagai wujud pengabdian terbaik manusia kepada Allah SWT</p>
-                </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="{{ '/assets/images/background-yayasan-irm-3.jpg' | relative_url }}" alt="Tim Yayasan Beraksi">
             </div>
-            <div class="misi-text-yayasan">
-                <div class="judul-misi-yayasan">
-                <h3 class="section-title-visi-misi">Misi Kami</h3>
-                </div>
-                <div class="isi-misi-yayasan">
-                <ul class="ul-isi-misi-yayasan">
+            <div class="about-text">
+                <h3>Visi Kami</h3>
+                <p>Mewujudkan masyarakat yang berdaya, mandiri, dan berkeadilan sosial, dengan menjunjung tinggi nilai-nilai kemanusiaan dan kepedulian terhadap sesama.</p>
+                <h3>Misi Kami</h3>
+                <ul class="ulmisi">
                     <li>Menyelenggarakan program-program sosial yang berdampak positif dan berkelanjutan.</li>
                     <li>Menggalang dana dan sumber daya secara transparan dan akuntabel.</li>
                     <li>Membangun kemitraan strategis dengan berbagai pihak untuk memperluas jangkauan kebaikan.</li>
@@ -87,8 +72,7 @@ MANFAATNYA BAGI KEHIDUPAN</h1>
                 </ul>
             </div>
         </div>
-</div>
-</div>
+    </div>
 </section>
 
 <section class="programs-section" id="program">

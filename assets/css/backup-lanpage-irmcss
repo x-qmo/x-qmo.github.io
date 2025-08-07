@@ -1,0 +1,481 @@
+/* Contoh di CSS */
+html {
+  font-size: 100%; /* Atau 62.5% untuk mempermudah perhitungan: 1rem = 10px */
+}
+
+body {
+  font-size: 1rem; /* Ini akan jadi 16px */
+}
+
+h1 {
+  font-size: 2.5rem; /* Ini akan jadi 40px (jika 1rem = 16px) */
+}
+
+p {
+  font-size: 1.125rem; /* Ini akan jadi 18px */
+  line-height: 1.6; /* Ini berarti 18px * 1.6 = 28.8px jarak antar baris */
+}
+/* CSS Reset Sederhana */
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+.ulmisi {
+  list-style-position: outside;
+padding-left: 15px;
+}
+
+/* Styling untuk container galeri */
+        .video-gallery-container {
+            background-color: #ffffff; /* Latar belakang putih untuk container */
+            border-radius: 1rem; /* Sudut membulat */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+            padding: 2rem; /* Padding internal */
+            width: 100%; /* Lebar penuh pada ukuran kecil */
+            box-sizing: border-box;
+        }
+
+        /* Styling untuk judul galeri */
+        .gallery-title {
+            color: #1a202c; /* Warna teks gelap */
+            margin-bottom: 2rem; /* Jarak bawah */
+            text-align: center;
+        }
+
+        /* Styling untuk grid video */
+        .video-grid {
+            display: grid;
+            gap: 1.5rem; /* Jarak antar video */
+            /* Mengatur kolom responsif: 1 kolom di mobile, 2 di tablet, 3 di desktop */
+            grid-template-columns: repeat(1, minmax(0, 1fr)); /* Default 1 kolom */
+        }
+
+        /* Media queries untuk responsivitas */
+        @media (min-width: 640px) { /* breakpoint sm */
+            .video-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 kolom di layar kecil ke atas */
+            }
+        }
+
+        @media (min-width: 1024px) { /* breakpoint lg */
+            .video-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 kolom di layar besar ke atas */
+            }
+        }
+
+        /* Styling untuk setiap item video */
+        .video-item {
+            background-color: #e6ffe6; /* Latar belakang abu-abu sangat muda */
+            overflow: hidden; /* Memastikan konten tidak keluar dari batas */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Bayangan item */
+            transition: transform 0.2s ease-in-out; /* Transisi halus saat hover */
+        }
+
+        .video-item:hover {
+            transform: translateY(-5px); /* Efek angkat saat hover */
+        }
+
+        /* Styling untuk container video responsif */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Rasio aspek 16:9 (tinggi / lebar * 100%) */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0; /* Menghilangkan border iframe */
+        }
+
+        /* Styling untuk judul dan deskripsi video */
+        .video-info {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .video-info h3 {
+            font-size: 1.25rem; /* Ukuran font judul */
+            font-weight: 600; /* Tebal */
+            color: #2d3748; /* Warna teks gelap */
+            margin-bottom: 0.5rem;
+        }
+
+        .video-info p {
+            font-size: 0.9rem; /* Ukuran font deskripsi */
+            color: #4a5568; /* Warna teks sedang */
+            line-height: 1.5;
+        }
+
+
+
+
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* --- Header & Navigasi --- */
+        .header {
+            background-color: #ffffff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #28a745; /* Warna hijau khas yayasan */
+            text-decoration: none;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #28a745;
+        }
+
+        .donate-button {
+            background-color: #28a745; /* Hijau */
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+        }
+
+        .donate-button:hover {
+            background-color: #218838; /* Hijau lebih gelap */
+            transform: translateY(-2px);
+        }
+
+        /* Tombol Hamburger untuk Mobile */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .hamburger span {
+            height: 3px;
+            width: 25px;
+            background-color: #333;
+            border-radius: 2px;
+        }
+
+        /* --- Hero Section --- */
+        .hero-section {
+            background-color: #374440;
+            color: #fff;
+            text-align: center;
+            padding: 10rem 0 8rem; /* Padding atas disesuaikan untuk fixed header */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh; /* Set minimum height */
+        }
+
+        .hero-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+
+        }
+
+        /* --- Section Umum --- */
+        section {
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 2.5rem;
+            color: #28a745;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+
+        /* --- About Section --- */
+        .about-section {
+            background-color: #fff;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            text-align: left;
+        }
+
+        .about-image, .about-text {
+            flex: 1 1 45%; /* Flex item will take about 45% of space */
+            min-width: 300px; /* Minimum width for stacking on smaller screens */
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .about-text h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        /* --- Program Section --- */
+        .programs-section {
+            background-color: #e6ffe6; /* Warna latar belakang lembut */
+        }
+
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .program-card {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .program-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4rem;
+            color: #28a745;
+            margin-bottom: 0.75rem;
+        }
+
+        .program-card p {
+            color: #666;
+        }
+
+        /* --- CTA Section --- */
+        .cta-section {
+            background: linear-gradient(to right, #28a745, #34d852); /* Gradient hijau */
+            color: #fff;
+            padding: 5rem 0;
+        }
+
+        .cta-section .donate-button {
+            background-color: #fff;
+            color: #28a745;
+            margin-top: 2rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .cta-section .donate-button:hover {
+            background-color: #f0f0f0;
+            color: #218838;
+        }
+
+        /* --- Footer --- */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .footer-column {
+            flex: 1 1 200px;
+        }
+
+        .footer-column h4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #28a745;
+        }
+
+        .footer-column p, .footer-column a {
+            font-size: 0.95rem;
+            color: #bbb;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .footer-column a:hover {
+            color: #fff;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            color: #bbb;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            margin-top: 3rem;
+            border-top: 1px solid #444;
+            padding-top: 1.5rem;
+            font-size: 0.85rem;
+            color: #888;
+            text-align: center;
+        }
+
+        /* --- Responsif --- */
+        @media (max-width: 768px) {
+              body {
+    font-size: 1rem; /* 18px */
+  }
+  h1 {
+    font-size: 1.75rem; /* 48px */
+  }
+            .hero-title {
+                font-size: 1.75rem;
+            }
+
+            .hero-subtitle, .section-description, .about-text p, .program-card p, p {
+                font-size: 1rem;
+                letter-spacing: 0.005rem;
+            }
+
+            .section-title {
+                font-size: 1.75rem;
+            }
+
+            .nav-list {
+                display: none; /* Sembunyikan navigasi di mobile secara default */
+                flex-direction: column;
+                width: 100%;
+                background-color: #fff;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                padding: 1rem 0;
+                text-align: center;
+            }
+
+            .nav-list.active {
+                display: flex; /* Tampilkan jika aktif */
+            }
+
+            .nav-list li {
+                margin: 0.5rem 0;
+            }
+
+            .hamburger {
+                display: flex; /* Tampilkan hamburger di mobile */
+            }
+
+            .header .container {
+                flex-wrap: wrap; /* Izinkan wrapping jika logo terlalu panjang */
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .about-image, .about-text {
+                flex: 1 1 100%;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-column {
+                flex: 1 1 100%;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+        }

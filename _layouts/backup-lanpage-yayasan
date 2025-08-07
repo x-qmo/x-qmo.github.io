@@ -102,100 +102,25 @@
 </script>
 </head>
 <body>
-    <header class="main-header">
-        <div class="top-nav-bar">
-            <div class="logo-desktop">
-                <a href="#">
-                    <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754565183/logo-yayasan_nbzplq.png" alt="Logo LSM PENJARA">
-                </a>
-            </div>
-
-            <div class="top-nav-icons">
-                <a href="#" class="icon-link black"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="icon-link black"><i class="fab fa-youtube"></i></a>
-                <div class="search-box">
-                    <input type="text" placeholder="Search...">
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                </div>
+    <header class="header">
+        <div class="container">
+            <a href="#beranda" class="logo">{{ site.data.yayasan-irm.nama_yayasan }}</a>
+            <nav class="main-nav">
+                <ul class="nav-list" id="nav-menu">
+                    <li><a href="#tentang-kami" class="nav-link">Tentang Kami</a></li>
+                    <li><a href="#program" class="nav-link">Program Kami</a></li>
+                    <li><a href="#donasi" class="nav-link">Galeri</a></li>
+                    <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                    <li><a href="#galeri" class="donate-button">Galery Kegiatan</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-
-        <nav class="main-nav-desktop">
-            <div class="logo-mobile">
-                <a href="#">
-                    <img src="https://via.placeholder.com/150x50?text=LSM+PENJARA" alt="Logo LSM PENJARA">
-                </a>
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="#" class="active">BERANDA</a></li>
-                <li class="has-dropdown"><a href="#">ORGANISASI</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">PRAKATA</a></li>
-                        <li><a href="#">DOA</a></li>
-                        <li><a href="#">VISI MISI & TUJUAN</a></li>
-                        <li><a href="#">PROFIL ORGANISASI</a></li>
-                        <li><a href="#">MAKNA NAMA LSM Penjara 1</a></li>
-                        <li><a href="#">LOGO & PENJELASANNYA</a></li>
-                        <li><a href="#">STRUKTUR ORGANISASI</a></li>
-                        <li><a href="#">SAMBUTAN KETUA UMUM</a></li>
-                        <li><a href="#">LEGALITAS</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">BERITA</a></li>
-                <li><a href="#">INVESTIGASI</a></li>
-                <li><a href="#">KEGIATAN</a></li>
-                <li><a href="#">KONTAK</a></li>
-            </ul>
-            <a href="#" class="report-button">LAPOR KAMI</a>
-            <button class="hamburger-menu" id="hamburger-menu"><i class="fas fa-bars"></i></button>
-        </nav>
     </header>
-
-    <div class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-            <button class="back-button" id="back-button">
-                <i class="fas fa-chevron-left"></i> Back
-            </button>
-        </div>
-        <nav class="sidebar-nav">
-            <ul>
-                <li><a href="#">BERANDA</a></li>
-                <li class="has-submenu">
-                    <a href="#">ORGANISASI <i class="fas fa-chevron-right"></i></a>
-                    <ul class="submenu">
-                        <li><a href="#">PRAKATA</a></li>
-                        <li><a href="#">DOA</a></li>
-                        <li><a href="#">VISI MISI & TUJUAN</a></li>
-                        <li><a href="#">PROFIL ORGANISASI</a></li>
-                        <li><a href="#">MAKNA NAMA LSM Penjara 1</a></li>
-                        <li><a href="#">LOGO & PENJELASANNYA</a></li>
-                        <li><a href="#">STRUKTUR ORGANISASI</a></li>
-                        <li><a href="#">SAMBUTAN KETUA UMUM</a></li>
-                        <li><a href="#">LEGALITAS</a></li>
-                    </ul>
-                </li>
-                <li class="has-submenu">
-                    <a href="#">BERITA <i class="fas fa-chevron-right"></i></a>
-                    <ul class="submenu">
-                        </ul>
-                </li>
-                <li><a href="#">INVESTIGASI</a></li>
-                <li class="has-submenu">
-                    <a href="#">KEGIATAN <i class="fas fa-chevron-right"></i></a>
-                    <ul class="submenu">
-                        </ul>
-                </li>
-                <li><a href="#">KONTAK</a></li>
-            </ul>
-        </nav>
-        <a href="https://wa.me/nomor-whatsapp-anda" class="whatsapp-button" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </div>
-
-    <div class="overlay" id="overlay"></div>
-
 
         <main class="landing-main">
         {{ content }}
@@ -236,6 +161,5 @@
     <!-- JavaScript untuk interaktivitas -->
     <script src="{{ '/assets/js/yayasan-irm.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/irm-slideshow.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/irm-menu-nav.js' | relative_url }}"></script>
 </body>
 </html>
