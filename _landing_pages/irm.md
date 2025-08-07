@@ -85,10 +85,9 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
             <div id="our-team" class="tab-content">
                 <h2 class="section-title">Tim Kami</h2>
                 <p>
-                    Tim kami terdiri dari para profesional yang berdedikasi dan berpengalaman di bidangnya masing-masing.
+                    Akan segera diterbitkan....
                 </p>
                 <p>
-                    Kami bekerja sama untuk mencapai tujuan bersama dan memberikan layanan terbaik kepada klien kami.
                 </p>
             </div>
             <div id="our-mission" class="tab-content">
@@ -121,7 +120,45 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
 </section>
 
 
+<section class="program-kegiatan-section-irm">
+<div class="container">
+<h2 class="section-title">Rangkuman Kegiatan</h2>
+<p class="section-description">
+Rangkuman kegiatan-kegiatan yang telah di laksanakan
+</p>
+<div class="slideshow-kegiatan-irm-container">
 
+<div class="mySlides-irm fade-irm">
+  <div class="numbertext-irm">1 / 3</div>
+  <img class="img-prog-kegiatan-irm" src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754594280/Sembako_Agustus_2024_wb8cqc.jpg" style="width:100%">
+  <div class="text-irm-cap">Persiapan Pembagian Paket Sembako Bukan Agustus 2024</div>
+</div>
+
+<div class="mySlides-irm fade-irm">
+  <div class="numbertext">2 / 3</div>
+  <img class="img-prog-kegiatan-irm" src="https://res.cloudinary.com/db2lct8xv/image/upload/v1751361225/pembagian-sembako_z1uo1i.jpg" style="width:100%">
+  <div class="text-irm-cap">Pembagian paket sembako kepada warga masyarakat Babakan Baru Kota Bandung</div>
+</div>
+
+<div class="mySlides-irm fade-irm">
+  <div class="numbertext">3 / 3</div>
+  <img class="img-prog-kegiatan-irm" src="https://res.cloudinary.com/db2lct8xv/image/upload/v1751359389/berbagi_makan_gratis_jv2rd7.jpg" style="width:100%">
+  <div class="text-irm-cap">Berbagi makan gratis yang dilaksanakan di wilayah Babakan Baru Kota Bandung</div>
+</div>
+
+<a class="prev-irm-p" onclick="plusSlides(-1)">❮</a>
+<a class="next-irm-n" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot-irm-d" onclick="currentSlide-irm(1)"></span>
+  <span class="dot-irm-d" onclick="currentSlide-irm(2)"></span>
+  <span class="dot-irm-d" onclick="currentSlide-irm(3)"></span>
+</div>
+</div>
+</section>
 
 <section class="programs-section" id="program">
     <div class="container">
