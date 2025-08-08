@@ -157,27 +157,33 @@ Rangkuman kegiatan-kegiatan yang telah di laksanakan
 <div class="slideshow-kegiatan-irm-container">
 
 <div class="mySlides-irm fade-irm">
-  <div class="numbertext-irm">1 / 4</div>
+  <div class="numbertext-irm">1 / 5</div>
   <img class="img-prog-kegiatan-irm" src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754594280/Sembako_Agustus_2024_wb8cqc.jpg" style="width:100%">
   <div class="text-irm-cap">Persiapan Pembagian Paket Sembako Bukan Agustus 2024</div>
 </div>
 
 <div class="mySlides-irm fade-irm">
-  <div class="numbertext">2 / 4</div>
+  <div class="numbertext">2 / 5</div>
   <img class="img-prog-kegiatan-irm" src="https://res.cloudinary.com/db2lct8xv/image/upload/v1751361225/pembagian-sembako_z1uo1i.jpg" style="width:100%">
   <div class="text-irm-cap">Pembagian paket sembako kepada warga masyarakat Babakan Baru Kota Bandung</div>
 </div>
 
 <div class="mySlides-irm fade-irm">
-  <div class="numbertext">3 / 4</div>
+  <div class="numbertext">3 / 5</div>
   <img class="img-prog-kegiatan-irm" src="https://res.cloudinary.com/db2lct8xv/image/upload/v1751359389/berbagi_makan_gratis_jv2rd7.jpg" style="width:100%">
   <div class="text-irm-cap">Berbagi makan gratis yang dilaksanakan di wilayah Babakan Baru Kota Bandung</div>
 </div>
 
 <div class="mySlides-irm fade-irm">
-  <div class="numbertext">4 / 4</div>
+  <div class="numbertext">4 / 5</div>
   <img class="img-prog-kegiatan-irm" src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754596894/Berbagi_takjil_typied.jpg" style="width:100%">
   <div class="text-irm-cap">Berbagi takjil di bulan ramadhan Jalan PHH. Mustofa Kota Bandung</div>
+</div>
+
+<div class="mySlides-irm fade-irm">
+  <div class="numbertext">5 / 5</div>
+  <img class="img-prog-kegiatan-irm" src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754623826/album-photo-berbagi-sembako-1_mfurkz.png" style="width:100%">
+  <div class="text-irm-cap">Pelaksanaan pembagian paket sembako di Babakan Baru Kota Bandung</div>
 </div>
 
 <a class="prev-irm-p" onclick="plusSlides(-1)">❮</a>
@@ -191,6 +197,7 @@ Rangkuman kegiatan-kegiatan yang telah di laksanakan
   <span class="dot-irm-d" onclick="currentSlide-irm(2)"></span>
   <span class="dot-irm-d" onclick="currentSlide-irm(3)"></span>
   <span class="dot-irm-d" onclick="currentSlide-irm(4)"></span>
+  <span class="dot-irm-d" onclick="currentSlide-irm(5)"></span>
 </div>
 </div>
 </section>
