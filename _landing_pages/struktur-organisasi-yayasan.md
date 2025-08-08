@@ -8,7 +8,7 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
 <section id="struktur-yayasan" class="struktur-section">
     <div class="container">
     <h2 class="section-title">Struktur Organisasi</h2>
-        <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754612087/struktur-organisasi_ar4kdt.jpg" alt="Nature" class="responsive-img-struktur">
+        <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754617987/strukturorganisasi-irm_tmnmsa.jpg" alt="Nature" class="responsive-img-struktur">
     </div>
 </section>
 

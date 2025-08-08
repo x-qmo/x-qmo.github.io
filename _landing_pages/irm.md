@@ -65,7 +65,7 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
                 <path d="M12 15v3"></path>
                 <rect x="7" y="18" width="10" height="5" rx="1"></rect>
             </svg>
-            <span class="spn-text-accku">Struktur</span>
+            <span class="spn-text-accku">Tim Kami</span>
         </a>
         <a href="#galeri" class="nav-itemku-irm active-page">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -97,13 +97,6 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
                 </svg>
                 <span class="spn-text-acc">Tentang Kami</span>
             </a>
-            <a href="#our-team" class="nav-itemku">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-                <span class="spn-text-acc">Tim Kami</span>
-            </a>
             <a href="#our-mission" class="nav-itemku">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
@@ -123,14 +116,6 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
                 <h2 class="section-title">Tentang Kami</h2>
                 <p class="section-description">
                     Yayasan Insan Robithotul Mukhlasin (IRM) adalah sebuah lembaga sosial kemanusiaan yang didirikan pada tahun 2024 dibawah naungan <b>Yayasan Makhsus Nusantara</b> dan dibawah <b>bimbingan ahli silsilah Gurunda Syaikh Al-'Allamah Masy'ur Kyai Dr. Fahmi Ahmad Fajar Abou Saad, MA Hafidzahullahu Ta'ala</b>.
-                </p>
-            </div>
-            <div id="our-team" class="tab-content">
-                <h2 class="section-title">Tim Kami</h2>
-                <p>
-                    Akan segera diterbitkan....
-                </p>
-                <p>
                 </p>
             </div>
             <div id="our-mission" class="tab-content">
