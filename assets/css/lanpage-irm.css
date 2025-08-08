@@ -651,7 +651,6 @@ ul {
     }
 
     .logo-mobile a {
-        position: absolute;
         left: 20px;
         top: 10px;
     }
@@ -772,7 +771,7 @@ ul {
         align-items: center;
     }
     .main-nav-desktop .logo-mobile {
-        display: none; /* Logo mobile sudah ada di top-nav-bar */
+        /*display: none; /* Logo mobile sudah ada di top-nav-bar */
     }
     .main-nav-desktop .nav-links {
         display: none;
