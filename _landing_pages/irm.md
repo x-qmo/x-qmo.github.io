@@ -54,7 +54,7 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
             </svg>
             <span class="spn-text-accku">Sejarah</span>
         </a>
-        <a href="#" class="nav-itemku-irm active-page">
+        <a href="{{ site.baseurl }}/landing-pages/struktur-organisasi-yayasan/" class="nav-itemku-irm active-page">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="7" y="2" width="10" height="5" rx="1"></rect>
                 <rect x="2" y="10" width="8" height="5" rx="1"></rect>
