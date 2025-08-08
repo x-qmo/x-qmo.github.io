@@ -26,10 +26,7 @@ p {
 padding-left: 15px;
 }
 
-.responsive-img-struktur {
-  width: 100%;
-  height: auto;
-}
+
 .history-content {
     max-width: 800px;
     margin: 0 auto;
@@ -1215,14 +1212,15 @@ ul {
   h1 {
     font-size: 1.75rem; /* 48px */
   }
+  .responsive-img-struktur {
+  width: 100%;
+  box-sizing: border-box;
+}
 
   .video-info h3 {
       font-size: 1rem;
 }
-.responsive-img-struktur {
-  width: 100%;
-  height: auto;
-}
+
   .ul-isi-misi-yayasan {
   list-style-type: disc;
   padding-left: 10px;
