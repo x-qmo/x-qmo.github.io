@@ -378,9 +378,9 @@ padding-left: 15px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
+    width: 33px;
+    height: 33px;
+    margin: 0.75rem 0.75rem 0.75rem 0rem;
     border-radius: 8px;
     font-size: 1.2rem;
     color: #fff;
@@ -391,10 +391,9 @@ padding-left: 15px;
 .search-box {
     display: flex;
     align-items: center;
-    margin-left: 20px;
     background-color: #f0f0f0;
     border-radius: 8px;
-    padding: 5px 10px;
+    padding: 0.23rem;
     width: 250px;
 }
 
@@ -677,7 +676,7 @@ ul {
     }
 
     .search-box {
-        display: none; /* Sembunyikan search box di mobile */
+        /*display: none; /* Sembunyikan search box di mobile */
     }
 
     .top-nav-icons .icon-link:last-of-type {
@@ -807,7 +806,7 @@ ul {
     }
 
     .search-box {
-        display: none;
+        /*display: none;*/
     }
 
     /* Mengatur ulang posisi elemen untuk mobile agar sesuai gambar */
