@@ -682,9 +682,6 @@ ul {
         align-items: center;
     }
 
-    .search-box {
-        /*display: none; /* Sembunyikan search box di mobile */
-    }
 
     .top-nav-icons .icon-link:last-of-type {
         background-color: #aaa;
@@ -812,9 +809,6 @@ ul {
         display: flex;
     }
 
-    .search-box {
-        /*display: none;*/
-    }
 
     /* Mengatur ulang posisi elemen untuk mobile agar sesuai gambar */
     .main-header {
