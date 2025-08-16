@@ -360,12 +360,13 @@ padding-left: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 3px 40px;
     border-bottom: 1px solid #ddd;
 }
 
 .logo-desktop img {
-    height: 90px; /* Sesuaikan ukuran logo */
+    height: 65px; /* Sesuaikan ukuran logo */
+    padding: 0 17px;
 }
 .logo-yayasan-irm {
   width: 120px;
@@ -487,7 +488,7 @@ padding-left: 15px;
 .report-button {
     background-color: #dc3545; /* Merah */
     color: #fff;
-    padding: 12px 25px;
+    padding: 3px 25px;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
@@ -653,8 +654,11 @@ ul {
     }
 
     .logo-mobile a {
-        left: 20px;
-        top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-weight: bold;
+        font-size: 0.875rem;
     }
 
     .logo-mobile img {
@@ -820,7 +824,7 @@ ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0.75rem 0;
+        padding: 3px 0;;
         border-bottom: 1px solid #ddd;
     }
 
