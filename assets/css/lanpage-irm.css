@@ -737,7 +737,7 @@ ul {
         position: static;
         margin-right: auto;
     }
-    .main-nav-desktop .nav-links, .main-nav-desktop .report-button, .main-nav-desktop .search-box {
+    .main-nav-desktop .nav-links, .main-nav-desktop .report-button, .main-nav-desktop {
         display: none;
     }
     .hamburger-menu {
