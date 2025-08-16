@@ -151,35 +151,16 @@ Rangkuman kegiatan-kegiatan yang telah di laksanakan
 </p>
 <div class="slideshow-kegiatan-irm-container">
 
+{% comment %}
+  Loop untuk membuat setiap slide secara dinamis
+{% endcomment %}
+{% for item in site.data.slideshow_irm %}
 <div class="mySlides-irm fade-irm">
-  <div class="numbertext-irm">1 / 5</div>
-  <img class="img-prog-kegiatan-irm" src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754594280/Sembako_Agustus_2024_wb8cqc.jpg" style="width:100%">
-  <div class="text-irm-cap">Persiapan Pembagian Paket Sembako Bukan Agustus 2024</div>
+  <div class="numbertext-irm">{{ forloop.index }} / {{ forloop.length }}</div>
+  <img class="img-prog-kegiatan-irm" src="{{ item.image }}" style="width:100%">
+  <div class="text-irm-cap">{{ item.caption }}</div>
 </div>
-
-<div class="mySlides-irm fade-irm">
-  <div class="numbertext">2 / 5</div>
-  <img class="img-prog-kegiatan-irm" src="https://res.cloudinary.com/db2lct8xv/image/upload/v1751361225/pembagian-sembako_z1uo1i.jpg" style="width:100%">
-  <div class="text-irm-cap">Pembagian paket sembako kepada warga masyarakat Babakan Baru Kota Bandung</div>
-</div>
-
-<div class="mySlides-irm fade-irm">
-  <div class="numbertext">3 / 5</div>
-  <img class="img-prog-kegiatan-irm" src="https://res.cloudinary.com/db2lct8xv/image/upload/v1751359389/berbagi_makan_gratis_jv2rd7.jpg" style="width:100%">
-  <div class="text-irm-cap">Berbagi makan gratis yang dilaksanakan di wilayah Babakan Baru Kota Bandung</div>
-</div>
-
-<div class="mySlides-irm fade-irm">
-  <div class="numbertext">4 / 5</div>
-  <img class="img-prog-kegiatan-irm" src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754596894/Berbagi_takjil_typied.jpg" style="width:100%">
-  <div class="text-irm-cap">Berbagi takjil di bulan ramadhan Jalan PHH. Mustofa Kota Bandung</div>
-</div>
-
-<div class="mySlides-irm fade-irm">
-  <div class="numbertext">5 / 5</div>
-  <img class="img-prog-kegiatan-irm" src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754623826/album-photo-berbagi-sembako-1_mfurkz.png" style="width:100%">
-  <div class="text-irm-cap">Pelaksanaan pembagian paket sembako di Babakan Baru Kota Bandung</div>
-</div>
+{% endfor %}
 
 <a class="prev-irm-p" onclick="plusSlides(-1)">❮</a>
 <a class="next-irm-n" onclick="plusSlides(1)">❯</a>
@@ -187,12 +168,13 @@ Rangkuman kegiatan-kegiatan yang telah di laksanakan
 </div>
 <br>
 
+{% comment %}
+  Loop untuk membuat titik-titik navigasi secara dinamis
+{% endcomment %}
 <div style="text-align:center">
-  <span class="dot-irm-d" onclick="currentSlide-irm(1)"></span>
-  <span class="dot-irm-d" onclick="currentSlide-irm(2)"></span>
-  <span class="dot-irm-d" onclick="currentSlide-irm(3)"></span>
-  <span class="dot-irm-d" onclick="currentSlide-irm(4)"></span>
-  <span class="dot-irm-d" onclick="currentSlide-irm(5)"></span>
+  {% for item in site.data.slideshow_irm %}
+  <span class="dot-irm-d" onclick="currentSlide-irm({{ forloop.index }})"></span>
+  {% endfor %}
 </div>
 </div>
 </section>
