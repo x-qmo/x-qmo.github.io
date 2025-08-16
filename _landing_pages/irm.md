@@ -10,17 +10,14 @@ og_image: /assets/images/thumbnail-yayasan-irm.jpg
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
             <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754577197/slide-3-irm_jspipd.jpg" style="width:100%">
-            <div class="text">Caption untuk Slide 1</div>
         </div>
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
             <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754577176/slide-2-irm_udbczm.jpg" style="width:100%">
-            <div class="text">Caption untuk Slide 2</div>
         </div>
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
             <img src="https://res.cloudinary.com/db2lct8xv/image/upload/v1754577154/slide-1-irm_lx5rbd.jpg" style="width:100%">
-            <div class="text">Caption untuk Slide 3</div>
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
